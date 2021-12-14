@@ -2,6 +2,10 @@ a+h1 {
     display: inline-block;
     color:white;
 }
+img+h1 {
+    display: inline-block;
+    color:crimson;
+}
 h1+nav {
     display: inline-block;
 }
