@@ -8,10 +8,6 @@
     <meta name="description" content="Ogni settimana un nuovo sfondo. Questo è l'impegno che mi sto prendendo.">
     <link rel="stylesheet" href="../css/core.css">
     <link rel="stylesheet" href="../css/cpp.css">
-    
-    <script data-ad-client="ca-pub-9843209517750049" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    
-    
 </head>
 
 <body>
@@ -42,6 +38,7 @@
                 <p>
                     <ul>
                         <li><a href="#cf">Calcolatrice con funzioni</a></li>
+                        <li><a href="#h">Aree geometriche</a></li>
                     </ul>
                 </p>
         </div>
@@ -161,8 +158,122 @@
                     return quoto;<br />
                 }<br />
                 </code>
+                
                 <p style="visibility: hidden;">Mio figlio Spike, ieri (9 dicembre 2021) ha compiuto 8 anni</p>
                 <a href="../doc/cCf.cpp" title="Download File" download><button>DOWNLOAD FILE</button></a>
+                </div>
+                <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare. parte 2</p>
+            <h3 id="h">Aree</h3>
+            <p style="font-style: oblique;">
+                SCOPO: fare un programma che abbia diverse funzioni con cui calcolare l'area di alcune figure
+                geometriche
+            </p>
+            <div class="cppcode">
+            <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                //Programma che calcola la base di alcune fig. geometriche piane <br />
+                    #include <iostream> <br />
+                    using namespace std; <br />
+                    void aQua(); <br />
+                    int qua(int); <br />
+                    void aRet(); <br />
+                    int ret(int, int); <br />
+                    void aTri(); <br />
+                    int tri(int, int); <br />
+                    void aTra(); <br />
+                    int tra(int, int, int); <br />
+ <br />
+ <br />
+ <br />
+                    int main(){ <br />
+                        int opz; <br />
+                        bool cont=true; <br />
+                        while(cont){ <br />
+                            cout<<"Opzioni:"<<endl; <br />
+                            cout<<"1 - Area del quadrato"<<endl; <br />
+                            cout<<"2 - Area del rettangolo"<<endl; <br />
+                            cout<<"3 - Area del triangolo"<<endl; <br />
+                            cout<<"4 - Area del trapezio"<<endl; <br />
+                            cout<<"99 - Fine"<<endl; <br />
+                            cout<<"---> "; <br />
+                            cin>>opz; <br />
+                            switch (opz) { <br />
+                                case 1: <br />
+                                    aQua(); <br />
+                                    break; <br />
+                                case 2: <br />
+                                    aRet(); <br />
+                                    break; <br />
+                                case 3: <br />
+                                    aTri(); <br />
+                                    break; <br />
+                                case 4: <br />
+                                    aTra(); <br />
+                                    break; <br />
+                                case 99: <br />
+                                    cont=false; <br />
+                                    break; <br />
+                                default: <br />
+                                    break; <br />
+                            } <br />
+                        } <br />
+                    } <br />
+ <br />
+                    void aQua(){ <br />
+                        int l; <br />
+                        cout<<"Dammi il lato: "; <br />
+                        cin>>l; <br />
+                        cout<<"L'area del quadrato e' "<<qua(l)<<endl<<endl; <br />
+                    } <br />
+                    int qua(int l){ <br />
+                        int area; <br />
+                        area=l*l; <br />
+                        return area; <br />
+                    } <br />
+                    void aRet(){ <br />
+                        int b, h; <br />
+                        cout<<"Dammi la base: "; <br />
+                        cin>>b; <br />
+                        cout<<"Dammi l'altezza: "; <br />
+                        cin>>h; <br />
+                        cout<<"L'area del rettangolo e' "<<ret(b, h)<<endl<<endl; <br />
+                    } <br />
+                    int ret(int b, int h){ <br />
+                        int area; <br />
+                        area=b*h; <br />
+                        return area; <br />
+                    } <br />
+                    void aTri(){ <br />
+                        int b, h; <br />
+                        cout<<"Dammi la base: "; <br />
+                        cin>>b; <br />
+                        cout<<"Dammi l'altezza: "; <br />
+                        cin>>h; <br />
+                        cout<<"L'area del triangolo e' "<<tri(b, h)<<endl<<endl; <br />
+                    } <br />
+                    int tri(int b, int h){ <br />
+                        int area; <br />
+                        area=(b*h)/2; <br />
+                        return area; <br />
+                    } <br />
+                    void aTra(){ <br />
+                        int b, h, b2; <br />
+                        cout<<"Dammi la base minore: "; <br />
+                        cin>>b; <br />
+                        cout<<"Dammi la base maggiore: "; <br />
+                        cin>>b2; <br />
+                        cout<<"Dammi l'altezza: "; <br />
+                        cin>>h; <br />
+                        cout<<"L'area del trapezio e' "<<tra(b, h, b2)<<endl<<endl; <br />
+                    } <br />
+                    int tra(int b, int h, int b2){ <br />
+                        int area; <br />
+                        area=(b+b2)*h/2; <br />
+                        return area; <br />
+                    } <br />
+ <br />
+                </code>
+                <p style="visibility: hidden;">Bla bla bla</p>
+                <a href="../doc/aree.cpp" title="Download File" download><button>DOWNLOAD FILE</button></a>
                 </div>
         </body>
         </html>
