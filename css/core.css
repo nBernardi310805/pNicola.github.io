@@ -1,6 +1,6 @@
 img+h1 {
     display: inline-block;
-    color:crimson;
+    color:white;
 }
 h1+nav {
     display: inline-block;
@@ -30,14 +30,15 @@ nav h2 {
 nav a {
     border-radius: 5px;
     border:solid;
-    border-color:crimson;
-    color:royalblue;
+    border-color:royalblue;
+    color:firebrick;
+    background-color:white;
     
 }
 a.active {
-    background-color:red;
+    background-color:midnightblue;
     color:white;
-    border-color: red;
+    border-color: white;
 
     
 }
