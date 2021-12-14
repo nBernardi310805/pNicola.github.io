@@ -4,7 +4,7 @@ a+h1 {
 }
 img+h1 {
     display: inline-block;
-    color:crimson;
+    color:white;
 }
 h1+nav {
     display: inline-block;
