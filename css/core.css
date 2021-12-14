@@ -35,6 +35,14 @@ nav a {
     background-color:white;
     
 }
+nav a:hover {
+    border-radius: 5px;
+    border:solid;
+    border-color:whitesmoke;
+    color:white;
+    background-color:royalblue;
+    
+}
 a.active {
     background-color:midnightblue;
     color:white;
