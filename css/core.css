@@ -1,0 +1,132 @@
+a+h1 {
+    display: inline-block;
+    color:white;
+}
+img+h1 {
+    display: inline-block;
+    color:white;
+}
+h1+nav {
+    display: inline-block;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #133250;
+}
+
+
+h1 {
+    font-size: 500%;
+    color:whitesmoke;
+}
+.titol {
+    font-weight: lighter;
+
+}
+header {
+    border-radius: 5px;
+    border-color: white;
+    border:solid;
+    background-color: red;
+
+}
+nav h2 {
+    color:whitesmoke;
+}
+nav a {
+    border-radius: 5px;
+    border:solid;
+    border-color:white;
+    color:crimson;
+    background-color: whitesmoke;
+    
+}
+nav a:hover {
+    border-radius: 5px;
+    border:solid;
+    border-color:white;
+    color:wheat;
+    background-color: royalblue;
+}
+a.active {
+    background-color:midnightblue;
+    color:white;
+    border-color: white;
+
+    
+}
+footer {
+    background-color:firebrick;
+    color:white;
+    border-radius: 5px;
+    font-weight: lighter;
+}
+h3 {
+    color:whitesmoke;
+    font-weight: lighter;
+}
+
+button {
+    width: 220px;
+    height: 30px;
+    background-color: white;
+    color:midnightblue;
+    border-radius: 5px;
+    
+}
+.tit {
+    zoom:220%;
+    color:red;
+    font-weight: lighter;
+    
+}
+a.but {
+border: transparent;
+}
+img.sfo {
+    max-width: 45%;
+    
+}
+#sfi {
+    max-width: 35%;
+    display: inline;
+    vertical-align: top;
+    
+}
+section h2:hover {
+    zoom:320%;
+}
+
+
+article, figure, a, img#sfondone {
+    max-width: 52%;
+    display: inline;
+    
+    
+    
+    
+}
+#txt {
+    vertical-align: top;
+    text-align:end;
+    
+    
+    
+}
+* {
+    color:white;
+}
+#kkkk {
+    zoom:155%;
+}
+button:hover {
+    background-color: darkred;
+    border-radius: 5px;
+    border:solid;
+    border-color: crimson;
+    color:white;
+}
+
+
+

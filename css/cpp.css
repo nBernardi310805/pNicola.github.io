@@ -1,0 +1,18 @@
+.c- {
+    color:red;
+    zoom:160%;
+}
+
+#in {
+    border-radius: 5px;
+    border: solid;
+    border-color:crimson;
+}
+a {
+    color:red;
+}
+.cppcode:hover {
+    border-radius: 5px;
+    border:solid;
+    border-color: darkred;
+}
