@@ -52,6 +52,7 @@
                         <li><a href="#cf">Calcolatrice con funzioni</a></li>
                         <li><a href="#h">Aree geometriche</a></li>
                         <li><a href="#fatt">Fattoriale</a></li>
+                        <li><a href="#ct">Convertitore tempo</a></li>
                     </ul>
                 </p>
         </div>
@@ -319,6 +320,38 @@ int fattoriale(int n){<br />
                 <p style="visibility: hidden;">Non so più cosa mettere</p>
                 <a href="../doc/fatt.cpp" title="Download File" download><button>DOWNLOAD FILE</button></a>
                 <p style="visibility: hidden;">Bla bla bla</p>
+            </div>
+                <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare.</p>
+            <h3 id="ct" class="c-">Convertitore tempo</h3>
+            <p style="font-style: oblique;">
+                Bisognava fare un programma che convertiva da giorni, ore, minuti in secondi
+            </p>
+            <div class="cppcode">
+            <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                #include <iostream><br />
+                    using namespace std;<br />
+                    long calcolaSecondi (int gg, int hh, int mm, int ss){<br />
+                        long s;<br />
+                        s=ss+mm*60+hh*3600+gg*86400;<br />
+                        return s;<br />
+                    }<br />
+                    int main(){<br />
+                        int gg, hh, mm, ss;<br />
+                        cout<<"Inserisci i giorni ";<br />
+                        cin>>gg;<br />
+                        cout<<"Inserisci le ore ";<br />
+                        cin>>hh;<br />
+                        cout<<"Inserisci i minuti ";<br />
+                        cin>>mm;<br />
+                        cout<<"Inserisci i secondi ";<br />
+                        cin>>ss;<br />
+                        cout<<"Equivalgono a "<< calcolaSecondi(gg, hh, mm, ss)<<" secondi";<br />
+                        <br />
+                    }<br />
+                </code>
+                <p style="visibility: hidden;">Sapessi</p>
+                <a href="../doc/cT.cpp" title="Download File" download><button>DOWNLOAD FILE</button></a>
+                <p style="visibility: hidden;">(Bla bla bla)^2</p>
             </div>
 
             
