@@ -86,7 +86,7 @@ border: transparent;
 }
 img.sfo {
     max-width: 45%;
-    image-rendering: optimizeSpeed;
+    image-rendering:optimizeQuality;
     
 }
 #sfi {
