@@ -4,7 +4,7 @@
 }
 
 #in {
-    border-radius: 5px;
+    border-radius: 15px;
     border: solid;
     border-color:crimson;
 }
@@ -12,7 +12,7 @@ a {
     color:red;
 }
 .cppcode:hover {
-    border-radius: 5px;
+    border-radius: 15px;
     border:solid;
     border-color: darkred;
 }
