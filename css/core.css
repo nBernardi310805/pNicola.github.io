@@ -25,7 +25,7 @@ h1 {
 
 }
 header {
-    border-radius: 5px;
+    border-radius: 15px;
     border-color: white;
     border:solid;
     background-color: red;
@@ -35,7 +35,7 @@ nav h2 {
     color:whitesmoke;
 }
 nav a {
-    border-radius: 5px;
+    border-radius: 30px;
     border:solid;
     border-color:white;
     color:crimson;
@@ -43,14 +43,13 @@ nav a {
     
 }
 nav a:hover {
-    border-radius: 5px;
+    border-radius: 30px;
     border:solid;
-    border-color:white;
-    color:wheat;
-    background-color: royalblue;
+    border-color:royalblue;
+    
 }
 a.active {
-    background-color:midnightblue;
+    background-color:royalblue;
     color:white;
     border-color: white;
 
@@ -59,8 +58,10 @@ a.active {
 footer {
     background-color:firebrick;
     color:white;
-    border-radius: 5px;
+    border-radius: 15px;
     font-weight: lighter;
+    padding-left: 10px;
+    
 }
 h3 {
     color:whitesmoke;
@@ -86,8 +87,7 @@ border: transparent;
 }
 img.sfo {
     max-width: 45%;
-    image-rendering:optimizeQuality;
-    
+    image-resolution:10%;
 }
 #sfi {
     max-width: 35%;
@@ -128,6 +128,35 @@ button:hover {
     border-color: crimson;
     color:white;
 }
-
-
-
+.icon {
+    width: 10%;
+    vertical-align:middle;
+   
+    clear:both;
+}
+.icon:hover {
+    animation-name: def;
+    animation-duration: 1s;
+    position: relative;
+    animation-fill-mode: both;
+}
+@keyframes def {
+    from { top:0px;}
+    to {top:-10px;}
+}
+.tipo p {
+    border-radius: 5px; border:solid; border-color: white;
+    zoom: 130%;
+}
+.tipo p:hover {
+    animation-name: amla;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+}
+@keyframes amla {
+    from {color:white; background-color: #133250;}
+    to {color:#133250; background-color: white;}
+}
+.sfff {
+    display: inline;
+}
