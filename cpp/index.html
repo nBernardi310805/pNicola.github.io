@@ -56,6 +56,7 @@
                         <li><a href="#h">Aree geometriche</a></li>
                         <li><a href="#fatt">Fattoriale</a></li>
                         <li><a href="#ct">Convertitore tempo</a></li>
+                        <li><a href="#2d">Misuratore di tempo tra due date</a></li>
                     </ul>
                 </p>
         </div>
@@ -121,7 +122,7 @@
                     cin>>a; <br />
                     cout<<"Dammi il secondo addendo --> "; <br />
                     cin>>b; <br />
-                    cout<<"La somma degli addendi "<<a<<" e "<<b<<" e' "<<somma(a, b)<<endl<<endl<<endl; <br />
+                    cout<<"La somma degli addendi "<<a<<" e "<<b<<" e' "<< somma(a, b)<< endl<<endl<<endl; <br />
                 } <br />
                  <br />
                 int somma(int a, int b){ <br />
@@ -137,7 +138,7 @@
                     cin>>a; <br />
                     cout<<"Dammi il sottraendo --> "; <br />
                     cin>>b; <br />
-                    cout<<"La differenza tra "<<a<<" e "<<b<<" e' "<<sottrazione(a, b)<<endl<<endl<<endl; <br />
+                    cout<<"La differenza tra "<<a<<" e "<< b<<" e' "<< sottrazione(a, b)<<endl<<endl<<endl; <br />
                 } <br />
                 int sottrazione(int a, int b){ <br />
                     int differenza; <br />
@@ -152,7 +153,7 @@
                     cin>>a; <br />
                     cout<<"Dammi il moltiplicatore --> "; <br />
                     cin>>b; <br />
-                    cout<<"Il prodotto di "<<a<<" e "<<b<<" e' "<<moltiplicazione(a, b)<<endl<<endl<<endl; <br />
+                    cout<<"Il prodotto di "<<a<<" e "<< b<<" e' "<< moltiplicazione(a, b)<< endl<< endl<< endl; <br />
                 } <br />
                 int moltiplicazione(int a, int b){ <br />
                     int prodotto; <br />
@@ -167,7 +168,7 @@
                     cin>>a;<br />
                     cout<<"Dammi il divisore --> ";<br />
                     cin>>b;<br />
-                    cout<<"Il quoto di "<<a<<" e "<<b<<" e' "<<divisione(a, b)<<endl<<endl<<endl;<br />
+                    cout<<"Il quoto di "<<a<<" e " << b << " e' "<< divisione(a, b)<< endl<< endl<< endl;<br />
                 }<br />
                 int divisione(int a, int b){<br />
                     int quoto;<br />
@@ -177,7 +178,7 @@
                 </code>
                 
                 <p style="visibility: hidden;">Mio figlio Spike, ieri (9 dicembre 2021) ha compiuto 8 anni</p>
-                <a href="../doc/cCf.cpp" title="Download File" download><button>DOWNLOAD FILE</button></a>
+                <a href="../doc/cCf.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
                 <p style="visibility: hidden;">Bla bla bla</p>
                 </div>
                 <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare. parte 2</p>
@@ -206,11 +207,11 @@
                         int opz; <br />
                         bool cont=true; <br />
                         while(cont){ <br />
-                            cout<<"Opzioni:"<<endl; <br />
-                            cout<<"1 - Area del quadrato"<<endl; <br />
-                            cout<<"2 - Area del rettangolo"<<endl; <br />
-                            cout<<"3 - Area del triangolo"<<endl; <br />
-                            cout<<"4 - Area del trapezio"<<endl; <br />
+                            cout<<"Opzioni:"<< endl; <br />
+                            cout<<"1 - Area del quadrato"<< endl; <br />
+                            cout<<"2 - Area del rettangolo"<< endl; <br />
+                            cout<<"3 - Area del triangolo"<< endl; <br />
+                            cout<<"4 - Area del trapezio"<< endl; <br />
                             cout<<"99 - Fine"<<endl; <br />
                             cout<<"---> "; <br />
                             cin>>opz; <br />
@@ -240,7 +241,7 @@
                         int l; <br />
                         cout<<"Dammi il lato: "; <br />
                         cin>>l; <br />
-                        cout<<"L'area del quadrato e' "<< qua(l)<< endl<< endl; <br />
+                        cout<<"L'area del quadrato e' "<<qua(l)<<endl<<endl; <br />
                     } <br />
                     int qua(int l){ <br />
                         int area; <br />
@@ -253,7 +254,7 @@
                         cin>>b; <br />
                         cout<<"Dammi l'altezza: "; <br />
                         cin>>h; <br />
-                        cout<<"L'area del rettangolo e' "<< ret(b, h)<< endl<< endl; <br />
+                        cout<<"L'area del rettangolo e' "<< ret(b, h)<< endl << endl; <br />
                     } <br />
                     int ret(int b, int h){ <br />
                         int area; <br />
@@ -266,7 +267,7 @@
                         cin>>b; <br />
                         cout<<"Dammi l'altezza: "; <br />
                         cin>>h; <br />
-                        cout<<"L'area del triangolo e' "<< tri(b, h)<< endl<< endl; <br />
+                        cout<<"L'area del triangolo e' "<<tri(b, h)<< endl<< endl; <br />
                     } <br />
                     int tri(int b, int h){ <br />
                         int area; <br />
@@ -291,7 +292,7 @@
  <br />
                 </code>
                 <p style="visibility: hidden;">Bla bla bla</p>
-                <a href="../doc/aree.cpp" title="Download File" download><button>DOWNLOAD FILE</button></a>
+                <a href="../doc/aree.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
                 <p style="visibility: hidden;">Bla bla bla</p>
                 </div>
                 <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare.</p>
@@ -309,7 +310,7 @@ int main(){<br />
     int n;<br />
     cout<<"Dammi il numero di cui vuoi calcolare il fattoriale: ";<br />
     cin>>n;<br />
-    cout<< fattoriale(n) << endl; <br />
+    cout<< fattoriale(n)<< endl;<br />
 }<br />
 int fattoriale(int n){<br />
     int fatt=1;<br />
@@ -321,10 +322,10 @@ int fattoriale(int n){<br />
 }<br />
                 </code>
                 <p style="visibility: hidden;">Non so più cosa mettere</p>
-                <a href="../doc/fatt.cpp" title="Download File" download><button>DOWNLOAD FILE</button></a>
+                <a href="../doc/fatt.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
                 <p style="visibility: hidden;">Bla bla bla</p>
             </div>
-                <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare.</p>
+            <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare.</p>
             <h3 id="ct" class="c-">Convertitore tempo</h3>
             <p style="font-style: oblique;">
                 Bisognava fare un programma che convertiva da giorni, ore, minuti in secondi
@@ -353,8 +354,170 @@ int fattoriale(int n){<br />
                     }<br />
                 </code>
                 <p style="visibility: hidden;">Sapessi</p>
-                <a href="../doc/cT.cpp" title="Download File" download><button>DOWNLOAD FILE</button></a>
+                <a href="../doc/cT.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
                 <p style="visibility: hidden;">(Bla bla bla)^2</p>
+            </div>
+
+
+            <p style="visibility: hidden;">Davvero, non so più cosa scrivere!</p>
+            <h3 id="2d" class="c-">Distanza tra due date</h3>
+            <p style="font-style: oblique;">
+                Fare un programma che immessa la 1a e la 2a data restituiva i gg, mm, yy,
+                sia con il calendario commerciale, sia con quello solare.
+            </p>
+            <div class="cppcode">
+            <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                /*Esercizio 29 pag A150:<br />
+                Programma per calcolare la distanza tra due date<br />
+                */<br />
+               #include <iostream><br />
+               using namespace std;<br />
+               void data(int);<br />
+               void aCom(int, int, long, int, int, long);<br />
+               void aSol(int, int, long, int, int, long);<br />
+               void help();<br />
+               <br />
+               int main(){<br />
+                   int opz;<br />
+                   bool cont=true;<br />
+                   while(cont){<br />
+                       cout<<"PROGRAMMA PER MISURARE L'INTERVALLO DI TEMPO TRA DUE DATE \n \n";<br />
+                       cout<<"Inserire 1 per usare l'ANNO COMMERCIALE \n";<br />
+                       cout<<"Inserire 2 per usare l'ANNO SOLARE \n";<br />
+                       cout<<"Inserire 0 per MAGGIORI INFORMAZIONI \n";<br />
+                       cout<<"Inserire 99 quando si HA FINITO \n";<br />
+                       cout<<"--> ";<br />
+                       cin>>opz;<br />
+                       switch (opz) {<br />
+                           case 0:<br />
+                               help();<br />
+                               break;<br />
+                           case 1:<br />
+                               data(opz);<br />
+                               break;<br />
+                           case 2:<br />
+                               data(opz);<br />
+                               break;<br />
+                           case 99:<br />
+                               cont=false;<br />
+                               break;<br />
+                           default:<br />
+                               break;<br />
+                       }<br />
+                   }<br />
+                   cout<<"Grazie per aver usato il mio programma. :) \n";<br />
+                   return 0;<br />
+               }<br />
+               void data(int opz){<br />
+                   int gg1, gg2, mm1, mm2;<br />
+                   long yy1, yy2;<br />
+                   cout<<"PRIMA data: \n";<br />
+                   cout<<"Inserire il GIORNO: -> ";<br />
+                   cin>>gg1;<br />
+                   cout<<"Inserire il MESE: -> ";<br />
+                   cin>>mm1;<br />
+                   cout<<"Inserire l'ANNO: -> ";<br />
+                   cin>>yy1;<br />
+                   cout<<"SECONDA data: \n";<br />
+                   cout<<"Inserire il GIORNO: -> ";<br />
+                   cin>>gg2;<br />
+                   cout<<"Inserire il MESE: -> ";<br />
+                   cin>>mm2;<br />
+                   cout<<"Inserire l'ANNO: -> ";<br />
+                   cin>>yy2;<br />
+                   if(opz==1){<br />
+                       aCom(gg1, mm1, yy1, gg2, mm2, yy2);<br />
+                   }else{<br />
+                       aSol(gg2, mm2, yy2, gg1, mm1, yy1);<br />
+                   }<br />
+               }<br />
+               void aCom(int gg1, int mm1, long yy1, int gg2, int mm2, long yy2){<br />
+                   long mm, yy, gg;<br />
+                   yy=yy2-yy1;<br />
+                   gg=gg2-gg1;<br />
+                   mm=mm2-mm1;<br />
+                   if(gg<0){<br />
+                       mm--;<br />
+                       gg+=30;<br />
+                   }<br />
+                   if(mm<0){<br />
+                       yy--;<br />
+                       mm+=12;<br />
+                   }<br />
+               <br />
+                   cout<<"Dalla prima data alla seconda sono passati "<<gg<<" GIORNI, "<<mm<<" MESI, "<<yy<<" ANNI. \n \n \n";<br />
+               }<br />
+               <br />
+               <br />
+               void aSol(int gg2, int mm2, long yy2, int gg1, int mm1, long yy1){<br />
+                   long mm, gg, yy;<br />
+                   yy=yy2-yy1;<br />
+                   mm=mm2-mm1;<br />
+                   gg=gg2-gg1;<br />
+                   if(mm<0){<br />
+                       mm+=12;<br />
+                       yy--;<br />
+                   }<br />
+                   if(gg<0){<br />
+                       mm--;<br />
+                       switch (mm) {<br />
+                           case 12:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           case 11:<br />
+                               gg+=30;<br />
+                               break;<br />
+                           case 10:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           case 9:<br />
+                               gg+=30;<br />
+                               break;<br />
+                           case 8:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           case 7:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           case 6:<br />
+                               gg+=30;<br />
+                               break;<br />
+                           case 5:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           case 4:<br />
+                               gg+=30;<br />
+                               break;<br />
+                           case 3:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           case 2:<br />
+                               gg+=28;<br />
+                               break;<br />
+                           case 1:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           case 0:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           <br />
+                           default:<br />
+                               break;<br />
+                       }<br />
+                   }<br />
+                   cout<<"Dalla prima data alla seconda sono passati "<<gg<<" GIORNI, "<<mm<<" MESI, "<<yy<<" ANNI. \n \n \n";<br />
+               }<br />
+               <br />
+               void help(){<br />
+                   cout<<"AIUTO: \n";<br />
+                   cout<<"L'anno commerciale è quello che, ogni mese ha 30 giorni, dunque 360 giorni. Viene usato per esempio nell'ambito finanziario per calcolare gli interessi nei prestiti. \n";<br />
+                   cout<<"L'anno solare è quello che tutti noi usiamo e ha 365 giorni. \n \n \n";<br />
+               }<br />
+               
+                </code>
+                <p style="visibility: hidden;">Non so più cosa mettere</p>
+                <a href="../doc/2date.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
+                <p style="visibility: hidden;">Bla bla bla</p>
             </div>
 
             
