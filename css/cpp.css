@@ -16,3 +16,11 @@ a {
     border:solid;
     border-color: darkred;
 }
+.dowb {
+    width: 10%;
+}
+.dowb:hover {
+    border-radius: 15px;
+    border: solid;
+    border-color:crimson;
+}
