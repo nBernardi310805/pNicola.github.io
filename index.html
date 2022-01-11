@@ -7,6 +7,7 @@
         <meta name="description" content="Il portale v.4.0">
         <link rel="icon" href="favicon.png">
         <link rel="stylesheet" href="css/core.css">
+        
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQNQS81SP0"></script>
@@ -24,10 +25,12 @@
                 <a href="tulipano.html"><img src="images/logo.png" width="80"></a>
                 <h1 class="titol">   Il Portale di Nicola</h1>
             <nav>
-                <h2><a class="active" href="">Home</a> | <a href="sfondi">Sfondi</a> | 
+                <h2 class="nav1"><a class="active" href="">Home</a> | <a href="sfondi">Sfondi</a> | 
                 <a href="cpp">C++</a> | <a href="trucchi">Trucchi</a></h2>
             </nav>
         </header>
+        
+       
         <section>
             <h1>Il Portale di Nicola
             </h1>
@@ -36,16 +39,21 @@
             </article>
         </section>
         <section>
-            <article>
-                <h3>Ogni lunedì, nuovo Sfondo della Settimana!</h3>
-            </article>
-            <a class="but" href="sfondi"><button>Sfondi</button></a>
-              <h3>Sfondi natalizi:</h3>
-                <p>Per Natale 2021 avevo trovato una decina di sfondi natalizi. Li lascio per completezza</p>
-                           <a class="but" href="sfondi/natale"><button>Sfondi di Natale</button></a>
-           <p style="visibility: hidden;">Questo è un easter-egg necessario: non riuscivo a trovare il modo
-        per staccare con il CSS e allora ho fatto questo paragrafo nascosto. Se l'hai trovato ti faccio i complimenti</p>
+                <a title="C++" href="cpp/"><img src="images/cpp.png" class="icon" id="c"></a>
+                <a title="Trucchi" href="trucchi/"><img src="images/tru.png" class="icon" id="t"></a>
+                <a title="Sfondi" href="sfondi/"><img src="images/sfo.png" class="icon" id="s"></a> <div style="display: none;">Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
+                
+                <div style="display: inline;" class="tipo">
+                <p style="display: inline;">Ogni lunedì nuovo sfondo della settimana!</p></div>   
         </section>
+        <section>
+            <p style="visibility: hidden;">Questo è un easter-egg necessario: non riuscivo a trovare il modo
+                per staccare con il CSS e allora ho fatto questo paragrafo nascosto. Se l'hai trovato ti faccio i complimenti</p>
+            <a title="Vecchio sito" href="https://site.portalenicola.it"><img src="images/old.png" class="icon"></a>
+            <a title="Contattami" href="mailto:mail@portalenicola.it?subject=SitoNuovo"><img src="images/contatta.png" class="icon"></a>
+            <a title="Chi sono io?" href="#whoami"><img src="images/info.png" class="icon"></a>
+        </section>
+        <p style="visibility: hidden;">Altro paragrafo fatto per staccare</p>
         <section>
             <article>
                 <img src="images/copp.png" alt="copertina" style="width: 30%;">
@@ -55,9 +63,9 @@
         <p style="visibility: hidden;">Tranquilli, non sono malware quelli che metto (direi anche la stessa cosa se li mettessi)
         comunque non li saprei neanche fare. In ogni caso, se non mi vuoi credere, tutti i codici sono in una repository pubblica di
     GitHub, ove il sito è hostato. Divertiti :)</p>
-        <section style="border-radius: 5px; border:solid; border-color: crimson;">
+        <section style="border-radius: 15px; border:solid; border-color: crimson;">
             <article>
-                <h4>Chi sono io?</h4>
+                <h4 id="whoami">Chi sono io?</h4>
                 <!--Boh-->
                 <p>Sono uno studente di terza informatica. Tutto quello che trovate nel sito è a scopo
                     didattico.
@@ -65,23 +73,14 @@
 
             </article>
         </section>
-        <section>
-            <article>
-                <h3>Sono riuscito a sistemare i problemi con il vecchio sito. Segue il bottone per andare al vecchio sito</h3>
-                <a href="https://site.portalenicola.it"><button>Vai al vecchio sito</button></a>
-            </article>
-        </section>
-        <h4 style="color: red;">Ti piace la nuova grafica del sito?</h4>
-        <h4 style="color: darkred;">Ci sono bug, problemi?</h4>
-        <h4 style="color:crimson">Hai consigli da darmi?</h4>
-        <a href="mailto:mail@portalenicola.it?subject=SitoNuovo"><button>Contattami</button></a>
-                                                       
+       
         <footer style="clear:left;">
+            
             <h3>Portale Nicola</h3>
             <p>Il Portale di Nicola, dal 17 maggio 2021 porta sfondi, easter egg e altro.
                 N.B. Questo è un sito passatempo
-            </p>
-           
+           </p>
+        
         </footer>
     </body>
 </html>
