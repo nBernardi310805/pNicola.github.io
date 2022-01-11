@@ -1,5 +1,5 @@
 section article img:hover {
-    border-radius: 5px;
+    border-radius: 15px;
     border:solid;
     border-color:darkred;
 }
