@@ -1,6 +1,7 @@
 a+h1 {
     display: inline-block;
     color:white;
+    
 }
 img+h1 {
     display: inline-block;
@@ -146,7 +147,7 @@ button:hover {
 }
 .tipo p {
     border-radius: 5px; border:solid; border-color: white;
-    zoom: 130%;
+    zoom: 180%;
 }
 .tipo p:hover {
     animation-name: amla;
@@ -170,15 +171,32 @@ button:hover {
     }
     .tipo {
         margin-top: 50px;
+        text-align: center;
+    }
+    nav a {
+        text-align:center;
+        
+    }
+    h1 {
+        text-align: center;
+    }
+    .tit {
+        text-align: center;
     }
     
 
 }
 @media (min-width:601px){
     .tipo {
-        display:inline;
+        margin-top: 50px;
+        text-align: center;
     }
     #cop {
-        width: 30%;
+        width: 35%;
+        float: right;
     }
+    .icon {
+        width: 20%;
+    }
+
 }
