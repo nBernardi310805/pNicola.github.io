@@ -161,7 +161,7 @@ button:hover {
 .sfff {
     display: inline;
 }
-@media (max-width:750px) {
+@media (max-width:768px) {
     .icon {
         width: 30%;
         
@@ -189,7 +189,7 @@ button:hover {
     
 
 }
-@media (min-width:751px){
+@media (min-width:768px){
     .tipo {
         margin-top: 50px;
         text-align: center;
