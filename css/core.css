@@ -166,7 +166,7 @@ button:hover {
         width: 30%;
         
     }
-    #cop {
+    #cop2 {
         width: 100%; 
     }
     .tipo {
@@ -183,6 +183,9 @@ button:hover {
     .tit {
         text-align: center;
     }
+    #cop1 {
+        display: none;
+    }
     
 
 }
@@ -191,12 +194,15 @@ button:hover {
         margin-top: 50px;
         text-align: center;
     }
-    #cop {
+    #cop1 {
         width: 35%;
         float: right;
     }
     .icon {
         width: 20%;
+    }
+    #cop2 {
+        display: none;
     }
 
 }
