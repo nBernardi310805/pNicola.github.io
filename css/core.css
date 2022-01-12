@@ -160,3 +160,25 @@ button:hover {
 .sfff {
     display: inline;
 }
+@media (max-width:600px) {
+    .icon {
+        width: 30%;
+        
+    }
+    #cop {
+        width: 100%; 
+    }
+    .tipo {
+        margin-top: 50px;
+    }
+    
+
+}
+@media (min-width:601px){
+    .tipo {
+        display:inline;
+    }
+    #cop {
+        width: 30%;
+    }
+}
