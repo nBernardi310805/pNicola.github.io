@@ -186,9 +186,31 @@ button:hover {
     #cop1 {
         display: none;
     }
+    #nov {
+        border-radius: 15px; border:solid; border-color: white;
+        width: 100%;
+    }
+    #tit3 {
+        color:red;
+        zoom: 150%
+    }
+    
+    p {
+        text-align: justify;
+    }
+    .dat {
+        text-align: right;
+    }
+    #vhs {
+        border-radius: 15px; border:solid; border-color: crimson;
+        width:100%;
+        
+        margin-top: 20px;
+    }
     
 
 }
+
 @media (min-width:768px){
     .tipo {
         margin-top: 50px;
@@ -204,5 +226,27 @@ button:hover {
     #cop2 {
         display: none;
     }
-
+    #nov {
+        border-radius: 15px; border:solid; border-color: white;
+        width: 48%;
+        float:left;
+        margin-bottom: 50px;
+    }
+    #tit3 {
+        color:red;
+        zoom: 150%
+    }
+    
+    p {
+        text-align: justify;
+    }
+    .dat {
+        text-align: right;
+    }
+    #vhs {
+        border-radius: 15px; border:solid; border-color: crimson;
+        width:48%;
+        float:right;
+        margin-bottom: 50px;
+    }
 }
