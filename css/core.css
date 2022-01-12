@@ -167,15 +167,15 @@ button:hover {
         
     }
     #cop2 {
-        width: 100%; 
+        width: 100%;
+        margin-top: 50px; 
     }
     .tipo {
         margin-top: 50px;
         text-align: center;
     }
-    nav a {
+    nav h2 a {
         text-align:center;
-        
     }
     h1 {
         text-align: center;
