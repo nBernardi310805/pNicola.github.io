@@ -1,7 +1,7 @@
 //Programma calcolatrice
 #include <iostream>
 using namespace std;
-
+//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
 void opzioneSomma();
 int somma(int, int);
 void opzioneSottrazione();
@@ -68,14 +68,14 @@ void opzioneSottrazione(){
     cin>>a;
     cout<<"Dammi il sottraendo --> ";
     cin>>b;
-    cout<<"La differenza tra "<<a<<" e "<<b<<" e' "<<sottrazione(a, b)<<endl<<endl<<endl;
+    cout<<"La differenza tra "<<a<<" e "<<b<<" e' "<<sottrazione(a, b)<<endl<<endl<<endl;//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
 }
 int sottrazione(int a, int b){
     int differenza;
     differenza=a-b;
     return differenza;
 }
-
+//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
 void opzioneMoltiplicazione(){
     int a, b;
     cout<<"MOLTIPLICAZIONE:"<<endl;
@@ -83,7 +83,7 @@ void opzioneMoltiplicazione(){
     cin>>a;
     cout<<"Dammi il moltiplicatore --> ";
     cin>>b;
-    cout<<"Il prodotto di "<<a<<" e "<<b<<" e' "<<moltiplicazione(a, b)<<endl<<endl<<endl;
+    cout<<"Il prodotto di "<<a<<" e "<<b<<" e' "<<moltiplicazione(a, b)<<endl<<endl<<endl;//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
 }
 int moltiplicazione(int a, int b){
     int prodotto;
@@ -98,8 +98,8 @@ void opzioneDivisione(){
     cin>>a;
     cout<<"Dammi il divisore --> ";
     cin>>b;
-    cout<<"Il quoto di "<<a<<" e "<<b<<" e' "<<divisione(a, b)<<endl<<endl<<endl;
-}
+    cout<<"Il quoto di "<<a<<" e "<<b<<" e' "<<divisione(a, b)<<endl<<endl<<endl;//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
+}//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
 int divisione(int a, int b){
     int quoto;
     quoto=a/b;
