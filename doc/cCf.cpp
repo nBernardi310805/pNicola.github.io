@@ -52,7 +52,7 @@ void opzioneSomma(){
     cin>>a;
     cout<<"Dammi il secondo addendo --> ";
     cin>>b;
-    cout<<"La somma degli addendi "<<a<<" e "<<b<<" e' "<<somma(a, b)<<endl<<endl<<endl;
+    cout<<"La somma degli addendi "<<a<<" e "<<b<<" e' "<<somma(a, b)<<endl<<endl<<endl;//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
 }
 
 int somma(int a, int b){
