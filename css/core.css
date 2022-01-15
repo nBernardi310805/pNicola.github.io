@@ -41,7 +41,7 @@ nav a {
     border-color:white;
     color:crimson;
     background-color: whitesmoke;
-    
+    font-style: normal;
 }
 nav a:hover {
     border-radius: 30px;
