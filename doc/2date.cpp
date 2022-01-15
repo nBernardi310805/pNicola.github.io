@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 void data(int);
-void aCom(int, int, long, int, int, long);
+void aCom(int, int, long, int, int, long); //SCARICATO DAL SITO https://portalenicola.it/cpp#2d
 void aSol(int, int, long, int, int, long);
 void help();
 
@@ -76,7 +76,7 @@ void aCom(int gg1, int mm1, long yy1, int gg2, int mm2, long yy2){
         mm+=12;
     }
 
-    cout<<"Dalla prima data alla seconda sono passati "<<gg<<" GIORNI, "<<mm<<" MESI, "<<yy<<" ANNI. \n \n \n";
+    cout<<"Dalla prima data alla seconda sono passati "<<gg<<" GIORNI, "<<mm<<" MESI, "<<yy<<" ANNI. \n \n \n";//QUESTO PROGRAMMA È STATO CREATO DA NICOLA BERNARDI
 }
 
 
@@ -89,7 +89,7 @@ void aSol(int gg2, int mm2, long yy2, int gg1, int mm1, long yy1){
         mm+=12;
         yy--;
     }
-    if(gg<0){
+    if(gg<0){//SCARICATO DAL SITO https://portalenicola.it/cpp
         mm--;
         switch (mm) {
             case 12:
@@ -136,11 +136,11 @@ void aSol(int gg2, int mm2, long yy2, int gg1, int mm1, long yy1){
                 break;
         }
     }
-    cout<<"Dalla prima data alla seconda sono passati "<<gg<<" GIORNI, "<<mm<<" MESI, "<<yy<<" ANNI. \n \n \n";
+    cout<<"Dalla prima data alla seconda sono passati "<<gg<<" GIORNI, "<<mm<<" MESI, "<<yy<<" ANNI. \n \n \n";//SCARICATO DAL SITO https://portalenicola.it/cpp
 }
 
 void help(){
     cout<<"AIUTO: \n";
-    cout<<"L'anno commerciale è quello che, ogni mese ha 30 giorni, dunque 360 giorni. Viene usato per esempio nell'ambito finanziario per calcolare gli interessi nei prestiti. \n";
-    cout<<"L'anno solare è quello che tutti noi usiamo e ha 365 giorni. \n \n \n";
+    cout<<"L'anno commerciale è quello che, ogni mese ha 30 giorni, dunque 360 giorni. Viene usato per esempio nell'ambito finanziario per calcolare gli interessi nei prestiti. \n";//SCARICATO DAL SITO https://portalenicola.it/cpp
+    cout<<"L'anno solare è quello che tutti noi usiamo e ha 365 giorni. \n \n \n"; //CREATO DA NICOLA BERNARDI, CARICATO SU portalenicola.it/cpp#2d
 }
