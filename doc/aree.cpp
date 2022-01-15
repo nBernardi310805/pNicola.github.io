@@ -50,7 +50,7 @@ void aQua(){
     int l;
     cout<<"Dammi il lato: ";
     cin>>l;
-    cout<<"L'area del quadrato e' "<<qua(l)<<endl<<endl;
+    cout<<"L'area del quadrato e' "<<qua(l)<<endl<<endl;//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
 }
 int qua(int l){
     int area;
@@ -91,10 +91,14 @@ void aTra(){
     cin>>b2;
     cout<<"Dammi l'altezza: ";
     cin>>h;
-    cout<<"L'area del trapezio e' "<<tra(b, h, b2)<<endl<<endl;
+    cout<<"L'area del trapezio e' "<<tra(b, h, b2)<<endl<<endl; //SCARICATO DAL SITO https://portalenicola.it/cpp
 }
-int tra(int b, int h, int b2){
+int tra(int b, int h, int b2){//SCARICATO DAL SITO https://portalenicola.it/cpp
     int area;
     area=(b+b2)*h/2;
     return area;
 }
+
+
+
+//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
