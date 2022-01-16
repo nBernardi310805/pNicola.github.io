@@ -62,6 +62,7 @@ footer {
     border-radius: 15px;
     font-weight: lighter;
     padding-left: 10px;
+    overflow:auto;
     
 }
 h3 {
