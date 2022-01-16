@@ -1,0 +1,35 @@
+@media (max-width:700px) {
+    #cop00 {
+        display: none;
+    }
+    #nov2 {
+        border-radius: 15px; border:solid; border-color: white;
+        float:left;
+        margin-bottom: 50px;
+        width:100%;
+    }
+    
+}
+@media (max-width:1024px){ /*Tablet*/
+    #cop00 {
+        display: none;
+    }
+    #nov2 {
+        border-radius: 15px; border:solid; border-color: white;
+        float:left;
+        margin-bottom: 50px;
+        width:100%;
+    }
+}
+@media (min-width:1024px){
+    #cop00 {
+        float:right;
+        width: 29%;
+    }
+    #nov2 {
+        border-radius: 15px; border:solid; border-color: white;
+        float:left;
+        margin-bottom: 50px;
+        width:69%;
+    }
+}
