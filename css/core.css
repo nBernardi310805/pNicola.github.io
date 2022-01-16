@@ -41,7 +41,7 @@ nav a {
     border-color:white;
     color:crimson;
     background-color: whitesmoke;
-    font-style: normal;
+    
 }
 nav a:hover {
     border-radius: 30px;
@@ -119,7 +119,7 @@ article, figure, a, img#sfondone {
 * {
     color:white;
 }
-.kkkk {
+#kkkk {
     zoom:155%;
 }
 button:hover {
@@ -142,8 +142,8 @@ button:hover {
     animation-fill-mode: both;
 }
 @keyframes def {
-    from { top:0px;}
-    to {top:-10px;}
+    from {top:0px;}
+    to {top:-20px;}
 }
 .tipo p {
     border-radius: 5px; border:solid; border-color: white;
@@ -161,7 +161,7 @@ button:hover {
 .sfff {
     display: inline;
 }
-@media (max-width:620px) {
+@media (max-width:700px) {
     .icon {
         width: 30%;
         
@@ -207,14 +207,49 @@ button:hover {
         
         margin-top: 20px;
     }
-    #looo {
-        text-align: center;
-    }
     
 
 }
-
-@media (min-width:620px){
+@media (max-width:1024px){ /*Tablet*/
+    .tipo {
+        margin-top: 50px;
+        text-align: center;
+    }
+    #cop1 {
+        width: 35%;
+        float: right;
+    }
+    .icon {
+        width: 20%;
+    }
+    #cop2 {
+        display: none;
+    }
+    #nov {
+        border-radius: 15px; border:solid; border-color: white;
+        width: 69%;
+        float:left;
+        margin-bottom: 50px;
+    }
+    #tit3 {
+        color:red;
+        zoom: 150%
+    }
+    
+    p {
+        text-align: justify;
+    }
+    .dat {
+        text-align: right;
+    }
+    #vhs {
+        border-radius: 15px; border:solid; border-color: crimson;
+        width:29%;
+        float:right;
+        margin-bottom: 50px;
+    }
+}
+@media (min-width:1024px){
     .tipo {
         margin-top: 50px;
         text-align: center;
@@ -252,4 +287,11 @@ button:hover {
         float:right;
         margin-bottom: 50px;
     }
+}
+#colagg {
+    text-decoration: none;
+}
+#agg {
+    text-align: center;
+    zoom:150%
 }
