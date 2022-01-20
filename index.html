@@ -9,6 +9,7 @@
         <link rel="icon" href="favicon.png">
         <link rel="stylesheet" href="css/core.css">
         <link rel="stylesheet" href="css/anim.css">
+        <script src="js/comandi.js"></script>
         
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -25,7 +26,7 @@
     <body>
         <header>
                 <a href="tulipano.html"><img src="images/logo.png" width="80"></a>
-                <h1 class="titol">   Il Portale di Nicola</h1>
+                <h1 class="titol" id="titol">Il Portale di Nicola</h1>
             <nav>
                 <h2 class="nav1"><a class="active" href="">Home</a> | <a href="sfondi">Sfondi</a> | 
                 <a href="cpp">C++</a> | <a href="trucchi">Trucchi</a></h2>
@@ -57,20 +58,32 @@
             <a title="Sostienimi: donami" href="https://paypal.me/gazzettaleviponti"><img src="images/paypal.png" class="icon" alt="Donami"></a>
             
             <div class="tipo">
-                <p style="display: inline;">Ogni lunedì nuovo sfondo della settimana!</p></div> 
+                <p style="display: inline;" id="cosafaccio">Ogni lunedì nuovo sfondo della settimana!</p></div> 
                 <img id="cop2" src="images/copp.png" alt="copertina"> 
         </section>
         <p style="visibility: hidden;">Altro paragrafo fatto per staccare</p>
+        <section id="eroi" style="overflow: auto;">
+            <article>
+                <h4 id="whoami">Area degli Eroi</h4>
+                <!--js-->
+                <div style="width: 45%; float:left;"><p>Per chi dona. Con la donazione si avrà
+                    diritto a svariati vantaggi. Per donare:
+                    <a href="https://paypal.me/gazzettaleviponti"><b>Clicca QUI</b></a></p></div>
+                </p>
+                <div style="width: 45%; float:right"><p onclick="alert('Per favore fammi la carità, Donami <3')">Non c'è ancora nessuno che ha donato, ma tu puoi essere il primo ed entrare nella leggenda</p></div>
+
+            </article>
+        </section>
         <section id="nov">
 
             <article>
             <h3 id="tit3">Novità</h3>
+            <p class="dat"><b>20 gennaio 2022:</b></p>
+            <p>Aggiunto il 'terminale' (pullula di Easter egg). N.B. è visibile solo da pc</p>
             <p class="dat"><b>17 gennaio 2022:</b></p>
-            <p>Fixati alcuni errori e aggiunti alcuni easter eggs.</p>
+            <p>Risolti alcuni errori e aggiunti alcuni easter eggs.</p>
             <p class="dat"><b>16 gennaio 2022:</b></p>
             <p>Riaggiunta la pagina della trasparenza.</p>
-            <p class="dat"><b>16 gennaio 2022:</b></p>
-            <p>Aggiunta la modalità tablet per il sito responsive.</p>
             <h3 id="agg" title="Pagina della trasparenza"><a id="colagg" href="aggiornamenti/">•••</a></h3>
            </article>
         </section>
@@ -78,7 +91,7 @@
             <article>
                 <h4 id="whoami">Chi sono io?</h4>
                 <!--Boh-->
-                <p>Sono uno studente di terza informatica. Tutto quello che trovate nel sito è a scopo
+                <p id="ioo">Sono uno studente di terza informatica. Tutto quello che trovate nel sito è a scopo
                     didattico.
                 </p>
                 <p style="display: none;">Tranquilli, non sono malware quelli che metto (direi anche la stessa cosa se li mettessi)
@@ -86,7 +99,17 @@
                 GitHub, ove il sito è hostato. Divertiti :)</p>
 
             </article>
+            </section>
+            <section id="vhs">
+            <article>
+                <h4 id="whoami">Area personale</h4>
+                <!--js-->
+                <p id="pArea" onclick="account()">Per chi ha l'account. (Clicca per saperne di più)
+                </p>
+
+            </article>
         </section>
+        
         
         
        
@@ -96,7 +119,8 @@
             <p>Il Portale di Nicola, dal 17 maggio 2021 porta sfondi, easter egg e altro.
                 N.B. Questo è un sito passatempo
            </p>
-        
+           <p id="logged"></p>
+        <img src="images/term.png" id="easter" onclick="cmd()">
         </footer>
     </body>
 </html>
