@@ -162,7 +162,7 @@ button:hover {
 .sfff {
     display: inline;
 }
-@media (max-width:800px) {
+@media (max-width:1000px) {
     .icon {
         width: 30%;
         
@@ -190,6 +190,7 @@ button:hover {
     #nov {
         border-radius: 15px; border:solid; border-color: white;
         width: 100%;
+        float:none;
     }
     #tit3 {
         color:red;
@@ -206,13 +207,29 @@ button:hover {
         border-radius: 15px; border:solid; border-color: crimson;
         width:100%;
         float:none;
+        clear:left;
         margin-top: 20px;
+        margin-bottom: 20px;
     }
     #easter {
         display: none;
     }
+    #eroi {
+        width: 100%;
+        border-radius: 15px; border:solid; border-color:fuchsia;
+        margin-bottom: 20px;
+        clear: left;
+        padding:3px;
+    }
+    #pA {
+        border-radius: 15px; border:solid; border-color: darkred;
+        width:100%;
+        float:none;
+        clear:left;
+        margin-bottom: 10px;
+    }
 }
-@media (max-width:1000px){ /*Mobile*/
+/* @media (max-width:){ /*tab
     .tipo {
         margin-top: 50px;
         text-align: center;
@@ -253,8 +270,8 @@ button:hover {
     #easter {
         display: none;
     }
-}
-@media (min-width:901px){
+} */
+@media (min-width:1000px){
     .tipo {
         margin-top: 50px;
         text-align: center;
@@ -298,6 +315,17 @@ button:hover {
         overflow: auto;
         padding-right: 10px;
     }
+    #eroi {
+        width: 100%;
+        border-radius: 15px; border:solid; border-color:fuchsia;
+        margin-bottom: 20px;
+    }
+    #pA {
+        border-radius: 15px; border:solid; border-color: darkred;
+        width:48%;
+        float:right;
+        margin-bottom: 50px;
+    }
 }
 #colagg {
     text-decoration: none;
@@ -305,9 +333,4 @@ button:hover {
 #agg {
     text-align: center;
     zoom:150%
-}
-#eroi {
-    width: 100%;
-    border-radius: 15px; border:solid; border-color:fuchsia;
-    margin-bottom: 20px;
 }
