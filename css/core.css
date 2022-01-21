@@ -326,7 +326,7 @@ button:hover {
     }
     @keyframes termi {
         from {top:0px;}
-        to {top:-20px}
+        to {top:-8px}
     }
     #eroi {
         width: 100%;
