@@ -318,6 +318,16 @@ button:hover {
         overflow: auto;
         padding-right: 10px;
     }
+    #easter:hover {
+        animation-name: termi;
+        animation-duration: 1s;
+        position: relative;
+        animation-fill-mode: both;
+    }
+    @keyframe termi {
+        from {top: 0px;}
+        to {top:-20px}
+    }
     #eroi {
         width: 100%;
         border-radius: 15px; border:solid; border-color:fuchsia;
