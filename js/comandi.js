@@ -64,6 +64,11 @@ function cmd(){
             document.getElementById('logged').innerHTML="Accesso effettuato come Nicola Bernardi"
             document.getElementById('pArea').innerHTML="Padrone, quando Ha voglia ampli i comandi del terminale."
         }
+        if(log=='sofiaW' && inn=='ciaooo'){
+            alert('Buonciao Sofia')
+            document.getElementById('logged').innerHTML="Accesso effettuato come Sofia Waddah"
+            document.getElementById('pArea').innerHTML="Lo sapevi che... Il terminale contiene molti Easter eggs. Prova a scriverci 'alociN'."
+        }
     }
     if(com=='easter egg'){
         alert('Credevi davvero che fossi così prevedibile?')
