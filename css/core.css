@@ -324,7 +324,7 @@ button:hover {
         position: relative;
         animation-fill-mode: both;
     }
-    @keyframe termi {
+    @keyframes termi {
         from {top:0px;}
         to {top:-20px}
     }
