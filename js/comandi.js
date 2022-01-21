@@ -105,6 +105,9 @@ function cmd(){
        nm = prompt('E va bene. Chi sei? ', 'Tulipano Gianpierpaolo')
        document.getElementById('donaaa').innerHTML="Eroe ma taccagno: " + nm
    }
+    if(com=='pwd'){
+        alert('github.com/nBernardi310805/pNicola.github.io')
+    }
 }
 
 
