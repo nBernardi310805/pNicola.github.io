@@ -212,7 +212,10 @@ button:hover {
         margin-bottom: 20px;
     }
     #easter {
-        display: none;
+        width:5%;
+        float: right;
+        overflow: auto;
+        padding-right: 10px;
     }
     #eroi {
         width: 100%;
