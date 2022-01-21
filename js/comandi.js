@@ -26,6 +26,7 @@ function cmd(){
             alert('Chiedo scusa prof. Spero le piaccia il mio sito :)')
             document.getElementById('cosafaccio').innerHTML="Cosa faccio? Nulla, devo studiare. ^_^' "
         }
+        document.getElementById('logged').innerHTML="Non hai effettuato l'accesso, ma hai detto che sei " + nam
     }
     if(com=='this site is mine'){
         alert('Salve ' + (io = prompt('Chi sei?', 'Nicola')))
@@ -107,6 +108,9 @@ function cmd(){
    }
     if(com=='pwd'){
         alert('github.com/nBernardi310805/pNicola.github.io')
+    }
+    if('tuz'){
+        alert('TuzCla')
     }
 }
 
