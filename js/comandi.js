@@ -109,7 +109,7 @@ function cmd(){
     if(com=='pwd'){
         alert('github.com/nBernardi310805/pNicola.github.io')
     }
-    if('tuz'){
+    if(com=='tuz'){
         alert('TuzCla')
     }
 }
