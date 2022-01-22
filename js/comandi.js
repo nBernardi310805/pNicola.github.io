@@ -30,8 +30,8 @@ function cmd(){
     }
     if(com=='this site is mine'){
         alert('Salve ' + (io = prompt('Chi sei?', 'Nicola')))
-        document.getElementById('titol').innerHTML="Il portale di " + io
-        document.getElementById('ciao').innerHTML="Il portale di " + io
+        document.getElementById('titol').innerHTML="Il Portale di " + io
+        document.getElementById('ciao').innerHTML="Il Portale di " + io
         document.getElementById('ioo').innerHTML="Sono un tizio a caso che è arrivato di punto in bianco e ha reclamato questo sito"
         document.getElementById('cosafaccio').innerHTML="Ogni lunedì... non so"
     }
