@@ -242,48 +242,7 @@ button:hover {
         animation-fill-mode: backwards;
     }
 }
-/* @media (max-width:){ /*tab
-    .tipo {
-        margin-top: 50px;
-        text-align: center;
-    }
-    #cop1 {
-        width: 35%;
-        float: right;
-    }
-    .icon {
-        width: 20%;
-    }
-    #cop2 {
-        display: none;
-    }
-    #nov {
-        border-radius: 15px; border:solid; border-color: white;
-        width: 69%;
-        float:left;
-        margin-bottom: 50px;
-    }
-    #tit3 {
-        color:red;
-        zoom: 150%
-    }
-    
-    p {
-        text-align: justify;
-    }
-    .dat {
-        text-align: right;
-    }
-    #vhs {
-        border-radius: 15px; border:solid; border-color: crimson;
-        width:28%;
-        float:right;
-        margin-bottom: 50px;
-    }
-    #easter {
-        display: none;
-    }
-} */
+
 @media (min-width:1000px){
     .tipo {
         margin-top: 50px;
