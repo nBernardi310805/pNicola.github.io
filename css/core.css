@@ -49,6 +49,7 @@ nav a {
     border-spacing: 10px;
     text-decoration: none;
     border-width: 2px;
+    display:inline-block;
 }
 nav a:hover {
     border-radius: 30px;
