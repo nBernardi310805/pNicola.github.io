@@ -3,6 +3,11 @@ a+h1 {
     color:white;
     
 }
+#ii {
+    border-radius: 10px;
+    padding-left: 5px;
+    width: 80px;
+}
 img+h1 {
     display: inline-block;
     color:white;
@@ -26,7 +31,7 @@ h1 {
 
 }
 header {
-    border-radius: 15px;
+    border-radius: 40px;
     border-color: white;
     border:solid;
     background-color: red;
@@ -41,20 +46,23 @@ nav a {
     border-color:white;
     color:crimson;
     background-color: whitesmoke;
-    
+    border-spacing: 10px;
+    text-decoration: none;
+    border-width: 2px;
 }
 nav a:hover {
     border-radius: 30px;
     border:solid;
     border-color:royalblue;
+    text-decoration: none;
+    border-width: 2px;
     
 }
 a.active {
     background-color:royalblue;
     color:white;
     border-color: white;
-
-    
+    border-width: 2px;
 }
 footer {
     background-color:firebrick;
@@ -98,7 +106,7 @@ img.sfo {
     
 }
 section h2:hover {
-    zoom:320%;
+    font-weight: normal;
 }
 
 
@@ -146,15 +154,7 @@ button:hover {
     from {top:0px;}
     to {top:-20px;}
 }
-.tipo p {
-    border-radius: 5px; border:solid; border-color: white;
-    zoom: 180%;
-}
-.tipo p:hover {
-    animation-name: amla;
-    animation-duration: 5s;
-    animation-fill-mode: backwards;
-}
+
 @keyframes amla {
     from {color:white; background-color: #133250;}
     to {color:#133250; background-color: white;}
@@ -177,6 +177,7 @@ button:hover {
     }
     nav h2 a {
         text-align:center;
+        
     }
     h1 {
         text-align: center;
@@ -212,10 +213,7 @@ button:hover {
         margin-bottom: 20px;
     }
     #easter {
-        width:5%;
-        float: right;
-        overflow: auto;
-        padding-right: 10px;
+        display: none;
     }
     #eroi {
         width: 100%;
@@ -230,6 +228,18 @@ button:hover {
         float:none;
         clear:left;
         margin-bottom: 10px;
+    }
+    .tipo {
+        border-radius: 5px; border:solid; border-color: white;
+        zoom: 180%;
+        width:100%;
+        
+    }
+    
+    .tipo:hover {
+        animation-name: amla;
+        animation-duration: 5s;
+        animation-fill-mode: backwards;
     }
 }
 /* @media (max-width:){ /*tab
@@ -271,10 +281,7 @@ button:hover {
         margin-bottom: 50px;
     }
     #easter {
-        width:5%;
-        float: right;
-        overflow: auto;
-        padding-right: 10px;
+        display: none;
     }
 } */
 @media (min-width:1000px){
@@ -321,16 +328,6 @@ button:hover {
         overflow: auto;
         padding-right: 10px;
     }
-    #easter:hover {
-        animation-name: termi;
-        animation-duration: 1s;
-        position: relative;
-        animation-fill-mode: both;
-    }
-    @keyframes termi {
-        from {top:0px;}
-        to {top:-8px}
-    }
     #eroi {
         width: 100%;
         border-radius: 15px; border:solid; border-color:fuchsia;
@@ -341,6 +338,18 @@ button:hover {
         width:48%;
         float:right;
         margin-bottom: 50px;
+    }
+    .tipo p {
+        border-radius: 5px; border:solid; border-color: white;
+        zoom: 180%;
+        width:40%;
+        
+    }
+    
+    .tipo p:hover {
+        animation-name: amla;
+        animation-duration: 5s;
+        animation-fill-mode: backwards;
     }
 }
 #colagg {
