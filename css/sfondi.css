@@ -3,3 +3,36 @@ section article img:hover {
     border:solid;
     border-color:darkred;
 }
+
+#n {
+    float: right;
+    background-color: red;
+    border-radius: 20px; border:solid;
+    border-color: lightgray;
+    text-align: center;
+    margin-top: 10px;
+
+}
+#t {
+    vertical-align: top;
+}
+@media(max-width:900px){
+    #n {
+        vertical-align: top;
+        height: auto;
+        width:100%;
+    }
+    nav h2 {
+        display: inline-block;
+        
+    }
+    nav h2 a {
+        vertical-align: middle;
+    }
+    #t {
+        clear:left;
+    }
+    #spz {
+        display: none;
+    }
+}
