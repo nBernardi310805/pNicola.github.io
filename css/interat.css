@@ -2,8 +2,9 @@ span {
     border-radius: 30px; border:solid; border-color:red;
 }
 #xx {
-    border-radius: 25px; border:solid; border-color:firebrick;
+    border-radius: 35px; border:solid; border-color:firebrick;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 #inn {
     border-radius: 50px; border:solid; border-color:crimson;
