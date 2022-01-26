@@ -6,10 +6,12 @@
     <meta charset="utf-8">
     <meta name="author" content="Nicola Bernardi">
     <meta name="description" content="Ogni settimana un nuovo sfondo. Questo è l'impegno che mi sto prendendo.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/core.css">
     <link rel="stylesheet" href="../css/cpp.css">
+    <meta name="keywords" content="il portale di nicola, portale nicola, portalenicola, c++, cpp, programmi c++ gratis, compiti gia fatti c++, programmi gia fatti c++">
+    
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQNQS81SP0"></script>
@@ -25,12 +27,12 @@
 
 <body>
     <header>
-        <a href="../risoluzioneschermo/"><img src="../images/logo.png" width="80"></a>
+    <a href="../risoluzioneschermo/"><img src="../images/logo.png" id="ii"></a>
                 <h1 class="titol">   Il Portale di Nicola</h1>
             <nav>
                 <h2><a href="../">Home</a>  <a href="../sfondi/">Sfondi</a>  
                 <a class="active" href="">C++</a>  <a href="../trucchi/">Trucchi</a>  <a href="../whoami/">Contatti</a>
-                  <a href="../interattivo/">Interattivo</a></h2>
+                <a href="../interattivo/">Interattivo</a></h2>
             </nav>
         </header>
         <section>
@@ -42,14 +44,13 @@
             </article>
             <p>Il C++ secondo Nicola</p>
             </section>
-            <h3 class="kkkk">In questa pagina verranno caricati alcuni dei progetti C++ fatti a scuola.</h3>
+            <h3 id="kkkk">In questa pagina verranno caricati alcuni dei progetti C++ fatti a scuola.</h3>
             <p>La publicazione del contenuto è esclusivamente a scopo didattico. :)</p>
             <h4>Il Bello è che vi lascio il download</h4>
             <p style="padding:15px; text-align:justify">Mi sono accorto di una cosa assai spiacevole cioè del fatto che, anche con l'attributo <code>CODE</code> alcune parti del programma in C++,
                 come l'invocazione della funzione, viene tagliato. Vi invito dunque a non fare copia-incolla, ma di scaricare il file dal pulsante di DOWNLOAD.
-                Buona Giornata</p>
-    <h3 class="kkkk"><b>ATTENZIONE NON MODIFICARE IL CODICE. LA MODIFICA DEL CODICE PUÒ COMPORTARE AL NON FUNZIONAMENTO DEL PROGRAMMA</b></h3>
-            <p style="display:none;">ciao, so la Marisa</p>
+                Buone feste</p>
+            <p style="visibility: hidden;">ciao, so la Marisa</p>
             <div id="in">
                 
                 <h3>Indice:</h3>
@@ -70,7 +71,9 @@
                 utilizzando le funzioni in c++
             </p>
             <div class="cppcode">
-            <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                <pre>
+            <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!" ondblclick="alert('Perché copi incolli? Il download è sotto')">
+                
                 //Programma calcolatrice <br />
                 #include <iostream> <br />
                 using namespace std; <br />
@@ -95,7 +98,7 @@
                         cout<<"4 - Divisione"<<endl; <br />
                         cout<<"99 - Fine"<<endl<<endl; <br />
                         cout<<"Scegliere una delle opzioni sopraelencate: "; <br />
-                        cin<<0pzione; <br />
+                        cin>>opzione; <br />
                         switch (opzione) { <br />
                             case 1: <br />
                                 opzioneSomma(); <br />
@@ -178,10 +181,11 @@
                     quoto=a/b;<br />
                     return quoto;<br />
                 }<br />
+            </pre>
                 </code>
                 
                 <p style="visibility: hidden;">Mio figlio Spike, ieri (9 dicembre 2021) ha compiuto 8 anni</p>
-                <a href="../doc/cCf.cpp" download><img src="../images/down.icns" alt="Download" class="dowb"></a>
+                <a href="../doc/cCf.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
                 <p style="visibility: hidden;">Bla bla bla</p>
                 </div>
                 <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare. parte 2</p>
@@ -218,7 +222,7 @@
                             cout<<"99 - Fine"<<endl; <br />
                             cout<<"---> "; <br />
                             cin>>opz; <br />
-                            switch (opzione) { <br />
+                            switch (opz) { <br />
                                 case 1: <br />
                                     aQua(); <br />
                                     break; <br />
@@ -295,7 +299,7 @@
  <br />
                 </code>
                 <p style="visibility: hidden;">Bla bla bla</p>
-                <a href="../doc/aree.cpp" download><img src="../images/down.icns" alt="Download" class="dowb"></a>
+                <a href="../doc/aree.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
                 <p style="visibility: hidden;">Bla bla bla</p>
                 </div>
                 <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare.</p>
@@ -306,7 +310,7 @@
             <div class="cppcode">
             <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
                 //fattoriale<br />
-#include <iostrem><br />
+#include <iostream><br />
 using namespace std;<br />
 int fattoriale(int);<br />
 int main(){<br />
@@ -357,7 +361,7 @@ int fattoriale(int n){<br />
                     }<br />
                 </code>
                 <p style="visibility: hidden;">Sapessi</p>
-                <a href="../doc/cT.cpp" download><img src="../images/down.icns" alt="Download" class="dowb"></a>
+                <a href="../doc/cT.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
                 <p style="visibility: hidden;">(Bla bla bla)^2</p>
             </div>
 
@@ -373,7 +377,7 @@ int fattoriale(int n){<br />
                 /*Esercizio 29 pag A150:<br />
                 Programma per calcolare la distanza tra due date<br />
                 */<br />
-               #include <istream><br />
+               #include <iostream><br />
                using namespace std;<br />
                void data(int);<br />
                void aCom(int, int, long, int, int, long);<br />
@@ -383,7 +387,7 @@ int fattoriale(int n){<br />
                int main(){<br />
                    int opz;<br />
                    bool cont=true;<br />
-                   while(continua){<br />
+                   while(cont){<br />
                        cout<<"PROGRAMMA PER MISURARE L'INTERVALLO DI TEMPO TRA DUE DATE \n \n";<br />
                        cout<<"Inserire 1 per usare l'ANNO COMMERCIALE \n";<br />
                        cout<<"Inserire 2 per usare l'ANNO SOLARE \n";<br />
@@ -519,7 +523,7 @@ int fattoriale(int n){<br />
                
                 </code>
                 <p style="visibility: hidden;">Non so più cosa mettere</p>
-                <a href="../doc/2date.cpp" download><img src="../images/down.icns" alt="Download" class="dowb"></a>
+                <a href="../doc/2date.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
                 <p style="visibility: hidden;">Bla bla bla</p>
             </div>
 
