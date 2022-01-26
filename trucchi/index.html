@@ -5,11 +5,12 @@
     <title>Trucchi - Il Portale di Nicola</title>
     <meta charset="utf-8">
     <meta name="author" content="Nicola Bernardi">
-    <meta name="description" content="Ogni settimana un nuovo sfondo. Questo è l'impegno che mi sto prendendo.">
+    <meta name="description" content="Quadruplicare il volume del Mac, trovare le icone di sistema, fare scherzi innocui ai vostri amici, copiare un'intera cartella con un file, questo e altro in questa pagina">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon.png">
     <link rel="stylesheet" href="../css/core.css">
     <link rel="stylesheet" href="../css/trucchi.css">
+    <meta name="keywords" content="portale nicola trucchi, il portale di nicola trucchi, portalenicola trucchi, spostare una o più cartelle con un file, quadruplicare il volume del Mac, icone di sistema mac, spegnere computer con un file">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQNQS81SP0"></script>
@@ -25,12 +26,12 @@
 
 <body>
     <header>
-    <a href="https://old.portalenicola.it"><img src="../images/logo.png" width="80"></a>
+    <a ondblclick="alert('Easter Egg Trovato! Complimenti!')" href="https://old.portalenicola.it"><img src="../images/logo.png" id="ii"></a>
                 <h1 class="titol">   Il Portale di Nicola</h1>
             <nav>
                 <h2><a href="../">Home</a>  <a href="../sfondi/">Sfondi</a>  
                 <a href="../cpp">C++</a>  <a class="active" href="">Trucchi</a>  <a href="../whoami/">Contatti</a>
-                  <a href="../interattivo/">Interattivo</a></h2>
+                <a href="../interattivo/">Interattivo</a></h2>
             </nav>
         </header>
         <section>
@@ -50,6 +51,7 @@
                 <ul>
                     <li><a href="#vm">Volume Mac</a></li>
                     <li><a href="#ia">Cartella Icone app</a></li>
+                    <li><a href="#prank">Scherzi innocui informatici</a></li>
                 </ul>
             </p>
     </div>
@@ -79,8 +81,53 @@
                     <img id="appc" src="../images/appCart.png" alt="img cart">
                 </article>
             </section>
+            <section>
+               <article>
+                    <h4 id="prank" class="ttt">Scherzi innocui da fare agli amici</h4>
+                    <h3>Introduzione</h3>
+                    <p class="tx">Volete prendere in giro i vostri amici? Magari quel amico (che tutti hanno)
+                        che si crede simpatico? Siete nel posto giusto.
+                    </p>
+                    <h3>Prima di iniziare</h3>
+                    <p class="tx">Lo scherzo che andremo a fare funziona <b>solo su Windows</b>.
+                    Tale scherzo si basa sull'uso dei file BATCH, ovvero file di testo che contengono comandi del prompt.
+                    Con i file batch potrete fare molte cose, sia utili, sia per scherzo (se non esagerate), come spegnere il computer,
+                    impostare un timer per lo spegnimento del pc, aprire programmi / file, copiare / spostare file, ecc.
+                </p>
+                <h3>Preliminari</h3>
+                <p class="tx">Assicuratevi che i file batch siano scritti bene, che non ci siano errori nei percorsi o di altro genere.
+                    Se non sapete farli, in questa guida, ve ne fornirò io di già fatti come esempio.
+                </p>
+                <h3>Svolgimento</h3>
+                <h4><u>Spegnere il computer</u></h4>
+                <p class="tx">Per spegnere il computer si deve incollare nel Prompt dei comandi di Windows il comando 
+                    <code>shutdown -s</code>. Tale comando programma lo spegnimento del PC a 60 secondi. Tale valore è modificabile
+                    con l'attributo <code>-t</code> seguito dall'intervallo (in secondi). Esempio: <code>shutdown -s -t 960</code>. Tale
+                    comando spegne il computer dopo 16 minuti. Per creare un file batch andiamo sul blocco note, e incolliamo il/i comandi
+                    che vogliamo. Salviamo il file e modifichiamo l'estensione del file da <code>.txt</code> a <code>.bat</code> e il gioco è fatto.
+                </p>
+                <p class="tx"><em>Se non l'hai già fatto in precedenza, nell'Esplora Risorse premi sul menu in alto <b>VISUALIZZA</b> e poi metti la spunta su 
+                <b>ESTENSIONI NOMI FILE</b>.</em></p>
+                <p class="tx">Per fare un file che spegne ISTANTANEAMENTE il PC usa il seguente comando: <code>shutdown -p</code>.
+                 Se vuoi che lo scherzo riesca bene, al 100%, ti consiglio di usare il seguente comando: <code>shutdown -p -f</code>.
+                Tale comando andrà a forzare l'arresto del computer</p>
+                <h4>Copiare / spostare file</h4>
+                <p class="tx">Se volete (per qualche motivo) copiare (o rubare) file a qualche vostro amico, dovrete usare il comando <code>copy</code>
+                </p>
+                <p class="tx"><em>Perché usare un comamdo / file batch quando posso farlo personalmente?</em> Perché se il vostro amico si è allontanato, potrebbe tornare 
+                da un momento all'altro. Per questo, l'apertura di un file in chiavetta è più rapida di una copia manuale.</p>
+                <p class="tx">il comando <code>copy</code> ha la seguente sintassi: <code>copy "PERCORSO DELLA CARTELLA DA COPIARE" "PERCORSO DI DESTINAZIONE"</code> 
+                dunque supponiamo che vogliamo copiare il file <em>verificaDiStoria.docx</em> dalla cartella <em>Documenti</em>, nella chiavetta <em>E:\</em>, il codice è il seguente: 
+            <code>copy "%USERPROFILE%\Documents\verificaDiStoria.docx" E:\</code>. Lo spostamento di un file ha la stessa sintassi, solo che invece che <code>copy</code> scriveremo 
+        <code>move</code></p>
+        <p class="tx"><em>%USERPROFILE% significa: la cartella dell'utente ovvero C:\Users\<b>nomeutente</b></em></p>
+        <p class="tx">Per copiare tutta la cartella documenti basta fare: <code>xcopy "%USERPROFILE%\Documents" E:\</code>.</p>
+                    <img id="batch" src="../images/bat.jpeg" alt="file batch">
+                    <!--voLLLLume: con 4 L perché quadruplica la scelta.-->
+                </article>
+            </section>
 <footer>
-    <h3>Portale Nicola</h3>
+    <h3 style="zoom:120%">Portale Nicola</h3>
     <p>Il Portale di Nicola, dal 17 maggio 2021 porta sfondi, easter egg e altro.
         N.B. Questo è un sito passatempo
     </p>
