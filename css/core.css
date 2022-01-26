@@ -314,7 +314,9 @@ button:hover {
 }
 #colagg {
     text-decoration: none;
+    border-radius: 10px; border:solid; border-color: red;
 }
+
 #agg {
     text-align: center;
     zoom:150%
