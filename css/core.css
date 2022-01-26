@@ -49,7 +49,7 @@ nav a {
     border-spacing: 10px;
     text-decoration: none;
     border-width: 2px;
-    display:inline-block;
+    display: inline-block;
 }
 nav a:hover {
     border-radius: 30px;
@@ -179,9 +179,6 @@ button:hover {
     nav h2 a {
         text-align:center;
         
-    }
-    nav h2 {
-        text-align:center;
     }
     h1 {
         text-align: center;
