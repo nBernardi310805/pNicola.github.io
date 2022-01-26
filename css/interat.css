@@ -11,3 +11,17 @@ span {
     margin-bottom: 30px;
     padding-left: 10px;
 }
+.button {
+    border-radius: 5px; border:solid; border-color: grey;
+    background-color: white;
+    border-width: 2px;
+    width:15%;
+    text-align: center;
+    
+}
+#label {
+    color:black;
+}
+button {
+    border-color:white;
+}
