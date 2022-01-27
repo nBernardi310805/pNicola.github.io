@@ -72,6 +72,7 @@ footer {
     font-weight: lighter;
     padding-left: 10px;
     overflow: auto;
+    margin-top: 20px;
     
 }
 h3 {
@@ -241,6 +242,9 @@ button:hover {
         animation-name: amla;
         animation-duration: 5s;
         animation-fill-mode: backwards;
+    }
+    header {
+        text-align: center;
     }
 }
 
