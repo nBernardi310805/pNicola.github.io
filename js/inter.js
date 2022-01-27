@@ -7,21 +7,24 @@ function inizia(){
 }
 function convS(){
     let gg, hh, mm, ss, risultato = 0
-    if(document.getElementById('g').textContent!='0'){
-        risultato = risultato + document.getElementById('g').textContent*86400
+    
+
+
+    if(document.getElementById('g').value!=''){
+        risultato = risultato + document.getElementById('g').value*86400
     }
     console.log(gg)
-    if(document.getElementById('h').textContent!='0'){
-        risultato = risultato + document.getElementById('h').textContent*3600
+    if(document.getElementById('h').value!=''){
+        risultato = risultato + document.getElementById('h').value*3600
     }
-    if(mm = document.getElementById('m').textContent!='0'){
-        risultato = risultato + document.getElementById('m').textContent*60
+    if(mm = document.getElementById('m').value!=''){
+        risultato = risultato + document.getElementById('m').value*60
     }
-    if(ss = document.getElementById('s').textContent!='0'){
-        risultato = risultato + document.getElementById('s').textContent
+    if(ss = document.getElementById('s').value!=''){
+        risultato = risultato + document.getElementById('s').value*1
     }
     
     
-    document.getElementById('ris').innerHTML=" " + risultato
+    document.getElementById('ris').innerHTML=" " + risultato 
 
 }
