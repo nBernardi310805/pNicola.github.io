@@ -10,8 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/core.css">
     <link rel="stylesheet" href="../css/cpp.css">
+    <script src="../js/altro.js"></script>
     <meta name="keywords" content="il portale di nicola, portale nicola, portalenicola, c++, cpp, programmi c++ gratis, compiti gia fatti c++, programmi gia fatti c++">
-    <script data-ad-client="ca-pub-9843209517750049" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQNQS81SP0"></script>
@@ -61,6 +62,7 @@
                         <li><a href="#fatt">Fattoriale</a></li>
                         <li><a href="#ct">Convertitore tempo</a></li>
                         <li><a href="#2d">Misuratore di tempo tra due date</a></li>
+                        <li><a href="#gMat">Gioco matematico</a></li>
                     </ul>
                 </p>
         </div>
@@ -186,6 +188,7 @@
                 
                 <p style="visibility: hidden;">Mio figlio Spike, ieri (9 dicembre 2021) ha compiuto 8 anni</p>
                 <a href="../doc/cCf.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
+                <p class="downtxt" id="dw5" onmouseenter="down5()" onmouseleave="downE5()">Download</p>
                 <p style="visibility: hidden;">Bla bla bla</p>
                 </div>
                 <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare. parte 2</p>
@@ -300,6 +303,7 @@
                 </code>
                 <p style="visibility: hidden;">Bla bla bla</p>
                 <a href="../doc/aree.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
+                <p class="downtxt" id="dw6" onmouseenter="down6()" onmouseleave="downE6()">Download</p>
                 <p style="visibility: hidden;">Bla bla bla</p>
                 </div>
                 <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare.</p>
@@ -330,6 +334,7 @@ int fattoriale(int n){<br />
                 </code>
                 <p style="visibility: hidden;">Non so più cosa mettere</p>
                 <a href="../doc/fatt.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
+                <p class="downtxt" id="dw1" onmouseenter="down1()" onmouseleave="downE1()">Download</p>
                 <p style="visibility: hidden;">Bla bla bla</p>
             </div>
             <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare.</p>
@@ -362,6 +367,7 @@ int fattoriale(int n){<br />
                 </code>
                 <p style="visibility: hidden;">Sapessi</p>
                 <a href="../doc/cT.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
+                <p class="downtxt" id="dw2" onmouseenter="down2()" onmouseleave="downE2()">Download</p>
                 <p style="visibility: hidden;">(Bla bla bla)^2</p>
             </div>
 
@@ -524,9 +530,123 @@ int fattoriale(int n){<br />
                 </code>
                 <p style="visibility: hidden;">Non so più cosa mettere</p>
                 <a href="../doc/2date.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
+                <p class="downtxt" id="dw4" onmouseenter="down4()" onmouseleave="downE4()">Download</p>
                 <p style="visibility: hidden;">Bla bla bla</p>
-            </div>
 
+
+
+            </div>
+            <p style="visibility: hidden;">Noh, vabbé, un'altro programma/esercizio/valutabile (#nonsapevocosamettere)</h3>
+                <h3 id="gMat" class="c-">Gioco matematico</h3>
+            <p style="font-style: oblique;">
+                Si da un numero e se è pari si dimezza, se è dispari si usa il successivo del suo triplo
+            </p>
+            <div class="cppcode">
+            <pre>
+                <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                    /*Esercizio 23 pag A149
+ Si da un numero e se è pari si dimezza, se è
+ dispari si usa il successivo del suo triplo
+ */
+#include <iostream>
+using namespace std;
+void giocoMat1();
+void giocoMat2();
+void help();
+int main(){
+    bool cont=true;
+    int sc;
+    while(cont){
+        cout<<"GIOCO MATEMATICO: \n \n";
+        cout<<"Inserisci 1 per giocare con 1 numero \n";
+        cout<<"Inserisci 2 per giocare con un intervallo di numeri tra due valori scelti \n";
+        cout<<"Inserisci 0 per altre info \n";
+        cout<<"Inserisci 99 per terminare il programma \n";
+        cout<<"--> ";
+        cin>>sc;
+        switch (sc) {
+            case 0:
+                help();
+                break;
+            case 1:
+                giocoMat1();
+                break;
+            case 2:
+                giocoMat2();
+                break;
+            case 99:
+                cont=false;
+                break;
+                
+            default:
+                break;
+        }
+    }
+    cout<<"Grazie per aver usato il mio programma :) \n";
+    return 0;
+}
+void help(){
+    cout<<"GIOCO CLASSICO: \n";
+    cout<<"Finché il numero è pari verrà dimezzato, se è dispari prendo il successivo al suo triplo. \n";
+    cout<<"GIOCO 2: \n";
+    cout<<"Si inseriscono due valori e il gioco verrà eseguito con l'intervallo tra i valori dati \n \n";
+}
+
+void giocoMat1(){
+    int i;
+    long n;
+    cout<<"Gioco classico: \n";
+    cout<<"Inserisci un numero: --> ";
+    cin>>n;
+    for(i=0; n>1; i++){
+        if(n%2==0){
+            n=n/2;
+            cout<<n<<endl;
+        }else{
+            n*=3;
+            n--;
+            cout<<n<<endl;
+        }
+    }
+    cout<<"Eseguito per "<<i<<" volte. \n";
+}
+void giocoMat2(){
+    long a, b, x;
+    int i;
+    cout<<"Gioco 2: \n";
+    cout<<"Inserisci il primo numero: --> ";
+    cin>>a;
+    cout<<"Inserisci il secondo numero: --> ";
+    cin>>b;
+    
+    for(int j=1; a<=b; a++){
+        x=a;
+        cout << "Numero " << x<<endl;
+        for(i=0; x>1; i++){
+            if(x%2==0){
+                x=x/2;
+                cout<<x<<endl;
+            }else{
+                x*=3;
+                x--;
+                cout<<x<<endl;
+            }
+        }
+        cout << " Eseguito "<< i << " volte. \n " ;
+    }
+    
+}
+        >
+                </code>
+            </pre>
+            <p style="visibility: hidden;">Non so più cosa mettere</p>
+            
+                <a href="../doc/gMat.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
+                <p class="downtxt" id="dw3" onmouseenter="down3()" onmouseleave="downE3()">Download</p>
+                <p style="visibility: hidden;">Bla bla bla</p>
+</div>
+<br />
+<br />
             
             <footer>
                 <h3>Portale Nicola</h3>
