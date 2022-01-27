@@ -25,3 +25,16 @@ span {
 button {
     border-color:white;
 }
+#sub {
+    color:white;
+    background-color: firebrick;
+    width:120px;
+    border-radius: 5px; border:solid; border-color: white;
+    border-width: 1px;
+}
+input {
+    color:white;
+    background-color: crimson;
+    border-radius: 5px; border:solid; border-color: white;
+    border-width: 1px;
+}
