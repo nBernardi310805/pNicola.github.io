@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/core.css">
     <link rel="stylesheet" href="../css/interat.css">
     <script src="../js/inter.js"></script>
-<script data-ad-client="ca-pub-9843209517750049" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQNQS81SP0"></script>
 <script>
@@ -30,7 +30,7 @@
                 <h1 class="titol">   Il Portale di Nicola</h1>
             <nav>
                 <h2><a href="../">Home</a>  <a href="../sfondi/">Sfondi</a>  
-                <a href="../cpp">C++</a>  <a href="../trucchi/">Trucchi</a>  <a href="../whoami/">Contatti</a>
+                <a href="../cpp">C++</a>  <a href="../trucchi/">Trucchi</a>  <a href="../whoami/">Chi sono io</a>
               <a class="active" href="">Interattivo</a></h2>
             </nav>
         </header>
@@ -54,16 +54,22 @@
                 </ul>
             </p>
     </div>
-           <section>
+           <section id="xx">
                <article>
                     <h4 id="cT" class="ttt">Convertitore tempo in secondi:</h4>
-                    <button onclick="inizia()">Clicca per iniziare</button>
-                   <p>Inserisci i giorni --> <span id="g">0</span></p>
-                   <p>Inserisci le ore --> <span id="h">0</span></p>
-                   <p>Inserisci i minuti --> <span id="m">0</span></p>
-                   <p>Inserisci i secondi --> <span id="s">0</span></p>
-                   <button onclick="convS()">Converti</button>
-                   <p>Risultato: <span id="ris"></span> secondi.</p>
+                    <p>
+                        <label>Inserisci i giorni: --> <input type="text" id="g" name="giorni"></label>
+                    </p><p>
+                        <label>Inserisci le ore: --> <input type="text" id="h" name="ore"></label>
+                    </p><p>
+                        <label>Inserisci i minuti: --> <input type="text" id="m" name="minuti"></label>
+                    </p><p>
+                        <label>Inserisci i secondi: --> <input type="text" id="s" name="secondi"></label>
+                    </p><p>
+                        <input type="submit" value="submit" id="sub" onclick="convS()">
+                    </p>
+                    <label>Risultato: <span id="ris"></span></label>
+                   
                     
                 </article>
             </section>
