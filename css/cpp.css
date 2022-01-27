@@ -11,16 +11,23 @@
 a {
     color:red;
 }
-.cppcode:hover {
+.cppcode {
     border-radius: 15px;
     border:solid;
     border-color: darkred;
 }
 .dowb {
-    width: 10%;
-}
-.dowb:hover {
-    border-radius: 15px;
+    width: 5%;
+    float:right;
+    border-radius: 25px;
     border: solid;
     border-color:crimson;
+   
+}
+.downtxt {
+    float:right;
+    border-radius: 25px;
+    border: solid;
+    border-color:crimson;
+    zoom:140%
 }
