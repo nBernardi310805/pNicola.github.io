@@ -4,14 +4,15 @@
         <title>Aggiornamenti - Il Portale di Nicola</title>
         <meta charset="utf-8">
         <meta name="author" content="Nicola Bernardi">
-        <meta name="description" content="Il portale v.4.0">
+        <meta name="description" content="Il portale v.4.2, La Pagina della Trasparenza">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="favicon.png">
+        <link rel="icon" href="/favicon.png">
         <link rel="stylesheet" href="../css/core.css">
         <link rel="stylesheet" href="../css/anim.css">
         <link rel="stylesheet" href="../css/agg.css">
         <script src="../js/comandi.js"></script>
-        <meta name="keywords" content="il portale di nicola, portale nicola, portalenicola, c++, cpp, sfondi gratis, free wallpaper, trucchi, tips, eastereggs, easter eggs, nicola bernardi">
+        <script src="../js/agg.js"></script>
+        <meta name="keywords" content="il portale di nicola, portale nicola, portalenicola, c++, cpp, sfondi gratis, free wallpaper, trucchi, tips, eastereggs, easter eggs, nicola bernardi, trasparenza">
         
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -47,10 +48,27 @@
                 pagina della trasperenza
             </p>
         </section>
-        <img src="../images/copp.png" alt="copertina" id="cop00">
-        <section id="nov2">
+        
+        <section id="nov3" style="vertical-align: top;">
             <article>
             <h3 id="tit3">Novità</h3>
+            <p class="dat"><b>28 gennaio 2022:</b></p>
+            <p>Aggiunto il PassID.</p>
+            <p class="dat"><b>28 gennaio 2022:</b></p>
+            <p>Modificata la grafica della Pagina della Trasparenza.</p>
+            
+           </article>
+           
+        </section>
+
+
+        <section id="nov2">
+            <article>
+            <h3 id="tit3">Cambiamenti</h3>
+            <p class="dat"><b>28 gennaio 2022:</b></p>
+            <p>Corretti alcuni bug e problemi tecnici, come collegamenti sbagliati, ecc.</p>
+            <p class="dat"><b>28 gennaio 2022:</b></p>
+            <p>Aggiunto un altro programma in C++.</p>
             <p class="dat"><b>27 gennaio 2022:</b></p>
             <p>Aggiunto un programma in C++.</p>
             <p class="dat"><b>27 gennaio 2022:</b></p>
@@ -97,15 +115,26 @@
         </section>
         
         
+        <section id="nov4" style="vertical-align: top;">
+            <article>
+            <h3 id="tit3">Cambiamenti in programma</h3>
+            <p id="msgc">Solo per gli utenti premium</p>
+            
+           </article>
+           
+        </section>
         
         
+        <p style="visibility: hidden;">ciao</p>
        
-        <footer style="clear:left;">
+        <footer style="clear:both;" id="fooot">
             
             <h3>Portale Nicola</h3>
             <p>Il Portale di Nicola, dal 17 maggio 2021 porta sfondi, easter egg e altro.
                 N.B. Questo è un sito passatempo
            </p>
+           <label>PASSid: <input type="password" id="passId" name="pId" oninput="premium()"></label>
+           <p id="msgL"></p>
         
         </footer>
     </body>
