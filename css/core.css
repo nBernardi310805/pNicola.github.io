@@ -73,7 +73,7 @@ footer {
     padding-left: 10px;
     overflow: auto;
     margin-top: 20px;
-    
+    clear:both;
 }
 h3 {
     color:whitesmoke;
@@ -215,7 +215,7 @@ button:hover {
         margin-bottom: 20px;
     }
     #easter {
-        display: none;
+        width:80px;
     }
     #eroi {
         width: 100%;
