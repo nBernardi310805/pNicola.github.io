@@ -5,7 +5,7 @@
     <title>C++ - Il Portale di Nicola</title>
     <meta charset="utf-8">
     <meta name="author" content="Nicola Bernardi">
-    <meta name="description" content="Ogni settimana un nuovo sfondo. Questo è l'impegno che mi sto prendendo.">
+    <meta name="description" content="Programmi C++ gratis per tutti: esercizi già fatti, da 3a superiore">
     <link rel="icon" href="../favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/core.css">
@@ -63,6 +63,7 @@
                         <li><a href="#ct">Convertitore tempo</a></li>
                         <li><a href="#2d">Misuratore di tempo tra due date</a></li>
                         <li><a href="#gMat">Gioco matematico</a></li>
+                        <li><a href="#ranDado">Random - Dado</a></li>
                     </ul>
                 </p>
         </div>
@@ -94,11 +95,11 @@
                     int opzione; <br />
                     bool continua=true; <br />
                     while(continua){
-                        cout<<"1 - Addizione"<<endl; <br />
-                        cout<<"2 - Sottrazione"<<endl; <br />
-                        cout<<"3 - Moltiplicazione"<<endl; <br />
-                        cout<<"4 - Divisione"<<endl; <br />
-                        cout<<"99 - Fine"<<endl<<endl; <br />
+                        cout<<"1 - Addizione"<< endl; <br />
+                        cout<<"2 - Sottrazione"<< endl; <br />
+                        cout<<"3 - Moltiplicazione"<< endl; <br />
+                        cout<<"4 - Divisione"<< endl; <br />
+                        cout<<"99 - Fine"<<endl<< endl; <br />
                         cout<<"Scegliere una delle opzioni sopraelencate: "; <br />
                         cin>>opzione; <br />
                         switch (opzione) { <br />
@@ -115,7 +116,7 @@
                                 opzioneDivisione(); <br />
                                 break; <br />
                             case 99: <br />
-                                cout<<"Grazie per aver usato il mio programma :)"<<endl; <br />
+                                cout<<"Grazie per aver usato il mio programma :)"<< endl; <br />
                                 continua=false; <br />
                                 break; <br />
                         } <br />
@@ -125,12 +126,12 @@
                  <br />
                 void opzioneSomma(){ <br />
                     int a, b; <br />
-                    cout<<"ADDIZIONE:"<<endl; <br />
+                    cout<<"ADDIZIONE:"<< endl; <br />
                     cout<<"Dammi il primo addendo --> "; <br />
                     cin>>a; <br />
                     cout<<"Dammi il secondo addendo --> "; <br />
                     cin>>b; <br />
-                    cout<<"La somma degli addendi "<<a<<" e "<<b<<" e' "<< somma(a, b)<< endl<<endl<<endl; <br />
+                    cout<<"La somma degli addendi "<<a<<" e "<<b<<" e' "<< somma(a, b)<< endl<<endl<< endl; <br />
                 } <br />
                  <br />
                 int somma(int a, int b){ <br />
@@ -141,12 +142,12 @@
                  <br />
                 void opzioneSottrazione(){ <br />
                     int a, b; <br />
-                    cout<<"SOTTRAZIONE:"<<endl; <br />
+                    cout<<"SOTTRAZIONE:"<< endl; <br />
                     cout<<"Dammi il minuendo --> "; <br />
                     cin>>a; <br />
                     cout<<"Dammi il sottraendo --> "; <br />
                     cin>>b; <br />
-                    cout<<"La differenza tra "<<a<<" e "<< b<<" e' "<< sottrazione(a, b)<<endl<<endl<<endl; <br />
+                    cout<<"La differenza tra "<<a<<" e "<< b<<" e' "<< sottrazione(a, b)<<endl<<endl<< endl; <br />
                 } <br />
                 int sottrazione(int a, int b){ <br />
                     int differenza; <br />
@@ -156,7 +157,7 @@
                  <br />
                 void opzioneMoltiplicazione(){ <br />
                     int a, b; <br />
-                    cout<<"MOLTIPLICAZIONE:"<<endl; <br />
+                    cout<<"MOLTIPLICAZIONE:"<< endl; <br />
                     cout<<"Dammi il moltiplicando --> "; <br />
                     cin>>a; <br />
                     cout<<"Dammi il moltiplicatore --> "; <br />
@@ -171,7 +172,7 @@
                 <br />
                 void opzioneDivisione(){<br />
                     int a, b;<br />
-                    cout<<"DIVISIONE:"<<endl;<br />
+                    cout<<"DIVISIONE:"<< endl;<br />
                     cout<<"Dammi il dividendo --> ";<br />
                     cin>>a;<br />
                     cout<<"Dammi il divisore --> ";<br />
@@ -222,7 +223,7 @@
                             cout<<"2 - Area del rettangolo"<< endl; <br />
                             cout<<"3 - Area del triangolo"<< endl; <br />
                             cout<<"4 - Area del trapezio"<< endl; <br />
-                            cout<<"99 - Fine"<<endl; <br />
+                            cout<<"99 - Fine"<< endl; <br />
                             cout<<"---> "; <br />
                             cin>>opz; <br />
                             switch (opz) { <br />
@@ -251,7 +252,7 @@
                         int l; <br />
                         cout<<"Dammi il lato: "; <br />
                         cin>>l; <br />
-                        cout<<"L'area del quadrato e' "<<qua(l)<<endl<<endl; <br />
+                        cout<<"L'area del quadrato e' "<<qua(l)<<endl<< endl; <br />
                     } <br />
                     int qua(int l){ <br />
                         int area; <br />
@@ -601,11 +602,11 @@ void giocoMat1(){
     for(i=0; n>1; i++){
         if(n%2==0){
             n=n/2;
-            cout<<n<<endl;
+            cout<<n<< endl;
         }else{
             n*=3;
             n--;
-            cout<<n<<endl;
+            cout<<n<< endl;
         }
     }
     cout<<"Eseguito per "<<i<<" volte. \n";
@@ -621,15 +622,15 @@ void giocoMat2(){
     
     for(int j=1; a<=b; a++){
         x=a;
-        cout << "Numero " << x<<endl;
+        cout << "Numero " << x<< endl;
         for(i=0; x>1; i++){
             if(x%2==0){
                 x=x/2;
-                cout<<x<<endl;
+                cout<<x<< endl;
             }else{
                 x*=3;
                 x--;
-                cout<<x<<endl;
+                cout<<x<< endl;
             }
         }
         cout << " Eseguito "<< i << " volte. \n " ;
@@ -645,6 +646,78 @@ void giocoMat2(){
                 <p class="downtxt" id="dw3" onmouseenter="down3()" onmouseleave="downE3()">Download</p>
                 <p style="visibility: hidden;">Bla bla bla</p>
 </div>
+
+                <p style="visibility: hidden;">2 programmi 2 giorni?!? WOW!</h3>
+                    <h3 id="ranDado" class="c-">RANDOM - Dado</h3>
+                <p style="font-style: oblique;">
+                    
+                </p>
+                <div class="cppcode">
+                <pre>
+                    <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                #include <iostream>
+                    #include <cstdlib>
+                    using namespace std;
+                    int main(){
+                        int var;
+                    
+                        srand (time(NULL));
+                    
+                    
+                        
+                        
+                        var=rand()%6+1;
+                        if(var==6){
+                            for(int i=1; i<=3; i++){
+                                cout<<"°   °";
+                                cout<< endl;
+                            }
+                                >
+                                
+                        }
+                        if(var==5){
+                            
+                                cout<<"°   °"< < endl;
+                                cout<<"  °  "<< endl;
+                                cout<<"°   °"<< endl;
+                        }
+                        if(var==4){
+                            
+                                cout<<"°   °"<< endl;
+                                cout<<"     "<< endl;
+                                cout<<"°   °"<< endl;
+                        }
+                        if(var==3){
+                            
+                                cout<<"°    "<< endl;
+                                cout<<"  °  "<< endl;
+                                cout<<"    °"<< endl;
+                        }
+                        if(var==2){
+                            
+                                cout<<"     "<< endl;
+                                cout<<"°   °"<< endl;
+                                cout<<"     "<< endl;
+                        }
+                        if(var==1){
+                            
+                                cout<<"     "<< endl;
+                                cout<<"  °  "<< endl;
+                                cout<<"     "<< endl;
+                        }
+                        cout<< endl;
+                        cout<< endl;
+                        cout<< endl;
+                        
+                        return 0;
+                    }   
+                </code>
+            </pre>
+                    <a href="../doc/dado.cpp"><img src="../images/down.icns" alt="Download" class="dowb"></a>
+                    <p class="downtxt" id="dw7" onmouseenter="down7()" onmouseleave="downE7()">Download</p>
+                    <p style="visibility: hidden;">Bla bla bla</p>               
+</div>  
+
 <br />
 <br />
             
