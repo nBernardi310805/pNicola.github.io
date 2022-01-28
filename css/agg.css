@@ -25,11 +25,38 @@
     #cop00 {
         float:right;
         width: 29%;
+        margin-bottom: 30px;
     }
     #nov2 {
         border-radius: 15px; border:solid; border-color: white;
-        float:left;
         margin-bottom: 50px;
-        width:69%;
+        width:48%;
+        margin-left: 20px;
+        float: right;
+
     }
+    #nov3 {
+        border-radius: 15px; border:solid; border-color: magenta;
+        margin-bottom: 50px;
+        width:48%;
+        margin-right: 20px;
+        float: left;
+        
+    }
+    #nov4 {
+        border-radius: 15px; border:solid; border-color: firebrick;
+        margin-bottom: 50px;
+        width:48%;
+        margin-right: 20px;
+        float:left
+    }
+}
+footer {
+    clear: both;
+}
+input {
+    color:white;
+    background-color: crimson;
+    border-radius: 5px; border:solid; border-color: white;
+    border-width: 1px;
 }
