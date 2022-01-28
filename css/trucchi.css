@@ -1,9 +1,3 @@
-#vollllume {
-    width: 20%;
-}
-#appc {
-    width: 50%;
-}
 #inn {
     border-radius: 15px;
     border: solid;
@@ -13,23 +7,21 @@
     color:red;
     zoom:160%;
 }
-.tx {
-    text-align: justify;
-}
-@media (max-width:600px){
+@media (min-width:900px){
     .tx {
-        float:left;
+        float:right;
         clear:left;
-        width: 80%;
+        width: 100%;
         text-align: left;
         
     }
     #vollllume {
         float:right;
+        width: 10%;
     }
     #appc {
-        float: both;
-        width: 100%;
+        float: right;
+        width: 40%;
     }
     .ttt {
         clear: both;
@@ -38,4 +30,46 @@
         width: 100%;
         text-align: justify;
     }
+    
+    h4 {
+        clear:both
+    }
+    .artic {
+        border-radius: 20px; border:solid; border-color:red;
+    }
+    #batch {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 10px;
+        float: right;
+    }
+}
+@media (max-width:900px){
+    #vollllume {
+        width: 20%;
+    }
+    #appc {
+        width: 50%;
+    }
+    .tx {
+        text-align: justify;
+    }
+    h3 {
+        zoom: 150%;
+    }
+    h4 {
+        zoom:130%;
+        font-weight: lighter;
+    }
+    code {
+        background-color: white;
+        color:black
+    }
+    #batch {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+footer {
+    clear: both;
 }
