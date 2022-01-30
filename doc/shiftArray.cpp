@@ -3,12 +3,13 @@
 #define N 5
 using namespace std;
 void shiftArray(int[], int, int, int);
+//by Nicola Bernardi
 void stampaArray(int[], int);
 int main()
 {
     int arr[N], verso, add;
     cout<<"Shift array \n \n";
-    cout<<"L'array ha "<<N<<" posizioni. \n";
+    cout<<"L'array ha "<<N/*https://portalenicola.it/cpp */ <<" posizioni. \n";
     cout<<"Per scambiare l'array verso sinistra digita 1, verso destra digita 2: (default=destra) --> ";
     cin>>verso;
     cout<<"Di quante posizioni vuoi shiftare?: --> ";
@@ -20,6 +21,7 @@ int main()
     }
     shiftArray(arr, N, verso, add);
     stampaArray(arr, N);
+    //by Nicola Bernardi
     return 0;
 }
 void shiftArray(int arr[], int dim, int verso, int add)
@@ -40,7 +42,7 @@ void shiftArray(int arr[], int dim, int verso, int add)
 
     }
     else
-    {
+     { /*portalenicola.it/cpp */
         for(int c=1; c<=add; c++){
             salva = arr[dim-1];
             for(int i=dim-1; i>=0; i--)
@@ -59,7 +61,7 @@ void shiftArray(int arr[], int dim, int verso, int add)
 void stampaArray(int arr[], int dim)
 {
     for(int j=0; j<dim; j++)
-    {
+    { //portalenicola.it/cpp
         cout<<"La posizione "<<j<<" dell'array ora vale: "<<arr[j]<<endl;
     }
 }
