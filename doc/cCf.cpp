@@ -1,7 +1,7 @@
 //Programma calcolatrice
 #include <iostream>
 using namespace std;
-//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
+//creato da Nicola Bernardi, caricato su https://portalenicola.it/didattica/cpp
 void opzioneSomma();
 int somma(int, int);
 void opzioneSottrazione();
@@ -52,8 +52,7 @@ void opzioneSomma(){
     cin>>a;
     cout<<"Dammi il secondo addendo --> ";
     cin>>b;
-    cout<<"La somma degli addendi "<<a<<" e "<<b<<" e' "<<somma(a, b)<<endl<<endl<<endl;//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
-}
+    cout<<"La somma degli addendi "<<a<<" e "<<b<<" e' "<<somma(a, b)<<endl<<endl<<endl;//creato da Nicola Bernardi, caricato su https://portalenicola.it/didattica/cpp
 
 int somma(int a, int b){
     int totale;
@@ -68,14 +67,13 @@ void opzioneSottrazione(){
     cin>>a;
     cout<<"Dammi il sottraendo --> ";
     cin>>b;
-    cout<<"La differenza tra "<<a<<" e "<<b<<" e' "<<sottrazione(a, b)<<endl<<endl<<endl;//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
-}
+    cout<<"La differenza tra "<<a<<" e "<<b<<" e' "<<sottrazione(a, b)<<endl<<endl<<endl;//creato da Nicola Bernardi, caricato su https://portalenicola.it/didattica/cpp
 int sottrazione(int a, int b){
     int differenza;
     differenza=a-b;
     return differenza;
 }
-//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
+//creato da Nicola Bernardi, caricato su https://portalenicola.it/didattica/cpp
 void opzioneMoltiplicazione(){
     int a, b;
     cout<<"MOLTIPLICAZIONE:"<<endl;
@@ -83,7 +81,7 @@ void opzioneMoltiplicazione(){
     cin>>a;
     cout<<"Dammi il moltiplicatore --> ";
     cin>>b;
-    cout<<"Il prodotto di "<<a<<" e "<<b<<" e' "<<moltiplicazione(a, b)<<endl<<endl<<endl;//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
+    cout<<"Il prodotto di "<<a<<" e "<<b<<" e' "<<moltiplicazione(a, b)<<endl<<endl<<endl;//creato da Nicola Bernardi, caricato su https://portalenicola.it/didattica/cpp
 }
 int moltiplicazione(int a, int b){
     int prodotto;
@@ -98,8 +96,8 @@ void opzioneDivisione(){
     cin>>a;
     cout<<"Dammi il divisore --> ";
     cin>>b;
-    cout<<"Il quoto di "<<a<<" e "<<b<<" e' "<<divisione(a, b)<<endl<<endl<<endl;//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
-}//creato da Nicola Bernardi, caricato su https://portalenicola.it/cpp
+    cout<<"Il quoto di "<<a<<" e "<<b<<" e' "<<divisione(a, b)<<endl<<endl<<endl;//creato da Nicola Bernardi, caricato su https://portalenicola.it/didattica/cpp
+}//creato da Nicola Bernardi, caricato su https://portalenicola.it/didattica/cpp
 int divisione(int a, int b){
     int quoto;
     quoto=a/b;
