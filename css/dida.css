@@ -1,0 +1,23 @@
+#tip {
+    float:right;
+    text-align: right;
+    
+    
+}
+#sug {
+    width: 25%;
+    margin-top: 10px;
+    border-radius: 20px; border:solid; border-color: gold;
+}
+#ccc {
+    border-radius: 20px; border:solid; border-color: gold;
+    padding: 5px;
+}
+#man {
+    zoom:300%;
+    font-weight: lighter;
+    font-style: oblique;
+}
+footer {
+    margin-top: 620px;
+}
