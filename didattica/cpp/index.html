@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>C++ - Il Portale di Nicola</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Nicola Bernardi">
+    <meta name="description" content="Programmi C++ gratis per tutti: esercizi già fatti, da 3a superiore">
+    <link rel="icon" href="../../favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/core.css">
+    <link rel="stylesheet" href="../../css/cpp.css">
+    <script src="../../js/altro.js"></script>
+    <meta name="keywords" content="il portale di nicola, portale nicola, portalenicola, c++, cpp, programmi c++ gratis, compiti gia fatti c++, programmi gia fatti c++">
+    
+    <script data-ad-client="ca-pub-9843209517750049" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQNQS81SP0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JQNQS81SP0');
+</script>
+
+</head>
+
+<body>
+    <header>
+    <a href="../../risoluzioneschermo/"><img src="../../images/logo.png" id="ii"></a>
+                <h1 class="titol">   Il Portale di Nicola</h1>
+            <nav>
+                <h2><a href="../../">Home</a>  <a href="../../sfondi/">Sfondi</a>  
+                <a class="active" href="../../didattica/">Didattica</a>  <a href="../../trucchi/">Trucchi</a>  <a href="../../whoami/">Contatti</a>
+                <a href="../../interattivo/">Interattivo</a></h2>
+            </nav>
+        </header>
+        <section>
+
+
+            <h1>Il Portale di Nicola</h1>
+            <article>
+                <h2 class="tit" title="O C--, decidi tu">C++</h2>
+            </article>
+            <p>Il C++ secondo Nicola</p>
+            </section>
+            <h3 id="kkkk">In questa pagina verranno caricati alcuni dei progetti C++ fatti a scuola.</h3>
+            <p>La publicazione del contenuto è esclusivamente a scopo didattico. :)</p>
+            <h4>Il Bello è che vi lascio il download</h4>
+            <p style="padding:15px; text-align:justify">Mi sono accorto di una cosa assai spiacevole cioè del fatto che, anche con l'attributo <code>CODE</code> alcune parti del programma in C++,
+                come l'invocazione della funzione, viene tagliato. Vi invito dunque a non fare copia-incolla, ma di scaricare il file dal pulsante di DOWNLOAD.
+                Buone feste</p>
+            <p style="visibility: hidden;">ciao, so la Marisa</p>
+            <div id="in">
+                
+                <h3>Indice:</h3>
+                <p>
+                    <ul>
+                        <li><a href="#cf">Calcolatrice con funzioni</a></li>
+                        <li><a href="#h">Aree geometriche</a></li>
+                        <li><a href="#fatt">Fattoriale</a></li>
+                        <li><a href="#ct">Convertitore tempo</a></li>
+                        <li><a href="#2d">Misuratore di tempo tra due date</a></li>
+                        <li><a href="#gMat">Gioco matematico</a></li>
+                        <li><a href="#ranDado">Random - Dado</a></li>
+                        <li><a href="#sAr">Shift Array</a></li>
+                    </ul>
+                </p>
+        </div>
+            </article>
+            <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare.</p>
+            <h3 id="cf" class="c-">Calcolatrice funzioni</h3>
+            <p style="font-style: oblique;">Bisognava fare una calcolatrice con le funzioni somma, sottrazione, divisione e moltiplicazione
+                utilizzando le funzioni in c++
+            </p>
+            <div class="cppcode">
+                <pre>
+            <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!" ondblclick="alert('Perché copi incolli? Il download è sotto')">
+                
+                //Programma calcolatrice <br />
+                #include <iostream> <br />
+                using namespace std; <br />
+                 <br />
+                void opzioneSomma(); <br />
+                int somma(int, int); <br />
+                void opzioneSottrazione(); <br />
+                int sottrazione(int, int); <br />
+                void opzioneMoltiplicazione(); <br />
+                int moltiplicazione(int, int); <br />
+                void opzioneDivisione(); <br />
+                int divisione(int, int); <br />
+                 <br />
+                 <br />
+                int main(){ <br />
+                    int opzione; <br />
+                    bool continua=true; <br />
+                    while(continua){
+                        cout<<"1 - Addizione"<< endl; <br />
+                        cout<<"2 - Sottrazione"<< endl; <br />
+                        cout<<"3 - Moltiplicazione"<< endl; <br />
+                        cout<<"4 - Divisione"<< endl; <br />
+                        cout<<"99 - Fine"<<endl<< endl; <br />
+                        cout<<"Scegliere una delle opzioni sopraelencate: "; <br />
+                        cin>>opzione; <br />
+                        switch (opzione) { <br />
+                            case 1: <br />
+                                opzioneSomma(); <br />
+                                break; <br />
+                            case 2: <br />
+                                opzioneSottrazione(); <br />
+                                break; <br />
+                            case 3: <br />
+                                opzioneMoltiplicazione(); <br />
+                                break; <br />
+                            case 4: <br />
+                                opzioneDivisione(); <br />
+                                break; <br />
+                            case 99: <br />
+                                cout<<"Grazie per aver usato il mio programma :)"<< endl; <br />
+                                continua=false; <br />
+                                break; <br />
+                        } <br />
+                    } <br />
+                    return 0; <br />
+                } <br />
+                 <br />
+                void opzioneSomma(){ <br />
+                    int a, b; <br />
+                    cout<<"ADDIZIONE:"<< endl; <br />
+                    cout<<"Dammi il primo addendo --> "; <br />
+                    cin>>a; <br />
+                    cout<<"Dammi il secondo addendo --> "; <br />
+                    cin>>b; <br />
+                    cout<<"La somma degli addendi "<<a<<" e "<<b<<" e' "<< somma(a, b)<< endl<<endl<< endl; <br />
+                } <br />
+                 <br />
+                int somma(int a, int b){ <br />
+                    int totale; <br />
+                    totale=a+b; <br />
+                    return totale; <br />
+                } <br />
+                 <br />
+                void opzioneSottrazione(){ <br />
+                    int a, b; <br />
+                    cout<<"SOTTRAZIONE:"<< endl; <br />
+                    cout<<"Dammi il minuendo --> "; <br />
+                    cin>>a; <br />
+                    cout<<"Dammi il sottraendo --> "; <br />
+                    cin>>b; <br />
+                    cout<<"La differenza tra "<<a<<" e "<< b<<" e' "<< sottrazione(a, b)<<endl<<endl<< endl; <br />
+                } <br />
+                int sottrazione(int a, int b){ <br />
+                    int differenza; <br />
+                    differenza=a-b; <br />
+                    return differenza; <br />
+                } <br />
+                 <br />
+                void opzioneMoltiplicazione(){ <br />
+                    int a, b; <br />
+                    cout<<"MOLTIPLICAZIONE:"<< endl; <br />
+                    cout<<"Dammi il moltiplicando --> "; <br />
+                    cin>>a; <br />
+                    cout<<"Dammi il moltiplicatore --> "; <br />
+                    cin>>b; <br />
+                    cout<<"Il prodotto di "<<a<<" e "<< b<<" e' "<< moltiplicazione(a, b)<< endl<< endl<< endl; <br />
+                } <br />
+                int moltiplicazione(int a, int b){ <br />
+                    int prodotto; <br />
+                    prodotto=a*b; <br />
+                    return prodotto; <br />
+                } <br />
+                <br />
+                void opzioneDivisione(){<br />
+                    int a, b;<br />
+                    cout<<"DIVISIONE:"<< endl;<br />
+                    cout<<"Dammi il dividendo --> ";<br />
+                    cin>>a;<br />
+                    cout<<"Dammi il divisore --> ";<br />
+                    cin>>b;<br />
+                    cout<<"Il quoto di "<<a<<" e " << b << " e' "<< divisione(a, b)<< endl<< endl<< endl;<br />
+                }<br />
+                int divisione(int a, int b){<br />
+                    int quoto;<br />
+                    quoto=a/b;<br />
+                    return quoto;<br />
+                }<br />
+            </pre>
+                </code>
+                
+                <p style="visibility: hidden;">Mio figlio Spike, ieri (9 dicembre 2021) ha compiuto 8 anni</p>
+                <a href="../../doc/cCf.cpp"><img src="../../images/down.icns" alt="Download" class="dowb"></a>
+                <p class="downtxt" id="dw5" onmouseenter="down5()" onmouseleave="downE5()">Download</p>
+                <p style="visibility: hidden;">Bla bla bla</p>
+                </div>
+                <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare. parte 2</p>
+            <h3 id="h" class="c-">Aree</h3>
+            <p style="font-style: oblique;">
+                SCOPO: fare un programma che abbia diverse funzioni con cui calcolare l'area di alcune figure
+                geometriche
+            </p>
+            <div class="cppcode">
+            <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                //Programma che calcola la base di alcune fig. geometriche piane <br />
+                    #include <iostream> <br />
+                    using namespace std; <br />
+                    void aQua(); <br />
+                    int qua(int); <br />
+                    void aRet(); <br />
+                    int ret(int, int); <br />
+                    void aTri(); <br />
+                    int tri(int, int); <br />
+                    void aTra(); <br />
+                    int tra(int, int, int); <br />
+ <br />
+ <br />
+ <br />
+                    int main(){ <br />
+                        int opz; <br />
+                        bool cont=true; <br />
+                        while(cont){ <br />
+                            cout<<"Opzioni:"<< endl; <br />
+                            cout<<"1 - Area del quadrato"<< endl; <br />
+                            cout<<"2 - Area del rettangolo"<< endl; <br />
+                            cout<<"3 - Area del triangolo"<< endl; <br />
+                            cout<<"4 - Area del trapezio"<< endl; <br />
+                            cout<<"99 - Fine"<< endl; <br />
+                            cout<<"---> "; <br />
+                            cin>>opz; <br />
+                            switch (opz) { <br />
+                                case 1: <br />
+                                    aQua(); <br />
+                                    break; <br />
+                                case 2: <br />
+                                    aRet(); <br />
+                                    break; <br />
+                                case 3: <br />
+                                    aTri(); <br />
+                                    break; <br />
+                                case 4: <br />
+                                    aTra(); <br />
+                                    break; <br />
+                                case 99: <br />
+                                    cont=false; <br />
+                                    break; <br />
+                                default: <br />
+                                    break; <br />
+                            } <br />
+                        } <br />
+                    } <br />
+ <br />
+                    void aQua(){ <br />
+                        int l; <br />
+                        cout<<"Dammi il lato: "; <br />
+                        cin>>l; <br />
+                        cout<<"L'area del quadrato e' "<<qua(l)<<endl<< endl; <br />
+                    } <br />
+                    int qua(int l){ <br />
+                        int area; <br />
+                        area=l*l; <br />
+                        return area; <br />
+                    } <br />
+                    void aRet(){ <br />
+                        int b, h; <br />
+                        cout<<"Dammi la base: "; <br />
+                        cin>>b; <br />
+                        cout<<"Dammi l'altezza: "; <br />
+                        cin>>h; <br />
+                        cout<<"L'area del rettangolo e' "<< ret(b, h)<< endl << endl; <br />
+                    } <br />
+                    int ret(int b, int h){ <br />
+                        int area; <br />
+                        area=b*h; <br />
+                        return area; <br />
+                    } <br />
+                    void aTri(){ <br />
+                        int b, h; <br />
+                        cout<<"Dammi la base: "; <br />
+                        cin>>b; <br />
+                        cout<<"Dammi l'altezza: "; <br />
+                        cin>>h; <br />
+                        cout<<"L'area del triangolo e' "<<tri(b, h)<< endl<< endl; <br />
+                    } <br />
+                    int tri(int b, int h){ <br />
+                        int area; <br />
+                        area=(b*h)/2; <br />
+                        return area; <br />
+                    } <br />
+                    void aTra(){ <br />
+                        int b, h, b2; <br />
+                        cout<<"Dammi la base minore: "; <br />
+                        cin>>b; <br />
+                        cout<<"Dammi la base maggiore: "; <br />
+                        cin>>b2; <br />
+                        cout<<"Dammi l'altezza: "; <br />
+                        cin>>h; <br />
+                        cout<<"L'area del trapezio e' "<< tra(b, h, b2)<< endl<< endl; <br />
+                    } <br />
+                    int tra(int b, int h, int b2){ <br />
+                        int area; <br />
+                        area=(b+b2)*h/2; <br />
+                        return area; <br />
+                    } <br />
+ <br />
+                </code>
+                <p style="visibility: hidden;">Bla bla bla</p>
+                <a href="../../doc/aree.cpp"><img src="../../images/down.icns" alt="Download" class="dowb"></a>
+                <p class="downtxt" id="dw6" onmouseenter="down6()" onmouseleave="downE6()">Download</p>
+                <p style="visibility: hidden;">Bla bla bla</p>
+                </div>
+                <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare.</p>
+            <h3 id="fatt" class="c-">Calcolo fattoriale</h3>
+            <p style="font-style: oblique;">
+                Fare un programma che restituiva il fattoriale del numero immesso
+            </p>
+            <div class="cppcode">
+            <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                //fattoriale<br />
+#include <iostream><br />
+using namespace std;<br />
+int fattoriale(int);<br />
+int main(){<br />
+    int n;<br />
+    cout<<"Dammi il numero di cui vuoi calcolare il fattoriale: ";<br />
+    cin>>n;<br />
+    cout<< fattoriale(n)<< endl;<br />
+}<br />
+int fattoriale(int n){<br />
+    int fatt=1;<br />
+    while(n>1){<br />
+        fatt=fatt*n;<br />
+        n--;<br />
+    }<br />
+    return fatt;<br />
+}<br />
+                </code>
+                <p style="visibility: hidden;">Non so più cosa mettere</p>
+                <a href="../../doc/fatt.cpp"><img src="../../images/down.icns" alt="Download" class="dowb"></a>
+                <p class="downtxt" id="dw1" onmouseenter="down1()" onmouseleave="downE1()">Download</p>
+                <p style="visibility: hidden;">Bla bla bla</p>
+            </div>
+            <p style="visibility: hidden;">Anche questo è un paragrafo fatto per staccare.</p>
+            <h3 id="ct" class="c-">Convertitore tempo</h3>
+            <p style="font-style: oblique;">
+                Bisognava fare un programma che convertiva da giorni, ore, minuti in secondi
+            </p>
+            <div class="cppcode">
+            <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                #include <iostream><br />
+                    using namespace std;<br />
+                    long calcolaSecondi (int gg, int hh, int mm, int ss){<br />
+                        long s;<br />
+                        s=ss+mm*60+hh*3600+gg*86400;<br />
+                        return s;<br />
+                    }<br />
+                    int main(){<br />
+                        int gg, hh, mm, ss;<br />
+                        cout<<"Inserisci i giorni ";<br />
+                        cin>>gg;<br />
+                        cout<<"Inserisci le ore ";<br />
+                        cin>>hh;<br />
+                        cout<<"Inserisci i minuti ";<br />
+                        cin>>mm;<br />
+                        cout<<"Inserisci i secondi ";<br />
+                        cin>>ss;<br />
+                        cout<<"Equivalgono a "<< calcolaSecondi(gg, hh, mm, ss)<<" secondi";<br />
+                        <br />
+                    }<br />
+                </code>
+                <p style="visibility: hidden;">Sapessi</p>
+                <a href="../../doc/cT.cpp"><img src="../../images/down.icns" alt="Download" class="dowb"></a>
+                <p class="downtxt" id="dw2" onmouseenter="down2()" onmouseleave="downE2()">Download</p>
+                <p style="visibility: hidden;">(Bla bla bla)^2</p>
+            </div>
+
+
+            <p style="visibility: hidden;">Davvero, non so più cosa scrivere!</p>
+            <h3 id="2d" class="c-">Distanza tra due date</h3>
+            <p style="font-style: oblique;">
+                Fare un programma che immessa la 1a e la 2a data restituiva i gg, mm, yy,
+                sia con il calendario commerciale, sia con quello solare.
+            </p>
+            <div class="cppcode">
+            <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                /*Esercizio 29 pag A150:<br />
+                Programma per calcolare la distanza tra due date<br />
+                */<br />
+               #include <iostream><br />
+               using namespace std;<br />
+               void data(int);<br />
+               void aCom(int, int, long, int, int, long);<br />
+               void aSol(int, int, long, int, int, long);<br />
+               void help();<br />
+               <br />
+               int main(){<br />
+                   int opz;<br />
+                   bool cont=true;<br />
+                   while(cont){<br />
+                       cout<<"PROGRAMMA PER MISURARE L'INTERVALLO DI TEMPO TRA DUE DATE \n \n";<br />
+                       cout<<"Inserire 1 per usare l'ANNO COMMERCIALE \n";<br />
+                       cout<<"Inserire 2 per usare l'ANNO SOLARE \n";<br />
+                       cout<<"Inserire 0 per MAGGIORI INFORMAZIONI \n";<br />
+                       cout<<"Inserire 99 quando si HA FINITO \n";<br />
+                       cout<<"--> ";<br />
+                       cin>>opz;<br />
+                       switch (opz) {<br />
+                           case 0:<br />
+                               help();<br />
+                               break;<br />
+                           case 1:<br />
+                               data(opz);<br />
+                               break;<br />
+                           case 2:<br />
+                               data(opz);<br />
+                               break;<br />
+                           case 99:<br />
+                               cont=false;<br />
+                               break;<br />
+                           default:<br />
+                               break;<br />
+                       }<br />
+                   }<br />
+                   cout<<"Grazie per aver usato il mio programma. :) \n";<br />
+                   return 0;<br />
+               }<br />
+               void data(int opz){<br />
+                   int gg1, gg2, mm1, mm2;<br />
+                   long yy1, yy2;<br />
+                   cout<<"PRIMA data: \n";<br />
+                   cout<<"Inserire il GIORNO: -> ";<br />
+                   cin>>gg1;<br />
+                   cout<<"Inserire il MESE: -> ";<br />
+                   cin>>mm1;<br />
+                   cout<<"Inserire l'ANNO: -> ";<br />
+                   cin>>yy1;<br />
+                   cout<<"SECONDA data: \n";<br />
+                   cout<<"Inserire il GIORNO: -> ";<br />
+                   cin>>gg2;<br />
+                   cout<<"Inserire il MESE: -> ";<br />
+                   cin>>mm2;<br />
+                   cout<<"Inserire l'ANNO: -> ";<br />
+                   cin>>yy2;<br />
+                   if(opz==1){<br />
+                       aCom(gg1, mm1, yy1, gg2, mm2, yy2);<br />
+                   }else{<br />
+                       aSol(gg2, mm2, yy2, gg1, mm1, yy1);<br />
+                   }<br />
+               }<br />
+               void aCom(int gg1, int mm1, long yy1, int gg2, int mm2, long yy2){<br />
+                   long mm, yy, gg;<br />
+                   yy=yy2-yy1;<br />
+                   gg=gg2-gg1;<br />
+                   mm=mm2-mm1;<br />
+                   if(gg<0){<br />
+                       mm--;<br />
+                       gg+=30;<br />
+                   }<br />
+                   if(mm<0){<br />
+                       yy--;<br />
+                       mm+=12;<br />
+                   }<br />
+               <br />
+                   cout<<"Dalla prima data alla seconda sono passati "<<gg<<" GIORNI, "<<mm<<" MESI, "<<yy<<" ANNI. \n \n \n";<br />
+               }<br />
+               <br />
+               <br />
+               void aSol(int gg2, int mm2, long yy2, int gg1, int mm1, long yy1){<br />
+                   long mm, gg, yy;<br />
+                   yy=yy2-yy1;<br />
+                   mm=mm2-mm1;<br />
+                   gg=gg2-gg1;<br />
+                   if(mm<0){<br />
+                       mm+=12;<br />
+                       yy--;<br />
+                   }<br />
+                   if(gg<0){<br />
+                       mm--;<br />
+                       switch (mm) {<br />
+                           case 12:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           case 11:<br />
+                               gg+=30;<br />
+                               break;<br />
+                           case 10:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           case 9:<br />
+                               gg+=30;<br />
+                               break;<br />
+                           case 8:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           case 7:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           case 6:<br />
+                               gg+=30;<br />
+                               break;<br />
+                           case 5:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           case 4:<br />
+                               gg+=30;<br />
+                               break;<br />
+                           case 3:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           case 2:<br />
+                               gg+=28;<br />
+                               break;<br />
+                           case 1:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           case 0:<br />
+                               gg+=31;<br />
+                               break;<br />
+                           <br />
+                           default:<br />
+                               break;<br />
+                       }<br />
+                   }<br />
+                   cout<<"Dalla prima data alla seconda sono passati "<<gg<<" GIORNI, "<<mm<<" MESI, "<<yy<<" ANNI. \n \n \n";<br />
+               }<br />
+               <br />
+               void help(){<br />
+                   cout<<"AIUTO: \n";<br />
+                   cout<<"L'anno commerciale è quello che, ogni mese ha 30 giorni, dunque 360 giorni. Viene usato per esempio nell'ambito finanziario per calcolare gli interessi nei prestiti. \n";<br />
+                   cout<<"L'anno solare è quello che tutti noi usiamo e ha 365 giorni. \n \n \n";<br />
+               }<br />
+               
+                </code>
+                <p style="visibility: hidden;">Non so più cosa mettere</p>
+                <a href="../../doc/2date.cpp"><img src="../../images/down.icns" alt="Download" class="dowb"></a>
+                <p class="downtxt" id="dw4" onmouseenter="down4()" onmouseleave="downE4()">Download</p>
+                <p style="visibility: hidden;">Bla bla bla</p>
+
+
+
+            </div>
+            <p style="visibility: hidden;">Noh, vabbé, un'altro programma/esercizio/valutabile (#nonsapevocosamettere)</h3>
+                <h3 id="gMat" class="c-">Gioco matematico</h3>
+            <p style="font-style: oblique;">
+                Si da un numero e se è pari si dimezza, se è dispari si usa il successivo del suo triplo
+            </p>
+            <div class="cppcode">
+            <pre>
+                <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                    /*Esercizio 23 pag A149
+ Si da un numero e se è pari si dimezza, se è
+ dispari si usa il successivo del suo triplo
+ */
+#include <iostream>
+using namespace std;
+void giocoMat1();
+void giocoMat2();
+void help();
+int main(){
+    bool cont=true;
+    int sc;
+    while(cont){
+        cout<<"GIOCO MATEMATICO: \n \n";
+        cout<<"Inserisci 1 per giocare con 1 numero \n";
+        cout<<"Inserisci 2 per giocare con un intervallo di numeri tra due valori scelti \n";
+        cout<<"Inserisci 0 per altre info \n";
+        cout<<"Inserisci 99 per terminare il programma \n";
+        cout<<"--> ";
+        cin>>sc;
+        switch (sc) {
+            case 0:
+                help();
+                break;
+            case 1:
+                giocoMat1();
+                break;
+            case 2:
+                giocoMat2();
+                break;
+            case 99:
+                cont=false;
+                break;
+                
+            default:
+                break;
+        }
+    }
+    cout<<"Grazie per aver usato il mio programma :) \n";
+    return 0;
+}
+void help(){
+    cout<<"GIOCO CLASSICO: \n";
+    cout<<"Finché il numero è pari verrà dimezzato, se è dispari prendo il successivo al suo triplo. \n";
+    cout<<"GIOCO 2: \n";
+    cout<<"Si inseriscono due valori e il gioco verrà eseguito con l'intervallo tra i valori dati \n \n";
+}
+
+void giocoMat1(){
+    int i;
+    long n;
+    cout<<"Gioco classico: \n";
+    cout<<"Inserisci un numero: --> ";
+    cin>>n;
+    for(i=0; n>1; i++){
+        if(n%2==0){
+            n=n/2;
+            cout<<n<< endl;
+        }else{
+            n*=3;
+            n--;
+            cout<<n<< endl;
+        }
+    }
+    cout<<"Eseguito per "<<i<<" volte. \n";
+}
+void giocoMat2(){
+    long a, b, x;
+    int i;
+    cout<<"Gioco 2: \n";
+    cout<<"Inserisci il primo numero: --> ";
+    cin>>a;
+    cout<<"Inserisci il secondo numero: --> ";
+    cin>>b;
+    
+    for(int j=1; a<=b; a++){
+        x=a;
+        cout << "Numero " << x<< endl;
+        for(i=0; x>1; i++){
+            if(x%2==0){
+                x=x/2;
+                cout<<x<< endl;
+            }else{
+                x*=3;
+                x--;
+                cout<<x<< endl;
+            }
+        }
+        cout << " Eseguito "<< i << " volte. \n " ;
+    }
+    
+}
+        >
+                </code>
+            </pre>
+            <p style="visibility: hidden;">Non so più cosa mettere</p>
+            
+                <a href="../../doc/gMat.cpp"><img src="../../images/down.icns" alt="Download" class="dowb"></a>
+                <p class="downtxt" id="dw3" onmouseenter="down3()" onmouseleave="downE3()">Download</p>
+                <p style="visibility: hidden;">Bla bla bla</p>
+</div>
+
+                <p style="visibility: hidden;">2 programmi 2 giorni?!? WOW!</h3>
+                    <h3 id="ranDado" class="c-">RANDOM - Dado</h3>
+                <p style="font-style: oblique;">
+                    All'esecuzione del programma verrà estratto un numero casuale e rappresentato con una faccia del dado.
+                </p>
+                <div class="cppcode">
+                <pre>
+                    <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                #include <iostream>
+                    #include <cstdlib>
+                    using namespace std;
+                    int main(){
+                        int var;
+                    
+                        srand (time(NULL));
+                    
+                    
+                        
+                        
+                        var=rand()%6+1;
+                        if(var==6){
+                            for(int i=1; i<=3; i++){
+                                cout<<"°   °";
+                                cout<< endl;
+                            }
+                                >
+                                
+                        }
+                        if(var==5){
+                            
+                                cout<<"°   °"< < endl;
+                                cout<<"  °  "<< endl;
+                                cout<<"°   °"<< endl;
+                        }
+                        if(var==4){
+                            
+                                cout<<"°   °"<< endl;
+                                cout<<"     "<< endl;
+                                cout<<"°   °"<< endl;
+                        }
+                        if(var==3){
+                            
+                                cout<<"°    "<< endl;
+                                cout<<"  °  "<< endl;
+                                cout<<"    °"<< endl;
+                        }
+                        if(var==2){
+                            
+                                cout<<"     "<< endl;
+                                cout<<"°   °"<< endl;
+                                cout<<"     "<< endl;
+                        }
+                        if(var==1){
+                            
+                                cout<<"     "<< endl;
+                                cout<<"  °  "<< endl;
+                                cout<<"     "<< endl;
+                        }
+                        cout<< endl;
+                        cout<< endl;
+                        cout<< endl;
+                        
+                        return 0;
+                    }   
+                </code>
+            </pre>
+                    <a href="../../doc/dado.cpp"><img src="../../images/down.icns" alt="Download" class="dowb"></a>
+                    <p class="downtxt" id="dw7" onmouseenter="down7()" onmouseleave="downE7()">Download</p>
+                    <p style="visibility: hidden;">Bla bla bla</p>               
+</div>  
+
+<p style="visibility: hidden;">3 programmi 4 giorni?!? WOW!</h3>
+    <h3 id="sAr" class="c-">Shift array</h3>
+<p style="font-style: oblique;">
+    In un array con N posizioni, aventi valori dati dall'utente, verranno fatti spostare nel verso e
+    nel numero di posizioni deciso dall'esecutore.
+</p>
+<div class="cppcode">
+<pre>
+    //Programma per shiftare l'array
+#include <iostream>
+#define N 5
+using namespace std;
+void shiftArray(int[], int, int, int);
+void stampaArray(int[], int);
+int main()
+{
+    int arr[N], verso, add;
+    cout<<"Shift array \n \n";
+    cout<<"L'array ha "<<N<<" posizioni. \n";
+    cout<<"Per scambiare l'array verso sinistra digita 1, verso destra digita 2: (default=destra) --> ";
+    cin>>verso;
+    cout<<"Di quante posizioni vuoi shiftare?: --> ";
+    cin>>add;
+    for(int i=0; i<N; i++)
+    {
+        cout<<"Assegna un valore alla posizione "<<i<<" dell'array: --> ";
+        cin>>arr[i];
+    }
+    shiftArray(arr, N, verso, add);
+    stampaArray(arr, N);
+    return 0;
+}
+void shiftArray(int arr[], int dim, int verso, int add)
+{
+    int salva;
+    if(verso==1)
+    {
+        for(int c=1; c<=add; c++){
+            salva = arr[0];
+            for(int i=0; i<dim; i++)
+            {
+                if(i<dim-1){
+                    arr[i]=arr[i+1];
+                }
+            }
+            arr[dim-1]=salva;
+        }
+
+    }
+    else
+    {
+        for(int c=1; c<=add; c++){
+            salva = arr[dim-1];
+            for(int i=dim-1; i>=0; i--)
+            {
+                if(i>0)
+                {
+                    arr[i]=arr[i-1];
+                }
+            }
+            arr[0]=salva;
+        }
+    }
+
+}
+
+void stampaArray(int arr[], int dim)
+{
+    for(int j=0; j<dim; j++)
+    {
+        cout<<"La posizione "<<j<<" dell'array ora vale: "<<arr[j]<<endl;
+    }
+}
+        >
+    </pre>
+    <a href="../../doc/shiftArray.cpp"><img src="../../images/down.icns" alt="Download" class="dowb"></a>
+                <p class="downtxt" id="dw8" onmouseenter="down8()" onmouseleave="downE8()">Download</p>
+                <p style="visibility: hidden;">---</p>
+    </div>
+    
+<br />
+<br />
+            
+            <footer>
+                <h3>Portale Nicola</h3>
+                <p>Il Portale di Nicola, dal 17 maggio 2021 porta sfondi, easter egg e altro.
+                    N.B. Questo è un sito passatempo
+                </p>
+            </footer>
+        </body>
+        </html>
