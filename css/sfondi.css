@@ -25,6 +25,7 @@ section article img:hover {
     nav h2 {
         display: inline-block;
         
+        
     }
     nav h2 a {
         vertical-align: middle;
@@ -35,4 +36,8 @@ section article img:hover {
     #spz {
         display: none;
     }
+    #n h2 a {
+        width: 205px;
+    }
+    
 }
