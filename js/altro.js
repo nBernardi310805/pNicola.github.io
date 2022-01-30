@@ -46,3 +46,10 @@ function down8(){
 function downE8() {
     document.getElementById('dw8').innerText="Download"
 }
+
+function tip() {
+    document.getElementById('tip').innerHTML='<p id="ccc" style="text-align:right;">Questa è la nuova pagina della Didattica: <br> Da essa puoi arrivare nella pagina del<br> C++, nella pagina dedicata a TPSIT<br> e prossimamente agli appunti</p>'
+}
+function ftipp() {
+    document.getElementById('tip').innerHTML='<img src="../images/tru.png" alt="tip" id="sug">'
+}
