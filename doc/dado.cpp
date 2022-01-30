@@ -5,7 +5,7 @@
 using namespace std;
 int main(){
     int var;
-//portalenicola.it/cpp#ranDado
+//https://portalenicola.it/didattica/cpp
     srand (time(NULL));
 
 
@@ -53,6 +53,6 @@ int main(){
     cout<<endl;
     cout<<endl;
     cout<<endl;
-    //portalenicola.it
+    //https://portalenicola.it/didattica/cpp
     return 0;
 }
