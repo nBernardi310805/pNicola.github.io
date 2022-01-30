@@ -41,7 +41,7 @@ int main(){
 }
 void help(){
     cout<<"GIOCO CLASSICO: \n";
-    cout<</*"Portalenicola.it/cpp"*/"Finché il numero è pari verrà dimezzato, se è dispari prendo il successivo al suo triplo. \n";
+    cout<</*"https://portalenicola.it/didattica/cpp"*/"Finché il numero è pari verrà dimezzato, se è dispari prendo il successivo al suo triplo. \n";
     cout<<"GIOCO 2: \n";
     cout<<"Si inseriscono due valori e il gioco verrà eseguito con l'intervallo tra i valori dati \n \n";
 }
@@ -85,7 +85,7 @@ void giocoMat2(){
                 x--;
                 cout<<x<<endl;
             }
-        }//portalenicola.it/cpp by Nicola Bernardi
+        }//https://portalenicola.it/didattica/cpp by Nicola Bernardi
         cout<<"Eseguito "<<i<<" volte. \n";
     }
     
