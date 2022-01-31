@@ -21,3 +21,19 @@
 footer {
     margin-top: 620px;
 }
+iframe {
+    border-radius: 15px; border:solid; border-color:red;
+    display: block;
+    
+}
+h3 {
+    font-size: 4vh;
+    font-weight: lighter;
+}
+button {
+    width:auto;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border: solid;
+    border-color:crimson;
+}
