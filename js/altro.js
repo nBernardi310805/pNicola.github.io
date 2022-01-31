@@ -53,3 +53,7 @@ function tip() {
 function ftipp() {
     document.getElementById('tip').innerHTML='<img src="../images/tru.png" alt="tip" id="sug">'
 }
+
+function dvC() {
+    document.getElementById('dC').innerHTML='<iframe src="https://tpsit.tk/divinaCommedia"></iframe>'
+}
