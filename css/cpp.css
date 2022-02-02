@@ -42,7 +42,7 @@ a {
     border-color:crimson;
     zoom:140%
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     .dowb {
         width: 15%;
         float:right
