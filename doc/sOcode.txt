@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>SO - Home Page</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Nicola Bernardi">
+    <meta name="description" content="SO">
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-22L0NZ73VZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-22L0NZ73VZ');
+</script>
+    
+</head>
+
+<body>
+    <h1>Wiki Sistemi Operativi</h1>
+    <h2>Nicola Bernardi</h2>
+    <p>In queste pagine troverete alcune informazioni riguardo i principali sistemi operativi</p>
+    <h3>Sistemi desktop</h3>
+    <p><a title="Sistema desktop di Google" href="html/chromeos.html">ChromeOS</a></p>
+    <p><a title="Sistema Opensource" href="html/linux.html">Linux</a></p>
+    <p><a title="SO di Apple" href="html/macos.html">MacOS</a></p>
+    <p><a title="SO di Microsoft" href="html/windows.html">Windows</a></p>
+    <h3>Sistemi Mobile</h3>
+    <p><a title="Sistema mobile di Google" href="html/android.html">Android</a></p>
+    <p><a title="SO mobile di Apple" href="html/ios.html">iOS</a></p>
+    <p><a title="SO mobile di Microsoft" href="html/winPhone.html">Windows Phone</a></p>
+    <img alt="oS image" src="images/so.jfif">
+    <p><a title="Torna all'indice" href="/">Torna al menu</a></p>
+</body>
+
+</html>
