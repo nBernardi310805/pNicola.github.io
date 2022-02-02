@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>I Personal Computer</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Nicola Bernardi">
+    <meta name="description" content="I Personal Computer">
+    
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-22L0NZ73VZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-22L0NZ73VZ');
+</script>
+    
+</head>
+
+<body>
+    <h1>I Personal Computer</h1>
+    <h4><i>Nicola Bernardi, 3bin, 8/11/2021</i></h4>
+    <h2>Indice:</h2>
+    <ul>
+        <li><a title="Introduzione dei PC" href="#intro">Introduzione</a></li>
+        <li><a title="Storia dei PC" href="#storia">La storia</a></li>
+    </ul>
+    <h3 id="intro">Introduzione</h3>
+    <ul>
+        <li><a title="nome PC" href="#nome">Il nome</a></li>
+        <li><a title="Come è costituito un PC" href="#cost">Costituzione</a></li>
+    </ul>
+    <p><small><i>(Da Wikipedia, l'enciclopedia libera)</i></small></p>
+    <!-- nei seguenti paragrafi, sono andato a capo per una questione di maggior leggibilità del codice-->
+
+    <h4 id="nome">Il nome</h4>
+
+    <p>Un personal computer (dalla lingua inglese, in italiano letterale “calcolatore personale” oppure
+        “elaboratore personale”, solitamente abbreviato in PC) è un qualsiasi computer che si presti
+        all'utilizzo proprio personale e alla personalizzazione da parte dell'utente nell'uso quotidiano.
+        Il termine personal computer nasce negli anni 80 quando vengono messi in commercio i primi computer
+        per il grande pubblico. Infatti precedentemente i calcolatori erano inaccessibili alla gente comune
+        per via delle ingenti dimensioni e prezzo elevato, e venivano acquistati principalmente da ricercatori
+        o grandi aziende. Attualmente col termine personal computer (PC) si vanno ad indicare i computer desktop
+        e i computer laptop.</p>
+
+    <h4 id="cost">Costituzione</h4>
+    <p>Un calcolatore personale è costruito tipicamente a livello hardware secondo l'architettura di
+        von Neumann ed è composto da un'unità di elaborazione centrale, in inglese central processing unit,
+        abbreviato in CPU (processore) e periferiche varie, spesso per facilitarne l'uso in maniera tipicamente
+        user friendly. A livello software il relativo sistema operativo implementa nella sua interfaccia utente
+        la cosiddetta metafora della scrivania. Il PC di fatto ha soppiantato nel tempo la vecchia macchina da
+        scrivere per uso personale e d'ufficio grazie ai programmi di videoscrittura aggiungendovi numerose altre
+        funzionalità (es. calcolo, grafica, progettazione ecc...)
+        grazie alla sua facile programmabilità..</p>
+
+    <h3 id="storia">La storia</h3>
+    <table>
+        <tbody>
+            <tr>
+                <th>Nome</th>
+                <th>Presentato</th>
+                <th>CPU</th>
+            </tr>
+            <tr>
+                <td>Apple II <img alt="Apple II image" src="images/apple2.jpg" width="100"></td>
+                <td>16 aprile 1977</td>
+                <td><a title="MOS 6502" href="html/mos6502.html">MOS 6502</a></td>
+            </tr>
+            <tr>
+                <td>IBM 5150 <img alt="IBM 5150 image" src="images/ibm.jpg" width="100"></td>
+                <td>12 agosto 1981</td>
+                <td><a title="Intel 8088" href="html/intel8088.html">Intel 8088</a></td>
+            </tr>
+            <tr>
+                <td>Gaming PC <img alt="Gaming PC image" src="images/gamingpc.jpg" width="100"></td>
+                <td>Attuale</td>
+                <td><a title="Intel Core i9" href="html/intelI9.html">Intel Core i9</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <h4>Lingue:</h4>
+    <ul>
+        <li><a title="English" href="../en/index.html">Inglese</a></li>
+        <li><a title="Italiano" href=""><b>Italiano</b></a></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
