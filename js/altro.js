@@ -57,3 +57,15 @@ function ftipp() {
 function dvC() {
     document.getElementById('dC').innerHTML='<iframe src="https://tpsit.tk/divinaCommedia"></iframe>'
 }
+function pc() {
+    document.getElementById('pc').innerHTML='<iframe src="https://tpsit.tk/PC/it" style="background-color:white"></iframe>'
+}
+function sO() {
+    document.getElementById('sO').innerHTML='<iframe src="https://tpsit.tk/SistemiOperativi" style="background-color:white"></iframe>'
+}
+function tpsit() {
+    document.getElementById('what').innerText='TPSIT è la materia che insegna a fare i siti web'
+}
+function fTpsit() {
+    document.getElementById('what').innerText="Cos'è TPSIT"
+}
