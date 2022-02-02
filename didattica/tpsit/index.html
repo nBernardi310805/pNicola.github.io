@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../../css/core.css">
         <link rel="stylesheet" href="../../css/dida.css">
         <script src="../../js/altro.js"></script>
-        <meta name="keywords" content="il portale di nicola, portale nicola, portalenicola, c++, cpp, nicolabernardi, didattica, tpsit, appunti">
+        <meta name="keywords" content="il portale di nicola, portale nicola, portalenicola, c++, cpp, nicolabernardi, didattica, tpsit, appunti, crearesitoweb, creare un sito web">
         
         <script data-ad-client="ca-pub-9843209517750049" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         
@@ -42,13 +42,17 @@
                 <h2 class="tit">Tpsit</h2>
             </article>
         </section>
+        <div>
+            <p id="what" onmouseenter="tpsit()" onmouseleave="fTpsit()">Cos'è TPSIT?</p>
+        </div>
         <section>
             <img id="cop1" src="../../images/copp.png" alt="copertina">
                 
                 
                  
         </section>
-        <section>
+        <h3 class="titPar">Vecchi progetti</h3>
+        <section class="tpProj">
             <h3>Divina Commedia</h3>
             <div id="dC">
                 <button onclick="dvC()">Vedi il risultato</button>
@@ -59,9 +63,53 @@
             </div>
         </section>
 
+        <section class="tpProj">
+            <h3>PC</h3>
+            <div id="pc">
+                <button onclick="pc()">Vedi il risultato</button>
+                <iframe></iframe>
+            </div>
+            <div style="display:inline;">
+                <iframe src="../../doc/pcCode.txt" style="background-color: white;"></iframe>
+            </div>
+        </section>
+
+        <section class="tpProj">
+            <h3>Sistemi Operativi - Wiki</h3>
+            <div id="sO">
+                <button onclick="sO()">Vedi il risultato</button>
+                <iframe></iframe>
+            </div>
+            <div style="display:inline;">
+                <iframe src="../../doc/sOcode.txt" style="background-color: white;"></iframe>
+            </div>
+        </section>
+        <section>
+            <h3 class="titPar">Come creare un sito web</h3>
+            <article>
+                <h3>Premessa:</h3>
+                <p>Imparare a creare un sito web non è come imparare a disegnare, cosa che tra l'altro non so fare,
+                    ma è più complesso perché bisogna imparare i codici descrittivi (HTML, CSS) e possibilmente il JavaScript.
+
+                </p>
+            </article>
+            <article id="we">
+                <h3>Per creare un sito web</h3>
+                <h4>L'HTML</h4>
+                <p>L'HTML è un linguaggio descrittivo. Serve per creare il sito web nella sua struttura,
+                    quindi titoli, testo, immagini
+                </p>
+                <iframe src="../../htmlOnly.html" id="htmlNot"></iframe>
+                <caption>L'iframe sovrastante mostra la <a href="../../">Home Page</a> del mio sito senza CSS o JavaScript.
+                </caption>
+                <p id="qq" style="visibility: hidden;">cc</p>
+                <caption><a href="../../htmlOnly.html"><button>Schermo intero</button></a></caption>
+            </article>
+        </section>
+
         <p style="visibility: hidden;">Altro paragrafo fatto per staccare</p>
         <h2 id="man">Pagina in costruzione</h2>
-        <p>La pagina è al momento in costruzione, ma tra qualche giorno sarà disponibile.</p>
+        <p>La pagina non è completa, ma lo sarà a breve. Torna domani a controllare.</p>
         
         
         
