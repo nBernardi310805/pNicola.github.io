@@ -115,10 +115,6 @@ section h2:hover {
 article, figure, a, img#sfondone {
     max-width: 52%;
     display: inline;
-    
-    
-    
-    
 }
 #txt {
     vertical-align: top;
@@ -254,11 +250,11 @@ button:hover {
         text-align: center;
     }
     #cop1 {
-        width: 35%;
+        width: 30%;
         float: right;
     }
     .icon {
-        width: 20%;
+        width: 15%;
     }
     #cop2 {
         display: none;
