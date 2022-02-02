@@ -1,39 +1,116 @@
-#tip {
-    float:right;
-    text-align: right;
-    
-    
+@media only screen and (max-width:900px) {
+    #tip {
+        float:right;
+        text-align: right;
+    }
+    #sug {
+        width: 25%;
+        margin-top: 10px;
+        border-radius: 20px; border:solid; border-color: gold;
+    }
+    #ccc {
+        border-radius: 20px; border:solid; border-color: gold;
+        padding: 5px;
+    }
+    #man {
+        zoom:300%;
+        font-weight: lighter;
+        font-style: oblique;
+    }
+    footer {
+        margin-top: 620px;
+    }
+    iframe {
+        border-radius: 15px; border:solid; border-color:red;
+        display: block;
+        width: 100%;
+        height: 200px;
+        
+    }
+    h3 {
+        font-size: 4vh;
+        font-weight: lighter;
+    }
+    button {
+        width:50%;
+        margin-bottom: 10px;
+        border-radius: 25px;
+        border: solid;
+        border-color:crimson;
+        font-size: medium;
+    }
+    .tpProj {
+        width: 100%;
+        text-align: center;
+    }
+    .titPar {
+        font-size: 4vh;
+        text-decoration: underline;
+        text-align: center;
+    }
+    #what {
+        width: 100%;
+        text-align: center;
+        border-radius: 25px;
+        border: solid;
+        border-color:crimson;
+    }
 }
-#sug {
-    width: 25%;
-    margin-top: 10px;
-    border-radius: 20px; border:solid; border-color: gold;
-}
-#ccc {
-    border-radius: 20px; border:solid; border-color: gold;
-    padding: 5px;
-}
-#man {
-    zoom:300%;
-    font-weight: lighter;
-    font-style: oblique;
-}
-footer {
-    margin-top: 620px;
-}
-iframe {
-    border-radius: 15px; border:solid; border-color:red;
-    display: block;
-    
-}
-h3 {
-    font-size: 4vh;
-    font-weight: lighter;
-}
-button {
-    width:auto;
-    margin-bottom: 10px;
-    border-radius: 25px;
-    border: solid;
-    border-color:crimson;
+
+
+
+
+@media only screen and (min-width:900px){
+    #tip {
+        float:right;
+        text-align: right;
+    }
+    #sug {
+        width: 25%;
+        margin-top: 10px;
+        border-radius: 20px; border:solid; border-color: gold;
+    }
+    #ccc {
+        border-radius: 20px; border:solid; border-color: gold;
+        padding: 5px;
+    }
+    #man {
+        zoom:300%;
+        font-weight: lighter;
+        font-style: oblique;
+    }
+    footer {
+        margin-top: 620px;
+    }
+    iframe {
+        border-radius: 15px; border:solid; border-color:red;
+        display: block;
+        
+    }
+    h3 {
+        font-size: 4vh;
+        font-weight: lighter;
+    }
+    button {
+        width:auto;
+        margin-bottom: 10px;
+        border-radius: 25px;
+        border: solid;
+        border-color:crimson;
+    }
+    .tpProj {
+        width: 20%;
+        display: inline-block;
+    }
+    .titPar {
+        font-size: 4vh;
+        text-decoration: underline;
+    }
+    #what {
+        width:15%;
+        text-align: center;
+        border-radius: 25px;
+        border: solid;
+        border-color:crimson;
+    }
 }
