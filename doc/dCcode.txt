@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>DivinaCommedia</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Nicola Bernardi">
+    <meta name="description" content="La Divina Commedia">
+    <link rel="icon" href="../SistemiOperativi/images/favicon.ico">
+    <link rel="stylesheet" href="/css/core.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-22L0NZ73VZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-22L0NZ73VZ');
+</script>
+    
+</head>
+
+<body>
+    <h1>Divina Commedia</h1>
+    <p>In essa vengono addotti due motivi per spiegare il titolo conferito: uno di carattere letterario, secondo
+        cui col nome di commedia era usanza definire un genere letterario che, da un inizio difficoltoso per il
+        protagonista, si conclude con un lieto fine, e uno stilistico. Infatti lo stile nonostante sia sublime, tratta
+        anche tematiche turpi tipiche di uno stile umile, secondo l'ottica cristiana di accogliere anche gli aspetti
+        più bassi del reale, pur di raggiungere il cuore di tutta l'umanità. Nel poema infatti si ritrovano entrambi
+        questi aspetti: dalla "selva oscura", allegoria dello smarrimento del poeta, si passa alla redenzione
+        finale, alla visione di Dio nel Paradiso; e in secondo luogo, i versi sono scritti in volgare e non in latino
+        che, sebbene esistesse già una ricca tradizione letteraria in lingua del sì, continuava ad essere
+        considerata la lingua per eccellenza della cultura.</p>
+
+    <p><b>L'aggettivo "divina"</b>, riferito alla Commedia per via dei temi riguardanti il divino, fu usato per la prima
+        volta <b>da Giovanni Boccaccio nel Trattatello in laude di Dante</b>, scritto circa quarant'anni dopo il periodo
+        in cui si pensa sia stato terminato il poema dantesco. <b>La locuzione Divina Commedia</b>, però, divenne
+        <b>comune solo dalla metà del Cinquecento in poi</b>, da quando Ludovico Dolce, nella sua edizione
+        del 1555, stampata a Venezia da Gabriel Giolito de' Ferrari, riprese nel titolo l'attributo datole dal
+        Boccaccio.
+    </p>
+
+    <p><b>Il nome "Commedia"</b> (nella forma comedìa) <b>appare solo due volte all'interno del poema</b>, mentre
+        nel Paradiso Dante lo definisce "poema sacro". <b>Dante non rinnega il titolo Commedia</b>, anche perché,
+        data la lunghezza dell'opera, le cantiche o i singoli canti vennero pubblicati volta per volta, e l'autore
+        non aveva la possibilità di revisionare ciò che già era stato reso pubblico. Il termine "Commedia"
+        dovette sembrare riduttivo a Dante nel momento in cui componeva il Paradiso, in cui lo stile, ma anche
+        la sintassi, sono profondamente cambiati rispetto ai canti che compongono l'Inferno; infatti <b>nell'ultimo
+            canto, il sostantivo Commedia viene sostituito da poema sacro</b>. Il discorso sulle palinodie, ovvero le
+        correzioni che Dante fa all'interno della sua opera, contraddicendo se stesso ma anche le sue fonti, è
+        molto più vasto ed esteso.
+    </p>
+
+    <p><b>Nelle ultime edizioni</b>, a partire da quella di Petrocchi (1966-67) fino a quelle di Lanza (1995), di
+        Sanguineti (2001) e di Inglese (2016), <b>si assiste all'abbandono dell'attributo Divina nel titolo</b>, dopo
+        quattro secoli di tradizione editoriale.</p>
+
+    <p><i>Nel mezzo del cammin di nostra vita
+            <br />
+            mi ritrovai per una selva oscura,
+            <br />
+            ché la diritta via era smarrita.
+    </p>
+    <p>
+        Ahi quanto a dir qual era è cosa dura,
+        <br />
+        esta selva selvaggia e aspra e forte,
+        <br />
+        che nel pensier rinova la paura!
+    </p>
+    <p>
+        Tant'è amara che poco è più morte;
+        <br />
+        ma per trattar del ben ch'i' vi trovai,
+        <br />
+        dirò de l'altre cose ch'i' v'ho scorte.
+    </p>
+    <p>
+        Io non so ben ridir com'i' v'intrai,
+        <br />
+        tant'era pien di sonno a quel punto
+        <br />
+        che la verace via abbandonai</i>
+    </p>
+    <p><a title="torna all'indice" href="/">Torna al menu</a></p>
+</body>
+
+</html>
