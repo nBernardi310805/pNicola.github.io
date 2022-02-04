@@ -1,4 +1,4 @@
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:700px) {
     #tip {
         float:right;
         text-align: right;
@@ -69,7 +69,7 @@
 
 
 
-@media only screen and (min-width:900px){
+@media only screen and (min-width:700px){
     #tip {
         float:right;
         text-align: right;
