@@ -160,9 +160,9 @@ button:hover {
 .sfff {
     display: inline;
 }
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:700px) {
     .icon {
-        width: 30%;
+        width: 23%;
         
     }
     #cop2 {
@@ -244,7 +244,7 @@ button:hover {
     }
 }
 
-@media only screen and (min-width:1000px){
+@media only screen and (min-width:700px){
     .tipo {
         margin-top: 50px;
         text-align: center;
@@ -254,7 +254,7 @@ button:hover {
         float: right;
     }
     .icon {
-        width: 15%;
+        width: 20%;
     }
     #cop2 {
         display: none;
