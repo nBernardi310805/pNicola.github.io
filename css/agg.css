@@ -24,7 +24,7 @@
         float:left
     }
 }
-@media only screen and (max-width:1024px){ /*Tablet*/
+/* @media only screen and (max-width:1024px){ /*Tablet
     #cop00 {
         display: none;
     }
@@ -49,8 +49,8 @@
         margin-right: 20px;
         float:left
     }
-}
-@media only screen and (min-width:1024px){
+} */
+@media only screen and (min-width:700px){
     #cop00 {
         float:right;
         width: 29%;
