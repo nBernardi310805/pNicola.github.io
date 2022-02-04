@@ -728,6 +728,7 @@ void giocoMat2(){
 </p>
 <div class="cppcode">
 <pre>
+<code>
     //Programma per shiftare l'array
 #include <iostream>
 #define N 5
@@ -794,9 +795,131 @@ void stampaArray(int arr[], int dim)
     }
 }
         >
+        </code>
     </pre>
     <a href="../../doc/shiftArray.cpp"><img src="../../images/down.icns" alt="Download" class="dowb"></a>
                 <p class="downtxt" id="dw8" onmouseenter="down8()" onmouseleave="downE8()">Download</p>
+                <p style="visibility: hidden;">---</p>
+    </div>
+    <p style="visibility: hidden;">Programma fresco di giornata</h3>
+                    <h3 id="oAs" class="c-">Ordina Array - Stringa</h3>
+                <p style="font-style: oblique;">
+                    Il programma ordinerà massimo 50 nomi / parole / frasi in ordine alfabetico con 2 metodi diversi
+                </p>
+                <div class="cppcode">
+                <pre>
+                    <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                    //Programma per ordinare nomi in ordine alfabetico
+
+#include <iostream>
+#define N 50
+
+using namespace std;
+
+void scambio(string&, string&);
+void exchangeSort(string[], int);
+void bubbleSort(string[], int);
+
+int main()
+{
+    string arr[N], tmp;
+    for(int i=0; i<N; i++)
+    {
+        cout<<"Scrivi un nome nella posizione "<<arr[i]<<" dell'array - (usa # per finire) \n";
+        getline(cin, tmp);
+        if(tmp=="#")
+        {
+            break;
+        }
+        arr[i]=tmp;
+    }
+    exchangeSort(arr, N);
+    bubbleSort(arr, N);
+    return 0;
+}
+
+void scambio(string& x, string& y)
+{
+    string z;
+    if(x.length()==0)
+    {
+        x="~";
+    }
+    if(y.length()==0)
+    {
+        y="~";
+    }
+    z=x;
+    x=y;
+    y=z;
+
+}
+
+void exchangeSort(string arr[], int dim)
+{
+    for(int i=0; i<dim-1; i++)
+    {
+        for(int j=i+1; j<dim; j++)
+        {
+            if(arr[j].length()==0)
+            {
+                break;
+            }
+            if(arr[i]>arr[j])
+            {
+                scambio(arr[i], arr[j]);
+
+
+            }
+        }
+    }
+    cout<<"Ordinamento con funzione Exchange-Sort \n";
+    for(int k=0; k<dim; k++)
+    {
+
+        if(arr[k].length()
+                ==0)
+        {
+            break;
+        }
+        cout<<"Il nome in posizione "<<k<<" e' "<<arr[k]<<endl;
+    }
+
+}
+
+void bubbleSort(string arr[], int dim)
+{
+    bool s;
+    do
+    {
+        s=false;
+        for(int i=0; i<dim-1; i++)
+        {
+            if(arr[i]>arr[i+1])
+            {
+                scambio(arr[i], arr[i+1]);
+                s=true;
+            }
+        }
+    }
+    while(s);
+
+    cout<<"Ordinamento con funzione Bubble-Sort \n";
+    for(int j=0; j<dim; j++)
+    {
+        if(arr[j]=="~")
+        {
+            break;
+        }
+        cout<<"Il nome in posizione "<<j<<" e' "<<arr[j]<<endl;
+    }
+}
+
+
+                    </code>
+                    </pre>
+                    <a href="../../doc/arrStr.cpp"><img src="../../images/down.icns" alt="Download" class="dowb"></a>
+                <p class="downtxt" id="dw9" onmouseenter="down9()" onmouseleave="downE9()">Download</p>
                 <p style="visibility: hidden;">---</p>
     </div>
     
