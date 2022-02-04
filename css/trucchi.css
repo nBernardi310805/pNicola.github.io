@@ -7,7 +7,7 @@
     color:red;
     zoom:160%;
 }
-@media only screen and (min-width:900px){
+@media only screen and (min-width:700px){
     .tx {
         float:right;
         clear:left;
@@ -44,7 +44,7 @@
         float: right;
     }
 }
-@media only screen and (max-width:900px){
+@media only screen and (max-width:700px){
     #vollllume {
         width: 20%;
     }
