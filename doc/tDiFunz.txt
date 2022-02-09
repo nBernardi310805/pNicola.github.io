@@ -1,0 +1,25 @@
+Tipi di funzioni
+Ripasso per compito 17/12/2021
+
+PROTOTIPO: 
+Int fatt(int);
+
+DEFINIZIONE:
+Int fatt(int a){
+Int c;         <—- parametro formale
+cin>>c;
+Return c*a;
+}
+
+INVOCAZIONE:
+Cout<<fatt(a);
+			 /\
+			 ||
+		a: parametro attuale
+
+
+
+
+
+
+#inf 

@@ -1,0 +1,4 @@
+Funzione Void
+A differenza del int, long, bool, ecc, il void non restituisce un valore.
+Inoltre se viene richiamato una funzione void, viene eseguita normalmente, come un’altro main.
+Esempio: programma che stampa @ formando un triangolo rettangolo, per il numero righe inserito:
