@@ -131,7 +131,7 @@ button:hover {
 .icon {
     width: 10%;
     vertical-align:middle;
-   
+    text-align: center;
     clear:both;
 }
 .icon:hover {
