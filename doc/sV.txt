@@ -1,0 +1,31 @@
+Scambio valori delle variabili
+PER RIFERIMENTO:
+Si opera direttamente nella variabile, non viene copiata. Per richiamarla si una la “e commerciale” (“&”)
+float c(int&, int&);
+Int main(){
+Int a=1, b=3;
+c(a, b);
+…                                         <— dopo la funzione a avrà valore 1 e b 23.
+}
+Float c(int& a, int& b){      <— stiamo lavorando con le variabili a e b.
+a=1;                                           i valori che mettiamo rimarranno disponibili
+b=23;                                        nel main.
+}
+
+PER VALORE:
+Si copia il contenuto della variabile che viene usata nella funzione. Alla fine della funzione i valori delle variabili vengono eliminate.
+float c(int, int);
+Int main(){
+Int a=1, b=3
+c(a, b);
+….                                         <— dopo la funzione a continua a valere 1
+}                                                  e b 3.
+Float c(int a, int b){            <— si sta lavorando su una copia di a e b.
+a=3;                                            una volta finita, i valori andranno persi.
+b=4;
+}
+
+
+
+
+#inf
