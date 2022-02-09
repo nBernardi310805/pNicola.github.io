@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
-        <title>Appunti - Il Portale di Nicola</title>
+        <title>Didattica - Il Portale di Nicola</title>
         <meta charset="utf-8">
         <meta name="author" content="Nicola Bernardi">
         <meta name="description" content="La parte didattica e scolastica ove troverete programmi già fatti, template, appunti e altro ancora">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../../favicon.png">
-        <link rel="stylesheet" href="../../css/core.css">
-        <link rel="stylesheet" href="../../css/dida.css">
+        <link rel="icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/core.css">
+        <link rel="stylesheet" href="../css/dida.css">
         <meta name="keywords" content="il portale di nicola, portale nicola, portalenicola, c++, cpp, nicolabernardi, didattica, tpsit, appunti">
-        <script src="../../js/altro.js"></script>
+        <script src="../js/altro.js"></script>
         <script data-ad-client="ca-pub-9843209517750049" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -26,26 +26,27 @@
     </head>
     <body>
         <header>
-                <a href=""><img src="../../images/logo.png" id="ii"></a>
+                <a href=""><img src="../images/logo.png" id="ii"></a>
                 <h1 class="titol" id="titol">Il Portale di Nicola</h1>
             <nav>
-                <h2 class="nav1"><a href="../../">Home</a>  <a href="../../sfondi">Sfondi</a>  
-                <a class="active" href="../">Didattica</a>  <a href="../../trucchi">Trucchi</a>  <a href="../../whoami/">Contatti</a>  <a href="../../interattivo/">Interattivo</a></h2>
+                <h2 class="nav1"><a href="../">Home</a>  <a href="../sfondi">Sfondi</a>  
+                <a class="active" href="">Didattica</a>  <a href="../trucchi">Trucchi</a>  <a href="../whoami/">Contatti</a>  <a href="../interattivo/">Interattivo</a></h2>
             </nav>
         </header>
         
-       
-          
+       <div id="tip" onmouseenter="tip()" onmouseleave="ftipp()">
+           <img src="../images/tru.png" alt="tip" id="sug">
+       </div>
         <section>
             <h1 id="ciao">Il Portale di Nicola</h1>
             <article>
-                <h2 class="tit">Appunti</h2>
+                <h2 class="tit">Didattica</h2>
             </article>
         </section>
-        <p>In questa pagina si potrà avere rapido accesso a tutti gli appunti caricati.
+        <p>In questa pagina si potrà avere rapido accesso a tutta la parte didattica del mio sito.
         </p>
         <section>
-                <img id="cop1" src="../../images/copp.png" alt="copertina">
+                <img id="cop1" src="../images/copp.png" alt="copertina">
                 
                 
                  
@@ -54,12 +55,13 @@
             <p style="visibility: hidden;">Questo è un easter-egg necessario: non riuscivo a trovare il modo
                 per staccare con il CSS e allora ho fatto questo paragrafo nascosto. Se l'hai trovato ti faccio i complimenti</p>
 
-            <a title="informatica" href="informatica/"><img src="../../images/inf.png" class="icon" alt="informatica"></a>
-            <a title="TPSIT" href="tpsit/"><img src="../../images/html.png" class="icon" alt="TPSIT"></a>
-            <a title="ItaSto" href="itasto/"><img src="../../images/itasto.png" class="icon" alt="Itasto"></a>
+            <a title="C++" href="cpp/"><img src="../images/cpp.png" class="icon" alt="C++"></a>
+            <a title="TPSIT" href="tpsit/"><img src="../images/tpsit.png" class="icon" alt="TPSIT"></a>
+            <a title="Appunti" href="appunti/"><img src="../images/appunti.png" class="icon" alt="Appunti"></a>
             
-             
-                <img id="cop2" src="../../images/copp.png" alt="copertina"> 
+            <div class="tipo">
+                <p style="display: inline;" id="cosafaccio">Per ogni problema contattami</p></div> 
+                <img id="cop2" src="../images/copp.png" alt="copertina"> 
         </section>
         <p style="visibility: hidden;">Altro paragrafo fatto per staccare</p>
         
@@ -73,7 +75,7 @@
         <footer style="clear:both;">
             
             <h3>Portale Nicola</h3>
-            <p style="float:both; width:80%">Il Portale di Nicola, dal 17 maggio 2021 porta sfondi, easter egg e altro.
+            <p style="float:left; width:80%">Il Portale di Nicola, dal 17 maggio 2021 porta sfondi, easter egg e altro.
                 N.B. Questo è un sito passatempo
            </p>
         </footer>
