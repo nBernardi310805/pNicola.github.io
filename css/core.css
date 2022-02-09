@@ -97,16 +97,8 @@ button {
 a.but {
 border: transparent;
 }
-img.sfo {
-    max-width: 45%;
-    image-resolution:10%;
-}
-#sfi {
-    max-width: 35%;
-    display: inline;
-    vertical-align: top;
-    
-}
+
+
 section h2:hover {
     font-weight: normal;
 }
