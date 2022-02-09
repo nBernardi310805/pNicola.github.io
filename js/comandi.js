@@ -114,3 +114,7 @@ function cmd(){
 function account(){
     alert('Per avere un account bisogna essere premium. Con una donazione di almeno 1€ si potrà avere account con novità esclusive, codice sorgente del sito e il proprio nome scritto in Home page nel "riquadro degli eroi"')
 }
+
+function neww(){
+    document.getElementById('psll').innerHTML='<h2 class="tit">Home Page</h2>'
+}
