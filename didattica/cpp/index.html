@@ -923,6 +923,49 @@ void bubbleSort(string arr[], int dim)
                 <p class="downtxt" id="dw9" onmouseenter="down9()" onmouseleave="downE9()">Download</p>
                 <p style="visibility: hidden;">---</p>
     </div>
+    <p style="visibility: hidden;">Programma fresco di giornata parte 2</h3>
+                    <h3 id="difAr" class="c-">Differenza valori array</h3>
+                <p style="font-style: oblique;">
+                   Il programma chiede in input 7 valori numerici e calcola la differenza tra il più piccolo e il più grande.
+                </p>
+                <div class="cppcode">
+                <pre>
+                    <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                    #include <iostream>
+#define N 7
+//programma per orfinare l'array
+using namespace std;
+int diffArray(int []);
+int main()
+{//by Nicola Bernardi
+    int arr[N];
+    for(int i=0; i<N; i++){
+        cout<<"Valorizza la posizione "<<i<<" dell'array: --> ";
+        cin>>arr[i];
+    }//portalenicola.it/didattica/cpp
+    cout<<"La differenza tra il valore massimo e quello minimo inserito e' "<<diffArray(arr)<<endl;
+    return 0;
+}
+//portalenicola.it
+int diffArray(int arr[]){
+    int mx=arr[0], mn=arr[0];
+    for(int i=1; i<N; i++){
+        if(arr[i]>mx){
+            mx=arr[i];
+        }
+        if(arr[i]<mn){
+            mn=arr[i];
+        }
+    }
+    return (mx-mn);
+}
+>
+                    </code>
+                    </pre>
+                    <a href="../../doc/diffValArr.cpp"><img src="../../images/down.icns" alt="Download" class="dowb" download></a>
+                <p class="downtxt" id="dw10" onmouseenter="down10()" onmouseleave="downE10()">Download</p>
+                <p style="visibility: hidden;">---</p>
+    </div>
     
 <br />
 <br />
