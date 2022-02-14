@@ -79,7 +79,7 @@ function downE13() {
 function down14(){
     document.getElementById('dw14').innerText="Download --> "
 }
-function downE14) {
+function downE14() {
     document.getElementById('dw14).innerText="Download"
 }
                          
