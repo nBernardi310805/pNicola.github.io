@@ -1,0 +1,885 @@
+@media only screen and (max-width:700px) {
+    #cop00 {
+        display: none;
+    }
+    #nov2 {
+        border-radius: 15px; border:solid; border-color: white;
+        float:left;
+        margin-bottom: 50px;
+        width:100%;
+    }
+    #nov3 {
+        border-radius: 15px; border:solid; border-color: magenta;
+        margin-bottom: 50px;
+        width:100%;
+        margin-right: 20px;
+        float: left;
+        
+    }
+    #nov4 {
+        border-radius: 15px; border:solid; border-color: firebrick;
+        margin-bottom: 50px;
+        width:100%;
+        margin-right: 20px;
+        float:left
+    }
+}
+/* @media only screen and (max-width:1024px){ /*Tablet
+    #cop00 {
+        display: none;
+    }
+    #nov2 {
+        border-radius: 15px; border:solid; border-color: white;
+        float:left;
+        margin-bottom: 50px;
+        width:100%;
+    }
+    #nov3 {
+        border-radius: 15px; border:solid; border-color: magenta;
+        margin-bottom: 50px;
+        width:100%;
+        margin-right: 20px;
+        float: left;
+        
+    }
+    #nov4 {
+        border-radius: 15px; border:solid; border-color: firebrick;
+        margin-bottom: 50px;
+        width:100%;
+        margin-right: 20px;
+        float:left
+    }
+} */
+@media only screen and (min-width:700px){
+    #cop00 {
+        float:right;
+        width: 29%;
+        margin-bottom: 30px;
+    }
+    #nov2 {
+        border-radius: 15px; border:solid; border-color: white;
+        margin-bottom: 50px;
+        width:48%;
+        margin-left: 20px;
+        float: right;
+
+    }
+    #nov3 {
+        border-radius: 15px; border:solid; border-color: magenta;
+        margin-bottom: 50px;
+        width:48%;
+        margin-right: 20px;
+        float: left;
+        
+    }
+    #nov4 {
+        border-radius: 15px; border:solid; border-color: firebrick;
+        margin-bottom: 50px;
+        width:48%;
+        margin-right: 20px;
+        float:left
+    }
+}
+footer {
+    clear: both;
+}
+input {
+    color:white;
+    background-color: crimson;
+    border-radius: 5px; border:solid; border-color: white;
+    border-width: 1px;
+}
+#inn {
+    border-radius: 15px;
+    border: solid;
+    border-color:crimson;
+}
+.ttt {
+    color:red;
+    zoom:160%;
+}
+@media only screen and (min-width:700px){
+    .tx {
+        float:right;
+        clear:left;
+        width: 100%;
+        text-align: left;
+        
+    }
+    #vollllume {
+        float:right;
+        width: 10%;
+    }
+    #appc {
+        float: right;
+        width: 40%;
+    }
+    .ttt {
+        clear: both;
+    }
+    #tt2 {
+        width: 100%;
+        text-align: justify;
+    }
+    
+    h4 {
+        clear:both
+    }
+    .artic {
+        border-radius: 20px; border:solid; border-color:red;
+    }
+    #batch {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 10px;
+        float: right;
+    }
+}
+@media only screen and (max-width:700px){
+    #vollllume {
+        width: 20%;
+    }
+    #appc {
+        width: 50%;
+    }
+    .tx {
+        text-align: justify;
+    }
+    h3 {
+        zoom: 150%;
+    }
+    h4 {
+        zoom:130%;
+        font-weight: lighter;
+    }
+    code {
+        background-color: white;
+        color:black
+    }
+    #batch {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+footer {
+    clear: both;
+}
+
+@media only screen and (max-width:700px){
+    #n {
+        vertical-align: top;
+        height: auto;
+        width:100%;
+    }
+    nav h2 {
+        display: inline-block;
+        
+        
+    }
+    nav h2 a {
+        vertical-align: middle;
+    }
+    #t {
+        clear:left;
+    }
+    #spz {
+        display: none;
+    }
+    #n h2 a {
+        width: 205px;
+    }
+    img.sfo {
+        width: 100%;
+        image-resolution:10%;
+    }
+    #dsk {
+        display: none;
+    }
+    .sfi {
+        max-width: 100%; display: inline; vertical-align: top;
+    }
+    #n {
+        float: right;
+        background-color: red;
+        border-radius: 20px; border:solid;
+        border-color: lightgray;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #sfondone {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (min-width:700px) {
+    section article img:hover {
+        border-radius: 15px;
+        border:solid;
+        border-color:darkred;
+    }
+    
+    #n {
+        float: right;
+        background-color: red;
+        border-radius: 20px; border:solid;
+        border-color: lightgray;
+        text-align: center;
+        margin-top: 10px;
+    }
+    img.sfo {
+        width: 49%;
+        image-resolution:10%;
+    }
+    #t {
+        vertical-align: top;
+    }
+    #mob {
+        display: none;
+    }
+    .sfi {
+        max-width: 35%; display: inline; vertical-align: top;
+    }
+
+}
+
+span {
+    border-radius: 30px; border:solid; border-color:red;
+}
+#xx {
+    border-radius: 35px; border:solid; border-color:firebrick;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+#inn {
+    border-radius: 50px; border:solid; border-color:crimson;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+.button {
+    border-radius: 5px; border:solid; border-color: grey;
+    background-color: white;
+    border-width: 2px;
+    width:15%;
+    text-align: center;
+    
+}
+#label {
+    color:black;
+}
+button {
+    border-color:white;
+}
+#sub {
+    color:white;
+    background-color: firebrick;
+    width:120px;
+    border-radius: 5px; border:solid; border-color: white;
+    border-width: 1px;
+}
+input {
+    color:white;
+    background-color: crimson;
+    border-radius: 5px; border:solid; border-color: white;
+    border-width: 1px;
+}
+
+#bacheca {
+    border-radius: 15px; border:solid; border-color: gold;
+    margin-bottom: 10px;
+}
+#icone1 {
+    text-align: center;
+}
+#icone2 {
+    text-align: center;
+}
+@media only screen and (max-width:700px) {
+    .icns {
+        display: none;
+    }
+    .icns2 {
+        text-align: right;
+        padding-bottom: 10px;
+    }
+    .icn {
+        width: 15%;
+        float:right;
+    }
+}
+@media only screen and (min-width:700px) {
+    .icns {
+        width: 35%;
+        float:right;
+        text-align: right;
+        display: inline;
+        padding-bottom: 10px;
+    }
+    .icns2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #tip {
+        float:right;
+        text-align: right;
+    }
+    #sug {
+        width: 25%;
+        margin-top: 10px;
+        border-radius: 20px; border:solid; border-color: gold;
+    }
+    #ccc {
+        border-radius: 20px; border:solid; border-color: gold;
+        padding: 5px;
+    }
+    #man {
+        text-align: center;
+        zoom:300%;
+        font-weight: lighter;
+        font-style: oblique;
+    }
+    footer {
+        margin-top: 620px;
+    }
+    iframe {
+        border-radius: 15px; border:solid; border-color:red;
+        display: block;
+        width: 100%;
+        height: 200px;
+        
+    }
+    h3 {
+        font-size: 4vh;
+        font-weight: lighter;
+    }
+    button {
+        width:50%;
+        margin-bottom: 10px;
+        border-radius: 25px;
+        border: solid;
+        border-color:crimson;
+        font-size: medium;
+    }
+    .tpProj {
+        width: 100%;
+        text-align: center;
+    }
+    .titPar {
+        font-size: 4vh;
+        text-decoration: underline;
+        text-align: center;
+    }
+    #what {
+        width: 100%;
+        text-align: center;
+        border-radius: 25px;
+        border: solid;
+        border-color:crimson;
+    }
+    h4 {
+        text-align: center;
+        font-size: 3vh;
+    }
+    h3 {
+        text-align: center;
+    }
+    .app {
+        background-color: white;
+        width: 100%;
+        height: 30vh;
+        
+    }
+    
+}
+#ind {
+    zoom:80%;
+    margin: auto;
+    margin-bottom: 4px;
+}
+
+
+
+@media only screen and (min-width:700px){
+    #tip {
+        float:right;
+        text-align: right;
+    }
+    #sug {
+        width: 25%;
+        margin-top: 10px;
+        border-radius: 20px; border:solid; border-color: gold;
+    }
+    #ccc {
+        border-radius: 20px; border:solid; border-color: gold;
+        padding: 5px;
+    }
+    #man {
+        zoom:300%;
+        font-weight: lighter;
+        font-style: oblique;
+    }
+    footer {
+        margin-top: 620px;
+    }
+    iframe {
+        border-radius: 15px; border:solid; border-color:red;
+        display: block;
+        width: 97%;
+        
+    }
+    h3 {
+        font-size: 4vh;
+        font-weight: lighter;
+    }
+    button {
+        width:auto;
+        margin-bottom: 10px;
+        border-radius: 25px;
+        border: solid;
+        border-color:crimson;
+    }
+    .tpProj {
+        width: 23%;
+        display: inline-block;
+    }
+    .titPar {
+        font-size: 4vh;
+        text-decoration: underline;
+    }
+    #what {
+        width:15%;
+        text-align: center;
+        border-radius: 25px;
+        border: solid;
+        border-color:crimson;
+    }
+    h4 {
+        font-size: 3vh;
+    }
+    #htmlNot {
+        height: 400px;
+        width: 50%;
+        background-color: white;
+        
+    }
+    #qq {
+        display: none;
+    }
+    .app {
+        background-color: white;
+        width: 68%;
+        height: 30vh;
+        
+    }
+}
+
+.c- {
+    color:red;
+    zoom:160%;
+}
+
+#in {
+    border-radius: 15px;
+    border: solid;
+    border-color:crimson;
+}
+a {
+    color:red;
+}
+.cppcode {
+    border-radius: 15px;
+    border:solid;
+    border-color: darkred;
+    overflow: auto;
+}
+.dowb {
+    width: 5%;
+    float:right;
+    border-radius: 25px;
+    border: solid;
+    border-color:crimson;
+   
+}
+.dowb:hover {
+    animation-name: misialza; /*nome-easteregg*/ /*(mi si alza l'icona), pervertito!*/
+    animation-duration: 1s;
+    position: relative;
+    animation-fill-mode: both;
+}
+@keyframes misialza {
+    from{top:0px;}
+    to{top:-10px}
+}
+.downtxt {
+    float:right;
+    border-radius: 25px;
+    border: solid;
+    border-color:crimson;
+    zoom:140%
+}
+@media only screen and (max-width: 700px) {
+    .dowb {
+        width: 15%;
+        float:right
+    }
+    
+}
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  a+h1 {
+    display: inline-block;
+    color:white;
+    
+}
+#ii {
+    border-radius: 10px;
+    padding-left: 5px;
+    width: 80px;
+}
+img+h1 {
+    display: inline-block;
+    color:white;
+}
+h1+nav {
+    display: inline-block;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #133250;
+}
+
+
+h1 {
+    font-size: 500%;
+    color:whitesmoke;
+}
+.titol {
+    font-weight: lighter;
+
+}
+header {
+    border-radius: 40px;
+    border-color: white;
+    border:solid;
+    background-color: red;
+
+}
+nav h2 {
+    color:whitesmoke;
+}
+nav a {
+    border-radius: 30px;
+    border:solid;
+    border-color:white;
+    color:crimson;
+    background-color: whitesmoke;
+    border-spacing: 10px;
+    text-decoration: none;
+    border-width: 2px;
+    display: inline-block;
+}
+nav a:hover {
+    border-radius: 30px;
+    border:solid;
+    border-color:royalblue;
+    text-decoration: none;
+    border-width: 2px;
+    
+}
+a.active {
+    background-color:royalblue;
+    color:white;
+    border-color: white;
+    border-width: 2px;
+}
+footer {
+    background-color:firebrick;
+    color:white;
+    border-radius: 15px;
+    font-weight: lighter;
+    padding-left: 10px;
+    overflow: auto;
+    margin-top: 20px;
+    clear:both;
+}
+h3 {
+    color:whitesmoke;
+    font-weight: lighter;
+}
+
+button {
+    width: 220px;
+    height: 30px;
+    background-color: white;
+    color:midnightblue;
+    border-radius: 5px;
+    
+}
+.tit {
+    zoom:220%;
+    color:red;
+    font-weight: lighter;
+    
+}
+a.but {
+border: transparent;
+}
+
+
+section h2:hover {
+    font-weight: normal;
+}
+
+
+article, figure, a, img#sfondone {
+    max-width: 52%;
+    display: inline;
+}
+#txt {
+    vertical-align: top;
+    text-align:end;
+    
+    
+    
+}
+* {
+    color:white;
+}
+#kkkk {
+    zoom:155%;
+}
+button:hover {
+    background-color: darkred;
+    border-radius: 30px;
+    border:solid;
+    border-color: crimson;
+    color:white;
+}
+.icon {
+    width: 10%;
+    vertical-align:middle;
+    text-align: center;
+    clear:both;
+}
+.icon:hover {
+    animation-name: def;
+    animation-duration: 1s;
+    position: relative;
+    animation-fill-mode: both;
+}
+@keyframes def {
+    from {top:0px;}
+    to {top:-20px;}
+}
+
+@keyframes amla {
+    from {color:white; background-color: #133250;}
+    to {color:#133250; background-color: white;}
+}z
+.sfff {
+    display: inline;
+}
+@media only screen and (max-width:700px) {
+    .icon {
+        width: 23%;
+        
+    }
+    #cop2 {
+        width: 100%;
+        margin-top: 50px; 
+    }
+    .tipo {
+        margin-top: 50px;
+        text-align: center;
+    }
+    nav h2 a {
+        text-align:center;
+        
+    }
+    h1 {
+        text-align: center;
+    }
+    .tit {
+        text-align: center;
+    }
+    #cop1 {
+        display: none;
+    }
+    #nov {
+        border-radius: 15px; border:solid; border-color: white;
+        width: 100%;
+        float:none;
+    }
+    #tit3 {
+        color:red;
+        zoom: 150%
+    }
+    
+    p {
+        text-align: justify;
+    }
+    .dat {
+        text-align: right;
+    }
+    #vhs {
+        border-radius: 15px; border:solid; border-color: crimson;
+        width:100%;
+        float:none;
+        clear:left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #easter {
+        width:80px;
+    }
+    #eroi {
+        width: 100%;
+        border-radius: 15px; border:solid; border-color:fuchsia;
+        margin-bottom: 20px;
+        clear: left;
+        padding:3px;
+    }
+    #pA {
+        border-radius: 15px; border:solid; border-color: darkred;
+        width:100%;
+        float:none;
+        clear:left;
+        margin-bottom: 10px;
+    }
+    .tipo {
+        border-radius: 5px; border:solid; border-color: white;
+        zoom: 180%;
+        width:100%;
+        
+    }
+    
+    .tipo:hover {
+        animation-name: amla;
+        animation-duration: 5s;
+        animation-fill-mode: backwards;
+    }
+    header {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:700px){
+    .tipo {
+        margin-top: 50px;
+        text-align: center;
+    }
+    #cop1 {
+        width: 30%;
+        float: right;
+    }
+    .icon {
+        width: 20%;
+    }
+    #cop2 {
+        display: none;
+    }
+    #nov {
+        border-radius: 15px; border:solid; border-color: white;
+        width: 48%;
+        float:left;
+        margin-bottom: 50px;
+    }
+    #tit3 {
+        color:red;
+        zoom: 150%
+    }
+    
+    p {
+        text-align: justify;
+    }
+    .dat {
+        text-align: right;
+    }
+    #vhs {
+        border-radius: 15px; border:solid; border-color: crimson;
+        width:48%;
+        float:right;
+        margin-bottom: 50px;
+    }
+    #easter {
+        width:5%;
+        float: right;
+        overflow: auto;
+        padding-right: 10px;
+    }
+    #eroi {
+        width: 100%;
+        border-radius: 15px; border:solid; border-color:fuchsia;
+        margin-bottom: 20px;
+    }
+    #pA {
+        border-radius: 15px; border:solid; border-color: darkred;
+        width:48%;
+        float:right;
+        margin-bottom: 50px;
+    }
+    .tipo p {
+        border-radius: 5px; border:solid; border-color: white;
+        zoom: 180%;
+        width:40%;
+        
+    }
+    
+    .tipo p:hover {
+        animation-name: amla;
+        animation-duration: 5s;
+        animation-fill-mode: backwards;
+    }
+}
+#colagg {
+    text-decoration: none;
+    border-radius: 10px; border:solid; border-color: red;
+}
+
+#agg {
+    text-align: center;
+    zoom:150%
+}
+
+
+#ciao {
+    animation-name: tito;
+    animation-duration: 6s;
+}
+@keyframes tito {
+    0% {color:white;}
+    50% {color:red;}
+    100% {color:white;}
+}
+#easter:hover {
+    animation-name: term;
+    animation-duration: 1s;
+    position:relative;
+    animation-fill-mode: both;
+}
+@keyframes term {
+    from{top:0px;}
+    to{top:-10px;}
+}
+
+
