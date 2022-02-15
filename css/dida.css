@@ -151,4 +151,9 @@
         height: 30vh;
         
     }
+    .sond {
+        display: inline;
+        width: 48%;
+        height: 400px;
+    }
 }
