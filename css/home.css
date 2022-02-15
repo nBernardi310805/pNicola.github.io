@@ -20,6 +20,12 @@
         width: 15%;
         float:right;
     }
+    #navvv {
+        border-radius: 30px; border: solid;
+        background-color: red;
+        margin-top: 5px;
+        text-align: center;
+    }
 }
 @media only screen and (min-width:700px) {
     .icns {
@@ -31,5 +37,11 @@
     }
     .icns2 {
         display: none;
+    }
+    #navvv {
+        border-radius: 30px; border: solid;
+        background-color: red;
+        margin-top: 5px;
+        text-align: center;
     }
 }
