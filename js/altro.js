@@ -1,3 +1,4 @@
+//questa parte non la nascondo perché non c'è nulla di personale dentro
 function down1(){
     document.getElementById('dw1').innerText="Download --> "
 }
@@ -100,6 +101,9 @@ function pc() {
 function sO() {
     document.getElementById('sO').innerHTML='<iframe src="https://tpsit.tk/SistemiOperativi" style="background-color:white"></iframe>'
 }
+function imc() {
+    document.getElementById('imc').innerHTML='<iframe src="https://tpsit.tk/BERNARDI_imc" style="background-color:white"></iframe>'
+}
 function tpsit() {
     document.getElementById('what').innerText='TPSIT è la materia che insegna a fare i siti web'
 }
@@ -123,4 +127,8 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+function sond(){
+    let risp = document.querySelector("input[type='radio']:checked").value
+    console.log(risp)
 }
