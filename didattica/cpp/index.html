@@ -28,8 +28,6 @@
     </script>
 
 
- 
-
 </head>
 
 <body>
@@ -61,7 +59,10 @@
         con l'attributo <code>CODE</code> alcune parti del programma in C++,
         come l'invocazione della funzione, viene tagliato. Vi invito dunque a non fare copia-incolla, ma di scaricare il
         file dal pulsante di DOWNLOAD.
-        Buone feste</p>
+        </p>
+        <p><b>Per scaricare i file scorri fino in fondo nel riquadro contenente l'anteprima del codice.
+            Sotto troverai il pulsante download
+        </b></p>
     <p style="visibility: hidden;">ciao, so la Marisa</p>
     <div id="in">
         
@@ -78,6 +79,7 @@
             <li><a href="#sAr">Shift Array</a></li>
             <li><a href="#oAs">Ordina Array - String</a></li>
             <li><a href="#difAr">Differenza valori array</a></li>
+            <li><a href="#pVer1">Esercitazione verifica</a></li>
         </ul>
         </p>
     </div>
@@ -975,11 +977,72 @@ int diffArray ( int arr[] ){
 
                     </code>
                     </pre>
+
         <a href="../../doc/diffValArr.cpp" download><img src="../../images/down.icns" alt="Download" class="dowb"></a>
         <p class="downtxt" id="dw10" onmouseenter="down10()" onmouseleave="downE10()">Download</p>
         <p style="visibility: hidden;">---</p>
     </div>
-
+    <p style="visibility: hidden;">Programma fresco di giornata parte 3! Vi sto viziando!</h3>
+        <h3 id="pVer1" class="c-">Esericitazione alla verifica</h3>
+        <p><small>Vuol dire che è stata la verifica dell'altra sezione</small></p>
+        <p style="font-style: oblique;">
+            Il programma genera casualmente 10 caratteri e dice quante vocali, consonanti e caratteri speciali
+             sono stati generati.
+        </p>
+        <div class="cppcode">
+            <pre>
+                        <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+                            //Prova verifica
+                            #include <iostream>
+                            #include <ctime>
+                            #define N 10
+                            using namespace std;
+                            void valorizzaArray(char[]);
+                            void cercaNellArray(char [], int&, int&, int&);
+                            
+                            int main() {
+                                char arr[N];
+                                int vocali=0, consonanti=0, speciali=0;
+                                valorizzaArray(arr);
+                                cercaNellArray(arr, vocali, consonanti, speciali);
+                                cout<<"Sono state casualmente generate "<<vocali<<" vocali. \n";
+                                cout<<"Sono state casualmente generate "<<consonanti<<" consonanti. \n";
+                                cout<<"Sono stati casualmente generati "<<speciali<<" caratteri speciali. \n";
+                                return 0;
+                            }
+                            //Funzione per valorizzare l'array
+                            void valorizzaArray(char arr[]){
+                                srand(time(NULL));
+                                for(int i=0; i<N; i++){
+                                    arr[i]=rand()%106+65;
+                                    cout<<"pos "<<i<<" : "<<arr[i]<<endl;
+                                }
+                            }
+                            //Funzione per cercare nell'array
+                            void cercaNellArray(char arr[], int& vocali, int& consonanti, int& speciali){
+                                for(int i=0; i<N; i++){
+                                    if((arr[i]>='a'&&arr[i]<='z') || (arr[i]>='A'&&arr[i]<='Z')){
+                                        
+                                        if(arr[i]=='a'||arr[i]=='e'||arr[i]=='i'||arr[i]=='o'||arr[i]=='u'||arr[i]=='A'||arr[i]=='E'||arr[i]=='I'||arr[i]=='O'||arr[i]=='U'){
+                                            vocali++;
+                                        }else {
+                                            consonanti++;
+                                        }
+                                        
+                                    }else {
+                                        speciali++;
+                                    }
+                                }
+                            }
+                            
+                            
+                                                                
+                        </code>
+                        </pre>
+                        <a href="../../doc/proVerif1.cpp" download><img src="../../images/down.icns" alt="Download" class="dowb"></a>
+                        <p class="downtxt" id="dw11" onmouseenter="down11()" onmouseleave="downE11()">Download</p>
+                        <p style="visibility: hidden;">---</p>
+                    </div>
     <br />
     <br />
 
