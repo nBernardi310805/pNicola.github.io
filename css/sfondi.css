@@ -28,6 +28,28 @@
     #sfondone {
         min-width: 100%;
     }
+    header div a {
+        border-radius: 30px;
+        border:solid;
+        border-color:white;
+        color:crimson;
+        background-color: whitesmoke;
+        border-spacing: 10px;
+        text-decoration: none;
+        border-width: 2px;
+        display: inline-block;
+    }
+    header div {
+        text-align: center;
+        padding-right: 10px;
+    }
+    header div a:hover {
+        border-radius: 30px;
+        border:solid;
+        border-color:royalblue;
+        text-decoration: none;
+        border-width: 2px;
+    }
 }
 
 @media only screen and (min-width:700px) {
