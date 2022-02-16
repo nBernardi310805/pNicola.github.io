@@ -1,9 +1,5 @@
 @media only screen and (max-width:700px){
-    #n {
-        vertical-align: top;
-        height: auto;
-        width:100%;
-    }
+   
     nav h2 {
         display: inline-block;
         
@@ -18,9 +14,7 @@
     #spz {
         display: none;
     }
-    #n h2 a {
-        width: 205px;
-    }
+    
     img.sfo {
         width: 100%;
         image-resolution:10%;
@@ -30,14 +24,6 @@
     }
     .sfi {
         max-width: 100%; display: inline; vertical-align: top;
-    }
-    #n {
-        float: right;
-        background-color: red;
-        border-radius: 20px; border:solid;
-        border-color: lightgray;
-        text-align: center;
-        margin-top: 10px;
     }
     #sfondone {
         min-width: 100%;
@@ -51,14 +37,7 @@
         border-color:darkred;
     }
     
-    #n {
-        float: right;
-        background-color: red;
-        border-radius: 20px; border:solid;
-        border-color: lightgray;
-        text-align: center;
-        margin-top: 10px;
-    }
+    
     img.sfo {
         width: 49%;
         image-resolution:10%;
