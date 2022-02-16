@@ -72,5 +72,27 @@
     .sfi {
         max-width: 35%; display: inline; vertical-align: top;
     }
+    header div a {
+        border-radius: 30px;
+        border:solid;
+        border-color:white;
+        color:crimson;
+        background-color: whitesmoke;
+        border-spacing: 10px;
+        text-decoration: none;
+        border-width: 2px;
+        display: inline-block;
+    }
+    header div {
+        text-align: end;
+        padding-right: 10px;
+    }
+    header div a:hover {
+        border-radius: 30px;
+        border:solid;
+        border-color:royalblue;
+        text-decoration: none;
+        border-width: 2px;
+    }
 
 }
