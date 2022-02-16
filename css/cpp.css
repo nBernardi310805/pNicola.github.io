@@ -16,6 +16,8 @@ a {
     border:solid;
     border-color: darkred;
     overflow: auto;
+    max-height: 700px;
+    width:100%;
 }
 .dowb {
     width: 5%;
