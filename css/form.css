@@ -1,0 +1,17 @@
+input {
+    border-radius: 10px; border: solid; border-color: grey;
+    border-width: 1px;
+    color: black;
+}
+input[type=button] {
+    border-radius: 10px; border: solid; border-color: white;
+    border-width: 1px;
+    color:white;
+    background-color: red;
+}
+#pss {
+    display: inline;
+}
+iframe {
+    border-radius: 15px; border:solid; border-color:red;
+}
