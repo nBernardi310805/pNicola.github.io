@@ -4,12 +4,14 @@
         <title>Tpsit - Il Portale di Nicola</title>
         <meta charset="utf-8">
         <meta name="author" content="Nicola Bernardi">
-        <meta name="description" content="La parte didattica e scolastica ove troverete programmi già fatti, template, appunti e altro ancora">
+        <meta name="description" content="TPSIT: come fare un sito web, appunti e molto altro">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../../favicon.png">
         <link rel="stylesheet" href="../../css/core.css">
         <link rel="stylesheet" href="../../css/dida.css">
+        <link rel="stylesheet" href="../../css/form.css">
         <script src="../../js/altro.js"></script>
+        <script src="../../js/tpsit.js"></script>
         <meta name="keywords" content="il portale di nicola, portale nicola, portalenicola, c++, cpp, nicolabernardi, didattica, tpsit, appunti, crearesitoweb, creare un sito web">
         
         <script data-ad-client="ca-pub-9843209517750049" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -53,6 +55,7 @@
                     <li><a href="#son">Sondaggio</a></li>
                     <li><a href="#sWc">Composizione di un sito web</a></li>
                     <li><a href="#goodSw">Creare un buon sito web</a></li>
+                    <li><a href="#intJShtml">Interazione JS - HTML</a></li>
                 </ul>
             </article>
         </section>
@@ -104,9 +107,10 @@
                 <iframe src="../../doc/imc_js.txt" style="background-color: white;"></iframe>
                 <p>In questo caso non ho messo il file HTML, ma quello JS che fa funzionare il tutto.</p>
             </div>
+            <h4>Ti piacciono questi prog</h4>
         </section>
-        <p style="visibility: hidden;">dddd</p>
-        <p style="visibility: hidden;">ddhsudik</p>
+        <p style="visibility: hidden;">TPSIT</p>
+        <p style="visibility: hidden;">Programmi per tutti</p>
 
         <section>
             <h2 id="son">Sondaggio:</h2>
@@ -114,10 +118,10 @@
             <iframe class="sond" src="../../beta/"></iframe>
             <iframe class="sond" src="../../"></iframe>
             <article>
-                <a href="mailto:mail@portalenicola.it?subject=Sondaggio_meglio_nav_staccata&body=sondAggio123 Grazie per aver partecipato :)">
+                <a href="" onclick="alert('sondaggio terminato. Questa parte ha peso')">
                     <button>Meglio nav staccata</button>
                 </a>
-                <a href="mailto:mail@portalenicola.it?subject=Sondaggio_meglio_nav_attaccata&body=sondAggio123 Grazie per aver partecipato :)">
+                <a href="" onclick="alert('sondaggio terminato. Questa parte ha vinto')">
                     <button>Meglio nav attaccata</button>
                 </a>
             </article>
@@ -196,17 +200,56 @@
                 <p style="text-align: center;"><<code>link rel="stylesheet" href="https://portalenicola.it/css/core.css"</code>></p>
             </article>
         </section>
+        <section>
+            <article>
+                <h3 class="titPar" id="intJShtml">Interazione HTML - JavaScript</h3>
+                <p>L'interazione tra HTML e JS avviene usando alcuni codici che ora vedremo.</p>
+                <p><b>Come faccio a fare uno spazio di input?</b></p>
+                <p>Lo spazio input si fa con l'HTML. Quello che faremo oggi non sarà altro che fare alcuni campi di input (prima indipendenti) con l'HTML
+                     e poi dire alla nostra funzione JS di prendersi il valore. Quindi:
+                </p>
+                <p><sub>P.s. Create poi sotto due caselle di testo con id <code>usr</code> e <code>pass</code></sub></p>
+                <p><pre style="border-radius: 15px; border: solid; border-color:crimson; width:auto; padding: 10px;">
+    <<code>label for="username"</code>>Inserisci l'username<<code>label</code>>
+    <<code>input type="text" id="username"</code>><<code title="per andare a capo">br</code>>
+    <<code>label for="password"</code>>Inserisci la password<<code>label</code>>
+    <<code>input type="password" id="password"</code>>
+    <<code>input type="submit" onclick="accedi()"</code>>  
+
+<<code>p id="usr"</code>><<code>/p</code>>
+<<code>p id="pass"</code>><<code>/p</code>>
+                </pre>
+                </p>
+                
+                
+                <p>Ok, ora andiamo a creare la nostra funzione JavaScript</p>
+                <p><pre style="border-radius: 15px; border: solid; border-color:crimson; width:auto; padding: 10px;">
+<code>function accedi(){  
+    <b title="let serve per creare una variabile">let</b> username = document.getElementById('username').value
+    let password = document.getElementById('password').value
+    document.getElementById('usr').innerText="Questo è l'username che hai inserito: " + username
+    document.getElementById('pass').innerText="Questa è la password che hai inserito: " + password
+}</code></pre></p>
+                <p>Fatto. Ora abbiamo la nostra funzione <code>accedi()</code> che legge i valori inseriti nei campi di testo (username e password) e li memorizza
+                nelle variabili <code>username</code> e <code>password</code>.</p>
+                <div style="border-radius: 15px; border: solid; border-color:crimson; max-width:auto; padding: 10px;">
+                        <label for="username">Inserisci l'username</label>
+                        <input type="text"id="username"><br>
+                        <label for="password">Inserisci la password</label>
+                        <input type="password"id="password">
+                        <input type="submit" onclick="accedi()">
+
+                    <p id="usr"></p>
+                    <p id="pass"></p>
+                </div>
+                                
+            </article>
+        </section>
 
         <p style="visibility: hidden;">Altro paragrafo fatto per staccare</p>
-        <h2 id="man">Pagina in costruzione</h2>
-        <p>La pagina non è completa, ma lo sarà a breve. Torna domani a controllare.</p>
-        
-        
-        
-        
         
        
-        <footer style="clear:left;">
+        <footer style="clear:both;">
             
             <h3>Portale Nicola</h3>
             <p style="float:left; width:80%">Il Portale di Nicola, dal 17 maggio 2021 porta sfondi, easter egg e altro.
