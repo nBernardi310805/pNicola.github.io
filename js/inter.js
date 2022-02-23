@@ -1,4 +1,5 @@
 //anche questa pagina ve la lascio visibile. Di nulla :)
+let x=true
 function inizia(){
     document.getElementById('h').contentEditable="true"
     document.getElementById('m').contentEditable="true"
@@ -11,7 +12,6 @@ function convS(){
     if(document.getElementById('g').value!=''){
         risultato = risultato + document.getElementById('g').value*86400
     }
-    console.log(gg)
     if(document.getElementById('h').value!=''){
         risultato = risultato + document.getElementById('h').value*3600
     }
@@ -26,7 +26,15 @@ function convS(){
     document.getElementById('ris').innerHTML=" " + risultato 
 
 }
-function random(){
+
+function preRand(){
+    if(document.getElementById('inte').checked){
+        inte()
+    }else{
+        random()
+    }
+}
+function random(risTruc){
     let a = document.getElementById('min').valueAsNumber
     let b = document.getElementById('max').valueAsNumber
     let c=0
@@ -35,13 +43,46 @@ function random(){
     }
     
     c = (b-a)
-    let ris = Math.floor(Math.random() * c) + a
+    let ris = Math.floor(Math.random() * c+1) + a
     if(isNaN(ris)){
         alert('Non è che hai dimenticato di inserire qualcosa?')
     }
-    if(isNaN(a)){
-        document.getElementById('risult').innerText="Sì, ma almeno il valore di partenza mettilo!"
+   
+    if(risTruc==1){
+        return ris
     }else{
-        document.getElementById('risult').innerText=+ris
+        if(isNaN(a)){
+            document.getElementById('risult').innerText="Sì, ma almeno il valore di partenza mettilo!"
+        }else{
+            returnaRis(ris)
+        }
     }
+
+
+}
+function returnaRis(ris){
+    document.getElementById('risult').innerText=+ris
+}
+
+
+function inte(){
+    let risTruc=1
+    document.getElementById('min').value='1'
+    document.getElementById('max').value='23'
+    let riss = random(risTruc)
+    if(riss==4){
+        returnaRis(12)
+    }else {
+        returnaRis(riss)
+    }
+}
+
+function testaOcroce(){
+    let x = Math.floor(Math.random() * 2)
+    document.getElementById('tira').value='Ri-tira la moneta'
+    if(x==0){
+        document.getElementById('teOcr').innerHTML='<img src="../images/testa.png" style="width:20%"><br> \n <p>Ho tirato la moneta ed è uscita testa.'
+        
+    }else
+        document.getElementById('teOcr').innerHTML='<img src="../images/croce.png" style="width:20%"><br> \n <p>Ho tirato la moneta ed è uscito croce.'
 }
