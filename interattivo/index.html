@@ -53,6 +53,7 @@
                 <ul>
                     <li><a href="#cT">Convertitore tempo in secondi</a></li>
                     <li><a href="#rand">Numero casuale</a></li>
+                    <li><a href="#tOc">Testa o croce</a></li>
                     
                 </ul>
             </p>
@@ -83,10 +84,25 @@
                         <small>Se il valore massimo
                          viene lasciato vuoto, varrà 999 miliardi
                     </small></p>
+                    <input type="checkbox" id="inte" name="interroga" onclick="inte()" value="in">
+                    <label for="inte" onclick="inte()">Interrogazione?</label><br>
+                    <p>Se è estrazione per interrogazione spuntare l'opzione. Di default sarà autocompilato casuale tra 1 e 23</p>
                     <input type="number" name="a" id="min">
                     <input type="number" name="b" id="max">
-                    <input type="submit" onclick="random()">
+                    <input type="submit" onclick="preRand()">
                     <p id="risult">Risultato</p>
+                </article>
+            </section>
+            <section id="xx">
+                <article>
+                    <h4 class="ttt" id="tOc">Testa o croce</h4>
+                    <p><em>Premi e guarda il risultato</em>.<br>
+                        <small>Si aprono le scommesse
+                    </small></p>
+                    <div id="teOcr">
+                        
+                    </div>
+                    <input type="submit" onclick="testaOcroce()" style="margin: 10px;" id="tira" value="Tira la moneta">
                 </article>
             </section>
             
