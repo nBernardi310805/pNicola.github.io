@@ -80,6 +80,7 @@
             <li><a href="#oAs">Ordina Array - String</a></li>
             <li><a href="#difAr">Differenza valori array</a></li>
             <li><a href="#pVer1">Esercitazione verifica</a></li>
+            <li><a href="#matr">Le matrici</a></li>
         </ul>
         </p>
     </div>
@@ -1014,7 +1015,7 @@ int diffArray ( int arr[] ){
                             void valorizzaArray(char arr[]){
                                 srand(time(NULL));
                                 for(int i=0; i<N; i++){
-                                    arr[i]=rand()%106+65;
+                                    arr[i]= rand ()%106+65;
                                     cout<<"pos "<<i<<" : "<<arr[i]<<endl;
                                 }
                             }
@@ -1034,7 +1035,7 @@ int diffArray ( int arr[] ){
                                     }
                                 }
                             }
-                            
+                           
                             
                                                                 
                         </code>
@@ -1043,6 +1044,61 @@ int diffArray ( int arr[] ){
                         <p class="downtxt" id="dw11" onmouseenter="down11()" onmouseleave="downE11()">Download</p>
                         <p style="visibility: hidden;">---</p>
                     </div>
+                    <p style="visibility: hidden;">Programma fresco di giornata parte 4! Vi sto davvero viziando!</h3>
+                        <h3 id="matr" class="c-">Le matrici</h3>
+                        <p><small>o array multidimensionali</small></p>
+                        <p style="font-style: oblique;">
+                            Il programma valorizza con numeri casuali tra 0 e 9 una matrice 10x4.
+                            Successivamente stampa i valori.
+                        </p>
+                        <div class="cppcode">
+                            <pre>
+                                        <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+//Le matrici o array multidimensionali
+#include < iostream >
+#define R 10
+#define C 4
+using namespace std;
+
+void valorizzaArray(int [][C], int, int, int);
+void stampaArray(int [][C], int);
+int main() {
+    int arr[R][C];
+    
+    srand(time(NULL));
+    //Chiamata alle funzioni
+    valorizzaArray(arr, R, 0, 9);
+    stampaArray(arr, R);
+    return 0;
+}
+
+void valorizzaArray(int v[][C], int r, int valMin, int valMax){
+    for(int i=0; i< R; i++){
+        for(int j=0; j < C; j++){
+            v[i][j]=rand()%(valMin-valMax)+valMin;
+        }
+    }
+}
+
+void stampaArray(int v[][C], int r){
+    cout<< "     a   b   c   d"< < endl;
+    for(int i=0; i < R; i++){
+        cout<< i<<")   ";
+        for(int j=0; j< C; j++){
+            cout<< v[i][j]<<"   ";
+        }
+        cout < < "\n" ;
+    }
+}
+        
+
+
+                                        </code>
+                                    </pre>
+                                    <a href="../../doc/matrix.cpp" download><img src="../../images/down.icns" alt="Download" class="dowb"></a>
+                                    <p class="downtxt" id="dw12" onmouseenter="down12()" onmouseleave="downE12()">Download</p>
+                                    <p style="visibility: hidden;">---</p>
+                                </div>
     <br />
     <br />
 
