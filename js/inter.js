@@ -1,5 +1,6 @@
 //anche questa pagina ve la lascio visibile. Di nulla :)
 let x=true
+let volte=0
 function inizia(){
     document.getElementById('h').contentEditable="true"
     document.getElementById('m').contentEditable="true"
@@ -80,9 +81,11 @@ function inte(){
 function testaOcroce(){
     let x = Math.floor(Math.random() * 2)
     document.getElementById('tira').value='Ri-tira la moneta'
+    volte++
     if(x==0){
         document.getElementById('teOcr').innerHTML='<img src="../images/testa.png" style="width:20%"><br> \n <p>Ho tirato la moneta ed è uscita testa.'
         
     }else
         document.getElementById('teOcr').innerHTML='<img src="../images/croce.png" style="width:20%"><br> \n <p>Ho tirato la moneta ed è uscito croce.'
+    document.getElementById('vv').innerText="" + volte
 }
