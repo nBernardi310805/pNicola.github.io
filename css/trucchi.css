@@ -43,6 +43,14 @@
         margin-bottom: 10px;
         float: right;
     }
+    .im {
+        width: 12%;
+        float:right;
+        padding-left: 5px;
+    }
+    .appum {
+        width: 22%;
+    }
 }
 @media only screen and (max-width:700px){
     #vollllume {
@@ -68,6 +76,12 @@
     #batch {
         width: 100%;
         margin-bottom: 10px;
+    }
+    .im {
+        width: 40%;
+    }
+    .appum {
+        width: 70%;
     }
 }
 footer {
