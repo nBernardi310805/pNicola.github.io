@@ -18,9 +18,7 @@
         font-weight: lighter;
         font-style: oblique;
     }
-    footer {
-        margin-top: 620px;
-    }
+    
     iframe {
         border-radius: 15px; border:solid; border-color:red;
         display: block;
@@ -77,7 +75,10 @@
     margin-bottom: 4px;
 }
 
-
+.rinq {
+    border-radius: 15px; border: solid; border-color:crimson; max-width:auto; padding: 10px;
+    overflow: auto;
+}
 
 @media only screen and (min-width:700px){
     #tip {
@@ -97,9 +98,6 @@
         zoom:300%;
         font-weight: lighter;
         font-style: oblique;
-    }
-    footer {
-        margin-top: 620px;
     }
     iframe {
         border-radius: 15px; border:solid; border-color:red;
@@ -156,4 +154,8 @@
         width: 48%;
         height: 400px;
     }
+}
+.riq {
+    border-radius: 15px; border: solid; border-color: red;
+    margin-bottom: 10px;
 }
