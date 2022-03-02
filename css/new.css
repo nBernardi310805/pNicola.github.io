@@ -1,0 +1,43 @@
+h1 {
+    zoom:50%;
+}
+header{
+    text-align: center;
+    border: none;
+    border-radius: 0%;
+    margin: -10px;
+}
+#ii {
+    width: 35px;
+    border-radius: 2px;
+    border: none;
+}
+#na {
+    text-align: center;
+    border: none;
+    border-radius: 0%;
+    margin: -10px;
+    background-color: crimson;
+}
+nav {
+   margin-top: -10px;
+}
+nav a {
+    border-radius: 0%;
+    border: none;
+    font-weight: lighter;
+}
+nav a:hover {
+    border-radius: 0%;
+    font-weight: lighter;
+
+}
+nav a.active {
+    background-color: #133250;
+}
+footer {
+    border: none;
+    border-radius: 0%;
+    margin: -10px;
+    margin-top: 15px;
+}

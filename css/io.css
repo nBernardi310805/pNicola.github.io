@@ -1,0 +1,8 @@
+/*In questo file css ci sono gli elementi input output*/
+button {
+    border-radius: 15px; border: solid; border-color: crimson;
+    border-width: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font:xx-large;
+    margin-bottom: 10px;
+}
