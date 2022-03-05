@@ -72,7 +72,7 @@ function inte(){
     document.getElementById('max').value='23'
     let riss = random(risTruc)
     if(riss==4){
-        returnaRis(12)
+        returnaRis(6)
     }else {
         returnaRis(riss)
     }
