@@ -31,10 +31,12 @@ h1 {
 
 }
 header {
-    border-radius: 40px;
+    border-radius: 0px;
     border-color: white;
-    border:solid;
+    border:none;
     background-color: red;
+    margin: -10px;
+
 
 }
 nav h2 {
@@ -68,11 +70,12 @@ a.active {
 footer {
     background-color:firebrick;
     color:white;
-    border-radius: 15px;
+    border-radius: 0px;
     font-weight: lighter;
     padding-left: 10px;
     overflow: auto;
     margin-top: 20px;
+    margin: -10px;
     clear:both;
 }
 h3 {
@@ -148,7 +151,7 @@ button:hover {
 @keyframes amla {
     from {color:white; background-color: #133250;}
     to {color:#133250; background-color: white;}
-}z
+}
 .sfff {
     display: inline;
 }
@@ -156,6 +159,9 @@ button:hover {
     .icon {
         width: 23%;
         
+    }
+    footer {
+        margin-top: 20px;
     }
     #cop2 {
         width: 100%;
