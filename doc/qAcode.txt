@@ -1,0 +1,30 @@
+function verificaTriangolo(){
+    let a = document.getElementById('a').valueAsNumber
+    let b = document.getElementById('b').valueAsNumber
+    let c = document.getElementById('c').valueAsNumber
+    let typ
+
+    if(b>a){        //Se a non è maggiore di b, scambia
+        let tmp = a
+        a = b
+        b = tmp
+    }else if(c>a){  //Se a non è maggiore di c, scambia
+        let tmp = a
+        a = c
+        c = tmp
+    }
+    if(a<(b+c)){ //If a < b + c
+        if((a*a)==(b*b)+(c*c)){
+            typ = 'rettangolo' //The type is right
+        }else if(b==c){
+            typ = 'isoscele'    //The type is isosceles 
+        }else {
+            typ = 'scaleno'     //The type is scalene
+        }
+        document.getElementById('trian').innerText='è un triangolo ' + typ
+    }else{
+        document.getElementById('trian').innerText='Non è un triangolo' //Isn't a triangle
+    }
+    
+}
+
