@@ -44,6 +44,8 @@
                 <a title="Instagram" href="https://www.instagram.com/nico.mon3y.3108/"><img src="images/instag.png" class="icon" alt="Instagram"></a>
                 <a title="Contatti" href="whoami/"><img src="images/contatta.png" class="icon" alt="Contatti"></a>
                 <a title="Sostienimi: donami" href="https://paypal.me/gazzettaleviponti"><img src="images/paypal.png" class="icon" alt="Donami"></a>
+                <a title="Vecchio sito" href="https://site.portalenicola.it"><img src="images/old.png" class="icon" alt="OldSite"></a>
+                <img src="images/term.png" id="easter" class="icon" onclick="cmd()" title="terminal">
             </div>
             
             <p style="display:none;">Il Portale di Nicola contiene Appunti didattici di diverse materie, nuovi sfondi ogni settimana, programmi C++ già fatti e scaricabili gratis,
@@ -64,6 +66,7 @@
                 <a title="Didattica" href="didattica/"><img src="images/did.png" class="icon" alt="didattica"></a>
                 <a title="Trucchi" href="trucchi/"><img src="images/tru.png" class="icon" alt="trucchi"></a>
                 <a title="Sfondi" href="sfondi/"><img src="images/sfo.png" class="icon" alt="sfondi"></a>
+                
                 
                  
         </section>
@@ -100,22 +103,24 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
                 <p class="dat" id="anal"><b>Secondo Le Analytics:</b></p>
                 <p><small>Rapporto settimanale (rispetto alla settimana scorsa)</small></p>
                 <p>Le pagine più viste sono:</p>
-                <p><small>AGGIORNATO 2 MARZO 2O21</small></p>
+                <p><small>AGGIORNATO 9 MARZO 2O21</small></p>
                 <ol>
-                    <li>Home Page - 5162 visual.</li>
-                    <li>↑(3) TPSIT - 1309 visual.</li>
-                    <li>↓(2) C++ - 1107 visual.</li>
-                    <li>↑(5) Pannello di Controllo - 933 visual.</li>
-                    <li>↓(4) Sfondi - 868 visual.</li>
-                    <li>↑(7) Interattivo - 811 visual.</li>
-                    <li>↑(8) Trucchi - 689 visual.</li>
-                    <li>↓(6) Aggiornamenti - 660 visual.</li>
-                    <li>↑(-) BETA* - 652 visual.</li>
-                    <li>↓(9) Didattica - 482 visual.</li>
+                    <li>Home Page - 5650 visual.</li>
+                    <li>TPSIT - 1320 visual.</li>
+                    <li>C++ - 1116 visual.</li>
+                    <li>Pannello di Controllo - 972 visual.</li>
+                    <li>Sfondi - 892 visual.</li>
+                    <li>Interattivo - 840 visual.</li>
+                    <li>Trucchi - 751 visual.</li>
+                    <li>Aggiornamenti - 668 visual.</li>
+                    <li>BETA* - 654 visual.</li>
+                    <li>Didattica - 509 visual.</li>
+                    <!-- Da usare: ↑ e ↓ -->
                 </ol>
-                <p id="cons">CONSIDERAZIONI: Mi ha stupito il fatto che la pagina nascosta 
-                    <a id="xxxx" onclick="alert('Volevi che ti portassi alla pagina nascosta'); document.getElementById('xxxx').innerText='/pannello'" style="text-decoration: underline;">pannello</a>
-                 sia così visitata.</p>
+                <p id="cons">CONSIDERAZIONI: La cosa che mi ha molto stupito in questa settimana è che 
+                    le pagine più viste non sono minimamente cambiate rispetto all'ultima settimana (certo, i numeri sono cresciuti),
+                     ma non vi è stato un cambiamento d'ordine. Un'altra cosa che mi ha stupito (in senso negativo, però), è 
+                     che non vi sembra interessare la pagina C++: essa è infatti cresciuta di sole 9 visualizzazioni.
                 <p><sub>I numeri nella parentesi rappresentano la posizione di una settimana fa</sub></p>
                 <p><sub><small><sub>*La pagina BETA è un esempio nella pagina TPSIT. Viene caricata nel iframe ogni volta che la pagina TPSIT viene aperta.</sub></small></sub></p>
             </article>
@@ -136,12 +141,13 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
 
             <article id="novModif">
             <h3 id="tit3">Novità</h3>
-            <p class="dat"><b>6 marzo 2022:</b></p>
-            <p>Effettuati svariati miglioramenti e aggiornamenti nelle varie pagine.</p>
-            <p class="dat"><b>6 marzo 2022:</b></p>
-            <p>Modificata la grafica del sito.</p>
-            <p class="dat"><b>6 marzo 2022:</b></p>
-            <p>Corretti alcuni errori e frasi cacofoniche nella pagina <a href="whoami/">Contatti</a>.</p>
+            <p class="dat"><b>9 marzo 2022:</b></p>
+            <p>Spostata l'icona del terminale nella vista desktop, modificate alcune icone.</p>
+            <p class="dat"><b>9 marzo 2022:</b></p>
+            <p>Cambiato il colore della selezione nella NAV.</p>
+            <p class="dat"><b>9 marzo 2022:</b></p>
+            <p>Aggiornato il report settimanale</p>
+
             <p><b><a style="color: red;" href="https://www.instagram.com/nico.mon3y.3108/">Seguimi su Instagram per più aggiornamenti e per partecipare attivamente ai miei sondaggi.</a></b></p>
             <h3 id="agg" title="Pagina della trasparenza"><a id="colagg" onmouseenter="document.getElementById('colagg').innerHTML='Pagina della Trasparenza'" onmouseleave="document.getElementById('colagg').innerHTML='•••'" href="aggiornamenti/">•••</a></h3>
            </article>
@@ -150,14 +156,12 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
         <section id="vhs">
             <article>
                 <h4 id="whoami">Potrebbe interessarti...</h4>
+                <p id="ioo"><a href="didattica/tpsit/"><b>Nuovi tutorial su TPSIT</b></a></p>
                 <h3 id="xte">Tanti nuovi trucchi per te</h3>
-                <p id="ioo"><a href="trucchi/">Come vedere la cronologia degli appunti, come aprire velocemente 2 finestre dalle barra delle applicazioni con un solo click e molto altro</a></p>
-                <h3 id="xte">Come creare un sito web: trucchi e consigli aggiornati</h3>
                 <p id="ioo"><a href="didattica/tpsit/">Nella pagina TPSIT, progetti di siti web, linguaggi per farne uno, consigli, interazione HTML - JS e altro ancora.</a></p>
                 <h3 id="xte">Testa o croce / casuale (anche per interrogazione)</h3>
                 <p id="ioo"><a href="interattivo/">Lancia la moneta, estrai un numero casuale tra l'intervallo scelto da te e altro</a></p>
                 <h3 id="xte">Scherzi innocui da fare agli amici</h3>
-                <p id="ioo"><a href="trucchi/#prank">Ecco gli scherzi innocui da fare ai propri amici.</a></p>
             </article>
             </section>
 
@@ -172,20 +176,21 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
         </section>
         
         
-        
+        <div class="icns2">
+            <a title="Instagram" href="https://www.instagram.com/nico.mon3y.3108/"><img src="images/instag.png" class="icn" alt="Instagram"></a>
+            <a title="Contatti" href="whoami/"><img src="images/contatta.png" class="icn" alt="Contatti"></a>
+            <a title="Sostienimi: donami" href="https://paypal.me/gazzettaleviponti"><img src="images/paypal.png" class="icn" alt="Donami"></a>
+            <a title="Vecchio sito" href="https://site.portalenicola.it"><img src="images/old.png" class="icn" alt="OldSite"></a>
+            <img src="images/term.png" id="easter" class="icn" onclick="cmd()" title="terminal">
+        </div>
        
         <footer style="clear:both;" id="foot">
-            <div class="icns2">
-                <a title="Instagram" href="https://www.instagram.com/nico.mon3y.3108/"><img src="images/instag.png" class="icn" alt="Instagram"></a>
-                <a title="Contatti" href="whoami/"><img src="images/contatta.png" class="icn" alt="Contatti"></a>
-                <a title="Sostienimi: donami" href="https://paypal.me/gazzettaleviponti"><img src="images/paypal.png" class="icn" alt="Donami"></a>
-            </div>
+            
             <h3>Portale Nicola</h3>
             <p style="float:left; width:80%">Il Portale di Nicola, dal 17 maggio 2021 porta sfondi, easter egg e altro.
                 N.B. Questo è un sito passatempo
            </p>
            <p id="logged"></p>
-        <img src="images/term.png" id="easter" onclick="cmd()" title="terminal" style="float: right;">
         </footer>
         </section>
     </body>
