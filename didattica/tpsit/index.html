@@ -4,7 +4,7 @@
         <title>Tpsit - Il Portale di Nicola</title>
         <meta charset="utf-8">
         <meta name="author" content="Nicola Bernardi">
-        <meta name="description" content="TPSIT: come fare un sito web, appunti e molto altro">
+        <meta name="description" content="TPSIT: come fare un sito web, consigli per un sito di qualità e altro ancora">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../../favicon.png">
         <link rel="stylesheet" href="../../css/core.css">
@@ -13,7 +13,6 @@
         <script src="../../js/altro.js"></script>
         <script src="../../js/tpsit.js"></script>
         <meta name="keywords" content="il portale di nicola, portale nicola, portalenicola, c++, cpp, nicolabernardi, didattica, tpsit, appunti, crearesitoweb, creare un sito web">
-        
         <script data-ad-client="ca-pub-9843209517750049" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -56,6 +55,7 @@
                     <li><a href="#sWc">Composizione di un sito web</a></li>
                     <li><a href="#goodSw">Creare un buon sito web</a></li>
                     <li><a href="#intJShtml">Interazione JS - HTML</a></li>
+                    <li><a href="#let">Le variabili JS</a></li>
                 </ul>
             </article>
         </section>
@@ -105,18 +105,17 @@
             </div>
             <div style="display:inline;">
                 <iframe src="../../doc/imc_js.txt" style="background-color: white;"></iframe>
-                <p>In questo caso non ho messo il file HTML, ma quello JS che fa funzionare il tutto.</p>
+                
             </div>
-            <h4>Ti piacciono questi progetti?</h4>
         </section>
         <section class="tpProj">
-            <h3>I quadrilateri - Wiki</h3>
+            <h3>I quadrilateri</h3>
             <div id="quA">
                 <button onclick="qA()">Vedi il risultato</button>
                 <iframe></iframe>
             </div>
             <div style="display:inline;">
-                <iframe src="../../doc/quCode.txt" style="background-color: white;"></iframe>
+                <iframe src="../../doc/qAcode.txt" style="background-color: white;"></iframe>
             </div>
         </section>
         <p style="visibility: hidden;">TPSIT</p>
@@ -255,7 +254,101 @@
                                 
             </article>
         </section>
+        <section>
+            <article>
+                <h3 class="titPar" id="let">Le variabili JavaScript</h3>
+                <p>Tutti i linguaggi di programmazione vengono aggiornati e così si evolvono. Ciò è ovviamente successo anche al JS.
+                     Oggi parleremo delle variabili e delle loro differenze.
+                </p>
+                <p><em>Prima di iniziare premettiamo che in informatica esistono due macro-categorie dei linguaggi in base alle variabili.
+                       Alcuni linguaggi, come il C o il C++, hanno le variabili di un solo tipo: <b>int</b>eri, <b>bool</b>eani, <b>string</b>he, ecc.
+                       Quando dichiari una variabile in C++ devi dirgli che tipo di variabile è: se crei una variabile <code>int</code>, non potrai che dargli valori interi,
+                        così se dichiari una variabile booleana, potrai solo assegnargli un valore vero o falso.
+                        Nel JavaScript, come in altri linguaggi, le variabili hanno il tipo che vogliamo noi: (possiamo dichiararla con valore 1 e poi assegnargli 'ciao').
+                </em></p>
+                <p>Come dicevo all'inizio, il linguaggio JS si è evoluto nel tempo: inizialmente le variabili si dichiaravano con l'attributo <code>var</code>.
+                Successivamente si introdusse l'attributo <code>let</code> per le variabili e il <code>const</code> per le costanti, anche se ovviamente il var è ancora funzionante e 
+                 presenta alcune differenze rispetto al <code>let</code>, come oggi vedremo.</p>
+                 <p><pre class="jsCode">
+        function areaTriangolo(){
+            let tipo='ret', b=10, h=5
+            console.log(a)
+            if(tipo=='ret'){
+                let a=b*h/2
+                console.log(a)
+            }
+            console.log(a)
+        }
+                 </pre></p>
+                 <p><pre class="cons">
+                     CONSOLE:
+    > Uncaught ReferenceError: a is not defined
+    > 7.5
+    > Uncaught ReferenceError: a is not defined
+                 </pre></p>
+                 <p style="clear: both;">Come vediamo, la variabile <code>let</code> è definita solo all'interno dell'if, non esiste prima e dopo.
+                Ora però facciamo la stessa cosa con <code>var</code>.</p>
+                <p><pre class="jsCode">
+        function areaTriangolo(){
+            var tipo='ret', b=10, h=5
+            console.log(a)
+            if(tipo=='ret'){
+                var a=b*h/2
+                console.log(a)
+            }
+            console.log(a)
+        }
+                </pre></p>
+                <p><pre class="cons">
+                    CONSOLE:
 
+   > undefined
+   > 7.5
+   > 7.5
+                </pre></p>
+                <p style="clear: both;">Incredibilmente, la variabile definita con <code>var</code> è disponibile anche dopo l'if, e 
+                    sopratutto prima della sua dichiarazione con valore <code>undefined</code>.</p>
+
+                <p><pre class="jsCode">
+                    function addizione(){
+                        let a=5, b=3
+                        console.log(a)
+                        let x=x/2
+                        console.log(x)
+                        console.log(a)
+                    }
+                             </pre></p>
+                             <p><pre class="cons">
+                    CONSOLE:
+
+> 5
+> Uncaught ReferenceError: Cannot access 'x' before initialization
+                             </pre></p>
+                <p style="clear: both;">L'avete notato? Una volta che la variabile definita con <code>let</code> ha trovato un errore
+                 non ha eseguito i successivi passaggi. Proviamo ora con <code>var</code>:</p>
+
+
+                 <p><pre class="jsCode">
+    function addizione(){
+        let a=5, b=3
+        console.log(a)
+        var x=x/2
+        console.log(x)
+        console.log(a)
+    }
+                             </pre></p>
+                             <p><pre class="cons">
+                    CONSOLE:
+
+> 5
+> NaN
+> 5
+                             </pre></p>
+                    <p style="clear: both;">Come era prevedibile, con la variabile dichiarata con <code>var</code>, 
+                    lo script non si è fermato, ma è andato avanti.
+                </p>
+                <p>In conclusione, vi consiglio di usare le variabili <code>let</code>, in modo da potervi accorgere tempestivamente
+                di un errore nel codice.</p>
         <p style="visibility: hidden;">Altro paragrafo fatto per staccare</p>
         
        
