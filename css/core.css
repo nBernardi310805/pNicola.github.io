@@ -208,9 +208,7 @@ button:hover {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    #easter {
-        width:80px;
-    }
+    
     #eroi {
         width: 100%;
         border-radius: 15px; border:solid; border-color:fuchsia;
@@ -239,6 +237,14 @@ button:hover {
     }
     header {
         text-align: center;
+
+    }
+    header a img {
+        margin-bottom: -40px;
+        margin-top: 10px;
+    }
+    nav {
+        margin-top: -30px;
     }
 }
 
@@ -280,12 +286,7 @@ button:hover {
         float:right;
         margin-bottom: 50px;
     }
-    #easter {
-        width:5%;
-        float: right;
-        overflow: auto;
-        padding-right: 10px;
-    }
+    
     #eroi {
         width: 100%;
         border-radius: 15px; border:solid; border-color:fuchsia;
