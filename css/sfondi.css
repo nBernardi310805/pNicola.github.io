@@ -46,7 +46,7 @@
     header div a:hover {
         border-radius: 30px;
         border:solid;
-        border-color:royalblue;
+        border-color:firebrick;
         text-decoration: none;
         border-width: 2px;
     }
@@ -91,7 +91,7 @@
     header div a:hover {
         border-radius: 30px;
         border:solid;
-        border-color:royalblue;
+        border-color:firebrick;
         text-decoration: none;
         border-width: 2px;
     }
