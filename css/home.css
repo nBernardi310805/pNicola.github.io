@@ -13,12 +13,11 @@
         display: none;
     }
     .icns2 {
-        text-align: right;
+        text-align: center;
         padding-bottom: 10px;
     }
     .icn {
         width: 15%;
-        float:right;
     }
     #navvv {
         border-radius: 30px; border: solid;
@@ -46,6 +45,7 @@
     }
 }
 #cons {
+    font-size:12px;
     font-family: fantasy;
-    font-style: italic;
+    padding: 5px;
 }
