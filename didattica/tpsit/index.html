@@ -303,12 +303,12 @@
                 <p><pre class="cons">
                     CONSOLE:
 
-   > undefined
-   > 7.5
-   > 7.5
+     > undefined
+     > 7.5
+     > 7.5
                 </pre></p>
                 <p style="clear: both;">Incredibilmente, la variabile definita con <code>var</code> è disponibile anche dopo l'if, e 
-                    sopratutto prima della sua dichiarazione con valore <code>undefined</code>.</p>
+                    soprattutto prima della sua dichiarazione con valore <code>undefined</code>.</p>
 
                 <p><pre class="jsCode">
                     function addizione(){
@@ -322,8 +322,8 @@
                              <p><pre class="cons">
                     CONSOLE:
 
-> 5
-> Uncaught ReferenceError: Cannot access 'x' before initialization
+    > 5
+    > Uncaught ReferenceError: Cannot access 'x' before initialization
                              </pre></p>
                 <p style="clear: both;">L'avete notato? Una volta che la variabile definita con <code>let</code> ha trovato un errore
                  non ha eseguito i successivi passaggi. Proviamo ora con <code>var</code>:</p>
@@ -341,9 +341,9 @@
                              <p><pre class="cons">
                     CONSOLE:
 
-> 5
-> NaN
-> 5
+    > 5
+    > NaN
+    > 5
                              </pre></p>
                     <p style="clear: both;">Come era prevedibile, con la variabile dichiarata con <code>var</code>, 
                     lo script non si è fermato, ma è andato avanti.
