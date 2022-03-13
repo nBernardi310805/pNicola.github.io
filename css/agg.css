@@ -14,7 +14,8 @@
         width:100%;
         margin-right: 20px;
         float: left;
-        
+        height: 1400px;
+        overflow: auto;
     }
     #nov4 {
         border-radius: 15px; border:solid; border-color: firebrick;
@@ -22,52 +23,24 @@
         width:100%;
         margin-right: 20px;
         float:left
+    }
+    .oldChange {
+        height: 1000px;
+        overflow: auto;
     }
 }
-/* @media only screen and (max-width:1024px){ /*Tablet
-    #cop00 {
-        display: none;
-    }
-    #nov2 {
-        border-radius: 15px; border:solid; border-color: white;
-        float:left;
-        margin-bottom: 50px;
-        width:100%;
-    }
-    #nov3 {
-        border-radius: 15px; border:solid; border-color: magenta;
-        margin-bottom: 50px;
-        width:100%;
-        margin-right: 20px;
-        float: left;
-        
-    }
-    #nov4 {
-        border-radius: 15px; border:solid; border-color: firebrick;
-        margin-bottom: 50px;
-        width:100%;
-        margin-right: 20px;
-        float:left
-    }
-} */
-@media only screen and (min-width:700px){
-    #cop00 {
-        float:right;
-        width: 29%;
-        margin-bottom: 30px;
-    }
+@media only screen and (max-width:900px){
     #nov2 {
         border-radius: 15px; border:solid; border-color: white;
         margin-bottom: 50px;
-        width:48%;
+        width:45%;
         margin-left: 20px;
         float: right;
-
     }
     #nov3 {
         border-radius: 15px; border:solid; border-color: magenta;
         margin-bottom: 50px;
-        width:48%;
+        width:45%;
         margin-right: 20px;
         float: left;
         
@@ -75,9 +48,41 @@
     #nov4 {
         border-radius: 15px; border:solid; border-color: firebrick;
         margin-bottom: 50px;
-        width:48%;
+        width:100%;
         margin-right: 20px;
-        float:left
+        clear: both;
+    }
+    .oldChange {
+        height: 2400px;
+        overflow: auto;
+    }
+}
+@media only screen and (min-width:900px){
+    #nov2 {
+        border-radius: 15px; border:solid; border-color: white;
+        margin-bottom: 50px;
+        width:47%;
+        margin-left: 20px;
+        float: right;
+    }
+    #nov3 {
+        border-radius: 15px; border:solid; border-color: magenta;
+        margin-bottom: 50px;
+        width:47%;
+        margin-right: 20px;
+        float: left;
+        
+    }
+    #nov4 {
+        border-radius: 15px; border:solid; border-color: firebrick;
+        margin-bottom: 50px;
+        width:47%;
+        margin-right: 20px;
+        float:left;
+    }
+    .oldChange {
+        height: 2400px;
+        overflow: auto;
     }
 }
 footer {
