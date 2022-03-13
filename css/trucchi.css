@@ -83,6 +83,9 @@
     .appum {
         width: 70%;
     }
+    .articolo {
+        overflow: auto;
+    }
 }
 footer {
     clear: both;
