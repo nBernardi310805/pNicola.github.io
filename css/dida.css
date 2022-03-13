@@ -70,7 +70,6 @@
     .cons {
         border-radius: 15px; border: solid; border-color: orangered;
         width: 100%;
-        padding: 10px;
         overflow: auto;
     
     }
