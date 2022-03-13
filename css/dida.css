@@ -67,6 +67,18 @@
         height: 30vh;
         
     }
+    .cons {
+        border-radius: 15px; border: solid; border-color: orangered;
+        width: 100%;
+        padding: 10px;
+        overflow: auto;
+    
+    }
+    .jsCode {
+        border-radius: 15px; border: solid; border-color: red;
+        width: 100%;
+        overflow: auto;
+    }
     
 }
 #ind {
@@ -79,19 +91,7 @@
     border-radius: 15px; border: solid; border-color:crimson; max-width:auto; padding: 10px;
     overflow: auto;
 }
-.cons {
-    border-radius: 15px; border: solid; border-color: orangered;
-    width: 32%;
-    float: right;
-    overflow: auto;
 
-}
-.jsCode {
-    border-radius: 15px; border: solid; border-color: red;
-    width: 65%;
-    float: left;
-    overflow: auto;
-}
 
 @media only screen and (min-width:700px){
     #tip {
@@ -167,8 +167,41 @@
         width: 48%;
         height: 400px;
     }
+    .cons {
+        border-radius: 15px; border: solid; border-color: orangered;
+        width: 32%;
+        float: right;
+        overflow: auto;
+    
+    }
+    .jsCode {
+        border-radius: 15px; border: solid; border-color: red;
+        width: 65%;
+        float: left;
+        overflow: auto;
+    }
 }
 .riq {
     border-radius: 15px; border: solid; border-color: red;
     margin-bottom: 10px;
 }
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    width: 230px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
