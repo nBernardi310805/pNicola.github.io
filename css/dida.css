@@ -79,6 +79,19 @@
     border-radius: 15px; border: solid; border-color:crimson; max-width:auto; padding: 10px;
     overflow: auto;
 }
+.cons {
+    border-radius: 15px; border: solid; border-color: orangered;
+    width: 32%;
+    float: right;
+    overflow: auto;
+
+}
+.jsCode {
+    border-radius: 15px; border: solid; border-color: red;
+    width: 65%;
+    float: left;
+    overflow: auto;
+}
 
 @media only screen and (min-width:700px){
     #tip {
