@@ -107,6 +107,9 @@ function imc() {
 function qA() {
     document.getElementById('quA').innerHTML='<iframe src="https://tpsit.tk/angoli/" style="background-color:white"></iframe>'
 }
+function aRand() {
+    document.getElementById('arRand').innerHTML='<iframe src="https://tpsit.tk/BERNARDI_random/"></iframe>'
+}
 function tpsit() {
     document.getElementById('what').innerText='TPSIT è la materia che insegna a fare i siti web'
 }
