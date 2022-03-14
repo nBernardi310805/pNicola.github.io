@@ -15,3 +15,9 @@ input[type=button] {
 iframe {
     border-radius: 15px; border:solid; border-color:red;
 }
+.fakeIframe {
+    border-radius: 15px; border:solid; border-color:red;
+    width: 300px;
+    height: 150px;
+    overflow: auto;
+}
