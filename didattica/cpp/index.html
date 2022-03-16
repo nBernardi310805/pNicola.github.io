@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="../../css/core.css">
     <link rel="stylesheet" href="../../css/cpp.css">
     <script src="../../js/altro.js"></script>
-    <meta name="keywords"
-        content="il portale di nicola, portale nicola, portalenicola, c++, cpp, programmi c++ gratis, compiti gia fatti c++, programmi gia fatti c++">
-<script src="https://cdn.websitepolicies.io/lib/cookieconsent/1.0.3/cookieconsent.min.js" defer></script><script>window.addEventListener("load",function(){window.wpcc.init({"border":"thin","corners":"large","colors":{"popup":{"background":"#491b1b","text":"#ffffff","border":"#e6b3b3"},"button":{"background":"#e6b3b3","text":"#000000"}},"position":"bottom","transparency":"5","content":{"href":"https://www.websitepolicies.com/policies/view/izdf3wue","message":"Questo sito utilizza i cookies per offrire una migliore esperienza, oltre a contenuti mirati ","button":"Perfetto","link":"Leggi di più"}})});</script>
+    <meta name="keywords" content="il portale di nicola, portale nicola, portalenicola, c++, cpp, programmi c++ gratis, compiti gia fatti c++, programmi gia fatti c++">
+
     <script data-ad-client="ca-pub-9843209517750049" async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
@@ -26,7 +25,7 @@
 
         gtag('config', 'G-JQNQS81SP0');
     </script>
-
+<script src="https://cdn.websitepolicies.io/lib/cookieconsent/1.0.3/cookieconsent.min.js" defer></script><script>window.addEventListener("load",function(){window.wpcc.init({"border":"thin","corners":"large","colors":{"popup":{"background":"#491b1b","text":"#ffffff","border":"#e6b3b3"},"button":{"background":"#e6b3b3","text":"#000000"}},"position":"bottom","transparency":"5","content":{"href":"https://www.websitepolicies.com/policies/view/izdf3wue","message":"Questo sito utilizza i cookies per offrire una migliore esperienza, oltre a contenuti mirati ","button":"Perfetto","link":"Leggi di più"}})});</script>
 
 </head>
 
@@ -81,6 +80,7 @@
             <li><a href="#difAr">Differenza valori array</a></li>
             <li><a href="#pVer1">Esercitazione verifica</a></li>
             <li><a href="#matr">Le matrici</a></li>
+            <li><a href="#struc">Le Strutture</a></li>
         </ul>
         </p>
     </div>
@@ -746,7 +746,7 @@ void giocoMat2(){
         <pre>
 <code>
     //Programma per shiftare l'array
-#include <iostream>
+#include &lt;iostream>
 #define N 5
 using namespace std;
 void shiftArray(int[], int, int, int);
@@ -754,15 +754,15 @@ void stampaArray(int[], int);
 int main()
 {
     int arr[N], verso, add;
-    cout<<"Shift array \n \n";
-    cout<<"L'array ha "<<N<<" posizioni. \n";
-    cout<<"Per scambiare l'array verso sinistra digita 1, verso destra digita 2: (default=destra) --> ";
+    cout&lt;&lt;"Shift array \n \n";
+    cout&lt;&lt;"L'array ha "&lt;&lt;N&lt;&lt;" posizioni. \n";
+    cout&lt;&lt;"Per scambiare l'array verso sinistra digita 1, verso destra digita 2: (default=destra) --> ";
     cin>>verso;
-    cout<<"Di quante posizioni vuoi shiftare?: --> ";
+    cout&lt;&lt;"Di quante posizioni vuoi shiftare?: --> ";
     cin>>add;
-    for(int i=0; i<N; i++)
+    for(int i=0; i&lt;N; i++)
     {
-        cout<<"Assegna un valore alla posizione "<<i<<" dell'array: --> ";
+        cout&lt;&lt;"Assegna un valore alla posizione "&lt;&lt;i&lt;&lt;" dell'array: --> ";
         cin>>arr[i];
     }
     shiftArray(arr, N, verso, add);
@@ -774,11 +774,11 @@ void shiftArray(int arr[], int dim, int verso, int add)
     int salva;
     if(verso==1)
     {
-        for(int c=1; c<=add; c++){
+        for(int c=1; c&lt;=add; c++){
             salva = arr[0];
-            for(int i=0; i<dim; i++)
+            for(int i=0; i&lt;dim; i++)
             {
-                if(i<dim-1){
+                if(i&lt;dim-1){
                     arr[i]=arr[i+1];
                 }
             }
@@ -788,7 +788,7 @@ void shiftArray(int arr[], int dim, int verso, int add)
     }
     else
     {
-        for(int c=1; c<=add; c++){
+        for(int c=1; c&lt;=add; c++){
             salva = arr[dim-1];
             for(int i=dim-1; i>=0; i--)
             {
@@ -805,12 +805,12 @@ void shiftArray(int arr[], int dim, int verso, int add)
 
 void stampaArray(int arr[], int dim)
 {
-    for(int j=0; j<dim; j++)
+    for(int j=0; j&lt;dim; j++)
     {
-        cout<<"La posizione "<<j<<" dell'array ora vale: "<<arr[j]<<endl;
+        cout&lt;&lt;"La posizione "&lt;&lt;j&lt;&lt;" dell'array ora vale: "&lt;&lt;arr[j]&lt;&lt;endl;
     }
 }
-        >
+        
         </code>
     </pre>
         <a href="../../doc/shiftArray.cpp" download><img src="../../images/down.icns" alt="Download" class="dowb"></a>
@@ -825,9 +825,9 @@ void stampaArray(int arr[], int dim)
     <div class="cppcode">
         <pre>
                     <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
-                    //Programma per ordinare nomi in ordine alfabetico
+//Programma per ordinare nomi in ordine alfabetico
 
-#include <iostream>
+#include &lt;iostream>
 #define N 50
 
 using namespace std;
@@ -839,9 +839,9 @@ void bubbleSort(string[], int);
 int main()
 {
     string arr[N], tmp;
-    for(int i=0; i<N; i++)
+    for(int i=0; i&lt;N; i++)
     {
-        cout<<"Scrivi un nome nella posizione "<<arr[i]<<" dell'array - (usa # per finire) \n";
+        cout&lt;&lt;"Scrivi un nome nella posizione "&lt;&lt;arr[i]&lt;&lt;" dell'array - (usa # per finire) \n";
         getline(cin, tmp);
         if(tmp=="#")
         {
@@ -873,9 +873,9 @@ void scambio(string& x, string& y)
 
 void exchangeSort(string arr[], int dim)
 {
-    for(int i=0; i< dim-1; i++)
+    for(int i=0; i&lt; dim-1; i++)
     {
-        for(int j=i+1; j < dim; j++)
+        for(int j=i+1; j &lt; dim; j++)
         {
             if (arr[j].length()==0)
             {
@@ -889,8 +889,8 @@ void exchangeSort(string arr[], int dim)
             }
         }
     }
-    cout<<"Ordinamento con funzione Exchange-Sort \n";
-    for(int k=0; k<dim; k++)
+    cout&lt;&lt;"Ordinamento con funzione Exchange-Sort \n";
+    for(int k=0; k&lt;dim; k++)
     {
 
         if(arr[k].length()
@@ -898,7 +898,7 @@ void exchangeSort(string arr[], int dim)
         {
             break;
         }
-        cout<<"Il nome in posizione "<<k<<" e' "<<arr[k]<<endl;
+        cout&lt;&lt;"Il nome in posizione "&lt;&lt;k&lt;&lt;" e' "&lt;&lt;arr[k]&lt;&lt;endl;
     }
 
 }
@@ -909,7 +909,7 @@ void bubbleSort(string arr[], int dim)
     do
     {
         s=false;
-        for(int i=0; i<dim-1; i++)
+        for(int i=0; i&lt;dim-1; i++)
         {
             if(arr[i]>arr[i+1])
             {
@@ -920,18 +920,16 @@ void bubbleSort(string arr[], int dim)
     }
     while(s);
 
-    cout<<"Ordinamento con funzione Bubble-Sort \n";
-    for(int j=0; j<dim; j++)
+    cout&lt;&lt;"Ordinamento con funzione Bubble-Sort \n";
+    for(int j=0; j&lt;dim; j++)
     {
         if(arr[j]=="~")
         {
             break;
         }
-        cout<<"Il nome in posizione "<<j<<" e' "<<arr[j]<<endl;
+        cout&lt;&lt;"Il nome in posizione "&lt;&lt;j&lt;&lt;" e' "&lt;&lt;arr[j]&lt;&lt;endl;
     }
 }
-
->
                     </code>
                     </pre>
         <a href="../../doc/arrStr.cpp" download><img src="../../images/down.icns" alt="Download" class="dowb"></a>
@@ -946,7 +944,7 @@ void bubbleSort(string arr[], int dim)
     <div class="cppcode">
         <pre>
                     <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
-#include <iostream>
+#include &lt;iostream>
 #define N 7
 //programma per orfinare l'array
 using namespace std;
@@ -954,28 +952,27 @@ int diffArray(int []);
 int main()
 {
     int arr[N];
-    for(int i=0; i< N; i++){
-        cout <<"Valorizza la posizione "<< i << " dell'array: --> ";
+    for(int i=0; i&lt; N; i++){
+        cout &lt;&lt;"Valorizza la posizione "&lt;&lt; i &lt;&lt; " dell'array: --> ";
         cin>>arr[i];
     }
-    cout<< "La differenza tra il valore massimo e quello minimo inserito e' "<< diffArray (arr) << endl;
+    cout&lt;&lt; "La differenza tra il valore massimo e quello minimo inserito e' "&lt;&lt; diffArray (arr) &lt;&lt; endl;
     return 0 ;
 }
 
 
 int diffArray ( int arr[] ){
     int mx=arr[0], mn=arr[0];
-    for(int i=1; i< N; i++){
+    for(int i=1; i&lt; N; i++){
         if(arr[i]>mx){
             mx=arr[i];
         }
-        if (arr[i] < mn ){
+        if (arr[i] &lt; mn ){
             mn=arr[i];
         }
     }
     return (mx-mn);
 }
-
                     </code>
                     </pre>
 
@@ -993,49 +990,49 @@ int diffArray ( int arr[] ){
         <div class="cppcode">
             <pre>
                         <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
-                            //Prova verifica
-                            #include <iostream>
-                            #include <ctime>
-                            #define N 10
-                            using namespace std;
-                            void valorizzaArray(char[]);
-                            void cercaNellArray(char [], int&, int&, int&);
+//Prova verifica
+#include &lt;iostream>
+#include &lt;ctime>
+#define N 10
+using namespace std;
+void valorizzaArray(char[]);
+void cercaNellArray(char [], int&, int&, int&);
+
+int main() {
+    char arr[N];
+    int vocali=0, consonanti=0, speciali=0;
+    valorizzaArray(arr);
+    cercaNellArray(arr, vocali, consonanti, speciali);
+    cout&lt;&lt;"Sono state casualmente generate "&lt;&lt;vocali&lt;&lt;" vocali. \n";
+    cout&lt;&lt;"Sono state casualmente generate "&lt;&lt;consonanti&lt;&lt;" consonanti. \n";
+    cout&lt;&lt;"Sono stati casualmente generati "&lt;&lt;speciali&lt;&lt;" caratteri speciali. \n";
+    return 0;
+}
+//Funzione per valorizzare l'array
+void valorizzaArray(char arr[]){
+    srand(time(NULL));
+    for(int i=0; i&lt;N; i++){
+        arr[i]=rand()%106+65;
+        cout&lt;&lt;"pos "&lt;&lt;i&lt;&lt;" : "&lt;&lt;arr[i]&lt;&lt;endl;
+    }
+}
+//Funzione per cercare nell'array
+void cercaNellArray(char arr[], int& vocali, int& consonanti, int& speciali){
+    for(int i=0; i&lt;N; i++){
+        if((arr[i]>='a'&&arr[i]&lt;='z') || (arr[i]>='A'&&arr[i]&lt;='Z')){
+            
+            if(arr[i]=='a'||arr[i]=='e'||arr[i]=='i'||arr[i]=='o'||arr[i]=='u'||arr[i]=='A'||arr[i]=='E'||arr[i]=='I'||arr[i]=='O'||arr[i]=='U'){
+                vocali++;
+            }else {
+                consonanti++;
+            }
+            
+        }else {
+            speciali++;
+        }
+    }
+}
                             
-                            int main() {
-                                char arr[N];
-                                int vocali=0, consonanti=0, speciali=0;
-                                valorizzaArray(arr);
-                                cercaNellArray(arr, vocali, consonanti, speciali);
-                                cout<<"Sono state casualmente generate "<<vocali<<" vocali. \n";
-                                cout<<"Sono state casualmente generate "<<consonanti<<" consonanti. \n";
-                                cout<<"Sono stati casualmente generati "<<speciali<<" caratteri speciali. \n";
-                                return 0;
-                            }
-                            //Funzione per valorizzare l'array
-                            void valorizzaArray(char arr[]){
-                                srand(time(NULL));
-                                for(int i=0; i<N; i++){
-                                    arr[i]= rand ()%106+65;
-                                    cout<<"pos "<<i<<" : "<<arr[i]<<endl;
-                                }
-                            }
-                            //Funzione per cercare nell'array
-                            void cercaNellArray(char arr[], int& vocali, int& consonanti, int& speciali){
-                                for(int i=0; i<N; i++){
-                                    if((arr[i]>='a'&&arr[i]<='z') || (arr[i]>='A'&&arr[i]<='Z')){
-                                        
-                                        if(arr[i]=='a'||arr[i]=='e'||arr[i]=='i'||arr[i]=='o'||arr[i]=='u'||arr[i]=='A'||arr[i]=='E'||arr[i]=='I'||arr[i]=='O'||arr[i]=='U'){
-                                            vocali++;
-                                        }else {
-                                            consonanti++;
-                                        }
-                                        
-                                    }else {
-                                        speciali++;
-                                    }
-                                }
-                            }
-                           
                             
                                                                 
                         </code>
@@ -1055,13 +1052,17 @@ int diffArray ( int arr[] ){
                             <pre>
                                         <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
 //Le matrici o array multidimensionali
-#include < iostream >
+#include &lt;iostream>
+#include &lt;ctime>
 #define R 10
 #define C 4
 using namespace std;
 
 void valorizzaArray(int [][C], int, int, int);
 void stampaArray(int [][C], int);
+int somma(int [][C], int);
+bool isMagic(int [][C]);
+bool isInside(int [][C], int, int);
 int main() {
     int arr[R][C];
     
@@ -1069,36 +1070,149 @@ int main() {
     //Chiamata alle funzioni
     valorizzaArray(arr, R, 0, 9);
     stampaArray(arr, R);
+    cout&lt;&lt;"La somma vale "&lt;&lt;somma(arr, R);
+    if(!isMagic(arr)){
+        cout&lt;&lt;"Non ";
+    }
+    cout&lt;&lt;"È magico"&lt;&lt;endl;
     return 0;
 }
 
 void valorizzaArray(int v[][C], int r, int valMin, int valMax){
-    for(int i=0; i< R; i++){
-        for(int j=0; j < C; j++){
+    for(int i=0; i&lt;R; i++){
+        for(int j=0; j&lt;C; j++){
             v[i][j]=rand()%(valMin-valMax)+valMin;
         }
     }
 }
 
 void stampaArray(int v[][C], int r){
-    cout<< "     a   b   c   d"< < endl;
-    for(int i=0; i < R; i++){
-        cout<< i<<")   ";
-        for(int j=0; j< C; j++){
-            cout<< v[i][j]<<"   ";
+    cout&lt;&lt;"     a   b   c   d"&lt;&lt;endl;
+    for(int i=0; i&lt;R; i++){
+        cout&lt;&lt;i&lt;&lt;")   ";
+        for(int j=0; j&lt;C; j++){
+            cout&lt;&lt;v[i][j]&lt;&lt;"   ";
         }
-        cout < < "\n" ;
+        cout&lt;&lt;"\n";
     }
 }
+int somma(int arr[][C], int r){
+    int somma=0;
+    for(int i=0; i&lt;r; i++){
+        for(int j=0; j&lt;C; j++){
+            somma+=arr[i][j];
+        }
+    }
+    return somma;
+}
+bool isMagic(int arr[][C]){
+    for(int elm=1; elm&lt;r**2; elm++){
         
+    }
+    return false;
+}
 
-
+bool isInside(int arr[][C], int r, int cerca){
+    for(int i=0; i&lt;r; i++){
+        for(int j=0; j&lt;C; j++){
+            if(arr[i][j]==cerca)
+                return true;
+        }
+    }
+    return false;
+}
                                         </code>
                                     </pre>
                                     <a href="../../doc/matrix.cpp" download><img src="../../images/down.icns" alt="Download" class="dowb"></a>
                                     <p class="downtxt" id="dw12" onmouseenter="down12()" onmouseleave="downE12()">Download</p>
                                     <p style="visibility: hidden;">---</p>
                                 </div>
+
+                                <p style="visibility: hidden;">Un programma fresco di giornata! Quanto tempo!</h3>
+                                    <h3 id="struc" class="c-">Le strutture (struct)</h3>
+                                    <p style="font-style: oblique;">
+                                        Queste struct servono a contenere i dettagli di un auto.
+                                    </p>
+                                    <div class="cppcode">
+                                        <pre>
+                                                <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
+//  Created by Nicola  Bernardi on 16/03/22.
+
+#include &lt;iostream>
+#define DIM 2
+using namespace std;
+
+//Struttura della data di nascita
+struct Data{
+    int giorno;
+    int mese;
+    int anno;
+};
+//Struttura del proprietario dell'auto
+struct Persona{
+    string nome;
+    string cognome;
+    Data ddn;
+};
+//Struttura auto
+struct Auto{
+    string marca;
+    int cilindrata;
+    string modello;
+    Persona acquirente;
+};
+
+void valorizzaArray(Auto[]);
+void stampaConcessionario(Auto[]);
+int main(){
+    Auto arr[DIM];
+    valorizzaArray(arr);
+    stampaConcessionario(arr);
+    
+    return 0;
+}
+//Valorizza campi
+void valorizzaArray(Auto arr[]){
+    for(int i=0; i&lt;DIM; i++){
+        cout&lt;&lt;"Inserire la marca: --> ";
+        getline(cin, arr[i].marca);
+        cout&lt;&lt;"Inserire la cilindrata: -->";
+        cin>>arr[i].cilindrata;
+        cout&lt;&lt;"Inserire il modello: -->";
+        getline(cin, arr[i].modello);
+        cout&lt;&lt;"Inserire il nome dell'acquirente: -->";
+        getline(cin, arr[i].acquirente.nome);
+        cout&lt;&lt;"Inserire il cognome dell'acquirente: -->";
+        getline(cin, arr[i].acquirente.cognome);
+        cout&lt;&lt;"Inserire il giorno di nascita dell'acquirente: -->";
+        cin>>arr[i].acquirente.ddn.giorno;
+        cout&lt;&lt;"Inserire il mese di nascita dell'acquirente: -->";
+        cin>>arr[i].acquirente.ddn.mese;
+        cout&lt;&lt;"Inserire l'anno di nascita dell'acquirente: -->";
+        cin>>arr[i].acquirente.ddn.anno;
+    }
+}
+//Stampa dati raccolti
+void stampaConcessionario(Auto arr[]){
+    for(int j=0; j&lt;DIM; j++){
+        cout&lt;&lt;"\n \n --- Auto --- \n \n";
+        cout&lt;&lt;"La marce è --> "&lt;&lt;arr[j].marca&lt;&lt;endl;
+        cout&lt;&lt;"La cilindrata è --> "&lt;&lt;arr[j].cilindrata&lt;&lt;endl;
+        cout&lt;&lt;"Il modello è --> "&lt;&lt;arr[j].modello&lt;&lt;endl;
+        cout&lt;&lt;"\n \n --- Proprietario --- \n \n";
+        cout&lt;&lt;"Il nome è --> "&lt;&lt;arr[j].acquirente.nome&lt;&lt;endl;
+        cout&lt;&lt;"Il cognome è --> "&lt;&lt;arr[j].acquirente.cognome&lt;&lt;endl;
+        cout&lt;&lt;"La data di nascita è --> "&lt;&lt;arr[j].acquirente.ddn.giorno&lt;&lt;"/"&lt;&lt;arr[j].acquirente.ddn.mese&lt;&lt;"/"&lt;&lt;arr[j].acquirente.ddn.anno&lt;&lt;endl;
+        
+    }
+}
+                                                    
+                                                    </code>
+                                                    </pre>
+         <a href="../../doc/structa.cpp" download><img src="../../images/down.icns" alt="Download" class="dowb"></a>
+        <p class="downtxt" id="dw13" onmouseenter="down13()" onmouseleave="downE13()">Download</p>
+        <p style="visibility: hidden;">Bla bla bla</p>
+    </div>
     <br />
     <br />
 
