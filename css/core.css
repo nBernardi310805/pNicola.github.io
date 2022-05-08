@@ -18,7 +18,8 @@ h1+nav {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #133250;
+    background-color: #133250; 
+    /*background-color: #052134; */
 }
 
 
@@ -185,7 +186,7 @@ button:hover {
         display: none;
     }
     #nov {
-        border-radius: 15px; border:solid; border-color: white;
+        border-radius: 30px; border:solid; border-color: white;
         width: 100%;
         float:none;
     }
@@ -264,7 +265,7 @@ button:hover {
         display: none;
     }
     #nov {
-        border-radius: 15px; border:solid; border-color: white;
+        border-radius: 30px 0px; border:solid; border-color: white;
         width: 48%;
         float:left;
         margin-bottom: 50px;
@@ -281,22 +282,24 @@ button:hover {
         text-align: right;
     }
     #vhs {
-        border-radius: 15px; border:solid; border-color: crimson;
+        margin: auto;
+        border-radius: 0px 30px; border:solid; border-color: crimson;
         width:48%;
         float:right;
         margin-bottom: 50px;
     }
     
     #eroi {
-        width: 100%;
+        width: 99%;
         border-radius: 15px; border:solid; border-color:fuchsia;
         margin-bottom: 20px;
     }
     #pA {
-        border-radius: 15px; border:solid; border-color: darkred;
+        border-radius: 0px 0px 25px 25px; border:solid; border-color: darkred;
         clear: both;
-        width:100%;
+        width:98%;
         margin-bottom: 50px;
+        padding: 10px;
     }
     .tipo p {
         border-radius: 5px; border:solid; border-color: white;
