@@ -1,6 +1,7 @@
 #bacheca {
-    border-radius: 15px; border:solid; border-color: gold;
+    border-radius: 25px 25px 0px 0px; border:solid; border-color: gold;
     margin-bottom: 10px;
+    padding: 5px;
 }
 #icone1 {
     text-align: center;
