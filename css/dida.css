@@ -24,7 +24,9 @@
         display: block;
         width: 100%;
         height: 200px;
-        
+    }
+    .fusc{
+        width: 50%; height: 500px;
     }
     h3 {
         font-size: 4vh;
@@ -154,6 +156,12 @@
     }
     #qq {
         display: none;
+    }
+    .fusc{
+        width: 49%; height: 500px;
+        display: inline;
+        float: inline-start;
+        margin-bottom: 20px;
     }
     .app {
         background-color: white;
