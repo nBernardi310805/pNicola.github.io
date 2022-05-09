@@ -78,7 +78,7 @@ function clicked(pos) {
             setTimeout(wipe, 1000)
         }
     document.getElementById('mv').innerText = nMos + 1
-    if(nMos<8)
+    if(nMos>8)
                 set>Timeout(wipe, 1000)
     fineTurno(turno)
 }
