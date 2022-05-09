@@ -9,6 +9,7 @@ console.log(puntiX)
 function wipe(pti) {
     moss.fill(0)
     win=false
+    nMos = 0
     for(let i=1; i<10; i++){
         document.getElementById(i).innerText = ''
     }
@@ -73,9 +74,12 @@ function clicked(pos) {
                 document.getElementById('puo').innerText = puntiO
                 alert(turno + ' vince!')
             }
+            
             setTimeout(wipe, 1000)
         }
     document.getElementById('mv').innerText = nMos + 1
+    if(nMos<8)
+                set>Timeout(wipe, 1000)
     fineTurno(turno)
 }
 
