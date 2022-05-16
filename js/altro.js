@@ -110,6 +110,9 @@ function qA() {
 function tris() {
     document.getElementById('tris').innerHTML='<iframe class="fusc" src="../../giochi/tris" style="background-color:white"></iframe>'
 }
+function genPas() {
+    document.getElementById('gP').innerHTML='<iframe class="fusc" src="https://tpsit.tk/generaPass/" style="background-color:white"></iframe>'
+}
 function tpsit() {
     document.getElementById('what').innerText='TPSIT è la materia che insegna a fare i siti web'
 }
