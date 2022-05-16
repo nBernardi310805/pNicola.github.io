@@ -110,6 +110,9 @@ function qA() {
 function tris() {
     document.getElementById('tris').innerHTML='<iframe class="fusc" src="../../giochi/tris" style="background-color:white"></iframe>'
 }
+function aRand() {
+    document.getElementById('arRand').innerHTML='<iframe src="https://tpsit.tk/BERNARDI_random/" style="background-color:white"></iframe>'
+}
 function genPas() {
     document.getElementById('gP').innerHTML='<iframe src="https://tpsit.tk/generaPass/" style="background-color:white"></iframe>'
 }
