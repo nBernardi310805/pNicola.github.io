@@ -54,7 +54,7 @@
                 <h3>Indice</h3>
                 <ul>
                     <li><a href="#dC">Progetti esempio</a></li>
-                    <li><a href="#son">NUOVO: Sondaggio</a></li>
+                    <li><a href="#son">Sondaggio (terminato)</a></li>
                     <li><a href="#sWc">Composizione di un sito web</a></li>
                     <li><a href="#goodSw">Creare un buon sito web</a></li>
                     <li><a href="#intJShtml">Interazione JS - HTML</a></li>
@@ -150,14 +150,14 @@
         <section>
             <h2 id="son">Sondaggio:</h2>
             <p>rispondi sinceramente:</p>
-            <iframe class="sond" src="../../beta/"></iframe>
             <iframe class="sond" src="../../"></iframe>
+            <iframe class="sond" src="../../beta"></iframe>
             <a href="../../beta/"><button>Clicca per vedere a schermo intero</button></a><br>
             <article>
-                <a href="mailto:mail@portalenicola.it?subject=Sondaggio:%20Colore%20pi%C3%B9%20Scuro">
+                <a onclick="alert('sondaggio terminato')">
                     <button>Meglio sfondo più scuro</button>
                 </a>
-                <a href="mailto:mail@portalenicola.it?subject=Sondaggio:%20Colore%20pi%C3%B9%20Chiaro">
+                <a onclick="alert('Sondaggio terminato. Non ti piace il colore più scuro? Per me la tua opinione è importante. Mandami una mail a mail@portalenicola.it ')">
                     <button>Meglio sfondo più chiaro (classico)</button>
                 </a>
             </article>
@@ -179,7 +179,7 @@
                 <p>L'HTML è un linguaggio descrittivo. Serve per creare il sito web nella sua struttura,
                     quindi titoli, testo, immagini
                 </p>
-                <iframe src="../../htmlOnly.html" id="htmlNot"></iframe>
+                <iframe src="../../htmlOnly.html" id="htmlNot" style="background-color:white;"></iframe>
                 <caption>L'iframe sovrastante mostra la <a href="../../">Home Page</a> del mio sito senza CSS o JavaScript.
                 </caption>
                 <p id="qq" style="visibility: hidden;">cc</p>
