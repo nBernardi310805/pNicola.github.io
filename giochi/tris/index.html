@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
-        <title>tris</title>
+        <title>Tris</title>
         <meta name="author" content="Nicola Bernardi">
         <meta name="description" content="tris di pascal">
         <link rel="stylesheet" href="../../css/tris.css">
         <script src="../../js/tris.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQNQS81SP0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JQNQS81SP0');
+</script>
+
     </head>
     <body>
         <h1>Tris</h1>
         <article>
-            <form>      
+            <form>
                 <input type="button" value="Nuova Partita" onclick="wipe(false)">
                 <input type="radio" value="pvp" name="mod" id="pvp" checked onclick="endAi()">
                 <label for="pvp">Player Vs Player</label>
