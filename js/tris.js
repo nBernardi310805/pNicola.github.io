@@ -5,12 +5,9 @@ moss.length = 10
 moss.fill(0)
 var puntiX = 0
 var puntiO = 0
-console.log(puntiX)
 function wipe(pti) {
     moss.fill(0)
     win=false
-    nMos = 0
-    document.getElementById('mv').innerText = 0
     for(let i=1; i<10; i++){
         document.getElementById(i).innerText = ''
     }
@@ -23,7 +20,6 @@ function wipe(pti) {
 function turnoNuovo(){
     moss.fill(0)
     win=false
-
     for(let i=1; i<10; i++){
         document.getElementById(i).innerText = ''
     }
@@ -75,15 +71,14 @@ function clicked(pos) {
                 document.getElementById('puo').innerText = puntiO
                 alert(turno + ' vince!')
             }
-            
             setTimeout(wipe, 1000)
         }
     document.getElementById('mv').innerText = nMos + 1
-    if(nMos>8)
-                set>Timeout(wipe, 1000)
+    if(nMos%9==0){
+        wipe(true)
+    }
     fineTurno(turno)
 }
-
 
 function segnaCella(pos, chi) {
     document.getElementById(pos).innerText = chi
@@ -104,13 +99,9 @@ function pcMove(){
     let moved = false
     do{
         let mov = Math.floor(Math.random()*9+1)
-        console.log(mov)
         if(moss[mov]==0){
-            //moss[mov] = 'O'
-            //segnaCella(mov, 'O')
             clicked(mov)
             break
         }
     }while(!moved)
-    //fineTurno('O')
 }
