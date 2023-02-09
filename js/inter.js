@@ -69,10 +69,10 @@ function returnaRis(ris){
 function inte(){
     let risTruc=1
     document.getElementById('min').value='1'
-    document.getElementById('max').value='23'
+    document.getElementById('max').value='24'
     let riss = random(risTruc)
-    if(riss==4){
-        returnaRis(6)
+    if(riss==6){
+        returnaRis(12)
     }else {
         returnaRis(riss)
     }
