@@ -93,28 +93,28 @@ function ftipp() {
 }
 
 function dvC() {
-    document.getElementById('dC').innerHTML='<iframe src="https://tpsit.tk/divinaCommedia"></iframe>'
+    document.getElementById('dC').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/divinaCommedia"></iframe>'
 }
 function pc() {
-    document.getElementById('pc').innerHTML='<iframe src="https://tpsit.tk/PC/it" style="background-color:white"></iframe>'
+    document.getElementById('pc').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/PC/it" style="background-color:white"></iframe>'
 }
 function sO() {
-    document.getElementById('sO').innerHTML='<iframe src="https://tpsit.tk/SistemiOperativi" style="background-color:white"></iframe>'
+    document.getElementById('sO').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/SistemiOperativi" style="background-color:white"></iframe>'
 }
 function imc() {
-    document.getElementById('imc').innerHTML='<iframe src="https://tpsit.tk/BERNARDI_imc" style="background-color:white"></iframe>'
+    document.getElementById('imc').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/BERNARDI_imc" style="background-color:white"></iframe>'
 }
 function qA() {
-    document.getElementById('quA').innerHTML='<iframe src="https://tpsit.tk/angoli/"></iframe>'
+    document.getElementById('quA').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/angoli/"></iframe>'
 }
 function tris() {
     document.getElementById('tris').innerHTML='<iframe class="fusc" src="../../giochi/tris" style="background-color:white"></iframe>'
 }
 function aRand() {
-    document.getElementById('arRand').innerHTML='<iframe src="https://tpsit.tk/BERNARDI_random/" style="background-color:white"></iframe>'
+    document.getElementById('arRand').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/BERNARDI_random/" style="background-color:white"></iframe>'
 }
 function genPas() {
-    document.getElementById('gP').innerHTML='<iframe src="https://tpsit.tk/generaPass/" style="background-color:white"></iframe>'
+    document.getElementById('gP').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/generaPass/" style="background-color:white"></iframe>'
 }
 function tpsit() {
     document.getElementById('what').innerText='TPSIT è la materia che insegna a fare i siti web'
