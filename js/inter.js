@@ -89,3 +89,25 @@ function testaOcroce(){
         document.getElementById('teOcr').innerHTML='<img src="../images/croce.png" style="width:20%"><br> \n <p>Ho tirato la moneta ed è uscito croce.'
     document.getElementById('vv').innerText="" + volte
 }
+
+function generaPassword() {
+    const CARATTERI = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!"#$%&()*+,-./:;<=>?@[]^_`{|}~'
+    //const MAIUSCOLE = MINUSCOLE.toUpperCase()
+    const NUMERI = '1234567890'
+    const SIMBOLI = '!"#$%&()*+,-./:;<=>?@[]^_`{|}~'
+    const LENGTH = document.getElementById('numberP').innerText
+    let password = ''
+    for(let i=0; i<LENGTH; i++){
+        password += CARATTERI[Math.floor(Math.random()*CARATTERI.length)]
+    }
+    document.getElementById('passGen').innerText = password
+}
+
+function aggiornaNumPass() {
+    const N = document.getElementById('range').valueAsNumber 
+    document.getElementById('numberP').innerText = N + 8
+}
+
+function copyPass() {
+    navigator.clipboard.writeText(document.getElementById('passGen').innerText);
+}

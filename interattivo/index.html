@@ -30,16 +30,12 @@
     <header>
     
         </header>
-        <section>
 
 
             <h1>Il Portale di Nicola</h1>
-            <article>
-                <h2 class="tit" title="Interattivo">Interattivo<h2>
-            </article>
+            <h2 class="tit" title="Interattivo">Interattivo</h2>
             <p title="by Me Medesimo">Questa pagina è interattiva</p>
             <h3 id="kkkk">Continua per saperne di più</h3>
-           </section>
            <div id="inn">
                 
             <h3>Indice:</h3>
@@ -48,31 +44,28 @@
                     <li><a href="#cT">Convertitore tempo in secondi</a></li>
                     <li><a href="#rand">Numero casuale</a></li>
                     <li><a href="#tOc">Testa o croce</a></li>
+                    <li><a href="#pass">Generatore di password</a></li>
                     
                 </ul>
-            </p>
     </div>
-           <section id="xx">
+           <section class="xx">
                <article>
                     <h4 id="cT" class="ttt">Convertitore tempo in secondi:</h4>
-                    <p>
                         <label>Inserisci i giorni:</label>
-                        <input type="text" id="g" name="giorni">
-                    </p><p>
-                        <label>Inserisci le ore: --> <input type="text" id="h" name="ore"></label>
-                    </p><p>
-                        <label>Inserisci i minuti: --> <input type="text" id="m" name="minuti"></label>
-                    </p><p>
-                        <label>Inserisci i secondi: --> <input type="text" id="s" name="secondi"></label>
-                    </p><p>
-                        <input type="submit" value="submit" id="sub" onclick="convS()">
-                    </p>
-                    <label>Risultato: <span id="ris"></span></label>
+                        <input type="text" id="g" name="giorni" class="textConvert">
+                        <label>Inserisci le ore:</label>
+                        <input type="text" id="h" name="ore" class="textConvert">
+                        <label>Inserisci i minuti:</label>
+                        <input type="text" id="m" name="minuti" class="textConvert">
+                        <label>Inserisci i secondi:</label>
+                        <input type="text" id="s" name="secondi" class="textConvert">
+                        <input type="button" value="Converti" id="sub" onclick="convS()">
+                    <label class="risss">Risultato: <span id="ris" class="risss"></span></label>
                    
                     
                 </article>
             </section>
-            <section id="xx">
+            <section class="xx">
                 <article>
                     <h4 class="ttt" id="rand">Numero casuale</h4>
                     <p><em>Inserisci un'intervallo e ti verrà restituito un numero casuale</em>.<br>
@@ -82,13 +75,13 @@
                     <input type="checkbox" id="inte" name="interroga" onclick="inte()" value="in">
                     <label for="inte" onclick="inte()">Interrogazione?</label><br>
                     <p>Se è estrazione per interrogazione spuntare l'opzione. Di default sarà autocompilato casuale tra 1 e 23</p>
-                    <input type="number" name="a" id="min">
-                    <input type="number" name="b" id="max">
-                    <input type="submit" onclick="preRand()">
+                    <input type="number" name="a" id="min" value="0">
+                    <input type="number" name="b" id="max" value="10">
+                    <input type="button" onclick="preRand()" value="Generate">
                     <p id="risult">Risultato</p>
                 </article>
             </section>
-            <section id="xx">
+            <section class="xx">
                 <article>
                     <h4 class="ttt" id="tOc">Testa o croce</h4>
                     <p><em>Premi e guarda il risultato</em>.<br>
@@ -98,7 +91,16 @@
                         
                     </div>
                     <p>Hai tirato la moneta <span id="vv">0</span> volte</p>
-                    <input type="submit" onclick="testaOcroce()" style="margin: 10px;" id="tira" value="Tira la moneta">
+                    <input type="button" onclick="testaOcroce()" style="margin-bottom: 20px; " id="tira" value="Tira la moneta">
+                </article>
+            </section>
+            <section class="xx">
+                <article>
+                    <h4 class="ttt" id="pass">Generatore di password</h4>
+                    <input type="range" id="range" value="2" onchange="aggiornaNumPass()"><label for="range" id="numberP">10</label>
+                    <input type="button" value="Genera" onclick="generaPassword()" id="gps"><br>
+                    <label id="passGen">La password generata verrà visualizzata qui</label>
+                    <input type="button" value="Copia" class="copy" onclick="copyPass()">
                 </article>
             </section>
             

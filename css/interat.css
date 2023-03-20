@@ -1,10 +1,10 @@
 span {
     border-radius: 30px; border:solid; border-color:red;
 }
-#xx {
+.xx {
     border-radius: 35px; border:solid; border-color:firebrick;
     margin-bottom: 10px;
-    padding-left: 10px;
+    padding: 15px;
 }
 #inn {
     border-radius: 50px; border:solid; border-color:crimson;
@@ -17,7 +17,6 @@ span {
     border-width: 2px;
     width:15%;
     text-align: center;
-    
 }
 #label {
     color:black;
@@ -25,22 +24,44 @@ span {
 button {
     border-color:white;
 }
-#sub {
-    color:white;
-    background-color: firebrick;
-    width:120px;
-    border-radius: 5px; border:solid; border-color: white;
-    border-width: 1px;
+@media only screen and (min-width:800px) {
+    #sub {
+        color:white;
+        background-color: firebrick;
+        width:120px;
+        border-radius: 5px; border:solid; border-color: white;
+        border-width: 1px;
+    }
+    .copy {
+        display: inline-block;
+        font-size: 8vh;
+        border-radius: 15px;
+        padding: 10px;
+    }
 }
+
 input {
     color:white;
     background-color: crimson;
     border-radius: 5px; border:solid; border-color: white;
     border-width: 1px;
 }
+#passGen {
+    border: solid red;
+    border-radius: 10px;
+    width: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 8vh;
+    font-weight: lighter;
+    padding: 10px;
+    margin-top: 10px;
+}
 
-/*@media only screen and (max-width:800px) {
-    input[type=text] {
+
+@media only screen and (max-width:800px) {
+    /*input[type=text] {
         color:white;
         background-color: crimson;
         border-radius: 5px; border:solid; border-color: white;
@@ -50,5 +71,55 @@ input {
     }
     label {
         text-align: left;
+    }*/
+    #passGen {
+        width: 98%;
+        padding: 0px;
+        margin:0px;
+        margin-top:20px;
+        margin-bottom:10px;
     }
-}*/
+    
+    input[type=range] {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    input[type=button] {
+        width: 98%;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #min {
+        width: 98%;
+        text-align: center;
+    }
+    #max {
+        width: 98%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .textConvert {
+        width: 98%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .risss {
+        margin-bottom: 55px;
+        margin-left: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .xx {
+        text-align: center;
+    }
+    /*.copy {
+        display: inline-block;
+        font-size: 8vh;
+        border-radius: 30px;
+        width: 98%;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }*/
+}
