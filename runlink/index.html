@@ -4,14 +4,21 @@
 <title>Visualizza dal link</title>
 <script>
 function vai(){
+document.getElementById('link').contentEditable = true
 let lnk = document.getElementById('link').value
-document.getElementById('ifr').innerHTML='<iframe style="width:100%; height:2000px" src="' + lnk + '"></iframe>'
+document.getElementById('ifr').innerHTML='<iframe style="width:100%; height:2000px">' + lnk + '</iframe>'
 }
 </script>
+<style>
+    #link{
+        background-color: black;
+    }
+</style>
 </head>
 <body>
-<input type="text" id="link">
-<button onclick="vai()">VAI</button>
+<!-- <input type="text" id="link" style=""> -->
+<p id="link">Inserisci il codice qui</p><br>
+<button onclick="vai()">VAI</button><br>
 <div id="ifr">
 <iframe></iframe>
 </div>

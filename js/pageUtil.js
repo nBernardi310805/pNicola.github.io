@@ -66,6 +66,11 @@ function veryDarkMode(){
     }
 }
 
+
+function creaFooter() {
+    // TODO
+}
+
 function getById(id){
     return document.getElementById(id)
 }
