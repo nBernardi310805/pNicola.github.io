@@ -1,4 +1,11 @@
 let tulip, com, nam, mat, log, inn, nm, logg, godMode=false
+addEventListener('DOMContentLoaded', darkmode)
+function darkmode(){
+    if(localStorage.getItem('ultraDM')=='true')
+        document.querySelector('style').innerHTML = 'body{background-color:#000000;}'
+    else
+        document.querySelector('style').innerHTML = ' '
+}
 function cmd(){
     nam=' '
     logg=' '
@@ -91,7 +98,7 @@ function cmd(){
             document.getElementById('donaaa').innerHTML="Eroe ma taccagno: " + nm
             break
         case 'pwd':
-            alert('github.com/nBernardi310805/pNicola.github.io')
+            alert('github.com/nBernardi310805/pNicola.github.io/index.html')
             break
         case 'godMode=true':
             document.getElementById('ciao').contentEditable="true"
@@ -111,6 +118,23 @@ function cmd(){
         case 'template':
             alert('Usa il mio template gratis per il tuo sito, incolla la seguente riga di codice:')
             alert('<link rel="stylesheet" href="https://portalenicola.it/css/template.css">')
+            break
+        case 'Gianchio98', 'gianchio98', 'gianchio', 'Gianchio':
+            alert('Forse intendevi "Granchio98" :)')
+            break
+        case 'Granchio', 'granchio':
+            alert('98?')
+            break
+        case 'oleddarkmode':
+            localStorage.setItem('ultraDM', true)
+            alert('Ultra darkmode (beta) attivata. Disattivala con "oleddarkmode --off"')
+            darkmode()
+            break
+        case 'oleddarkmode --off':
+            localStorage.clear('utraDM')
+            alert('Ultra darkmode disattivata')
+            darkmode()
+            break
     }
 }
 

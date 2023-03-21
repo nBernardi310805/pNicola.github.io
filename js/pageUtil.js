@@ -4,6 +4,7 @@
  */
 addEventListener('DOMContentLoaded', creaNav)
 addEventListener('DOMContentLoaded', veryDarkMode)
+addEventListener('DOMContentLoaded', creaFooter)
 
 function creaNav(){     // ` `
     let title = document.querySelector('title').innerText
@@ -68,7 +69,8 @@ function veryDarkMode(){
 
 
 function creaFooter() {
-    // TODO
+    let html = '<h3>Portale Nicola</h3><p style="">Il Portale di Nicola, dal 17 maggio 2021 porta sfondi, easter egg e altro.N.B. Questo è un sito passatempo</p><p id="logged"></p>'
+    document.querySelector('footer').innerHTML = html
 }
 
 function getById(id){

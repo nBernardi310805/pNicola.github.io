@@ -1,12 +1,14 @@
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:800px) {
     #tip {
-        float:right;
-        text-align: right;
+       display: none;
     }
     #sug {
         width: 25%;
         margin-top: 10px;
         border-radius: 20px; border:solid; border-color: gold;
+    }
+    p{
+        text-align: center;
     }
     #ccc {
         border-radius: 20px; border:solid; border-color: gold;
@@ -94,7 +96,7 @@
 }
 
 
-@media only screen and (min-width:700px){
+@media only screen and (min-width:800px){
     #tip {
         float:right;
         text-align: right;

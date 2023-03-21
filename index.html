@@ -4,7 +4,7 @@
         <title>Il Portale di Nicola</title>
         <meta charset="utf-8">
         <meta name="author" content="Nicola Bernardi">
-        <meta name="description" content="Come fare un sito web: consigli e molto altro, trucchi, sfondi gratis, programmi C++ già fatti e molto altro nel Portale di Nicola 4.3.5.8">
+        <meta name="description" content="Come fare un sito web: consigli e molto altro, trucchi, sfondi gratis, programmi C++ già fatti e molto altro nel Portale di Nicola 4.3.6.0">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="favicon.png">
         <link rel="stylesheet" href="css/core.css">
@@ -88,7 +88,7 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
             <a title="Ti potrebbe interessare:" href="#xte"><img src="images/star.png" class="icon" alt="Novità per te"></a>
             <a title="TPSIT" href="didattica/tpsit/"><img src="images/tpsit.png" class="icon" alt="OldSite"></a>
             <a title="Interattivo" href="interattivo/"><img src="images/inter.png" class="icon" alt="tpsit"></a>
-            <p>(!) - Premi le icone sovrastanti per andare alle pagine (oppure usa la barra di navigazione in alto).</p>
+            <!-- <p>(!) - Premi le icone sovrastanti per andare alle pagine (oppure usa la barra di navigazione in alto).</p> -->
 
             <div class="tipo">
                 <p style="display: inline;" id="cosafaccio">Giorni alla fine della scuola</p></div> 
@@ -100,12 +100,23 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
         <section id="bacheca" style="overflow: auto;">
             <article>
                 <h4 id="whoami"><u>Bacheca</u></h4>
-                <p class="dat" id="anal"><b>La pagina TPSIT è tornata!</b></p>
+                <p class="dat"><b>La pagina TPSIT è tornata!</b></p>
                 <p><a href="https://tpsit.nbernardi.tk/">Clicca qui per andare alla pagina TPSIT con tutti i progetti</a></p>
                 
-                
+                <p class="dat" id="anal"><b>Analytics della settimana</b></p>
+                <p>Facciamo ritornare una vecchia tradizione: l'aggiornamento settimanale delle pagine più viste del sito.
+                    Questo perché voglio essere trasparente al 100% nei vostri confronti. Segue dunque l'elenco delle pagine più viste.
+                </p>
+                <ol>
+                    <li>🏆 Home Page - 739 visual.</li>
+                    <li>🥈 Interattivo - 333 visual.</li>
+                    <li>🥉 Sfondi (pg1) - 214 visual.</li>
+                    <li>Pannello di controllo - 176 visual.</li>
+                    <li>Contatti - 139 visual.</li>
+                    <li>Didattica - 72 visual.</li>
+                    <li>Sfondi (pg2) - 48 visual.</li>
+                </ol>
                 <p><sub>I numeri nella parentesi rappresentano la posizione di una settimana fa</sub></p>
-                <p><sub><small><sub>*La pagina BETA è un esempio nella pagina TPSIT. Viene caricata nel iframe ogni volta che la pagina TPSIT viene aperta.</sub></small></sub></p>
             </article>
         </section>
    
@@ -124,15 +135,13 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
 
             <article id="novModif">
             <h3 id="tit3">Novità</h3>
-            <p class="dat"><b>20 marzo 2023:</b></p>
-            <p>Pagina <a href="interattivo/">Interattiva</a>, grafica mobile: ingrandita l'altezza dell'input.</p>
-            <p class="dat"><b>20 marzo 2023:</b></p>
-            <p>Modificata la grafica mobile della pagina <a href="interattivo/">Interattiva</a>.</p>
-            <p class="dat"><b>20 marzo 2023:</b></p>
-            <p>Aggiunto un <a href="interattivo/index.html#pass">Generatore di password casuali</a> nella pagina <a href="interattivo/">Interattiva</a>.</p>
-            <p class="dat"><b>19 marzo 2023:</b></p>
-            <p>Modificato il pannello di controllo, implementando le ultime funzioni beta.</p>
-
+            <p class="dat"><b>21 marzo 2023:</b></p>
+            <p>È stata aumentata la dimensione del font nella grafica mobile.</p>
+            <p class="dat"><b>21 marzo 2023:</b></p>
+            <p>Sono stati apportati moltissimi cambiamenti grafici al sito.</p>
+            <p class="dat"><b>21 marzo 2023:</b></p>
+            <p>È stato cambiato anche la gestione del <code>footer</code>.</p>
+            
             <p><b><a style="color: red;" href="https://www.instagram.com/nico.mon3y.3108/">Seguimi su Instagram per più aggiornamenti e per partecipare attivamente ai miei sondaggi.</a></b></p>
             <h3 id="agg" title="Pagina della trasparenza"><a id="colagg" onmouseenter="document.getElementById('colagg').innerHTML='Pagina della Trasparenza'" onmouseleave="document.getElementById('colagg').innerHTML='•••'" href="aggiornamenti/">•••</a></h3>
            </article>
@@ -167,11 +176,7 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
 
         <footer style="clear:both;" id="foot">
             
-            <h3>Portale Nicola</h3>
-            <p style="float:left; width:80%">Il Portale di Nicola, dal 17 maggio 2021 porta sfondi, easter egg e altro.
-                N.B. Questo è un sito passatempo
-           </p>
-           <p id="logged"></p>
+            
         </footer>
         </section>
     </body>
