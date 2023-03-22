@@ -1,10 +1,10 @@
-@media only screen and (max-width:700px) {
+/*@media only screen and (max-width:700px) {
     #cop00 {
         display: none;
     }
+
     #nov2 {
         border-radius: 15px; border:solid; border-color: white;
-        float:left;
         margin-bottom: 50px;
         width:100%;
     }
@@ -12,44 +12,35 @@
         border-radius: 15px; border:solid; border-color: magenta;
         margin-bottom: 50px;
         width:100%;
-        margin-right: 20px;
-        float: left;
         height: 1400px;
         overflow: auto;
     }
     #nov4 {
         border-radius: 15px; border:solid; border-color: firebrick;
         margin-bottom: 50px;
-        width:100%;
+        width:10%;
         margin-right: 20px;
-        float:left
     }
     .oldChange {
         height: 1000px;
         overflow: auto;
     }
-}
+}*/
 @media only screen and (max-width:900px){
     #nov2 {
         border-radius: 15px; border:solid; border-color: white;
         margin-bottom: 50px;
-        width:100%;
-        margin-left: 20px;
-        float: right;
+        width:96%;
     }
     #nov3 {
         border-radius: 15px; border:solid; border-color: magenta;
         margin-bottom: 50px;
-        width:100%;
-        margin-right: 20px;
-        float: left;
-        
+        width:96%;
     }
     #nov4 {
         border-radius: 15px; border:solid; border-color: firebrick;
         margin-bottom: 50px;
-        width:100%;
-        margin-right: 20px;
+        width:96%;
         clear: both;
     }
     .oldChange {
