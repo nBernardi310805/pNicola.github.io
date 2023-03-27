@@ -1,6 +1,6 @@
 addEventListener('DOMContentLoaded', ggRim)
 addEventListener('DOMContentLoaded', premessa)
-// mi si è buggato il commit. :(
+// mi si è buggato il commit. :( 
 /**
  * Seriamente devo dirti cosa fa questa funzione? Non si capisce dal nome
  * che poi al tempo questa funzione la presi da internet
