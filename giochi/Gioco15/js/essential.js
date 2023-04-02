@@ -1,3 +1,6 @@
+/**
+* Crea la navbar
+*/
 function fillHeader(page){
     const DEF = ['Home Page', 'Giochi', 'Notizie', 'Area Personale', 'Info']
     const DEF_P = ['../', '../', 'html/news.html', 'html/pers.html', 'html/about.html']
