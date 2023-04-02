@@ -1,11 +1,10 @@
 /**
- * In BETA.
- * lavorerò a questo file se troverò la voglia di farlo
+ * Utilità delle pagine. Crea la navbar e il footer e la ultradarkmode
  */
 addEventListener('DOMContentLoaded', creaNav)
 addEventListener('DOMContentLoaded', veryDarkMode)
 addEventListener('DOMContentLoaded', creaFooter)
-
+ 
 function creaNav(){     // ` `
     let title = document.querySelector('title').innerText
     ss = false
@@ -14,7 +13,7 @@ function creaNav(){     // ` `
     let navbar_name = ['Home', 'Sfondi', 'Didattica', 'Trucchi', 'Contatti', 'Interattivo']
     const THIS_PAGE = window.location.href
     let navbar_link = ['/', '/sfondi', '/didattica', '/trucchi', '/whoami', '/interattivo']
-    let html = '<a href="/tulipano.html"><img src="/images/logo.png" id="ii" alt="logo"></a><h1 class="titol" id="titol">Il Portale di Nicola</h1>'
+    let html = '<a href="/tulipano.html"><img src="/images/logoPuro.png" id="ii" alt="logo"></a><h1 class="titol" id="titol">Il Portale di Nicola</h1>'
     html += '<nav><h2 class="nav1" id="modTut">'
     for(let i=0; i<navbar_name.length; i++){
         html += '<a '
