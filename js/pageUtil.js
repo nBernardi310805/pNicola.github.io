@@ -1,6 +1,5 @@
 /**
- * In BETA.
- * lavorerò a questo file se troverò la voglia di farlo
+ * Utilità delle pagine. Crea la navbar e il footer e la ultradarkmode
  */
 addEventListener('DOMContentLoaded', creaNav)
 addEventListener('DOMContentLoaded', veryDarkMode)
