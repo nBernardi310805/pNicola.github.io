@@ -5,7 +5,7 @@
 addEventListener('DOMContentLoaded', creaNav)
 addEventListener('DOMContentLoaded', veryDarkMode)
 addEventListener('DOMContentLoaded', creaFooter)
-
+ 
 function creaNav(){     // ` `
     let title = document.querySelector('title').innerText
     ss = false
