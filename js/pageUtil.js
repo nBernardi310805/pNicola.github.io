@@ -13,7 +13,7 @@ function creaNav(){     // ` `
     let navbar_name = ['Home', 'Sfondi', 'Didattica', 'Trucchi', 'Contatti', 'Interattivo']
     const THIS_PAGE = window.location.href
     let navbar_link = ['/', '/sfondi', '/didattica', '/trucchi', '/whoami', '/interattivo']
-    let html = '<a href="/tulipano.html"><img src="/images/logoPuro.png" id="ii" alt="logo"></a><h1 class="titol" id="titol">Il Portale di Nicola</h1>'
+    let html = '<a href="/tulipano.html"><img src="/images/logoPasqua.png" id="ii" alt="logo"></a><h1 class="titol" id="titol">Buona Pasqua da Il Portale di Nicola</h1>'
     html += '<nav><h2 class="nav1" id="modTut">'
     for(let i=0; i<navbar_name.length; i++){
         html += '<a '
@@ -78,4 +78,8 @@ function getById(id){
 
 function setHTML(id, msg){
     document.getElementById(id).innerHTML = msg
+}
+
+function sostituisciImmagine(id){
+    document.getElementById(id).src='../images/pasq.png'
 }
