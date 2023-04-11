@@ -1,90 +1,4 @@
 //questa parte non la nascondo perché non c'è nulla di personale dentro
-function down1(){
-    document.getElementById('dw1').innerText="Download --> "
-}
-function downE1() {
-    document.getElementById('dw1').innerText="Download"
-}
-function down2(){
-    document.getElementById('dw2').innerText="Download --> "
-}
-function downE2() {
-    document.getElementById('dw2').innerText="Download"
-}
-function down3(){
-    document.getElementById('dw3').innerText="Download --> "
-}
-function downE3() {
-    document.getElementById('dw3').innerText="Download"
-}
-function down4(){
-    document.getElementById('dw4').innerText="Download --> "
-}
-function downE4() {
-    document.getElementById('dw4').innerText="Download"
-}
-function down5(){
-    document.getElementById('dw5').innerText="Download --> "
-}
-function downE5() {
-    document.getElementById('dw5').innerText="Download"
-}
-function down6(){
-    document.getElementById('dw6').innerText="Download --> "
-}
-function downE6() {
-    document.getElementById('dw6').innerText="Download"
-}
-function down7(){
-    document.getElementById('dw7').innerText="Download --> "
-}
-function downE7() {
-    document.getElementById('dw7').innerText="Download"
-}
-function down8(){
-    document.getElementById('dw8').innerText="Download --> "
-}
-function downE8() {
-    document.getElementById('dw8').innerText="Download"
-}
-function down9(){
-    document.getElementById('dw9').innerText="Download --> "
-}
-function downE9() {
-    document.getElementById('dw9').innerText="Download"
-}
-function down10(){
-    document.getElementById('dw10').innerText="Download --> "
-}
-function downE10() {
-    document.getElementById('dw10').innerText="Download"
-}
-function down11(){
-    document.getElementById('dw11').innerText="Download --> "
-}
-function downE11() {
-    document.getElementById('dw11').innerText="Download"
-}
-function down12(){
-    document.getElementById('dw12').innerText="Download --> "
-}
-function downE12() {
-    document.getElementById('dw12').innerText="Download"
-}
-function down13(){
-    document.getElementById('dw13').innerText="Download --> "
-}
-function downE13() {
-    document.getElementById('dw13').innerText="Download"
-}
-function down14(){
-    document.getElementById('dw14').innerText="Download --> "
-}
-function downE14() {
-    document.getElementById('dw14').innerText="Download"
-}
-                         
-
 function tip() {
     document.getElementById('tip').innerHTML='<p id="ccc" style="text-align:right;">Questa è la nuova pagina della Didattica: <br> Da essa puoi arrivare nella pagina del<br> C++, nella pagina dedicata a TPSIT<br> e prossimamente agli appunti</p>'
 }
@@ -117,7 +31,7 @@ function genPas() {
     document.getElementById('gP').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/generaPass/" style="background-color:white"></iframe>'
 }
 function tpsit() {
-    document.getElementById('what').innerText='TPSIT è la materia che insegna a fare i siti web'
+    document.getElementById('what').innerText='TPSIT è la materia che insegna a fare i siti web e le applicazioni android. In questa pagina ci soffermiamo sui siti.'
 }
 function fTpsit() {
     document.getElementById('what').innerText="Cos'è TPSIT"

@@ -86,114 +86,113 @@
     <div class="cppcode">
         <pre>
             <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!" ondblclick="alert('Perché copi incolli? Il download è sotto')">
-                
-                //Programma calcolatrice <br />
-                #include <iostream> <br />
-                using namespace std; <br />
-                 <br />
-                void opzioneSomma(); <br />
-                int somma(int, int); <br />
-                void opzioneSottrazione(); <br />
-                int sottrazione(int, int); <br />
-                void opzioneMoltiplicazione(); <br />
-                int moltiplicazione(int, int); <br />
-                void opzioneDivisione(); <br />
-                int divisione(int, int); <br />
-                 <br />
-                 <br />
-                int main(){ <br />
-                    int opzione; <br />
-                    bool continua=true; <br />
-                    while(continua){
-                        cout<<"1 - Addizione"<< endl; <br />
-                        cout<<"2 - Sottrazione"<< endl; <br />
-                        cout<<"3 - Moltiplicazione"<< endl; <br />
-                        cout<<"4 - Divisione"<< endl; <br />
-                        cout<<"99 - Fine"<<endl<< endl; <br />
-                        cout<<"Scegliere una delle opzioni sopraelencate: "; <br />
-                        cin>>opzione; <br />
-                        switch (opzione) { <br />
-                            case 1: <br />
-                                opzioneSomma(); <br />
-                                break; <br />
-                            case 2: <br />
-                                opzioneSottrazione(); <br />
-                                break; <br />
-                            case 3: <br />
-                                opzioneMoltiplicazione(); <br />
-                                break; <br />
-                            case 4: <br />
-                                opzioneDivisione(); <br />
-                                break; <br />
-                            case 99: <br />
-                                cout<<"Grazie per aver usato il mio programma :)"<< endl; <br />
-                                continua=false; <br />
-                                break; <br />
-                        } <br />
-                    } <br />
-                    return 0; <br />
-                } <br />
-                 <br />
-                void opzioneSomma(){ <br />
-                    int a, b; <br />
-                    cout<<"ADDIZIONE:"<< endl; <br />
-                    cout<<"Dammi il primo addendo --> "; <br />
-                    cin>>a; <br />
-                    cout<<"Dammi il secondo addendo --> "; <br />
-                    cin>>b; <br />
-                    cout<<"La somma degli addendi "<<a<<" e "<<b<<" e' "<< somma(a, b)<< endl<<endl<< endl; <br />
-                } <br />
-                 <br />
-                int somma(int a, int b){ <br />
-                    int totale; <br />
-                    totale=a+b; <br />
-                    return totale; <br />
-                } <br />
-                 <br />
-                void opzioneSottrazione(){ <br />
-                    int a, b; <br />
-                    cout<<"SOTTRAZIONE:"<< endl; <br />
-                    cout<<"Dammi il minuendo --> "; <br />
-                    cin>>a; <br />
-                    cout<<"Dammi il sottraendo --> "; <br />
-                    cin>>b; <br />
-                    cout<<"La differenza tra "<<a<<" e "<< b<<" e' "<< sottrazione(a, b)<<endl<<endl<< endl; <br />
-                } <br />
-                int sottrazione(int a, int b){ <br />
-                    int differenza; <br />
-                    differenza=a-b; <br />
-                    return differenza; <br />
-                } <br />
-                 <br />
-                void opzioneMoltiplicazione(){ <br />
-                    int a, b; <br />
-                    cout<<"MOLTIPLICAZIONE:"<< endl; <br />
-                    cout<<"Dammi il moltiplicando --> "; <br />
-                    cin>>a; <br />
-                    cout<<"Dammi il moltiplicatore --> "; <br />
-                    cin>>b; <br />
-                    cout<<"Il prodotto di "<<a<<" e "<< b<<" e' "<< moltiplicazione(a, b)<< endl<< endl<< endl; <br />
-                } <br />
-                int moltiplicazione(int a, int b){ <br />
-                    int prodotto; <br />
-                    prodotto=a*b; <br />
-                    return prodotto; <br />
-                } <br />
-                <br />
-                void opzioneDivisione(){<br />
-                    int a, b;<br />
-                    cout<<"DIVISIONE:"<< endl;<br />
-                    cout<<"Dammi il dividendo --> ";<br />
-                    cin>>a;<br />
-                    cout<<"Dammi il divisore --> ";<br />
-                    cin>>b;<br />
-                    cout<<"Il quoto di "<<a<<" e " << b << " e' "<< divisione(a, b)<< endl<< endl<< endl;<br />
-                }<br />
-                int divisione(int a, int b){<br />
-                    int quoto;<br />
-                    quoto=a/b;<br />
-                    return quoto;<br />
-                }<br />
+//Programma calcolatrice 
+#include <iostream> 
+using namespace std; 
+    
+void opzioneSomma(); 
+int somma(int, int); 
+void opzioneSottrazione(); 
+int sottrazione(int, int); 
+void opzioneMoltiplicazione(); 
+int moltiplicazione(int, int); 
+void opzioneDivisione(); 
+int divisione(int, int); 
+    
+    
+int main(){ 
+    int opzione; 
+    bool continua=true; 
+    while(continua){
+        cout<<"1 - Addizione"<< endl; 
+        cout<<"2 - Sottrazione"<< endl; 
+        cout<<"3 - Moltiplicazione"<< endl; 
+        cout<<"4 - Divisione"<< endl; 
+        cout<<"99 - Fine"<<endl<< endl; 
+        cout<<"Scegliere una delle opzioni sopraelencate: "; 
+        cin>>opzione; 
+        switch (opzione) { 
+            case 1: 
+                opzioneSomma(); 
+                break; 
+            case 2: 
+                opzioneSottrazione(); 
+                break; 
+            case 3: 
+                opzioneMoltiplicazione(); 
+                break; 
+            case 4: 
+                opzioneDivisione(); 
+                break; 
+            case 99: 
+                cout<<"Grazie per aver usato il mio programma :)"<< endl; 
+                continua=false; 
+                break; 
+        } 
+    } 
+    return 0; 
+} 
+    
+void opzioneSomma(){ 
+    int a, b; 
+    cout<<"ADDIZIONE:"<< endl; 
+    cout<<"Dammi il primo addendo --> "; 
+    cin>>a; 
+    cout<<"Dammi il secondo addendo --> "; 
+    cin>>b; 
+    cout<<"La somma degli addendi "<<a<<" e "<<b<<" e' "<< somma(a, b)<< endl<<endl<< endl; 
+} 
+    
+int somma(int a, int b){ 
+    int totale; 
+    totale=a+b; 
+    return totale; 
+} 
+    
+void opzioneSottrazione(){ 
+    int a, b; 
+    cout<<"SOTTRAZIONE:"<< endl; 
+    cout<<"Dammi il minuendo --> "; 
+    cin>>a; 
+    cout<<"Dammi il sottraendo --> "; 
+    cin>>b; 
+    cout<<"La differenza tra "<<a<<" e "<< b<<" e' "<< sottrazione(a, b)<<endl<<endl<< endl; 
+} 
+int sottrazione(int a, int b){ 
+    int differenza; 
+    differenza=a-b; 
+    return differenza; 
+} 
+    
+void opzioneMoltiplicazione(){ 
+    int a, b; 
+    cout<<"MOLTIPLICAZIONE:"<< endl; 
+    cout<<"Dammi il moltiplicando --> "; 
+    cin>>a; 
+    cout<<"Dammi il moltiplicatore --> "; 
+    cin>>b; 
+    cout<<"Il prodotto di "<<a<<" e "<< b<<" e' "<< moltiplicazione(a, b)<< endl<< endl<< endl; 
+} 
+int moltiplicazione(int a, int b){ 
+    int prodotto; 
+    prodotto=a*b; 
+    return prodotto; 
+} 
+
+void opzioneDivisione(){
+    int a, b;
+    cout<<"DIVISIONE:"<< endl;
+    cout<<"Dammi il dividendo --> ";
+    cin>>a;
+    cout<<"Dammi il divisore --> ";
+    cin>>b;
+    cout<<"Il quoto di "<<a<<" e " << b << " e' "<< divisione(a, b)<< endl<< endl<< endl;
+}
+int divisione(int a, int b){
+    int quoto;
+    quoto=a/b;
+    return quoto;
+}
             </pre>
         </code>
 
@@ -209,109 +208,110 @@
         geometriche
     </p>
     <div class="cppcode">
+        <pre>
         <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
-                //Programma che calcola la base di alcune fig. geometriche piane <br />
-                    #include <iostream> <br />
-                    using namespace std; <br />
-                    void aQua(); <br />
-                    int qua(int); <br />
-                    void aRet(); <br />
-                    int ret(int, int); <br />
-                    void aTri(); <br />
-                    int tri(int, int); <br />
-                    void aTra(); <br />
-                    int tra(int, int, int); <br />
- <br />
- <br />
- <br />
-                    int main(){ <br />
-                        int opz; <br />
-                        bool cont=true; <br />
-                        while(cont){ <br />
-                            cout<<"Opzioni:"<< endl; <br />
-                            cout<<"1 - Area del quadrato"<< endl; <br />
-                            cout<<"2 - Area del rettangolo"<< endl; <br />
-                            cout<<"3 - Area del triangolo"<< endl; <br />
-                            cout<<"4 - Area del trapezio"<< endl; <br />
-                            cout<<"99 - Fine"<< endl; <br />
-                            cout<<"---> "; <br />
-                            cin>>opz; <br />
-                            switch (opz) { <br />
-                                case 1: <br />
-                                    aQua(); <br />
-                                    break; <br />
-                                case 2: <br />
-                                    aRet(); <br />
-                                    break; <br />
-                                case 3: <br />
-                                    aTri(); <br />
-                                    break; <br />
-                                case 4: <br />
-                                    aTra(); <br />
-                                    break; <br />
-                                case 99: <br />
-                                    cont=false; <br />
-                                    break; <br />
-                                default: <br />
-                                    break; <br />
-                            } <br />
-                        } <br />
-                    } <br />
- <br />
-                    void aQua(){ <br />
-                        int l; <br />
-                        cout<<"Dammi il lato: "; <br />
-                        cin>>l; <br />
-                        cout<<"L'area del quadrato e' "<<qua(l)<<endl<< endl; <br />
-                    } <br />
-                    int qua(int l){ <br />
-                        int area; <br />
-                        area=l*l; <br />
-                        return area; <br />
-                    } <br />
-                    void aRet(){ <br />
-                        int b, h; <br />
-                        cout<<"Dammi la base: "; <br />
-                        cin>>b; <br />
-                        cout<<"Dammi l'altezza: "; <br />
-                        cin>>h; <br />
-                        cout<<"L'area del rettangolo e' "<< ret(b, h)<< endl << endl; <br />
-                    } <br />
-                    int ret(int b, int h){ <br />
-                        int area; <br />
-                        area=b*h; <br />
-                        return area; <br />
-                    } <br />
-                    void aTri(){ <br />
-                        int b, h; <br />
-                        cout<<"Dammi la base: "; <br />
-                        cin>>b; <br />
-                        cout<<"Dammi l'altezza: "; <br />
-                        cin>>h; <br />
-                        cout<<"L'area del triangolo e' "<<tri(b, h)<< endl<< endl; <br />
-                    } <br />
-                    int tri(int b, int h){ <br />
-                        int area; <br />
-                        area=(b*h)/2; <br />
-                        return area; <br />
-                    } <br />
-                    void aTra(){ <br />
-                        int b, h, b2; <br />
-                        cout<<"Dammi la base minore: "; <br />
-                        cin>>b; <br />
-                        cout<<"Dammi la base maggiore: "; <br />
-                        cin>>b2; <br />
-                        cout<<"Dammi l'altezza: "; <br />
-                        cin>>h; <br />
-                        cout<<"L'area del trapezio e' "<< tra(b, h, b2)<< endl<< endl; <br />
-                    } <br />
-                    int tra(int b, int h, int b2){ <br />
-                        int area; <br />
-                        area=(b+b2)*h/2; <br />
-                        return area; <br />
-                    } <br />
- <br />
+//Programma che calcola la base di alcune fig. geometriche piane 
+#include <iostream> 
+using namespace std; 
+void aQua(); 
+int qua(int); 
+void aRet(); 
+int ret(int, int); 
+void aTri(); 
+int tri(int, int); 
+void aTra(); 
+int tra(int, int, int); 
+
+
+
+int main(){ 
+    int opz; 
+    bool cont=true; 
+    while(cont){ 
+        cout<<"Opzioni:"<< endl; 
+        cout<<"1 - Area del quadrato"<< endl; 
+        cout<<"2 - Area del rettangolo"<< endl; 
+        cout<<"3 - Area del triangolo"<< endl; 
+        cout<<"4 - Area del trapezio"<< endl; 
+        cout<<"99 - Fine"<< endl; 
+        cout<<"---> "; 
+        cin>>opz; 
+        switch (opz) { 
+            case 1: 
+                aQua(); 
+                break; 
+            case 2: 
+                aRet(); 
+                break; 
+            case 3: 
+                aTri(); 
+                break; 
+            case 4: 
+                aTra(); 
+                break; 
+            case 99: 
+                cont=false; 
+                break; 
+            default: 
+                break; 
+        } 
+    } 
+} 
+
+void aQua(){ 
+    int l; 
+    cout<<"Dammi il lato: "; 
+    cin>>l; 
+    cout<<"L'area del quadrato e' "<<qua(l)<<endl<< endl; 
+} 
+int qua(int l){ 
+    int area; 
+    area=l*l; 
+    return area; 
+} 
+void aRet(){ 
+    int b, h; 
+    cout<<"Dammi la base: "; 
+    cin>>b; 
+    cout<<"Dammi l'altezza: "; 
+    cin>>h; 
+    cout<<"L'area del rettangolo e' "<< ret(b, h)<< endl << endl; 
+} 
+int ret(int b, int h){ 
+    int area; 
+    area=b*h; 
+    return area; 
+} 
+void aTri(){ 
+    int b, h; 
+    cout<<"Dammi la base: "; 
+    cin>>b; 
+    cout<<"Dammi l'altezza: "; 
+    cin>>h; 
+    cout<<"L'area del triangolo e' "<<tri(b, h)<< endl<< endl; 
+} 
+int tri(int b, int h){ 
+    int area; 
+    area=(b*h)/2; 
+    return area; 
+} 
+void aTra(){ 
+    int b, h, b2; 
+    cout<<"Dammi la base minore: "; 
+    cin>>b; 
+    cout<<"Dammi la base maggiore: "; 
+    cin>>b2; 
+    cout<<"Dammi l'altezza: "; 
+    cin>>h; 
+    cout<<"L'area del trapezio e' "<< tra(b, h, b2)<< endl<< endl; 
+} 
+int tra(int b, int h, int b2){ 
+    int area; 
+    area=(b+b2)*h/2; 
+    return area; 
+} 
                 </code>
+            </pre>
         <p style="visibility: hidden;">Bla bla bla</p>
         <a href="../../doc/aree.cpp" download><img src="../../images/down.icns" alt="Download" class="dowb"></a>
         <p class="downtxt" id="dw6" onmouseenter="down6()" onmouseleave="downE6()">Download</p>
@@ -323,26 +323,28 @@
         Fare un programma che restituiva il fattoriale del numero immesso
     </p>
     <div class="cppcode">
+        <pre>
         <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
-                //fattoriale<br />
-#include <iostream><br />
-using namespace std;<br />
-int fattoriale(int);<br />
-int main(){<br />
-    int n;<br />
-    cout<<"Dammi il numero di cui vuoi calcolare il fattoriale: ";<br />
-    cin>>n;<br />
-    cout<< fattoriale(n)<< endl;<br />
-}<br />
-int fattoriale(int n){<br />
-    int fatt=1;<br />
-    while(n>1){<br />
-        fatt=fatt*n;<br />
-        n--;<br />
-    }<br />
-    return fatt;<br />
-}<br />
+//fattoriale
+#include <iostream>
+using namespace std;
+int fattoriale(int);
+int main(){
+    int n;
+    cout<<"Dammi il numero di cui vuoi calcolare il fattoriale: ";
+    cin>>n;
+    cout<< fattoriale(n)<< endl;
+}
+int fattoriale(int n){
+    int fatt=1;
+    while(n>1){
+        fatt=fatt*n;
+        n--;
+    }
+    return fatt;
+}
                 </code>
+                </pre>
         <p style="visibility: hidden;">Non so più cosa mettere</p>
         <a href="../../doc/fatt.cpp" download><img src="../../images/down.icns" alt="Download" class="dowb"></a>
         <p class="downtxt" id="dw1" onmouseenter="down1()" onmouseleave="downE1()">Download</p>
@@ -354,28 +356,30 @@ int fattoriale(int n){<br />
         Bisognava fare un programma che convertiva da giorni, ore, minuti in secondi
     </p>
     <div class="cppcode">
+        <pre>
         <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
-                #include <iostream><br />
-                    using namespace std;<br />
-                    long calcolaSecondi (int gg, int hh, int mm, int ss){<br />
-                        long s;<br />
-                        s=ss+mm*60+hh*3600+gg*86400;<br />
-                        return s;<br />
-                    }<br />
-                    int main(){<br />
-                        int gg, hh, mm, ss;<br />
-                        cout<<"Inserisci i giorni ";<br />
-                        cin>>gg;<br />
-                        cout<<"Inserisci le ore ";<br />
-                        cin>>hh;<br />
-                        cout<<"Inserisci i minuti ";<br />
-                        cin>>mm;<br />
-                        cout<<"Inserisci i secondi ";<br />
-                        cin>>ss;<br />
-                        cout<<"Equivalgono a "<< calcolaSecondi(gg, hh, mm, ss)<<" secondi";<br />
-                        <br />
-                    }<br />
+#include <iostream>
+using namespace std;
+long calcolaSecondi (int gg, int hh, int mm, int ss){
+    long s;
+    s=ss+mm*60+hh*3600+gg*86400;
+    return s;
+}
+int main(){
+    int gg, hh, mm, ss;
+    cout<<"Inserisci i giorni ";
+    cin>>gg;
+    cout<<"Inserisci le ore ";
+    cin>>hh;
+    cout<<"Inserisci i minuti ";
+    cin>>mm;
+    cout<<"Inserisci i secondi ";
+    cin>>ss;
+    cout<<"Equivalgono a "<< calcolaSecondi(gg, hh, mm, ss)<<" secondi";
+    
+}
                 </code>
+            </pre>
         <p style="visibility: hidden;">Sapessi</p>
         <a href="../../doc/cT.cpp" download><img src="../../images/down.icns" alt="Download" class="dowb"></a>
         <p class="downtxt" id="dw2" onmouseenter="down2()" onmouseleave="downE2()">Download</p>
@@ -390,155 +394,156 @@ int fattoriale(int n){<br />
         sia con il calendario commerciale, sia con quello solare.
     </p>
     <div class="cppcode">
+        <pre>
         <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
-                /*Esercizio 29 pag A150:<br />
-                Programma per calcolare la distanza tra due date<br />
-                */<br />
-               #include <iostream><br />
-               using namespace std;<br />
-               void data(int);<br />
-               void aCom(int, int, long, int, int, long);<br />
-               void aSol(int, int, long, int, int, long);<br />
-               void help();<br />
-               <br />
-               int main(){<br />
-                   int opz;<br />
-                   bool cont=true;<br />
-                   while(cont){<br />
-                       cout<<"PROGRAMMA PER MISURARE L'INTERVALLO DI TEMPO TRA DUE DATE \n \n";<br />
-                       cout<<"Inserire 1 per usare l'ANNO COMMERCIALE \n";<br />
-                       cout<<"Inserire 2 per usare l'ANNO SOLARE \n";<br />
-                       cout<<"Inserire 0 per MAGGIORI INFORMAZIONI \n";<br />
-                       cout<<"Inserire 99 quando si HA FINITO \n";<br />
-                       cout<<"--> ";<br />
-                       cin>>opz;<br />
-                       switch (opz) {<br />
-                           case 0:<br />
-                               help();<br />
-                               break;<br />
-                           case 1:<br />
-                               data(opz);<br />
-                               break;<br />
-                           case 2:<br />
-                               data(opz);<br />
-                               break;<br />
-                           case 99:<br />
-                               cont=false;<br />
-                               break;<br />
-                           default:<br />
-                               break;<br />
-                       }<br />
-                   }<br />
-                   cout<<"Grazie per aver usato il mio programma. :) \n";<br />
-                   return 0;<br />
-               }<br />
-               void data(int opz){<br />
-                   int gg1, gg2, mm1, mm2;<br />
-                   long yy1, yy2;<br />
-                   cout<<"PRIMA data: \n";<br />
-                   cout<<"Inserire il GIORNO: -> ";<br />
-                   cin>>gg1;<br />
-                   cout<<"Inserire il MESE: -> ";<br />
-                   cin>>mm1;<br />
-                   cout<<"Inserire l'ANNO: -> ";<br />
-                   cin>>yy1;<br />
-                   cout<<"SECONDA data: \n";<br />
-                   cout<<"Inserire il GIORNO: -> ";<br />
-                   cin>>gg2;<br />
-                   cout<<"Inserire il MESE: -> ";<br />
-                   cin>>mm2;<br />
-                   cout<<"Inserire l'ANNO: -> ";<br />
-                   cin>>yy2;<br />
-                   if(opz==1){<br />
-                       aCom(gg1, mm1, yy1, gg2, mm2, yy2);<br />
-                   }else{<br />
-                       aSol(gg2, mm2, yy2, gg1, mm1, yy1);<br />
-                   }<br />
-               }<br />
-               void aCom(int gg1, int mm1, long yy1, int gg2, int mm2, long yy2){<br />
-                   long mm, yy, gg;<br />
-                   yy=yy2-yy1;<br />
-                   gg=gg2-gg1;<br />
-                   mm=mm2-mm1;<br />
-                   if(gg<0){<br />
-                       mm--;<br />
-                       gg+=30;<br />
-                   }<br />
-                   if(mm<0){<br />
-                       yy--;<br />
-                       mm+=12;<br />
-                   }<br />
-               <br />
-                   cout<<"Dalla prima data alla seconda sono passati "<<gg<<" GIORNI, "<<mm<<" MESI, "<<yy<<" ANNI. \n \n \n";<br />
-               }<br />
-               <br />
-               <br />
-               void aSol(int gg2, int mm2, long yy2, int gg1, int mm1, long yy1){<br />
-                   long mm, gg, yy;<br />
-                   yy=yy2-yy1;<br />
-                   mm=mm2-mm1;<br />
-                   gg=gg2-gg1;<br />
-                   if(mm<0){<br />
-                       mm+=12;<br />
-                       yy--;<br />
-                   }<br />
-                   if(gg<0){<br />
-                       mm--;<br />
-                       switch (mm) {<br />
-                           case 12:<br />
-                               gg+=31;<br />
-                               break;<br />
-                           case 11:<br />
-                               gg+=30;<br />
-                               break;<br />
-                           case 10:<br />
-                               gg+=31;<br />
-                               break;<br />
-                           case 9:<br />
-                               gg+=30;<br />
-                               break;<br />
-                           case 8:<br />
-                               gg+=31;<br />
-                               break;<br />
-                           case 7:<br />
-                               gg+=31;<br />
-                               break;<br />
-                           case 6:<br />
-                               gg+=30;<br />
-                               break;<br />
-                           case 5:<br />
-                               gg+=31;<br />
-                               break;<br />
-                           case 4:<br />
-                               gg+=30;<br />
-                               break;<br />
-                           case 3:<br />
-                               gg+=31;<br />
-                               break;<br />
-                           case 2:<br />
-                               gg+=28;<br />
-                               break;<br />
-                           case 1:<br />
-                               gg+=31;<br />
-                               break;<br />
-                           case 0:<br />
-                               gg+=31;<br />
-                               break;<br />
-                           <br />
-                           default:<br />
-                               break;<br />
-                       }<br />
-                   }<br />
-                   cout<<"Dalla prima data alla seconda sono passati "<<gg<<" GIORNI, "<<mm<<" MESI, "<<yy<<" ANNI. \n \n \n";<br />
-               }<br />
-               <br />
-               void help(){<br />
-                   cout<<"AIUTO: \n";<br />
-                   cout<<"L'anno commerciale è quello che, ogni mese ha 30 giorni, dunque 360 giorni. Viene usato per esempio nell'ambito finanziario per calcolare gli interessi nei prestiti. \n";<br />
-                   cout<<"L'anno solare è quello che tutti noi usiamo e ha 365 giorni. \n \n \n";<br />
-               }<br />
-               
+/*Esercizio 29 pag A150:
+Programma per calcolare la distanza tra due date
+*/
+#include <iostream>
+using namespace std;
+void data(int);
+void aCom(int, int, long, int, int, long);
+void aSol(int, int, long, int, int, long);
+void help();
+
+int main(){
+    int opz;
+    bool cont=true;
+    while(cont){
+        cout<<"PROGRAMMA PER MISURARE L'INTERVALLO DI TEMPO TRA DUE DATE \n \n";
+        cout<<"Inserire 1 per usare l'ANNO COMMERCIALE \n";
+        cout<<"Inserire 2 per usare l'ANNO SOLARE \n";
+        cout<<"Inserire 0 per MAGGIORI INFORMAZIONI \n";
+        cout<<"Inserire 99 quando si HA FINITO \n";
+        cout<<"--> ";
+        cin>>opz;
+        switch (opz) {
+            case 0:
+                help();
+                break;
+            case 1:
+                data(opz);
+                break;
+            case 2:
+                data(opz);
+                break;
+            case 99:
+                cont=false;
+                break;
+            default:
+                break;
+        }
+    }
+    cout<<"Grazie per aver usato il mio programma. :) \n";
+    return 0;
+}
+void data(int opz){
+    int gg1, gg2, mm1, mm2;
+    long yy1, yy2;
+    cout<<"PRIMA data: \n";
+    cout<<"Inserire il GIORNO: -> ";
+    cin>>gg1;
+    cout<<"Inserire il MESE: -> ";
+    cin>>mm1;
+    cout<<"Inserire l'ANNO: -> ";
+    cin>>yy1;
+    cout<<"SECONDA data: \n";
+    cout<<"Inserire il GIORNO: -> ";
+    cin>>gg2;
+    cout<<"Inserire il MESE: -> ";
+    cin>>mm2;
+    cout<<"Inserire l'ANNO: -> ";
+    cin>>yy2;
+    if(opz==1){
+        aCom(gg1, mm1, yy1, gg2, mm2, yy2);
+    }else{
+        aSol(gg2, mm2, yy2, gg1, mm1, yy1);
+    }
+}
+void aCom(int gg1, int mm1, long yy1, int gg2, int mm2, long yy2){
+    long mm, yy, gg;
+    yy=yy2-yy1;
+    gg=gg2-gg1;
+    mm=mm2-mm1;
+    if(gg<0){
+        mm--;
+        gg+=30;
+    }
+    if(mm<0){
+        yy--;
+        mm+=12;
+    }
+
+    cout<<"Dalla prima data alla seconda sono passati "<<gg<<" GIORNI, "<<mm<<" MESI, "<<yy<<" ANNI. \n \n \n";
+}
+
+
+void aSol(int gg2, int mm2, long yy2, int gg1, int mm1, long yy1){
+    long mm, gg, yy;
+    yy=yy2-yy1;
+    mm=mm2-mm1;
+    gg=gg2-gg1;
+    if(mm<0){
+        mm+=12;
+        yy--;
+    }
+    if(gg<0){
+        mm--;
+        switch (mm) {
+            case 12:
+                gg+=31;
+                break;
+            case 11:
+                gg+=30;
+                break;
+            case 10:
+                gg+=31;
+                break;
+            case 9:
+                gg+=30;
+                break;
+            case 8:
+                gg+=31;
+                break;
+            case 7:
+                gg+=31;
+                break;
+            case 6:
+                gg+=30;
+                break;
+            case 5:
+                gg+=31;
+                break;
+            case 4:
+                gg+=30;
+                break;
+            case 3:
+                gg+=31;
+                break;
+            case 2:
+                gg+=28;
+                break;
+            case 1:
+                gg+=31;
+                break;
+            case 0:
+                gg+=31;
+                break;
+            
+            default:
+                break;
+        }
+    }
+    cout<<"Dalla prima data alla seconda sono passati "<<gg<<" GIORNI, "<<mm<<" MESI, "<<yy<<" ANNI. \n \n \n";
+}
+
+void help(){
+    cout<<"AIUTO: \n";
+    cout<<"L'anno commerciale è quello che, ogni mese ha 30 giorni, dunque 360 giorni. Viene usato per esempio nell'ambito finanziario per calcolare gli interessi nei prestiti. \n";
+    cout<<"L'anno solare è quello che tutti noi usiamo e ha 365 giorni. \n \n \n";
+}
                 </code>
+            </pre>
         <p style="visibility: hidden;">Non so più cosa mettere</p>
         <a href="../../doc/2date.cpp" download><img src="../../images/down.icns" alt="Download" class="dowb"></a>
         <p class="downtxt" id="dw4" onmouseenter="down4()" onmouseleave="downE4()">Download</p>
@@ -665,62 +670,62 @@ void giocoMat2(){
     <div class="cppcode">
         <pre>
                     <code title="Perché copi-incolli? C'è il pulsante di Download in fondo!">
-                #include <iostream>
-                    #include <cstdlib>
-                    using namespace std;
-                    int main(){
-                        int var;
-                    
-                        srand (time(NULL));
-                    
-                    
-                        
-                        
-                        var=rand()%6+1;
-                        if(var==6){
-                            for(int i=1; i<=3; i++){
-                                cout<<"°   °";
-                                cout<< endl;
-                            }
-                                >
-                                
-                        }
-                        if(var==5){
-                            
-                                cout<<"°   °"< < endl;
-                                cout<<"  °  "<< endl;
-                                cout<<"°   °"<< endl;
-                        }
-                        if(var==4){
-                            
-                                cout<<"°   °"<< endl;
-                                cout<<"     "<< endl;
-                                cout<<"°   °"<< endl;
-                        }
-                        if(var==3){
-                            
-                                cout<<"°    "<< endl;
-                                cout<<"  °  "<< endl;
-                                cout<<"    °"<< endl;
-                        }
-                        if(var==2){
-                            
-                                cout<<"     "<< endl;
-                                cout<<"°   °"<< endl;
-                                cout<<"     "<< endl;
-                        }
-                        if(var==1){
-                            
-                                cout<<"     "<< endl;
-                                cout<<"  °  "<< endl;
-                                cout<<"     "<< endl;
-                        }
-                        cout<< endl;
-                        cout<< endl;
-                        cout<< endl;
-                        
-                        return 0;
-                    }   
+#include <iostream>
+    #include <cstdlib>
+    using namespace std;
+    int main(){
+        int var;
+    
+        srand (time(NULL));
+    
+    
+        
+        
+        var=rand()%6+1;
+        if(var==6){
+            for(int i=1; i<=3; i++){
+                cout<<"°   °";
+                cout<< endl;
+            }
+                >
+                
+        }
+        if(var==5){
+            
+                cout<<"°   °"< < endl;
+                cout<<"  °  "<< endl;
+                cout<<"°   °"<< endl;
+        }
+        if(var==4){
+            
+                cout<<"°   °"<< endl;
+                cout<<"     "<< endl;
+                cout<<"°   °"<< endl;
+        }
+        if(var==3){
+            
+                cout<<"°    "<< endl;
+                cout<<"  °  "<< endl;
+                cout<<"    °"<< endl;
+        }
+        if(var==2){
+            
+                cout<<"     "<< endl;
+                cout<<"°   °"<< endl;
+                cout<<"     "<< endl;
+        }
+        if(var==1){
+            
+                cout<<"     "<< endl;
+                cout<<"  °  "<< endl;
+                cout<<"     "<< endl;
+        }
+        cout<< endl;
+        cout<< endl;
+        cout<< endl;
+        
+        return 0;
+    }   
                 </code>
             </pre>
         <a href="../../doc/dado.cpp" download><img src="../../images/down.icns" alt="Download" class="dowb"></a>
@@ -737,7 +742,7 @@ void giocoMat2(){
     <div class="cppcode">
         <pre>
 <code>
-    //Programma per shiftare l'array
+//Programma per shiftare l'array
 #include &lt;iostream>
 #define N 5
 using namespace std;
@@ -1205,8 +1210,8 @@ void stampaConcessionario(Auto arr[]){
         <p class="downtxt" id="dw13" onmouseenter="down13()" onmouseleave="downE13()">Download</p>
         <p style="visibility: hidden;">Bla bla bla</p>
     </div>
-    <br />
-    <br />
+    
+    
 
     <footer>
         

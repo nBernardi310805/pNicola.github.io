@@ -4,6 +4,7 @@
 addEventListener('DOMContentLoaded', creaNav)
 addEventListener('DOMContentLoaded', veryDarkMode)
 addEventListener('DOMContentLoaded', creaFooter)
+addEventListener('DOMContentLoaded', uRim)
  
 function creaNav(){     // ` `
     let title = document.querySelector('title').innerText
@@ -60,9 +61,16 @@ function creaNav(){     // ` `
 }
 
 function veryDarkMode(){
-    if(localStorage.getItem('ultraDM')=='true'){
-        const d = document.querySelector('body')
-        d.style.backgroundColor = '#000000'
+    if(localStorage.getItem('theme')=='dark')
+        document.querySelector('body').style.backgroundColor = '#000000'
+    else if(localStorage.getItem('theme')=='light'){
+        document.querySelector('body').style.backgroundColor = '#ffffff'
+        document.querySelector('p').style = 'color:black'
+        let ris = prompt('Attenzione: questa feature è in alpha. Vuoi tornare alla modalità normale? Rispondi Y o N')
+        if(ris.toUpperCase()=='Y'){
+            localStorage.removeItem('theme')
+            location.reload()
+        }
     }
 }
 
@@ -82,4 +90,22 @@ function setHTML(id, msg){
 
 function sostituisciImmagine(id){
     document.getElementById(id).src='/images/pasq.png'
+}
+
+var users=0
+function countup(){
+    return users++
+}
+function uRim(){
+    setInterval(mod, 50)
+}
+
+function mod(){
+    const TARGET = document.getElementById('useratori')
+    if(users<76)
+        TARGET.innerText = countup()
+    else{
+        TARGET.style='color:lightgrey; font-weight:bolder;'
+        return
+    }
 }
