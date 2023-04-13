@@ -47,6 +47,8 @@ header {
 nav h2 {
     color:whitesmoke;
 }
+
+nav{text-align: center;}
 nav a {
     border-radius: 30px;
     border:solid;
@@ -57,7 +59,7 @@ nav a {
     text-decoration: none;
     border-width: 2px;
     display: inline-block;
-    width: 16%;
+    width: 15.5%;
     text-align: center;
 }
 nav a:hover {

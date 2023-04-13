@@ -83,17 +83,21 @@
         text-decoration: none;
         border-width: 2px;
         display: inline-block;
+        width: 15.5%;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-right: 3px;
     }
     header div {
-        text-align: end;
+        text-align: center;
         padding-right: 10px;
     }
     header div a:hover {
         border-radius: 30px;
         border:solid;
-        border-color:firebrick;
+        background-color: firebrick;
         text-decoration: none;
         border-width: 2px;
+        color:white;
     }
-
 }
