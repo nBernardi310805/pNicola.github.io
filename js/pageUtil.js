@@ -4,7 +4,6 @@
 addEventListener('DOMContentLoaded', creaNav)
 addEventListener('DOMContentLoaded', veryDarkMode)
 addEventListener('DOMContentLoaded', creaFooter)
-addEventListener('DOMContentLoaded', uRim)
  
 function creaNav(){     // ` `
     let title = document.querySelector('title').innerText
@@ -92,20 +91,3 @@ function sostituisciImmagine(id){
     document.getElementById(id).src='/images/pasq.png'
 }
 
-var users=0
-function countup(){
-    return users++
-}
-function uRim(){
-    setInterval(mod, 50)
-}
-
-function mod(){
-    const TARGET = document.getElementById('useratori')
-    if(users<76)
-        TARGET.innerText = countup()
-    else{
-        TARGET.style='color:lightgrey; font-weight:bolder;'
-        return
-    }
-}

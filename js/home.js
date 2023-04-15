@@ -1,23 +1,5 @@
 addEventListener('DOMContentLoaded', ggRim)
-function importante(){
-    alert('IMPORTANTE:\nIl 25 giugno mi scade il dominio portalenicola.it.\n Il nuovo dominio sarà "ilportaledinicola.it".')
-}
-let i = 0
-function usr(){
-  //cont.innerText = i
-  //setTimeout(aggiorna(i, cont), 1000)
-
-  console.log(i)
-  if(i> 251)
-    return
-    setInterval(500, prova)
-    i++
-}
-function prova(){
-  let cont = document.getElementById('nUtenti')
-  cont.innerText = "ciao"
-  setInterval(500, usr)
-}
+addEventListener('DOMContentLoaded', uRim)
 
 function aggiorna(n, dove){
     dove.innerText = n
@@ -54,3 +36,25 @@ function ggRim(){
 function modifica(){
     document.getElementById('cosafaccio').innerText = countdown().days + 'gg, ' + countdown().hours + 'h, ' + countdown().minutes + "', " + countdown().seconds + "'' alla fine della scuola"
 }
+
+/**
+ * Aggiorna il numero degli utenti in maniera simpatica
+ */
+var users=0
+function countup(){
+    return users++
+}
+function uRim(){
+    setInterval(mod, 50)
+}
+
+function mod(){
+    const TARGET = document.getElementById('useratori')
+    if(users<80)
+        TARGET.innerText = countup()
+    else{
+        TARGET.style='color:lightgrey; font-weight:bolder;'
+        return
+    }
+}
+
