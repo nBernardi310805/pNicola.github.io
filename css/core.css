@@ -135,10 +135,11 @@ article, figure, a, img#sfondone {
     zoom:155%;
 }
 button:hover {
-    background-color: darkred;
     border-radius: 30px;
     border:solid;
-    border-color: crimson;
+    background-color: firebrick;
+    text-decoration: none;
+    border-width: 2px;
     color:white;
 }
 .icon {
@@ -350,6 +351,26 @@ button:hover {
         animation-name: amla;
         animation-duration: 5s;
         animation-fill-mode: backwards;
+    }
+    button {
+        border-radius: 30px;
+        border:solid;
+        border-color:firebrick;
+        color:firebrick;
+        background-color: whitesmoke;
+        border-spacing: 10px;
+        text-decoration: none;
+        border-width: 2px;
+        display: inline-block;
+        width: 20%;
+        height: 40px;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+        margin-bottom: 5;
+        margin-top:5px;
+        clear:both;
+        float:none;
     }
 }
 #colagg {

@@ -25,7 +25,7 @@
         border-radius: 15px; border:solid; border-color:red;
         display: block;
         width: 100%;
-        height: 200px;
+        height: 300px;
     }
     .fusc{
         width: 100%; height: 500px;
@@ -35,12 +35,22 @@
         font-weight: lighter;
     }
     button {
-        width:50%;
-        margin-bottom: 10px;
-        border-radius: 25px;
-        border: solid;
-        border-color:crimson;
-        font-size: medium;
+        border-radius: 30px;
+        border:solid;
+        border-color:firebrick;
+        color:firebrick;
+        background-color: whitesmoke;
+        border-spacing: 10px;
+        text-decoration: none;
+        border-width: 2px;
+        display: inline-block;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+        margin-bottom: 5;
+        margin-top:5px;
     }
     .tpProj {
         width: 100%;
@@ -118,7 +128,7 @@
     iframe {
         border-radius: 15px; border:solid; border-color:red;
         display: block;
-        width: 97%;
+        width: 100%;
         
     }
     h3 {
@@ -126,11 +136,20 @@
         font-weight: lighter;
     }
     button {
-        width:auto;
+        border-radius: 30px;
+        border:solid;
+        border-color:firebrick;
+        color:firebrick;
+        background-color: whitesmoke;
+        border-spacing: 10px;
+        text-decoration: none;
+        border-width: 2px;
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
         margin-bottom: 10px;
-        border-radius: 25px;
-        border: solid;
-        border-color:crimson;
     }
     .tpProj {
         width: 23%;
@@ -188,6 +207,37 @@
         width: 65%;
         float: left;
         overflow: auto;
+    }
+    .btnGo {
+        border-radius: 30px;
+        border:solid;
+        border-color:firebrick;
+        color:firebrick;
+        background-color: whitesmoke;
+        border-spacing: 10px;
+        text-decoration: none;
+        border-width: 2px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .btnGo:hover {
+        border-radius: 30px;
+        border:solid;
+        background-color: firebrick;
+        text-decoration: none;
+        border-width: 2px;
+        color:white;
+    }
+    .tpProj h3 {
+        text-align: center;
+    }
+    button:disabled {
+        cursor: not-allowed;
+        background-color: lightgray;
     }
 }
 .riq {
