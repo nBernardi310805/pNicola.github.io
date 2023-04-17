@@ -49,7 +49,7 @@
         text-align: center;
         font-size: larger;
         font-weight: bold;
-        margin-bottom: 5;
+        margin-bottom: 5px;
         margin-top:5px;
     }
     .tpProj {
@@ -160,7 +160,7 @@
         text-decoration: underline;
     }
     #what {
-        width:15%;
+        width:100%;
         text-align: center;
         border-radius: 25px;
         border: solid;
@@ -170,8 +170,8 @@
         font-size: 3vh;
     }
     #htmlNot {
-        height: 400px;
-        width: 50%;
+        height: 600px;
+        width: 100%;
         background-color: white;
         
     }
