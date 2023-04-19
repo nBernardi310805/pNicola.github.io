@@ -4,6 +4,7 @@
 addEventListener('DOMContentLoaded', creaNav)
 addEventListener('DOMContentLoaded', veryDarkMode)
 addEventListener('DOMContentLoaded', creaFooter)
+addEventListener('DOMContentLoaded', injectLinks)
  
 function creaNav(){     // ` `
     let title = document.querySelector('title').innerText
@@ -91,3 +92,7 @@ function sostituisciImmagine(id){
     document.getElementById(id).src='/images/pasq.png'
 }
 
+function injectLinks(){
+    const HEAD = document.querySelector('head')
+    HEAD.innerHTML += '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9843209517750049" crossorigin="anonymous"></script>'
+}
