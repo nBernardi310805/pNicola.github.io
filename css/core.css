@@ -206,7 +206,7 @@ button:hover {
     #nov p {
         text-align: center;
     }
-    #tit3 {
+    .tit3 {
         color:red;
         zoom: 150%
     }
@@ -306,7 +306,7 @@ button:hover {
         margin-bottom: 50px;
         padding: 5px;
     }
-    #tit3 {
+    .tit3 {
         color:red;
         zoom: 150%
     }

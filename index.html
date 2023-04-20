@@ -13,16 +13,6 @@
         <script src="js/comandi.js"></script>
         <script src="js/home.js"></script>
         <script src="js/pageUtil.js"></script>
-
-<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-<amp-ad width="100vw" height="320"
-     type="adsense"
-     data-ad-client="ca-pub-9843209517750049"
-     data-ad-slot="4860844160"
-     data-auto-format="rspv"
-     data-full-width="">
-  <div overflow=""></div>
-</amp-ad>
         <meta name="keywords" content="il portale di nicola, portale nicola, portalenicola, c++, cpp, sfondi gratis, free wallpaper, trucchi, tips, eastereggs, easter eggs, nicola bernardi, tpsit, app android, nicola bernardi sito, il portale di nicola bernardi, nbernardi">
         
         <script data-ad-client="ca-pub-9843209517750049" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -44,7 +34,6 @@
     <body>
         <header>
                     <!-- NAVBAR GENERATA CON IL JS -->
-            </nav>
         </header>
         <section id="bod">
         <section>
@@ -54,8 +43,8 @@
                 <a title="Sostienimi: donami" href="https://paypal.me/gazzettaleviponti"><img src="images/paypal.png" class="icon" alt="Donami" id="paypll"></a>
                 <!-- <a title="Vecchio sito - Non più disponibile" href="https://site.nbernardi.tk" disabled><img src="images/old.png" class="icon" alt="OldSite"></a> -->
                 <a title="C++" href="didattica/cpp/"><img src="images/cpp.png" class="icon" alt="Cpp" id="cplus"></a>
-                <a title="Informatica" href="didattica/informatica" style="display:none;"><img src="images/coding.png" class="icon" alt="Informatica" id=""style="display:none;"></a>
-                <img src="images/term.png" id="easter" class="icon" onclick="cmd()" title="terminal" id="cmddd">
+                <a title="Informatica" href="didattica/informatica" style="display:none;"><img src="images/coding.png" class="icon" alt="Informatica" style="display:none;"></a>
+                <img src="images/term.png" class="icon" onclick="cmd()" title="terminal" id="cmddd">
                 <a title="Giochi" href="giochi/"><img src="images/giochi.png" class="icon" alt="Giochi" id="giuochi"></a>
                 <a title="Entra nel mio server Discord" href="https://discord.gg/TK8j9nft"><img src="images/discord.png" class="icon" id="discordia" alt="Join into my Discord Server"></a>
             </div>
@@ -99,7 +88,7 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
 
         <section id="bacheca" style="overflow: auto;">
             <article>
-                <h4 id="whoami"><u>Bacheca</u></h4>
+                <h4 class="whoami"><u>Bacheca</u></h4>
                 <p class="dat"><b>La pagina TPSIT è tornata!</b></p>
                 <p><a href="https://tpsit.nbernardi.tk/">Clicca qui per andare alla pagina TPSIT con tutti i progetti</a></p>
                 
@@ -108,30 +97,29 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
                 </p>
                 <!-- ↑ ↓ -->
                 <ol>
-                    <li>🏆 Home Page - 1118 visual.</li>
-                    <li>🥈 Interattivo - 357 visual.</li>
-                    <li>🥉 Sfondi (pg1) - 253 visual.</li>
-                    <li>Pannello di controllo - 199 visual.</li>
-                    <li>Contatti - 159 visual.</li>
-                    <li>Didattica - 112 visual.</li>
-                    <li>Aggiornamenti - 97 visual.</li>
-                    <li>Trucchi - 74 visual.</li>
-                    <li>Sfondi pg2 - 54 visual.</li>
-                    <li>Tpsit - 48 visual.</li>
+                    <li>🏆 Home Page - 1291 visual.</li>
+                    <li>🥈 Interattivo - 365 visual.</li>
+                    <li>🥉 Sfondi (pg1) - 261 visual.</li>
+                    <li>Pannello di controllo - 200 visual.</li>
+                    <li>Contatti - 168 visual.</li>
+                    <li>Didattica - 131 visual.</li>
+                    <li>↑(10) Tpsit - 104 visual.</li>
+                    <li>↓(7) Aggiornamenti - 102 visual.</li>
+                    <li>↑(12) Java - 84 visual.</li>
+                    <li>↓(8)Trucchi - 78 visual.</li>
                 </ol>
-                <p><small>Ultimo aggiornamento: 15 aprile 2023</small></p>
-                <!-- <p><sub>I numeri nella parentesi rappresentano la posizione di una settimana fa</sub></p> -->
+                <p><small>Ultimo aggiornamento: 20 aprile 2023</small></p>
+                <p><sub>I numeri nella parentesi rappresentano la posizione che avevano lo scorso aggiornamento</sub></p>
             </article>
         </section> 
    
         <section id="eroi" style="overflow: auto;">
             <article>
-                <h4 id="whoami">Area degli Eroi</h4>
+                <h4 class="whoami">Area degli Eroi</h4>
                 <!--js-->
                 <div style="width: 45%; float:left;"><p>Per chi dona. Con la donazione si avrà
                     diritto a svariati vantaggi. Per donare:
                     <a href="https://paypal.me/gazzettaleviponti"><b>Clicca QUI</b></a></p></div>
-                </p>
                 <div style="width: 45%; float:right"><p onclick="alert('Per favore fammi la carità, Donami <3')" id="donaaa">Non c'è ancora nessuno che ha donato, ma tu puoi essere il primo ed entrare nella leggenda</p></div>
             </article>
         </section>
@@ -139,12 +127,12 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
 
             <article id="novModif"> 
             <h3 id="tit3">Novità</h3>
-            <p class="dat"><b>17 aprile 2023:</b></p>
-            <p>Sono stati migliorati alcuni elementi nella grafica desktop <a href="didattica/tpsit/">Tpsit</a>.</p>
-            <p class="dat"><b>17 aprile 2023:</b></p>
-            <p>È stata migliorata la grafica dei bottoni nella pagina <a href="didattica/tpsit/">Tpsit</a>.</p>
-            <p class="dat"><b>15 aprile 2023:</b></p>
-            <p>È stato rimosso il banner "questo sito usa i cookie", (Spoiler: questo sito utilizza solo i cookie di analytics).</p>
+            <p class="dat"><b>20 aprile 2023:</b></p>
+            <p>Nuova favicon.</p>
+            <p class="dat"><b>20 aprile 2023:</b></p>
+            <p>È stata migliorata la qualità del codice.</p>
+            <p class="dat"><b>20 aprile 2023:</b></p>
+            <p>Aggiornate le Analytics.</p>
             
             <p><b><a style="color: red;" href="https://www.instagram.com/nico.mon3y.3108/">Seguimi su Instagram per più aggiornamenti e per partecipare attivamente ai miei sondaggi.</a></b></p>
             <h3 id="agg" title="Pagina della trasparenza"><a id="colagg" onmouseenter="document.getElementById('colagg').innerHTML='Pagina della Trasparenza'" onmouseleave="document.getElementById('colagg').innerHTML='•••'" href="aggiornamenti/">•••</a></h3>
@@ -153,15 +141,15 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
         </section>
         <section id="vhs">
             <article>
-                <h4 id="whoami">Potrebbe interessarti...</h4>
-                <p id="ioo"><a href="https://discord.gg/TK8j9nft"><b>Entra nel mio SERVER DISCORD</b></a></p>
-                <h3 id="xte">Ebbene sì, ho creato un server Discord dove chiunque può parlare con me per darmi consigli sul sito o più banalmente per chiaccherare con me.
+                <h4 class="whoami">Potrebbe interessarti...</h4>
+                <p class="ioo"><a href="https://discord.gg/TK8j9nft"><b>Entra nel mio SERVER DISCORD</b></a></p>
+                <h3 class="xte">Ebbene sì, ho creato un server Discord dove chiunque può parlare con me per darmi consigli sul sito o più banalmente per chiaccherare con me.
                     Ho messo a disposizione diverse chat testuali e diverse chat vocali. Entrate, vi divertirete.
                 </h3>
-                <p id="ioo"><a href="https://timemachine.nbernardi.tk"><b>Vai alla time machine</b></a></p>
-                <h3 id="xte">I due anni del sito si avvicinano e io ho caricato online i vecchi snapshoot del sito</h3>
-                <p id="ioo"><a href="didattica/tpsit/">Nella pagina TPSIT, progetti di siti web, linguaggi per farne uno, consigli, interazione HTML - JS e altro ancora.</a></p>
-                <h3 id="xte">Testa o croce / casuale (anche per interrogazione)</h3>
+                <p class="ioo"><a href="https://timemachine.nbernardi.tk"><b>Vai alla time machine</b></a></p>
+                <h3 class="xte">I due anni del sito si avvicinano e io ho caricato online i vecchi snapshoot del sito</h3>
+                <p class="ioo"><a href="didattica/tpsit/">Nella pagina TPSIT, progetti di siti web, linguaggi per farne uno, consigli, interazione HTML - JS e altro ancora.</a></p>
+                <h3 class="xte">Testa o croce / casuale (anche per interrogazione)</h3>
             </article>
             </section>
 

@@ -192,7 +192,7 @@ footer {
         width: 100%;
         image-resolution:10%;
     }
-    #dsk {
+    .dsk {
         display: none;
     }
     .sfi {
@@ -233,7 +233,7 @@ footer {
     #t {
         vertical-align: top;
     }
-    #mob {
+    .mob {
         display: none;
     }
     .sfi {
