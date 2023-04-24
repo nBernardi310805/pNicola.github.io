@@ -94,8 +94,8 @@ h3 {
 }
 
 button {
-    width: 220px;
-    height: 30px;
+    min-width: 220px;
+    min-height: 30px;
     background-color: white;
     color:midnightblue;
     border-radius: 5px;
@@ -206,7 +206,7 @@ button:hover {
     #nov p {
         text-align: center;
     }
-    .tit3 {
+    .tit3, .whoami {
         color:red;
         zoom: 150%
     }
@@ -276,6 +276,37 @@ button:hover {
     nav {
         margin-top: -30px;
     }
+    button {
+        border-radius: 20px;
+        border:solid;
+        border-color:firebrick;
+        color:firebrick;
+        background-color: whitesmoke;
+        border-spacing: 10px;
+        text-decoration: none;
+        border-width: 2px;
+        display: inline-block;
+        min-width: 100%;
+        min-height: 40px;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+        margin-bottom: 5;
+        margin-top:5px;
+        clear:both;
+        float:none;
+    }
+    button:hover {
+        border-radius: 20px;
+        border:solid;
+        background-color: firebrick;
+        text-decoration: none;
+        border-width: 2px;
+        color:white;
+    }
+    .whoami{
+        text-align: center;
+    }
 }
 
 
@@ -306,7 +337,7 @@ button:hover {
         margin-bottom: 50px;
         padding: 5px;
     }
-    .tit3 {
+    .tit3, .whoami {
         color:red;
         zoom: 150%
     }
@@ -362,8 +393,8 @@ button:hover {
         text-decoration: none;
         border-width: 2px;
         display: inline-block;
-        width: 20%;
-        height: 40px;
+        min-width: 20%;
+        min-height: 40px;
         text-align: center;
         font-size: larger;
         font-weight: bold;

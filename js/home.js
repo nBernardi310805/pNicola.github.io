@@ -1,6 +1,7 @@
 addEventListener('DOMContentLoaded', ggRim)
 addEventListener('DOMContentLoaded', uRim)
 
+
 function aggiorna(n, dove){
     dove.innerText = n
     return
@@ -50,11 +51,12 @@ function uRim(){
 
 function mod(){
     const TARGET = document.getElementById('useratori')
-    if(users<90)
+    if(users<91)
         TARGET.innerText = countup()
     else{
         TARGET.style='color:lightgrey; font-weight:bolder;'
         return
     }
 }
+
 

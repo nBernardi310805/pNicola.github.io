@@ -4,7 +4,7 @@
         <title>Il Portale di Nicola</title>
         <meta charset="utf-8">
         <meta name="author" content="Nicola Bernardi">
-        <meta name="description" content="Come fare un sito web: consigli e molto altro, trucchi, sfondi gratis, programmi C++ già fatti e molto altro nel Portale di Nicola 4.3.6.1">
+        <meta name="description" content="Come fare un sito web: consigli e molto altro, trucchi, sfondi gratis, programmi C++ già fatti e molto altro nel Portale di Nicola 4.3.6.2">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="favicon.png">
         <link rel="stylesheet" href="css/core.css">
@@ -97,42 +97,43 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
                 </p>
                 <!-- ↑ ↓ -->
                 <ol>
-                    <li>🏆 Home Page - 1291 visual.</li>
-                    <li>🥈 Interattivo - 365 visual.</li>
-                    <li>🥉 Sfondi (pg1) - 261 visual.</li>
+                    <li>🏆 Home Page - 1313 visual.</li>
+                    <li>🥈 Interattivo - 371 visual.</li>
+                    <li>🥉 Sfondi (pg1) - 264 visual.</li>
                     <li>Pannello di controllo - 200 visual.</li>
-                    <li>Contatti - 168 visual.</li>
-                    <li>Didattica - 131 visual.</li>
-                    <li>↑(10) Tpsit - 104 visual.</li>
-                    <li>↓(7) Aggiornamenti - 102 visual.</li>
-                    <li>↑(12) Java - 84 visual.</li>
-                    <li>↓(8)Trucchi - 78 visual.</li>
+                    <li>Contatti - 170 visual.</li>
+                    <li>Didattica - 141 visual.</li>
+                    <li>Tpsit - 136 visual.</li>
+                    <li>Aggiornamenti - 103 visual.</li>
+                    <li>Java - 84 visual.</li>
+                    <li>Trucchi - 80 visual.</li>
                 </ol>
-                <p><small>Ultimo aggiornamento: 20 aprile 2023</small></p>
-                <p><sub>I numeri nella parentesi rappresentano la posizione che avevano lo scorso aggiornamento</sub></p>
+                <p><small>Ultimo aggiornamento: 24 aprile 2023</small></p>
+                <!-- <p><sub>I numeri nella parentesi rappresentano la posizione che avevano lo scorso aggiornamento</sub></p> -->
             </article>
         </section> 
    
         <section id="eroi" style="overflow: auto;">
             <article>
-                <h4 class="whoami">Area degli Eroi</h4>
+                <h4 class="whoami"><span>Evento:</span> Festa della liberazione</h4>
                 <!--js-->
-                <div style="width: 45%; float:left;"><p>Per chi dona. Con la donazione si avrà
-                    diritto a svariati vantaggi. Per donare:
-                    <a href="https://paypal.me/gazzettaleviponti"><b>Clicca QUI</b></a></p></div>
-                <div style="width: 45%; float:right"><p onclick="alert('Per favore fammi la carità, Donami <3')" id="donaaa">Non c'è ancora nessuno che ha donato, ma tu puoi essere il primo ed entrare nella leggenda</p></div>
+                <div style="width: 45%; float:left;"><p>
+                    <button onclick="animazATema()">Premi qui per avviare l'animazione a tema</button>
+                    <button onclick="localStorage.removeItem('festa')">Premi qui per fermare l'animazione a tema</button>
+                </p></div>
+                <div style="width: 45%; float:right"><p id="donaaa">In questa pagina sono presenti i bottoni e le cose relative agli eventi/festività in Italia.</p></div>
             </article>
         </section>
         <section id="nov">
 
             <article id="novModif"> 
-            <h3 id="tit3">Novità</h3>
-            <p class="dat"><b>20 aprile 2023:</b></p>
-            <p>Nuova favicon.</p>
-            <p class="dat"><b>20 aprile 2023:</b></p>
-            <p>È stata migliorata la qualità del codice.</p>
-            <p class="dat"><b>20 aprile 2023:</b></p>
-            <p>Aggiornate le Analytics.</p>
+            <h3 class="tit3">Novità</h3>
+            <p class="dat"><b>24 aprile 2023:</b></p>
+            <p>Aggiornate le Analytics e il numero di utenti.</p>
+            <p class="dat"><b>24 aprile 2023:</b></p>
+            <p>È stata implementata una sezione a tema Festa della Liberazione.</p>
+            <p class="dat"><b>24 aprile 2023:</b></p>
+            <p>Rimossa la sezione eroi in favore degli eventi/festività.</p>
             
             <p><b><a style="color: red;" href="https://www.instagram.com/nico.mon3y.3108/">Seguimi su Instagram per più aggiornamenti e per partecipare attivamente ai miei sondaggi.</a></b></p>
             <h3 id="agg" title="Pagina della trasparenza"><a id="colagg" onmouseenter="document.getElementById('colagg').innerHTML='Pagina della Trasparenza'" onmouseleave="document.getElementById('colagg').innerHTML='•••'" href="aggiornamenti/">•••</a></h3>
@@ -142,14 +143,18 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
         <section id="vhs">
             <article>
                 <h4 class="whoami">Potrebbe interessarti...</h4>
-                <p class="ioo"><a href="https://discord.gg/TK8j9nft"><b>Entra nel mio SERVER DISCORD</b></a></p>
-                <h3 class="xte">Ebbene sì, ho creato un server Discord dove chiunque può parlare con me per darmi consigli sul sito o più banalmente per chiaccherare con me.
+                <h3 class="xte"><a href="">25 Aprile 2023</a></h3>
+                <p class="ioo">
+                    Noi del Portale di Nicola <small>dico noi perché fa più figo (al sito ci lavoro solo io)</small> vogliamo augurarvi un buon 25 aprile.
+                </p>
+                <h3 class="xte"><a href="https://discord.gg/TK8j9nft">Entra nel mio SERVER DISCORD</a></h3>
+                <p class="ioo">Ebbene sì, ho creato un server Discord dove chiunque può parlare con me per darmi consigli sul sito o più banalmente per chiaccherare con me.
                     Ho messo a disposizione diverse chat testuali e diverse chat vocali. Entrate, vi divertirete.
-                </h3>
-                <p class="ioo"><a href="https://timemachine.nbernardi.tk"><b>Vai alla time machine</b></a></p>
-                <h3 class="xte">I due anni del sito si avvicinano e io ho caricato online i vecchi snapshoot del sito</h3>
-                <p class="ioo"><a href="didattica/tpsit/">Nella pagina TPSIT, progetti di siti web, linguaggi per farne uno, consigli, interazione HTML - JS e altro ancora.</a></p>
-                <h3 class="xte">Testa o croce / casuale (anche per interrogazione)</h3>
+                </p>
+                <h3 class="xte"><a href="https://timemachine.nbernardi.tk">Vai alla time machine</a></h3>
+                <p class="ioo">I due anni del sito si avvicinano e io ho caricato online i vecchi snapshoot del sito</p>
+                <h3 class="xte"><a href="didattica/tpsit/">Pagina TPSIT</a></h3>
+                <p class="ioo">Nella pagina TPSIT, progetti di siti web, linguaggi per farne uno, consigli, interazione HTML - JS e altro ancora.</p>
             </article>
             </section>
 

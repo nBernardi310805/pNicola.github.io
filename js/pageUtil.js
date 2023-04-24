@@ -1,10 +1,13 @@
 /**
  * Utilità delle pagine. Crea la navbar e il footer e la ultradarkmode
  */
+let vxx = 0, expired=false
+
 addEventListener('DOMContentLoaded', creaNav)
 addEventListener('DOMContentLoaded', veryDarkMode)
 addEventListener('DOMContentLoaded', creaFooter)
 addEventListener('DOMContentLoaded', injectLinks)
+addEventListener('DOMContentLoaded', italianFlag)
  
 function creaNav(){     // ` `
     let title = document.querySelector('title').innerText
@@ -95,4 +98,47 @@ function sostituisciImmagine(id){
 function injectLinks(){
     const HEAD = document.querySelector('head')
     HEAD.innerHTML += '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9843209517750049" crossorigin="anonymous"></script>'
+}
+
+function italianFlag(){
+    const x = JSON.parse(localStorage.getItem('festa'))
+    if(x==null){
+        console.log("vi")
+    }else if(x.value=='activated'&&(x.expiry-Date.parse(new Date()))>0)
+        var interval = setInterval(changeHeaderBackground, 3000)
+    else{
+        localStorage.removeItem('festa')
+        location.reload
+        return
+    }
+}
+
+function changeHeaderBackground(){
+    const HEADER = document.querySelector('header')
+    switch (vxx) {
+        case 0:
+            HEADER.style.backgroundColor = 'green'
+            break
+        case 1:
+            HEADER.style.backgroundColor = 'white'
+            document.getElementById('titol').style.color="black"
+            break
+        case 2:
+            HEADER.style.backgroundColor = 'red'
+            document.getElementById('titol').style.color="white"
+            break
+    }
+    if(vxx==2)
+        vxx=0
+    else
+        vxx++
+}
+
+function animazATema(){
+    const item = {
+		value: 'activated',
+		expiry: Date.parse('2023-04-26')
+	}
+    localStorage.setItem('festa', (JSON.stringify(item)))
+    italianFlag()
 }
