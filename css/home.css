@@ -58,3 +58,6 @@
     font-family: fantasy;
     padding: 5px;
 }
+.btn_small {
+    min-width: 20%;
+}

@@ -1,5 +1,6 @@
 addEventListener('DOMContentLoaded', ggRim)
 addEventListener('DOMContentLoaded', uRim)
+addEventListener('DOMContentLoaded', grg)
 
 
 function aggiorna(n, dove){
@@ -58,5 +59,33 @@ function mod(){
         return
     }
 }
+
+function yyy(){
+    const total = Date.parse('2023-05-17')-Date.parse(Date())
+    const seconds = Math.floor( (total/1000) % 60 );
+    const minutes = Math.floor( (total/1000/60) % 60 );
+    const hours = Math.floor( (total/(1000*60*60)) % 24 );
+    const days = Math.floor( total/(1000*60*60*24) );
+    return {
+      total,
+      days,
+      hours,
+      minutes,
+      seconds
+    };
+  }
+  /**
+   * chiama la funzione modifica ogni secondo
+   */
+  function grg(){
+      setInterval(jij, 1000)
+  }
+  /**
+   * crea la stringa da scrivere
+   */
+  function jij(){
+      document.getElementById('c2y').innerText = yyy().days + 'gg, ' + yyy().hours + 'h, ' + yyy().minutes + "', " + yyy().seconds + "'' ai 2 anni del sito"
+  }
+  
 
 
