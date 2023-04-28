@@ -7,10 +7,7 @@
         height: 200px;
         text-align: center;
     }
-    
-    tr{
-        align-content: center;
-    }
+    tr{align-content: center;}
     td{
         font-size: 100px;
         font-family:Georgia, 'Times New Roman', Times, serif;
@@ -31,9 +28,7 @@
         padding: 10px;
         text-align: center;
     }
-    table{
-        margin: auto;
-    }
+    table{margin: auto;}
     h1{
         color:red;
         text-align: center;
@@ -59,10 +54,7 @@
         height: 200px;
         text-align: center;
     }
-    
-    tr{
-        align-content: center;
-    }
+    tr{align-content: center;}
     td{
         font-size: 100px;
         font-family:Georgia, 'Times New Roman', Times, serif;
@@ -83,9 +75,7 @@
         padding: 10px;
         text-align: center;
     }
-    table{
-        margin: auto;
-    }
+    table{margin: auto;}
     h1{
         color:red;
         text-align: center;
@@ -101,7 +91,5 @@
         border-radius: 20px 10px;
         background-color: red;
     }
-    table{
-        width: 100%;
-    }
+    table{width: 100%;}
 }

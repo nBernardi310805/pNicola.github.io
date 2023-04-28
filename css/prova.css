@@ -3,7 +3,6 @@ margin: 0;
 padding: 0;
 background: #eb8e15;
 }
-
 @media screen and (max-width: 320px) {
 body {background-color:#FF8000;}
 }

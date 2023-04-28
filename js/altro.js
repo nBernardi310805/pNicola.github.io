@@ -1,20 +1,10 @@
 //questa parte non la nascondo perché non c'è nulla di personale dentro
-function tip() {
-    document.getElementById('tip').innerHTML='<p id="ccc" style="text-align:right;">Questa è la nuova pagina della Didattica: <br> Da essa puoi arrivare nella pagina del<br> C++, nella pagina dedicata a TPSIT<br> e prossimamente agli appunti</p>'
-}
-function ftipp() {
-    document.getElementById('tip').innerHTML='<img src="../images/tru.png" alt="tip" id="sug">'
-}
+function tip() { document.getElementById('tip').innerHTML='<p id="ccc" style="text-align:right;">Questa è la nuova pagina della Didattica: <br> Da essa puoi arrivare nella pagina del<br> C++, nella pagina dedicata a TPSIT<br> e prossimamente agli appunti</p>'}
+function ftipp() {document.getElementById('tip').innerHTML='<img src="../images/tru.png" alt="tip" id="sug">'}
 
-function dvC() {
-    document.getElementById('dC').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/divinaCommedia"></iframe>'
-}
-function pc() {
-    document.getElementById('pc').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/PC/it" style="background-color:white"></iframe>'
-}
-function sO() {
-    document.getElementById('sO').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/SistemiOperativi" style="background-color:white"></iframe>'
-}
+function dvC() {document.getElementById('dC').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/divinaCommedia"></iframe>'}
+function pc() {document.getElementById('pc').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/PC/it" style="background-color:white"></iframe>'}
+function sO() {document.getElementById('sO').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/SistemiOperativi" style="background-color:white"></iframe>'}
 function imc() {
     document.getElementById('imc').innerHTML='<iframe src="https://tpsit.nbernardi.tk/websites/BERNARDI_imc" style="background-color:white"></iframe>'
 }

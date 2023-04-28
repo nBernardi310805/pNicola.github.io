@@ -1,7 +1,6 @@
 a+h1 {
     display: inline-block;
     color:white;
-    
 }
 #ii {
     border-radius: 10px;
@@ -25,15 +24,12 @@ body {
     /*background-color: #133250; */
     background-color: #052134; 
 }
-
-
 h1 {
     font-size: 500%;
     color:whitesmoke;
 }
 .titol {
     font-weight: lighter;
-
 }
 header {
     border-radius: 0px;
@@ -41,20 +37,17 @@ header {
     border:none;
     background-color: red;
     margin: -10px;
-
-
 }
 nav h2 {
     color:whitesmoke;
 }
-
 nav{text-align: center;}
 nav a {
-    border-radius: 30px;
+    border-radius:30px;
     border:solid;
     border-color:white;
     color:crimson;
-    background-color: whitesmoke;
+    background-color:whitesmoke;
     border-spacing: 10px;
     text-decoration: none;
     border-width: 2px;
@@ -69,7 +62,6 @@ nav a:hover {
     text-decoration: none;
     border-width: 2px;
     color:white;
-    
 }
 a.active {
     background-color:crimson;
@@ -99,24 +91,18 @@ button {
     background-color: white;
     color:midnightblue;
     border-radius: 5px;
-    
 }
 .tit {
     zoom:220%;
     color:red;
     font-weight: lighter;
-    
 }
 a.but {
 border: transparent;
 }
-
-
 section h2:hover {
     font-weight: normal;
 }
-
-
 article, figure, a, img#sfondone {
     max-width: 52%;
     display: inline;
@@ -124,9 +110,6 @@ article, figure, a, img#sfondone {
 #txt {
     vertical-align: top;
     text-align:end;
-    
-    
-    
 }
 * {
     color:white;
@@ -158,7 +141,6 @@ button:hover {
     from {top:0px;}
     to {top:-20px;}
 }
-
 @keyframes amla {
     from {color:white; background-color: #133250;}
     to {color:#133250; background-color: white;}
@@ -413,12 +395,3 @@ button:hover {
     text-align: center;
     zoom:150%;
 }
-
-/*@media only screen and (max-width:1024px){
-    nav a {
-        width: 15%;
-    }
-    img {
-        width: 100%;
-    }
-}*/

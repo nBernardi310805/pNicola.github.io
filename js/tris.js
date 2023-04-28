@@ -1,17 +1,14 @@
-let win = false
-let moss = []
-let ai = false
+let win = false, moss = [], ai = false
 moss.length = 10
 moss.fill(0)
-var puntiX = 0
-var puntiO = 0
+var puntiX = 0, puntiO = 0
 function wipe(pti) {
     moss.fill(0)
     win=false
     for(let i=1; i<10; i++){
         document.getElementById(i).innerText = ''
     }
-    if(pti==false){
+    if(!pti){
         puntiO = 0; puntiX = 0
         document.getElementById('pux').innerText = '' + puntiX
         document.getElementById('puo').innerText = puntiO
@@ -57,12 +54,12 @@ function clicked(pos) {
             win = true
         else if (moss[3] == turno && moss[5] == turno && moss[7] == turno)
             win = true
-        if(win==true){
+        if(win){
             alert(turno + ' vince!')
             if(turno=='X'){
                 puntiX++
                 document.getElementById('pux').innerText = '' + puntiX
-                if(ai==true){
+                if(ai){
                     setTimeout(wipe, 1000)
                     return 0
                 }
@@ -79,22 +76,17 @@ function clicked(pos) {
     }
     fineTurno(turno)
 }
-
-function segnaCella(pos, chi) {
-    document.getElementById(pos).innerText = chi
-}
+function segnaCella(pos, chi) { document.getElementById(pos).innerText = chi }
 
 function fineTurno(turno) {
     if (turno == 'X') {
         document.getElementById('trn').innerText = 'O'
-        if(ai==true){
-            setTimeout(pcMove, 2000)
-        }
-    } else {
+    } 
+    if(ai)
+        setTimeout(pcMove, 2000)
+    else
         document.getElementById('trn').innerText = 'X'
-    }
 }
-
 function pcMove(){
     let moved = false
     do{

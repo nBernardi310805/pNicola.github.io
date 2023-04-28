@@ -13,7 +13,6 @@
         clear:left;
         width: 100%;
         text-align: left;
-        
     }
     #vollllume {
         float:right;
@@ -23,20 +22,14 @@
         float: right;
         width: 40%;
     }
-    .ttt {
-        clear: both;
-    }
+    .ttt {clear: both;}
     #tt2 {
         width: 100%;
         text-align: justify;
     }
     
-    h4 {
-        clear:both
-    }
-    .artic {
-        border-radius: 20px; border:solid; border-color:red;
-    }
+    h4 {clear:both}
+    .artic {border-radius: 20px; border:solid; border-color:red;}
     #batch {
         width: 50%;
         text-align: center;
@@ -48,20 +41,12 @@
         float:right;
         padding-left: 5px;
     }
-    .appum {
-        width: 22%;
-    }
+    .appum {width: 22%;}
 }
 @media only screen and (max-width:800px){
-    #vollllume {
-        width: 20%;
-    }
-    #appc {
-        width: 50%;
-    }
-    .tx {
-        text-align: center;
-    }
+    #vollllume {width: 20%;}
+    #appc {width: 50%;}
+    .tx {text-align: center;}
     h3 {
         zoom: 150%;
         text-align: center;
@@ -79,25 +64,11 @@
         width: 100%;
         margin-bottom: 10px;
     }
-    .im {
-        width: 40%;
-    }
-    .appum {
-        width: 70%;
-    }
-    .articolo {
-        overflow: auto;
-    }
-    p{
-        text-align: center;
-    }
-    h5 {
-        text-align: center;
-    }
-    img {
-        text-align: center;
-    }
+    .im {width: 40%;}
+    .appum {width: 70%;}
+    .articolo {overflow: auto;}
+    p{text-align: center;}
+    h5 {text-align: center;}
+    img {text-align: center;}
 }
-footer {
-    clear: both;
-}
+footer {clear: both;}

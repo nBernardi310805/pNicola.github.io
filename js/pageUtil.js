@@ -2,7 +2,6 @@
  * Utilità delle pagine. Crea la navbar e il footer e la ultradarkmode
  */
 let vxx = 0, expired=false
-
 addEventListener('DOMContentLoaded', creaNav)
 addEventListener('DOMContentLoaded', veryDarkMode)
 addEventListener('DOMContentLoaded', creaFooter)
@@ -13,7 +12,7 @@ function creaNav(){     // ` `
     let title = document.querySelector('title').innerText
     ss = false
     title = title.split(' -')
-    title = title[0]      // abbiamo il titolo della pagina
+    title = title[0]
     let navbar_name = ['Home', 'Sfondi', 'Didattica', 'Trucchi', 'Contatti', 'Interattivo']
     const THIS_PAGE = window.location.href
     let navbar_link = ['/', '/sfondi', '/didattica', '/trucchi', '/whoami', '/interattivo']
@@ -62,7 +61,6 @@ function creaNav(){     // ` `
     }
     document.querySelector('header').innerHTML = html
 }
-
 function veryDarkMode(){
     if(localStorage.getItem('theme')=='dark')
         document.querySelector('body').style.backgroundColor = '#000000'
@@ -76,30 +74,21 @@ function veryDarkMode(){
         }
     }
 }
-
-
 function creaFooter() {
     let html = '<h3>Portale Nicola</h3><p style="">Il Portale di Nicola, dal 17 maggio 2021 porta sfondi, easter egg e altro.N.B. Questo è un sito passatempo</p><p id="logged"></p>'
     document.querySelector('footer').innerHTML = html
 }
-
 function getById(id){
     return document.getElementById(id)
 }
 
-function setHTML(id, msg){
-    document.getElementById(id).innerHTML = msg
-}
+function setHTML(id, msg){document.getElementById(id).innerHTML = msg}
 
-function sostituisciImmagine(id){
-    document.getElementById(id).src='/images/pasq.png'
-}
-
+function sostituisciImmagine(id){document.getElementById(id).src='/images/pasq.png'}
 function injectLinks(){
     const HEAD = document.querySelector('head')
     HEAD.innerHTML += '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9843209517750049" crossorigin="anonymous"></script>'
 }
-
 function italianFlag(){
     const x = JSON.parse(localStorage.getItem('festa'))
     if(x==null){
@@ -112,7 +101,6 @@ function italianFlag(){
         return
     }
 }
-
 function changeHeaderBackground(){
     const HEADER = document.querySelector('header')
     switch (vxx) {
@@ -133,7 +121,6 @@ function changeHeaderBackground(){
     else
         vxx++
 }
-
 function animazATema(){
     const item = {
 		value: 'activated',
