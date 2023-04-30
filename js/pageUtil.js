@@ -73,6 +73,8 @@ function veryDarkMode(){
             localStorage.removeItem('theme')
             location.reload()
         }
+    }else if(localStorage.getItem('theme')=='ogblue'){
+        document.querySelector('body').style.backgroundColor = '#133250'
     }
 }
 function creaFooter() {
@@ -160,6 +162,13 @@ function setColor(){
             let d = document.getElementsByClassName('ft')  // sono stanco dopo 2 ore di lavoro sul sito, per cui sto mettendo nomi di variabili a caso
             for(let b=0; b<d.length; b++){
                 d[b].style.color='black'
+            }
+            break
+        case 'orange':
+            document.getElementById('titol').style.color='black'
+            let s = document.getElementsByClassName('ft')  // sono stanco dopo 2 ore di lavoro sul sito, per cui sto mettendo nomi di variabili a caso
+            for(let b=0; b<s.length; b++){
+                s[b].style.color='black'
             }
             break
     }
