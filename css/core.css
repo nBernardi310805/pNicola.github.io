@@ -273,7 +273,7 @@ button:hover {
         text-align: center;
         font-size: larger;
         font-weight: bold;
-        margin-bottom: 5;
+        margin-bottom: 5px;
         margin-top:5px;
         clear:both;
         float:none;
@@ -380,7 +380,7 @@ button:hover {
         text-align: center;
         font-size: larger;
         font-weight: bold;
-        margin-bottom: 5;
+        margin-bottom: 5px;
         margin-top:5px;
         clear:both;
         float:none;

@@ -7,6 +7,7 @@ addEventListener('DOMContentLoaded', veryDarkMode)
 addEventListener('DOMContentLoaded', creaFooter)
 addEventListener('DOMContentLoaded', injectLinks)
 addEventListener('DOMContentLoaded', italianFlag)
+addEventListener('DOMContentLoaded', setColor)
  
 function creaNav(){     // ` `
     let title = document.querySelector('title').innerText
@@ -75,7 +76,7 @@ function veryDarkMode(){
     }
 }
 function creaFooter() {
-    let html = '<h3>Portale Nicola</h3><p style="">Il Portale di Nicola, dal 17 maggio 2021 porta sfondi, easter egg e altro.N.B. Questo è un sito passatempo</p><p id="logged"></p>'
+    let html = '<h3 class="ft">Portale Nicola</h3><p style=""class="ft">Il Portale di Nicola, dal 17 maggio 2021 porta sfondi, easter egg e altro.N.B. Questo è un sito passatempo</p><p id="logged" class="ft"></p>'
     document.querySelector('footer').innerHTML = html
 }
 function getById(id){
@@ -87,7 +88,7 @@ function setHTML(id, msg){document.getElementById(id).innerHTML = msg}
 function sostituisciImmagine(id){document.getElementById(id).src='/images/pasq.png'}
 function injectLinks(){
     const HEAD = document.querySelector('head')
-    HEAD.innerHTML += '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9843209517750049" crossorigin="anonymous"></script>'
+    //HEAD.innerHTML += '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9843209517750049" crossorigin="anonymous"></script>'
 }
 function italianFlag(){
     const x = JSON.parse(localStorage.getItem('festa'))
@@ -128,4 +129,39 @@ function animazATema(){
 	}
     localStorage.setItem('festa', (JSON.stringify(item)))
     italianFlag()
+}
+
+function setColor(){
+    const COLOR = localStorage.getItem('color')
+    const HEADER = document.querySelector('header')
+    if(COLOR==null)
+        return
+    if(COLOR=='def'){
+        HEADER.style.backgroundColor = 'red'
+        document.querySelector('footer').style.backgroundColor='firebrick'
+        return
+    }
+    HEADER.style.backgroundColor = COLOR
+    document.querySelector('footer').style.backgroundColor=COLOR
+    switch (COLOR) {
+        case 'lime':
+            document.getElementById('titol').style.color='black'
+            let xy = document.getElementsByClassName('ft')  // sono stanco dopo 2 ore di lavoro sul sito, per cui sto mettendo nomi di variabili a caso
+            for(let b=0; b<xy.length; b++){
+                xy[b].style.color='black'
+            }
+            break
+        case 'cyan':
+            document.getElementById('titol').style.color='firebrick'
+            document.querySelector('footer').style.backgroundColor='teal'
+            break
+        case 'yellow':
+            document.getElementById('titol').style.color='black'
+            let d = document.getElementsByClassName('ft')  // sono stanco dopo 2 ore di lavoro sul sito, per cui sto mettendo nomi di variabili a caso
+            for(let b=0; b<d.length; b++){
+                d[b].style.color='black'
+            }
+            break
+    }
+    
 }
