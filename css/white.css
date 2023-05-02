@@ -1,0 +1,24 @@
+body {
+    background-color: white;
+    color:black;
+}
+p{
+    color:black;
+}
+#ciao {
+    color:black;
+}
+@keyframes tito {
+    0% {color:black;}
+    50% {color:red;}
+    100% {color:black;}
+}
+#cosafaccio {
+    border-color:cornflowerblue;
+}
+#bacheca p {
+    color:black;
+}
+#bacheca article .whoami{
+    color:black;
+}

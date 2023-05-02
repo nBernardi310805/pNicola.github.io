@@ -143,6 +143,11 @@ function setColor(){
         document.querySelector('footer').style.backgroundColor='firebrick'
         return
     }
+    const BUTTONS = document.querySelectorAll('button')
+    for(let g=0; g<BUTTONS.length; g++){
+        BUTTONS[g].style.backgroundColor=COLOR
+        BUTTONS[g].style.borderColor=COLOR
+    }
     HEADER.style.backgroundColor = COLOR
     document.querySelector('footer').style.backgroundColor=COLOR
     switch (COLOR) {
@@ -152,10 +157,16 @@ function setColor(){
             for(let b=0; b<xy.length; b++){
                 xy[b].style.color='black'
             }
+            for(let b=0; b<BUTTONS.length; b++){
+                BUTTONS[b].style.color='black'
+            }
             break
         case 'cyan':
             document.getElementById('titol').style.color='firebrick'
             document.querySelector('footer').style.backgroundColor='teal'
+            for(let b=0; b<BUTTONS.length; b++){
+                BUTTONS[b].style.color='black'
+            }
             break
         case 'yellow':
             document.getElementById('titol').style.color='black'
@@ -163,12 +174,18 @@ function setColor(){
             for(let b=0; b<d.length; b++){
                 d[b].style.color='black'
             }
+            for(let b=0; b<BUTTONS.length; b++){
+                BUTTONS[b].style.color='black'
+            }
             break
         case 'orange':
             document.getElementById('titol').style.color='black'
             let s = document.getElementsByClassName('ft')  // sono stanco dopo 2 ore di lavoro sul sito, per cui sto mettendo nomi di variabili a caso
             for(let b=0; b<s.length; b++){
                 s[b].style.color='black'
+            }
+            for(let b=0; b<BUTTONS.length; b++){
+                BUTTONS[b].style.color='black'
             }
             break
     }

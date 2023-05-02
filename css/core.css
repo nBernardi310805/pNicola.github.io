@@ -123,7 +123,9 @@ button:hover {
     background-color: firebrick;
     text-decoration: none;
     border-width: 2px;
-    color:white;
+    color:whitesmoke;
+    border-color: white;
+    cursor:pointer;
 }
 .icon {
     width: 10%;
@@ -262,8 +264,8 @@ button:hover {
         border-radius: 20px;
         border:solid;
         border-color:firebrick;
-        color:firebrick;
-        background-color: whitesmoke;
+        color:white;
+        background-color: firebrick;
         border-spacing: 10px;
         text-decoration: none;
         border-width: 2px;
@@ -281,10 +283,10 @@ button:hover {
     button:hover {
         border-radius: 20px;
         border:solid;
-        background-color: firebrick;
+        background-color: white;
         text-decoration: none;
         border-width: 2px;
-        color:white;
+        color:firebrick;
     }
     .whoami{
         text-align: center;
@@ -369,8 +371,8 @@ button:hover {
         border-radius: 30px;
         border:solid;
         border-color:firebrick;
-        color:firebrick;
-        background-color: whitesmoke;
+        color:whitesmoke;
+        background-color: firebrick;
         border-spacing: 10px;
         text-decoration: none;
         border-width: 2px;

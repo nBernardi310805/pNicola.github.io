@@ -33,7 +33,7 @@
         font-size: 4vh;
         font-weight: lighter;
     }
-    button {
+    /*button {
         border-radius: 30px;
         border:solid;
         border-color:firebrick;
@@ -50,7 +50,7 @@
         font-weight: bold;
         margin-bottom: 5px;
         margin-top:5px;
-    }
+    }*/
     .tpProj {
         width: 100%;
         text-align: center;
@@ -129,7 +129,7 @@
         font-size: 4vh;
         font-weight: lighter;
     }
-    button {
+    /*button {
         border-radius: 30px;
         border:solid;
         border-color:firebrick;
@@ -144,7 +144,7 @@
         font-size: larger;
         font-weight: bold;
         margin-bottom: 10px;
-    }
+    }*/
     .tpProj {
         width: 23%;
         display: inline-block;
