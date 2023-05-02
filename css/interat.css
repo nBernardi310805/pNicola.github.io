@@ -107,5 +107,7 @@ input {
     }
     input[type=number] {
         height: 25px;
+        text-align: center;
     }
+
 }

@@ -42,19 +42,7 @@ nav h2 {
     color:whitesmoke;
 }
 nav{text-align: center;}
-nav a {
-    border-radius:30px;
-    border:solid;
-    border-color:white;
-    color:crimson;
-    background-color:whitesmoke;
-    border-spacing: 10px;
-    text-decoration: none;
-    border-width: 2px;
-    display: inline-block;
-    width: 15.5%;
-    text-align: center;
-}
+
 nav a:hover {
     border-radius: 30px;
     border:solid;
@@ -151,6 +139,7 @@ button:hover {
     display: inline;
 }
 @media (max-width:800px) {
+
     .icon {
         width: 32%;
         
@@ -291,10 +280,37 @@ button:hover {
     .whoami{
         text-align: center;
     }
+    nav a {
+        border-radius:30px;
+        border:solid;
+        border-color:white;
+        color:crimson;
+        background-color:whitesmoke;
+        border-spacing: 10px;
+        text-decoration: none;
+        border-width: 2px;
+        display: inline-block;
+        min-width: 30%;
+        text-align: center;
+        margin-top: 10px;
+    }
 }
 
 
 @media (min-width:800px){
+    nav a {
+        border-radius:30px;
+        border:solid;
+        border-color:white;
+        color:crimson;
+        background-color:whitesmoke;
+        border-spacing: 10px;
+        text-decoration: none;
+        border-width: 2px;
+        display: inline-block;
+        width: 15.5%;
+        text-align: center;
+    }
     .tipo {
         margin-top: 50px;
         text-align: center;
