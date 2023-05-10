@@ -35,10 +35,10 @@ function uRim(){
 }
 function mod(){
     const TARGET = document.getElementById('useratori')
-    if(users<97)
+    if(users<101)
         TARGET.innerText = countup()
     else{
-        TARGET.style='color:lightgrey; font-weight:bolder;'
+        TARGET.style='color:gold; font-weight:bolder;'
         return
     }
 }

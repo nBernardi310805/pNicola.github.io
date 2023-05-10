@@ -8,6 +8,7 @@ addEventListener('DOMContentLoaded', creaFooter)
 addEventListener('DOMContentLoaded', injectLinks)
 addEventListener('DOMContentLoaded', italianFlag)
 addEventListener('DOMContentLoaded', setColor)
+addEventListener('DOMContentLoaded', changePageFont)
  
 function creaNav(){     // ` `
     let title = document.querySelector('title').innerText
@@ -190,4 +191,34 @@ function setColor(){
             break
     }
     
+}
+
+function changePageFont() {
+    const BODY = document.querySelector('body')
+    const VALUE = localStorage.getItem('font')
+    switch (VALUE) {
+        case 'd':
+            break;
+        case 'verdena':
+            BODY.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif'
+            break
+        case 'elegante':
+            BODY.style.fontFamily = "Georgia, 'Times New Roman', Times, serif"
+            break
+        case 'raffinato':
+            BODY.style.fontFamily="Cambria, Cochin, Georgia, Times, 'Times New Roman"
+            break
+        case 'da_galera':
+            BODY.style.fontFamily = "'Comic Sans MS', 'Comic Sans', cursive"
+            break
+        case 'impatto':
+            BODY.style.fontFamily = "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
+            break
+        case 'ghirigori':
+            BODY.style.fontFamily="fantasy"
+            break
+        case 'moderno':
+            BODY.style.fontFamily = "Arial, Helvetica, sans-serif"
+            break
+    }
 }
