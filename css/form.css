@@ -42,6 +42,7 @@ iframe {
         color:white;
         background-color: red;
         margin-top: 10px;
+        cursor: pointer;
     }
     #pss {
         display: inline;
