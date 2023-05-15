@@ -35,7 +35,7 @@ function uRim(){
 }
 function mod(){
     const TARGET = document.getElementById('useratori')
-    if(users<101)
+    if(users<117)
         TARGET.innerText = countup()
     else{
         TARGET.style='color:gold; font-weight:bolder;'
