@@ -21,5 +21,8 @@ function countdown(){
       document.getElementById('cosafaccio').innerText = countdown().days + 'gg, ' + countdown().hours + 'h, ' + countdown().minutes + "', " + countdown().seconds + "'' ai 2 anni del sito"
   }
   function premessa(){
-    alert('PREMESSA: \nCon tutta probabilità questa sarà la pagina più cringe del mio sito. Per favore, abbiate pietà e non giudicatemi, avevo 15 anni. La pagina non è completa')
+    //alert('PREMESSA: \nCon tutta probabilità questa sarà la pagina più cringe del mio sito. Per favore, abbiate pietà e non giudicatemi, avevo 15 anni. La pagina non è completa')
+    if(!localStorage.getItem('timeMachine')=='on'){
+      location.href = '/'
+    }
   }
