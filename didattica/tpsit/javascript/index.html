@@ -47,6 +47,7 @@
                 <h3>Indice</h3>
                 <ul>
                     <li><a href="#intro">Introduzione</a></li>
+                    <li><a href="#cookies">I cookie</a></li>
                 </ul>
             </article>
         </section>
@@ -74,6 +75,41 @@
             Certo, ad esempio tutte le parti dinamiche come gli easter eggs nel terminale della home page, la parte logica del <a href="../../../pannello/">Pannello di Controllo</a>, 
             Il contatore degli utenti nella home, il cambio del testo quando il mouse entra in un oggetto e tutto ciò che vedete nella pagina <a href="../../../interattivo/">Interattiva</a> è fatto col JavaScript.
         </p>
+        <h3 class="titPar" id="cookies">I cookie</h3>
+        <h4>Introduzione</h4>
+        <p>I cookie servono per memorizzare alcune informazioni degli utenti direttamente nel loro browser. Questa tecnica di memorizzazione fa comodo alle aziende che non risparmiano spazio di archiviazione per i dati degli utenti e agli utenti stessi 
+            che possono cancellarli in qualsiasi momento. 
+        </p>
+        <p><b>Ma se i cookie servono solo per memorizzare i dati degli utenti, tipo il carrello di amazon, perché è richiesto che l'utente accetti i cookie?</b></p>
+        <p>
+            Il problema della privacy degli utenti con i cookie è il fatto che esistano i cookie di terze parti. Esistono poi altri sistemi di memorizzazione dei dati degli utenti nel browser, come <code>localStorage</code> o <code>sessionStorage</code>. 
+            Questi due sistemi non richiedono il banner di avviso agli utenti perché devono essere gestiti dal sito e non possono essere letti da siti come googleAdsense per la profilazione dell'utente.
+        </p>
+        <p><b>Tu utilizzi i cookie nel Portale?</b></p>
+        <p>
+            No, ho eliminato tutti i cookie, tranne quelli di Analytics che sono consentiti. Per tenere in memoria il colore della navbar personalizzata, il font, ecc. uso <code>localStorage</code>.
+            LocalStorage ha una gestione simile ai cookie. La memorizzazione avviene in chiavi (<code>key</code>) e valore associato alla key. 
+            Questo è un esempio della logica chiave valore:
+        </p>
+        <table>
+            <th>/</th>
+            <th>Key</th>
+            <th>Value</th>
+            <tbody>
+                <tr>
+                    <td>Username/Password</td>
+                    <td>admin</td>
+                    <td>password</td>
+                </tr>
+                <tr>
+                    <td>Tipo dato / username e password in JSON</td>
+                    <td>_users</td>
+                    <td>{"username":"admin", "password": "password"}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Il JSON è molto usato e molto comodo per i cookie e per memorizzare in una stringa un oggetto. Il prossimo articolo sarà sul JSON.</p>
 
         <h3>Tra due settimane nuovo articolo su JS (o anche prima, dipende dal feedback che ricevo)</h3>
        <a href="../"><button>Torna a TPSIT</button></a>

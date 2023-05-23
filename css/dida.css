@@ -257,3 +257,11 @@
     color:red;
     font-family: 'Courier New', Courier, monospace;
   }
+  table, td, tr, th {
+    border:solid white;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+  th {
+    color:red;
+  }
