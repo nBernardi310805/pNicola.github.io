@@ -35,15 +35,20 @@ function uRim(){
 }
 function mod(){
     const TARGET = document.getElementById('useratori')
-    if(users<131)
+    if(users<139)
         TARGET.innerText = countup()
     else{
         TARGET.style='color:gold; font-weight:bolder;'
         return
     }
 }
+
+/**
+ * Giorni all evento
+ * @returns varie cose
+ */
 function yyy(){
-    const total = Date.parse('2023-05-17')-Date.parse(Date())
+    const total = Date.parse('2023-06-02')-Date.parse(Date())
     const seconds = Math.floor( (total/1000) % 60 );
     const minutes = Math.floor( (total/1000/60) % 60 );
     const hours = Math.floor( (total/(1000*60*60)) % 24 );
@@ -57,7 +62,7 @@ function yyy(){
     };
   }
   function grg(){setInterval(jij, 1000)}
-  function jij(){document.getElementById('c2y').innerText = yyy().days + 'gg, ' + yyy().hours + 'h, ' + yyy().minutes + "', " + yyy().seconds + "'' ai 2 anni del sito"}
+  function jij(){document.getElementById('ggEv').innerText = yyy().days + 'gg, ' + yyy().hours + 'h, ' + yyy().minutes + "', " + yyy().seconds + "'' alla Festa della Repubblica"}
   
 
 

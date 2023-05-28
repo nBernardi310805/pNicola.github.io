@@ -92,10 +92,10 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
         <section id="bacheca" style="overflow: auto;">
             <article>
                 <h4 class="whoami"><u>Bacheca</u></h4>
-                <p class="dat"><b style="color:red;">Nuovo articolo nella pagina JavaScript (tpsit) 23 maggio 2023.</b></p>
+                <p class="dat"><b style="color:green;">28 maggio: Nuovissimo articolo sul JSON nell pagina JavaScript</b></p>
                 <p><a href="didattica/tpsit/javascript/">
-                    Oggi parliamo dei cookie. A cosa servono? Perché possono essere un problema per la privacy? Ci sono delle alternative che non richiedono che 
-                    l'utente venga avvisato? <b>Spoiler: sì</b>. Leggete l'articolo completo cliccando qui.
+                    Oggi parliamo del JSON, che cos'è? Come usarlo? Parleremo proprio di questo nell'articolo dedicato nella pagina JavaScript. 
+                    Il tutorial di oggi è veramente molto semplice. Clicca qui per leggere l'articolo.
                 </a></p>
                 <p class="dat"><b>Comunicazione di servizio:</b></p>
                 <p>
@@ -108,34 +108,35 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
                 </p>
                 <!-- ↑ ↓ -->
                 <ol>
-                    <li>🏆 Home Page - 1653 visual.</li>
-                    <li>🥈Impostazioni - 1247 visual.</li>
-                    <li>🥉Interattivo - 448 visual.</li>
-                    <li>Sfondi (pg1) - 321 visual.</li>
-                    <li>Aggiornamenti - 225 visual.</li>
-                    <li>Pannello di controllo - 201 visual.</li>
-                    <li>Contatti - 182 visual.</li>
-                    <li>Didattica - 157 visual.</li>
-                    <li>Tpsit - 154 visual.</li>
-                    <li>Trucchi - 114 visual.</li>
+                    <li>🏆 Home Page - 1695 visual.</li>
+                    <li>🥈Impostazioni - 1254 visual.</li>
+                    <li>🥉Interattivo - 452 visual.</li>
+                    <li>Sfondi (pg1) - 337 visual.</li>
+                    <li>↑(22) JavaScript - 235 visual.</li>
+                    <li>↓(5) Aggiornamenti - 228 visual.</li>
+                    <li>↓(6) Pannello di controllo - 201 visual.</li>
+                    <li>↓(7)Contatti - 188 visual.</li>
+                    <li>↓(8) Didattica - 161 visual.</li>
+                    <li>↓(9)Tpsit - 156 visual.</li>
                 </ol>
-                <p><small>Ultimo aggiornamento: 22 maggio 2023</small></p>
-                <!-- <p><sub>I numeri tra parentesi rappresentano la posizione che avevano lo scorso aggiornamento</sub></p> -->
-                <!-- <p>Considerazioni: La pagina <a href="settings/">della Personalizzazione</a> ha ricevuto un gran risultato in appena 2 giorni. Arriveranno altri aggiornamenti per la personalizzazione. Stay tuned!</p> -->
+                <p><small>Ultimo aggiornamento: 28 maggio 2023</small></p>
+                <p><sub>I numeri tra parentesi rappresentano la posizione che avevano lo scorso aggiornamento</sub></p>
+                <p>Considerazioni: Noto con piacere che la pagina <a href="didattica/tpsit/javascript/">JavaScript</a> Sta riscuotendo molto interesse. Mi impegnerò dunque a portare più tutorial in quella pagina.</p>
             </article>
         </section> 
    
         <section id="eroi" style="overflow: auto;">
             <article>
-                <h4 class="whoami"><span>Evento:</span> -</h4>
+                <h4 class="whoami"><span>Evento:</span> Festa della Repubblica</h4>
                 <!--js-->
                 <div style="width: 45%; float:left;"><p>
-                    Nessun evento per ora. Stay tuned!
-                    <!-- <button onclick="animazATema()">Premi qui per avviare l'animazione a tema</button>
-                    <button onclick="localStorage.removeItem('festa')">Premi qui per fermare l'animazione a tema</button>-->
+                    Si avvicina la Festa della Repubblica e il sito verrà decorato appositamente per l'evento.
+                    <button onclick="animazATema()">Premi qui per avviare l'animazione a tema</button>
+                    <button onclick="localStorage.removeItem('festa'); location.reload()">Premi qui per fermare l'animazione a tema</button>
                 </p></div>
                 <div style="width: 45%; float:right"><p id="donaaa">In questa pagina sono presenti i bottoni e le cose relative agli eventi/festività in Italia.</p></div>
                 <div style="clear:both; text-align: center;">
+                    <p>Giorni all'evento: <span id="ggEv" style="color:red;">-</span></p>
                     </div>
             </article>
         </section>
@@ -143,12 +144,12 @@ ovviamente ho scoperto (da diverso tempo) l'attributo margin, ma mi scoccio di m
 
             <article id="novModif"> 
             <h3 class="tit3">Novità</h3>
-            <p class="dat"><b>23 maggio 2023:</b></p>
-            <p>Nuovo articolo in <a href="didattica/tpsit/javascript/">Tpsit - JavaScript</a> sui cookie.</p>
-            <p class="dat"><b>22 maggio 2023:</b></p>
-            <p>Nuova comunicazione in bacheca.</p>
-            <p class="dat"><b>22 maggio 2023:</b></p>
-            <p>Aggiornate le analytics e il contatore degli utenti.</p>
+            <p class="dat"><b>28 maggio 2023:</b></p>
+            <p>Nuovissimo articolo sul JSON nella <a href="didattica/tpsit/javascript/">Pagina JavaScript</a>.</p>
+            <p class="dat"><b>28 maggio 2023:</b></p>
+            <p>Nuovo evento: Festa della Repubblica.</p>
+            <p class="dat"><b>28 maggio 2023:</b></p>
+            <p>Aggiornate le analytics, il contatore utenti e aggiunto un nuovo sfondo.</p>
             
             <p><b><a style="color: red;" href="https://www.instagram.com/nico.mon3y.3108/">Seguimi su Instagram per più aggiornamenti e per partecipare attivamente ai miei sondaggi.</a></b></p>
             <h3 id="agg" title="Pagina della trasparenza"><a id="colagg" onmouseenter="document.getElementById('colagg').innerHTML='Pagina della Trasparenza'" onmouseleave="document.getElementById('colagg').innerHTML='•••'" href="aggiornamenti/">•••</a></h3>

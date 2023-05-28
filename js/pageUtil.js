@@ -128,7 +128,7 @@ function changeHeaderBackground(){
 function animazATema(){
     const item = {
 		value: 'activated',
-		expiry: Date.parse('2023-04-26')
+		expiry: Date.parse('2023-06-02')
 	}
     localStorage.setItem('festa', (JSON.stringify(item)))
     italianFlag()

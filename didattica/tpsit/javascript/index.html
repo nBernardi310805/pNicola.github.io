@@ -48,6 +48,7 @@
                 <ul>
                     <li><a href="#intro">Introduzione</a></li>
                     <li><a href="#cookies">I cookie</a></li>
+                    <li><a href="#j_figlio">Il JSON</a></li>
                 </ul>
             </article>
         </section>
@@ -75,6 +76,8 @@
             Certo, ad esempio tutte le parti dinamiche come gli easter eggs nel terminale della home page, la parte logica del <a href="../../../pannello/">Pannello di Controllo</a>, 
             Il contatore degli utenti nella home, il cambio del testo quando il mouse entra in un oggetto e tutto ciò che vedete nella pagina <a href="../../../interattivo/">Interattiva</a> è fatto col JavaScript.
         </p>
+
+
         <h3 class="titPar" id="cookies">I cookie</h3>
         <h4>Introduzione</h4>
         <p>I cookie servono per memorizzare alcune informazioni degli utenti direttamente nel loro browser. Questa tecnica di memorizzazione fa comodo alle aziende che non risparmiano spazio di archiviazione per i dati degli utenti e agli utenti stessi 
@@ -109,7 +112,87 @@
             </tbody>
         </table>
 
-        <p>Il JSON è molto usato e molto comodo per i cookie e per memorizzare in una stringa un oggetto. Il prossimo articolo sarà sul JSON.</p>
+        <p>Il JSON è molto usato e molto comodo per i cookie e per memorizzare in una stringa un oggetto.</p>
+
+
+        <h3 class="titPar" id="j_figlio">Il JSON</h3>
+        <h4>Introduzione</h4>
+        <p>Immaginate di dover memorizzare in un solo cookie o in localstorage le preferenze dell'utente rispetto ai cookie: 
+            dovrete quindi tenere in memoria nel browser se l'utente ha accettato tutti i cookie, se li ha rifiutati tutti o se ha accettato parzialmente 
+            (ad esempio, ha accettato i cookie di esperienza, ma ha rifiutato quelli di marketing). 
+            Logicamente non possiamo fare un cookie per ciascuna spunta, diventerebbe molto scocciante gestirli uno a uno. 
+            Ci viene in soccorso quindi il JSON.
+        </p>
+        <h4>Vantaggi del JSON:</h4>
+        <ul>
+            <li>Facile da leggere e da scrivere (anche per un essere umano);</li>
+            <li>Compatibile con diversi linguaggi di programmazione;</li>
+            <li>Sintassi semplice: JSON si basa su una struttura dati gerarchica basata su coppie chiave-valore;</li>
+            <li>Altri vantaggi che in questo caso, a noi non interessano (come un peso minore rispetto all'XML o il supporto per le API web);</li>
+        </ul>
+        <h4>Il caso pratico</h4>
+        <p>N.B. useremo localstorage per la memorizzazione delle preferenze, ma il JSON si applica perfettamente anche ai cookie.</p>
+        <p>
+            Supponiamo che noi dobbiamo gestire le 5 spunte dei cookie: <b>necessari</b> (che sarà sempre spuntata), <b>funzionalità</b>, <b>esperienza</b>, <b>misurazione</b> e <b>marketing</b>. 
+            Quando l'utente confermerà le sue scelte dei cookie, noi controlleremo le varie spunte e le memorizzeremo in un oggetto chiamato "pref": (nel esempio sottostante, fingeremo che l'utente abbia rifiutato solo il marketing)
+            <pre>
+<code>
+const PREF = {
+    necessari: true,
+    funzionalità: true,
+    esperienza: true,
+    misurazione: true,
+    marketing: false
+};
+</code>
+            </pre>
+            Dobbiamo ora memorizzare le preferenze dell'utente in localstorage con la chiave "_pref". Procederemo nel seguente modo:
+
+            <pre>
+                <code>
+const PREF_IN_JSON = JSON.stringify(PREF)
+                </code>
+            </pre>
+            La costante PREF_IN_JSON avrà contenuto:
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            {"necessari":true,"funzionalità":true,"esperienza":true,"misurazione":true,"marketing":false}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            Ora memorizziamolo in localStorage:
+            <pre>
+                <code>
+localStorage.setItem('_pref', PREF_IN_JSON)
+                </code>
+            </pre>
+            Abbiamo quindi raggiunto il nostro obbiettivo. Possiamo poi recuperarci l'oggetto in questo modo:
+            <pre>
+                <code>
+const PREF_IN_JSON = localStorage.getItem("_pref")
+const PREF = JSON.parse(PREF_IN_JSON)
+                </code>
+            </pre>
+        </p>
+        <h4>Metodi principali JSON:</h4>
+        <table>
+            <tbody>
+                <th>Metodo</th>
+                <th>Cosa fa</th>
+                <tr>
+                    <td>JSON.stringify(*obj*)</td>
+                    <td>Trasforma un oggetto JS in una stringa JSON</td>
+                </tr>
+                <tr>
+                    <td>JSON.parse(*json string*)</td>
+                    <td>Trasforma una stringa JSON in un oggetto JS.</td>
+                </tr>
+            </tbody>
+        </table>
+
 
         <h3>Tra due settimane nuovo articolo su JS (o anche prima, dipende dal feedback che ricevo)</h3>
        <a href="../"><button>Torna a TPSIT</button></a>
