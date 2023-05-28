@@ -50,6 +50,7 @@
             <li><a href="#prank">Scherzi innocui informatici</a></li>
             <li><a href="#appu">Cronologia elementi copiati</a></li>
             <li><a href="#expl">Aprire 2 finestre dello stesso programma velocemente</a></li>
+            <li><a href="#hashing">Impronta digitale di un file</a></li>
         </ul>
     </div>
     <section class="articolo">
@@ -184,6 +185,34 @@
             <h5>Windows</h5>
             <p>Come fai ad aprire 2 esplora file? Tasto destro, nuova finestra? Se stai usando un mouse premi la rotella
                 sull'icona nella barra delle applicazioni.</p>
+        </article>
+    </section>
+
+    <section class="articolo">
+        <article>
+            <h4 id="hashing" class="ttt">L'impronta digitale di un file</h4>
+            <p class="tx">
+                L'hashing è un algoritmo matematico che, in base al contenuto del file, restituisce una stringa esadecimale univoca. 
+                Dalla stringa generata non si può risalire al contenuto del file e per questo è usato come metodo di crittografia per le password nei sistemi Linux (come in Ubuntu). 
+                Ci sono poi dei sistemi (come il salting) per rendere più difficile agli hacker la "decriptazione" dell'hashing delle password (scusate esperti, ma è molto complicato spiegare l'hashing in termini che siano comprensibili da tutti), ma questo non è lo scopo del trucco.
+                Oggi vi insegnerò come calcolare lo SHA1 (un algoritmo di hashing molto usato), di un file.
+            </p>
+
+            <h5>MacOS</h5>
+            <p>Su MacOS è molto semplice calcolare lo SHA1 di un file: aprite il terminale e scrivete:
+                <code>openssl sha1</code> e trascinate di seguito il file di cui vorrete calcolare lo sha1 prima di dare invio. Vi verrà stampato lo sha1 del file trascinato.
+            </p>
+            
+            <h5>Windows</h5>
+            <p>Per calcolare lo SHA1 su windows bisogna utilizzare il seguente comando nel prompt dei comandi:
+                <code>certutil -hashfile &lt;percorso del file di cui volete lo sha1> SHA1</code>
+            </p>
+            <h5>Ubuntu</h5>
+            <p>In ubuntu il comando da scrivere è molto breve: 
+                <code>sha1sum &lt;percorso del file di cui volete lo sha1></code>
+            </p>
+            <p></p>
+            <img id="appc" src="../images/appCart.png" alt="img cart">
         </article>
     </section>
     <footer>
