@@ -72,7 +72,7 @@
                         <small>Se il valore massimo
                          viene lasciato vuoto, varrà 999 miliardi
                     </small></p>
-                    <input type="checkbox" id="inte" name="interroga" onclick="inte()" value="in">
+                    <input type="checkbox" id="inte" name="interroga" onclick="random()" value="in">
                     <label for="inte" onclick="inte()">Interrogazione?</label><br>
                     <p>Se è estrazione per interrogazione spuntare l'opzione. Di default sarà autocompilato casuale tra 1 e 24</p>
                     <input type="number" name="a" id="min" value="0">
@@ -100,7 +100,7 @@
                     <input type="range" id="range" value="2" onchange="aggiornaNumPass()"><label for="range" id="numberP">10</label>
                     <input type="button" value="Genera" onclick="generaPassword()" id="gps"><br>
                     <label id="passGen">La password generata verrà visualizzata qui</label>
-                    <input type="button" value="Copia" class="copy" onclick="copyPass()">
+                    <input type="button" value="Copia" class="copy" onclick="copyPass()" id="copyy">
                 </article>
             </section>
             
