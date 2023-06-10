@@ -1,6 +1,7 @@
 //addEventListener('DOMContentLoaded', ggRim)
 addEventListener('DOMContentLoaded', uRim)
 addEventListener('DOMContentLoaded', grg)
+addEventListener('DOMContentLoaded', sRim)
 
 function aggiorna(n, dove){
     dove.innerText = n
@@ -65,4 +66,19 @@ function yyy(){
   function jij(){document.getElementById('ggEv').innerText = yyy().days + 'gg, ' + yyy().hours + 'h, ' + yyy().minutes + "', " + yyy().seconds + "'' alla Festa della Repubblica"}
   
 
-
+  var time=60
+  function countend(){
+      return time--
+  }
+  function sRim(){
+      setInterval(modda, 25)
+  }
+  function modda(){
+      const TARGET = document.getElementById('cosafaccio')
+      if(time>=0)
+          TARGET.innerText = countend() + '" alla fine della scuola'
+      else{
+          TARGET.innerText = 'Buone vacanze estive!'
+          return
+      }
+  }
