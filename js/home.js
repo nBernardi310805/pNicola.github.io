@@ -1,4 +1,4 @@
-addEventListener('DOMContentLoaded', ggRim)
+//addEventListener('DOMContentLoaded', ggRim)
 addEventListener('DOMContentLoaded', uRim)
 addEventListener('DOMContentLoaded', grg)
 
