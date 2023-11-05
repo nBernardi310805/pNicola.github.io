@@ -17,7 +17,7 @@ function creaNav(){     // ` `
     title = title[0]
     let navbar_name = ['Home', 'Sfondi', 'Didattica', 'Trucchi', 'Contatti', 'Interattivo']
     const THIS_PAGE = window.location.href
-    let navbar_link = ['/', '/pNicola.github.io/sfondi', '/pNicola.github.io/didattica', '/pNicola.github.io/trucchi', '/pNicola.github.io/whoami', '/pNicola.github.io/interattivo']
+    let navbar_link = ['/pNicola.github.io/', '/pNicola.github.io/sfondi', '/pNicola.github.io/didattica', '/pNicola.github.io/trucchi', '/pNicola.github.io/whoami', '/pNicola.github.io/interattivo']
     let html = '<a href="/pNicola.github.io/tulipano.html"><img src="/pNicola.github.io/images/logoPuro.png" id="ii" alt="logo"></a><h1 class="titol" id="titol">Il Portale di Nicola</h1>'
     html += '<nav><h2 class="nav1" id="modTut">'
     for(let i=0; i<navbar_name.length; i++){
