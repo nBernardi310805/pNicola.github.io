@@ -17,8 +17,8 @@ function creaNav(){     // ` `
     title = title[0]
     let navbar_name = ['Home', 'Sfondi', 'Didattica', 'Trucchi', 'Contatti', 'Interattivo']
     const THIS_PAGE = window.location.href
-    let navbar_link = ['/', '/sfondi', '/didattica', '/trucchi', '/whoami', '/interattivo']
-    let html = '<a href="/tulipano.html"><img src="/images/logoPuro.png" id="ii" alt="logo"></a><h1 class="titol" id="titol">Il Portale di Nicola</h1>'
+    let navbar_link = ['/', '/pNicola.github.io/sfondi', '/pNicola.github.io/didattica', '/pNicola.github.io/trucchi', '/pNicola.github.io/whoami', '/pNicola.github.io/interattivo']
+    let html = '<a href="/pNicola.github.io/tulipano.html"><img src="/pNicola.github.io/images/logoPuro.png" id="ii" alt="logo"></a><h1 class="titol" id="titol">Il Portale di Nicola</h1>'
     html += '<nav><h2 class="nav1" id="modTut">'
     for(let i=0; i<navbar_name.length; i++){
         html += '<a '
@@ -46,7 +46,7 @@ function creaNav(){     // ` `
     if(title == 'Sfondi' || title=='Sfondi pg2' || title=='Sfondi pg3' || title=='Sfondi pg4' || title=='Sfondi di Natale'){
         const NAV_SFONDI_NAME = ['Pagina 1', 'Pagina 2', 'Pagina 3', 'Pagina 4', 'Sfondi di Natale']
         const NAV_SFONDI_PGNAME = ['Sfondi', 'Sfondi pg2', 'Sfondi pg3', 'Sfondi pg4', 'Sfondi di Natale']
-        const NAV_SFONDI_PATH = ['/sfondi', '/sfondi/p2', '/sfondi/p3', '/sfondi/p4', '/sfondi/natale']
+        const NAV_SFONDI_PATH = ['/pNicola.github.io/sfondi', '/pNicola.github.io/sfondi/p2', '/pNicola.github.io/sfondi/p3', '/pNicola.github.io/sfondi/p4', '/pNicola.github.io/sfondi/natale']
         html += '<div><h2>'
         for(let i=0; i<NAV_SFONDI_NAME.length; i++){
             html += '<a '
@@ -88,7 +88,7 @@ function getById(id){
 
 function setHTML(id, msg){document.getElementById(id).innerHTML = msg}
 
-function sostituisciImmagine(id){document.getElementById(id).src='/images/pasq.png'}
+function sostituisciImmagine(id){document.getElementById(id).src='/pNicola.github.io/images/pasq.png'}
 function injectLinks(){
     const HEAD = document.querySelector('head')
     //HEAD.innerHTML += '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9843209517750049" crossorigin="anonymous"></script>'
